@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/dtcarrot/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build/bootloader
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader
 
 # Utility rule file for _project_elf_src.
 
@@ -57,8 +57,8 @@ CMakeFiles/_project_elf_src: project_elf_src.c
 
 
 project_elf_src.c:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dtcarrot/esp/web_server/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating project_elf_src.c"
-	/usr/bin/cmake -E touch /home/dtcarrot/esp/web_server/build/bootloader/project_elf_src.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating project_elf_src.c"
+	/usr/bin/cmake -E touch /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/project_elf_src.c
 
 _project_elf_src: CMakeFiles/_project_elf_src
 _project_elf_src: project_elf_src.c
@@ -76,6 +76,6 @@ CMakeFiles/_project_elf_src.dir/clean:
 .PHONY : CMakeFiles/_project_elf_src.dir/clean
 
 CMakeFiles/_project_elf_src.dir/depend:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/esp-idf/components/bootloader/subproject /home/dtcarrot/esp/esp-idf/components/bootloader/subproject /home/dtcarrot/esp/web_server/build/bootloader /home/dtcarrot/esp/web_server/build/bootloader /home/dtcarrot/esp/web_server/build/bootloader/CMakeFiles/_project_elf_src.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/esp-idf/components/bootloader/subproject /home/dtcarrot/esp/esp-idf/components/bootloader/subproject /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/CMakeFiles/_project_elf_src.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_project_elf_src.dir/depend
 

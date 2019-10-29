@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dtcarrot/esp/web_server
+CMAKE_SOURCE_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build
 
 # Utility rule file for app-flash.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
 include CMakeFiles/app-flash.dir/progress.make
 
 CMakeFiles/app-flash:
-	cd /home/dtcarrot/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH="/home/dtcarrot/esp/esp-idf" -D ESPTOOLPY="/home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32" -D ESPTOOL_ARGS="write_flash @flash_app_args" -D ESPTOOL_WORKING_DIR="/home/dtcarrot/esp/web_server/build" -P run_esptool.cmake
+	cd /home/dtcarrot/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH="/home/dtcarrot/esp/esp-idf" -D ESPTOOLPY="/home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32" -D ESPTOOL_ARGS="write_flash @flash_app_args" -D ESPTOOL_WORKING_DIR="/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build" -P run_esptool.cmake
 
 app-flash: CMakeFiles/app-flash
 app-flash: CMakeFiles/app-flash.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/app-flash.dir/clean:
 .PHONY : CMakeFiles/app-flash.dir/clean
 
 CMakeFiles/app-flash.dir/depend:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/web_server /home/dtcarrot/esp/web_server /home/dtcarrot/esp/web_server/build /home/dtcarrot/esp/web_server/build /home/dtcarrot/esp/web_server/build/CMakeFiles/app-flash.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/ict2104/esp32-ai-thinker /home/dtcarrot/esp/ict2104/esp32-ai-thinker /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/app-flash.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/app-flash.dir/depend
 

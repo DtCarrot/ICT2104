@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dtcarrot/esp/web_server
+CMAKE_SOURCE_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build
 
 # Utility rule file for partition_table.
 
@@ -58,8 +58,8 @@ esp-idf/partition_table/CMakeFiles/partition_table: partition_table/partition-ta
 
 partition_table/partition-table.bin: /home/dtcarrot/esp/esp-idf/components/partition_table/partitions_singleapp.csv
 partition_table/partition-table.bin: /home/dtcarrot/esp/esp-idf/components/partition_table/gen_esp32part.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../../partition_table/partition-table.bin"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/partition_table && /home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/components/partition_table/gen_esp32part.py -q --offset 0x8000 --disable-md5sum --flash-size 2MB /home/dtcarrot/esp/esp-idf/components/partition_table/partitions_singleapp.csv /home/dtcarrot/esp/web_server/build/partition_table/partition-table.bin
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../../partition_table/partition-table.bin"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/partition_table && /home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/components/partition_table/gen_esp32part.py -q --offset 0x8000 --disable-md5sum --flash-size 2MB /home/dtcarrot/esp/esp-idf/components/partition_table/partitions_singleapp.csv /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/partition_table/partition-table.bin
 
 partition_table: esp-idf/partition_table/CMakeFiles/partition_table
 partition_table: partition_table/partition-table.bin
@@ -73,10 +73,10 @@ esp-idf/partition_table/CMakeFiles/partition_table.dir/build: partition_table
 .PHONY : esp-idf/partition_table/CMakeFiles/partition_table.dir/build
 
 esp-idf/partition_table/CMakeFiles/partition_table.dir/clean:
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/partition_table && $(CMAKE_COMMAND) -P CMakeFiles/partition_table.dir/cmake_clean.cmake
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/partition_table && $(CMAKE_COMMAND) -P CMakeFiles/partition_table.dir/cmake_clean.cmake
 .PHONY : esp-idf/partition_table/CMakeFiles/partition_table.dir/clean
 
 esp-idf/partition_table/CMakeFiles/partition_table.dir/depend:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/web_server /home/dtcarrot/esp/esp-idf/components/partition_table /home/dtcarrot/esp/web_server/build /home/dtcarrot/esp/web_server/build/esp-idf/partition_table /home/dtcarrot/esp/web_server/build/esp-idf/partition_table/CMakeFiles/partition_table.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/ict2104/esp32-ai-thinker /home/dtcarrot/esp/esp-idf/components/partition_table /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/partition_table /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/partition_table/CMakeFiles/partition_table.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/partition_table/CMakeFiles/partition_table.dir/depend
 

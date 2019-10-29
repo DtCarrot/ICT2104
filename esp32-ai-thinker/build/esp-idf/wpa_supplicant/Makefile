@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dtcarrot/esp/web_server
+CMAKE_SOURCE_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/CMakeFiles /home/dtcarrot/esp/web_server/build/esp-idf/wpa_supplicant/CMakeFiles/progress.marks
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/wpa_supplicant/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/CMakeFiles 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/wpa_supplicant/CMakeFiles/progress.marks
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/wpa_supplicant/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/wpa_supplicant/clean
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/wpa_supplicant/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/wpa_supplicant/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/wpa_supplicant/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/wpa_supplicant/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/wpa_supplicant/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/rule:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/rule
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/rule
 .PHONY : esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ __idf_wpa_supplicant: esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir
 
 # fast build rule for target.
 __idf_wpa_supplicant/fast:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build
 .PHONY : __idf_wpa_supplicant/fast
 
 port/os_xtensa.obj: port/os_xtensa.c.obj
@@ -177,7 +177,7 @@ port/os_xtensa.obj: port/os_xtensa.c.obj
 
 # target to build an object file
 port/os_xtensa.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/port/os_xtensa.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/port/os_xtensa.c.obj
 .PHONY : port/os_xtensa.c.obj
 
 port/os_xtensa.i: port/os_xtensa.c.i
@@ -186,7 +186,7 @@ port/os_xtensa.i: port/os_xtensa.c.i
 
 # target to preprocess a source file
 port/os_xtensa.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/port/os_xtensa.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/port/os_xtensa.c.i
 .PHONY : port/os_xtensa.c.i
 
 port/os_xtensa.s: port/os_xtensa.c.s
@@ -195,7 +195,7 @@ port/os_xtensa.s: port/os_xtensa.c.s
 
 # target to generate assembly for a file
 port/os_xtensa.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/port/os_xtensa.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/port/os_xtensa.c.s
 .PHONY : port/os_xtensa.c.s
 
 src/ap/ap_config.obj: src/ap/ap_config.c.obj
@@ -204,7 +204,7 @@ src/ap/ap_config.obj: src/ap/ap_config.c.obj
 
 # target to build an object file
 src/ap/ap_config.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ap_config.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ap_config.c.obj
 .PHONY : src/ap/ap_config.c.obj
 
 src/ap/ap_config.i: src/ap/ap_config.c.i
@@ -213,7 +213,7 @@ src/ap/ap_config.i: src/ap/ap_config.c.i
 
 # target to preprocess a source file
 src/ap/ap_config.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ap_config.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ap_config.c.i
 .PHONY : src/ap/ap_config.c.i
 
 src/ap/ap_config.s: src/ap/ap_config.c.s
@@ -222,7 +222,7 @@ src/ap/ap_config.s: src/ap/ap_config.c.s
 
 # target to generate assembly for a file
 src/ap/ap_config.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ap_config.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ap_config.c.s
 .PHONY : src/ap/ap_config.c.s
 
 src/ap/ieee802_1x.obj: src/ap/ieee802_1x.c.obj
@@ -231,7 +231,7 @@ src/ap/ieee802_1x.obj: src/ap/ieee802_1x.c.obj
 
 # target to build an object file
 src/ap/ieee802_1x.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ieee802_1x.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ieee802_1x.c.obj
 .PHONY : src/ap/ieee802_1x.c.obj
 
 src/ap/ieee802_1x.i: src/ap/ieee802_1x.c.i
@@ -240,7 +240,7 @@ src/ap/ieee802_1x.i: src/ap/ieee802_1x.c.i
 
 # target to preprocess a source file
 src/ap/ieee802_1x.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ieee802_1x.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ieee802_1x.c.i
 .PHONY : src/ap/ieee802_1x.c.i
 
 src/ap/ieee802_1x.s: src/ap/ieee802_1x.c.s
@@ -249,7 +249,7 @@ src/ap/ieee802_1x.s: src/ap/ieee802_1x.c.s
 
 # target to generate assembly for a file
 src/ap/ieee802_1x.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ieee802_1x.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ieee802_1x.c.s
 .PHONY : src/ap/ieee802_1x.c.s
 
 src/ap/wpa_auth.obj: src/ap/wpa_auth.c.obj
@@ -258,7 +258,7 @@ src/ap/wpa_auth.obj: src/ap/wpa_auth.c.obj
 
 # target to build an object file
 src/ap/wpa_auth.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth.c.obj
 .PHONY : src/ap/wpa_auth.c.obj
 
 src/ap/wpa_auth.i: src/ap/wpa_auth.c.i
@@ -267,7 +267,7 @@ src/ap/wpa_auth.i: src/ap/wpa_auth.c.i
 
 # target to preprocess a source file
 src/ap/wpa_auth.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth.c.i
 .PHONY : src/ap/wpa_auth.c.i
 
 src/ap/wpa_auth.s: src/ap/wpa_auth.c.s
@@ -276,7 +276,7 @@ src/ap/wpa_auth.s: src/ap/wpa_auth.c.s
 
 # target to generate assembly for a file
 src/ap/wpa_auth.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth.c.s
 .PHONY : src/ap/wpa_auth.c.s
 
 src/ap/wpa_auth_ie.obj: src/ap/wpa_auth_ie.c.obj
@@ -285,7 +285,7 @@ src/ap/wpa_auth_ie.obj: src/ap/wpa_auth_ie.c.obj
 
 # target to build an object file
 src/ap/wpa_auth_ie.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth_ie.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth_ie.c.obj
 .PHONY : src/ap/wpa_auth_ie.c.obj
 
 src/ap/wpa_auth_ie.i: src/ap/wpa_auth_ie.c.i
@@ -294,7 +294,7 @@ src/ap/wpa_auth_ie.i: src/ap/wpa_auth_ie.c.i
 
 # target to preprocess a source file
 src/ap/wpa_auth_ie.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth_ie.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth_ie.c.i
 .PHONY : src/ap/wpa_auth_ie.c.i
 
 src/ap/wpa_auth_ie.s: src/ap/wpa_auth_ie.c.s
@@ -303,7 +303,7 @@ src/ap/wpa_auth_ie.s: src/ap/wpa_auth_ie.c.s
 
 # target to generate assembly for a file
 src/ap/wpa_auth_ie.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth_ie.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth_ie.c.s
 .PHONY : src/ap/wpa_auth_ie.c.s
 
 src/common/wpa_common.obj: src/common/wpa_common.c.obj
@@ -312,7 +312,7 @@ src/common/wpa_common.obj: src/common/wpa_common.c.obj
 
 # target to build an object file
 src/common/wpa_common.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/wpa_common.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/wpa_common.c.obj
 .PHONY : src/common/wpa_common.c.obj
 
 src/common/wpa_common.i: src/common/wpa_common.c.i
@@ -321,7 +321,7 @@ src/common/wpa_common.i: src/common/wpa_common.c.i
 
 # target to preprocess a source file
 src/common/wpa_common.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/wpa_common.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/wpa_common.c.i
 .PHONY : src/common/wpa_common.c.i
 
 src/common/wpa_common.s: src/common/wpa_common.c.s
@@ -330,7 +330,7 @@ src/common/wpa_common.s: src/common/wpa_common.c.s
 
 # target to generate assembly for a file
 src/common/wpa_common.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/wpa_common.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/wpa_common.c.s
 .PHONY : src/common/wpa_common.c.s
 
 src/crypto/aes-cbc.obj: src/crypto/aes-cbc.c.obj
@@ -339,7 +339,7 @@ src/crypto/aes-cbc.obj: src/crypto/aes-cbc.c.obj
 
 # target to build an object file
 src/crypto/aes-cbc.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-cbc.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-cbc.c.obj
 .PHONY : src/crypto/aes-cbc.c.obj
 
 src/crypto/aes-cbc.i: src/crypto/aes-cbc.c.i
@@ -348,7 +348,7 @@ src/crypto/aes-cbc.i: src/crypto/aes-cbc.c.i
 
 # target to preprocess a source file
 src/crypto/aes-cbc.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-cbc.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-cbc.c.i
 .PHONY : src/crypto/aes-cbc.c.i
 
 src/crypto/aes-cbc.s: src/crypto/aes-cbc.c.s
@@ -357,7 +357,7 @@ src/crypto/aes-cbc.s: src/crypto/aes-cbc.c.s
 
 # target to generate assembly for a file
 src/crypto/aes-cbc.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-cbc.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-cbc.c.s
 .PHONY : src/crypto/aes-cbc.c.s
 
 src/crypto/aes-internal-dec.obj: src/crypto/aes-internal-dec.c.obj
@@ -366,7 +366,7 @@ src/crypto/aes-internal-dec.obj: src/crypto/aes-internal-dec.c.obj
 
 # target to build an object file
 src/crypto/aes-internal-dec.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal-dec.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal-dec.c.obj
 .PHONY : src/crypto/aes-internal-dec.c.obj
 
 src/crypto/aes-internal-dec.i: src/crypto/aes-internal-dec.c.i
@@ -375,7 +375,7 @@ src/crypto/aes-internal-dec.i: src/crypto/aes-internal-dec.c.i
 
 # target to preprocess a source file
 src/crypto/aes-internal-dec.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal-dec.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal-dec.c.i
 .PHONY : src/crypto/aes-internal-dec.c.i
 
 src/crypto/aes-internal-dec.s: src/crypto/aes-internal-dec.c.s
@@ -384,7 +384,7 @@ src/crypto/aes-internal-dec.s: src/crypto/aes-internal-dec.c.s
 
 # target to generate assembly for a file
 src/crypto/aes-internal-dec.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal-dec.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal-dec.c.s
 .PHONY : src/crypto/aes-internal-dec.c.s
 
 src/crypto/aes-internal-enc.obj: src/crypto/aes-internal-enc.c.obj
@@ -393,7 +393,7 @@ src/crypto/aes-internal-enc.obj: src/crypto/aes-internal-enc.c.obj
 
 # target to build an object file
 src/crypto/aes-internal-enc.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal-enc.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal-enc.c.obj
 .PHONY : src/crypto/aes-internal-enc.c.obj
 
 src/crypto/aes-internal-enc.i: src/crypto/aes-internal-enc.c.i
@@ -402,7 +402,7 @@ src/crypto/aes-internal-enc.i: src/crypto/aes-internal-enc.c.i
 
 # target to preprocess a source file
 src/crypto/aes-internal-enc.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal-enc.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal-enc.c.i
 .PHONY : src/crypto/aes-internal-enc.c.i
 
 src/crypto/aes-internal-enc.s: src/crypto/aes-internal-enc.c.s
@@ -411,7 +411,7 @@ src/crypto/aes-internal-enc.s: src/crypto/aes-internal-enc.c.s
 
 # target to generate assembly for a file
 src/crypto/aes-internal-enc.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal-enc.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal-enc.c.s
 .PHONY : src/crypto/aes-internal-enc.c.s
 
 src/crypto/aes-internal.obj: src/crypto/aes-internal.c.obj
@@ -420,7 +420,7 @@ src/crypto/aes-internal.obj: src/crypto/aes-internal.c.obj
 
 # target to build an object file
 src/crypto/aes-internal.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal.c.obj
 .PHONY : src/crypto/aes-internal.c.obj
 
 src/crypto/aes-internal.i: src/crypto/aes-internal.c.i
@@ -429,7 +429,7 @@ src/crypto/aes-internal.i: src/crypto/aes-internal.c.i
 
 # target to preprocess a source file
 src/crypto/aes-internal.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal.c.i
 .PHONY : src/crypto/aes-internal.c.i
 
 src/crypto/aes-internal.s: src/crypto/aes-internal.c.s
@@ -438,7 +438,7 @@ src/crypto/aes-internal.s: src/crypto/aes-internal.c.s
 
 # target to generate assembly for a file
 src/crypto/aes-internal.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-internal.c.s
 .PHONY : src/crypto/aes-internal.c.s
 
 src/crypto/aes-unwrap.obj: src/crypto/aes-unwrap.c.obj
@@ -447,7 +447,7 @@ src/crypto/aes-unwrap.obj: src/crypto/aes-unwrap.c.obj
 
 # target to build an object file
 src/crypto/aes-unwrap.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-unwrap.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-unwrap.c.obj
 .PHONY : src/crypto/aes-unwrap.c.obj
 
 src/crypto/aes-unwrap.i: src/crypto/aes-unwrap.c.i
@@ -456,7 +456,7 @@ src/crypto/aes-unwrap.i: src/crypto/aes-unwrap.c.i
 
 # target to preprocess a source file
 src/crypto/aes-unwrap.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-unwrap.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-unwrap.c.i
 .PHONY : src/crypto/aes-unwrap.c.i
 
 src/crypto/aes-unwrap.s: src/crypto/aes-unwrap.c.s
@@ -465,7 +465,7 @@ src/crypto/aes-unwrap.s: src/crypto/aes-unwrap.c.s
 
 # target to generate assembly for a file
 src/crypto/aes-unwrap.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-unwrap.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-unwrap.c.s
 .PHONY : src/crypto/aes-unwrap.c.s
 
 src/crypto/aes-wrap.obj: src/crypto/aes-wrap.c.obj
@@ -474,7 +474,7 @@ src/crypto/aes-wrap.obj: src/crypto/aes-wrap.c.obj
 
 # target to build an object file
 src/crypto/aes-wrap.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-wrap.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-wrap.c.obj
 .PHONY : src/crypto/aes-wrap.c.obj
 
 src/crypto/aes-wrap.i: src/crypto/aes-wrap.c.i
@@ -483,7 +483,7 @@ src/crypto/aes-wrap.i: src/crypto/aes-wrap.c.i
 
 # target to preprocess a source file
 src/crypto/aes-wrap.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-wrap.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-wrap.c.i
 .PHONY : src/crypto/aes-wrap.c.i
 
 src/crypto/aes-wrap.s: src/crypto/aes-wrap.c.s
@@ -492,7 +492,7 @@ src/crypto/aes-wrap.s: src/crypto/aes-wrap.c.s
 
 # target to generate assembly for a file
 src/crypto/aes-wrap.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-wrap.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-wrap.c.s
 .PHONY : src/crypto/aes-wrap.c.s
 
 src/crypto/bignum.obj: src/crypto/bignum.c.obj
@@ -501,7 +501,7 @@ src/crypto/bignum.obj: src/crypto/bignum.c.obj
 
 # target to build an object file
 src/crypto/bignum.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/bignum.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/bignum.c.obj
 .PHONY : src/crypto/bignum.c.obj
 
 src/crypto/bignum.i: src/crypto/bignum.c.i
@@ -510,7 +510,7 @@ src/crypto/bignum.i: src/crypto/bignum.c.i
 
 # target to preprocess a source file
 src/crypto/bignum.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/bignum.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/bignum.c.i
 .PHONY : src/crypto/bignum.c.i
 
 src/crypto/bignum.s: src/crypto/bignum.c.s
@@ -519,7 +519,7 @@ src/crypto/bignum.s: src/crypto/bignum.c.s
 
 # target to generate assembly for a file
 src/crypto/bignum.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/bignum.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/bignum.c.s
 .PHONY : src/crypto/bignum.c.s
 
 src/crypto/crypto_internal-cipher.obj: src/crypto/crypto_internal-cipher.c.obj
@@ -528,7 +528,7 @@ src/crypto/crypto_internal-cipher.obj: src/crypto/crypto_internal-cipher.c.obj
 
 # target to build an object file
 src/crypto/crypto_internal-cipher.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-cipher.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-cipher.c.obj
 .PHONY : src/crypto/crypto_internal-cipher.c.obj
 
 src/crypto/crypto_internal-cipher.i: src/crypto/crypto_internal-cipher.c.i
@@ -537,7 +537,7 @@ src/crypto/crypto_internal-cipher.i: src/crypto/crypto_internal-cipher.c.i
 
 # target to preprocess a source file
 src/crypto/crypto_internal-cipher.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-cipher.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-cipher.c.i
 .PHONY : src/crypto/crypto_internal-cipher.c.i
 
 src/crypto/crypto_internal-cipher.s: src/crypto/crypto_internal-cipher.c.s
@@ -546,7 +546,7 @@ src/crypto/crypto_internal-cipher.s: src/crypto/crypto_internal-cipher.c.s
 
 # target to generate assembly for a file
 src/crypto/crypto_internal-cipher.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-cipher.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-cipher.c.s
 .PHONY : src/crypto/crypto_internal-cipher.c.s
 
 src/crypto/crypto_internal-modexp.obj: src/crypto/crypto_internal-modexp.c.obj
@@ -555,7 +555,7 @@ src/crypto/crypto_internal-modexp.obj: src/crypto/crypto_internal-modexp.c.obj
 
 # target to build an object file
 src/crypto/crypto_internal-modexp.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-modexp.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-modexp.c.obj
 .PHONY : src/crypto/crypto_internal-modexp.c.obj
 
 src/crypto/crypto_internal-modexp.i: src/crypto/crypto_internal-modexp.c.i
@@ -564,7 +564,7 @@ src/crypto/crypto_internal-modexp.i: src/crypto/crypto_internal-modexp.c.i
 
 # target to preprocess a source file
 src/crypto/crypto_internal-modexp.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-modexp.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-modexp.c.i
 .PHONY : src/crypto/crypto_internal-modexp.c.i
 
 src/crypto/crypto_internal-modexp.s: src/crypto/crypto_internal-modexp.c.s
@@ -573,7 +573,7 @@ src/crypto/crypto_internal-modexp.s: src/crypto/crypto_internal-modexp.c.s
 
 # target to generate assembly for a file
 src/crypto/crypto_internal-modexp.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-modexp.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-modexp.c.s
 .PHONY : src/crypto/crypto_internal-modexp.c.s
 
 src/crypto/crypto_internal-rsa.obj: src/crypto/crypto_internal-rsa.c.obj
@@ -582,7 +582,7 @@ src/crypto/crypto_internal-rsa.obj: src/crypto/crypto_internal-rsa.c.obj
 
 # target to build an object file
 src/crypto/crypto_internal-rsa.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-rsa.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-rsa.c.obj
 .PHONY : src/crypto/crypto_internal-rsa.c.obj
 
 src/crypto/crypto_internal-rsa.i: src/crypto/crypto_internal-rsa.c.i
@@ -591,7 +591,7 @@ src/crypto/crypto_internal-rsa.i: src/crypto/crypto_internal-rsa.c.i
 
 # target to preprocess a source file
 src/crypto/crypto_internal-rsa.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-rsa.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-rsa.c.i
 .PHONY : src/crypto/crypto_internal-rsa.c.i
 
 src/crypto/crypto_internal-rsa.s: src/crypto/crypto_internal-rsa.c.s
@@ -600,7 +600,7 @@ src/crypto/crypto_internal-rsa.s: src/crypto/crypto_internal-rsa.c.s
 
 # target to generate assembly for a file
 src/crypto/crypto_internal-rsa.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-rsa.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal-rsa.c.s
 .PHONY : src/crypto/crypto_internal-rsa.c.s
 
 src/crypto/crypto_internal.obj: src/crypto/crypto_internal.c.obj
@@ -609,7 +609,7 @@ src/crypto/crypto_internal.obj: src/crypto/crypto_internal.c.obj
 
 # target to build an object file
 src/crypto/crypto_internal.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal.c.obj
 .PHONY : src/crypto/crypto_internal.c.obj
 
 src/crypto/crypto_internal.i: src/crypto/crypto_internal.c.i
@@ -618,7 +618,7 @@ src/crypto/crypto_internal.i: src/crypto/crypto_internal.c.i
 
 # target to preprocess a source file
 src/crypto/crypto_internal.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal.c.i
 .PHONY : src/crypto/crypto_internal.c.i
 
 src/crypto/crypto_internal.s: src/crypto/crypto_internal.c.s
@@ -627,7 +627,7 @@ src/crypto/crypto_internal.s: src/crypto/crypto_internal.c.s
 
 # target to generate assembly for a file
 src/crypto/crypto_internal.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_internal.c.s
 .PHONY : src/crypto/crypto_internal.c.s
 
 src/crypto/crypto_mbedtls.obj: src/crypto/crypto_mbedtls.c.obj
@@ -636,7 +636,7 @@ src/crypto/crypto_mbedtls.obj: src/crypto/crypto_mbedtls.c.obj
 
 # target to build an object file
 src/crypto/crypto_mbedtls.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_mbedtls.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_mbedtls.c.obj
 .PHONY : src/crypto/crypto_mbedtls.c.obj
 
 src/crypto/crypto_mbedtls.i: src/crypto/crypto_mbedtls.c.i
@@ -645,7 +645,7 @@ src/crypto/crypto_mbedtls.i: src/crypto/crypto_mbedtls.c.i
 
 # target to preprocess a source file
 src/crypto/crypto_mbedtls.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_mbedtls.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_mbedtls.c.i
 .PHONY : src/crypto/crypto_mbedtls.c.i
 
 src/crypto/crypto_mbedtls.s: src/crypto/crypto_mbedtls.c.s
@@ -654,7 +654,7 @@ src/crypto/crypto_mbedtls.s: src/crypto/crypto_mbedtls.c.s
 
 # target to generate assembly for a file
 src/crypto/crypto_mbedtls.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_mbedtls.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_mbedtls.c.s
 .PHONY : src/crypto/crypto_mbedtls.c.s
 
 src/crypto/crypto_ops.obj: src/crypto/crypto_ops.c.obj
@@ -663,7 +663,7 @@ src/crypto/crypto_ops.obj: src/crypto/crypto_ops.c.obj
 
 # target to build an object file
 src/crypto/crypto_ops.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_ops.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_ops.c.obj
 .PHONY : src/crypto/crypto_ops.c.obj
 
 src/crypto/crypto_ops.i: src/crypto/crypto_ops.c.i
@@ -672,7 +672,7 @@ src/crypto/crypto_ops.i: src/crypto/crypto_ops.c.i
 
 # target to preprocess a source file
 src/crypto/crypto_ops.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_ops.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_ops.c.i
 .PHONY : src/crypto/crypto_ops.c.i
 
 src/crypto/crypto_ops.s: src/crypto/crypto_ops.c.s
@@ -681,7 +681,7 @@ src/crypto/crypto_ops.s: src/crypto/crypto_ops.c.s
 
 # target to generate assembly for a file
 src/crypto/crypto_ops.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_ops.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_ops.c.s
 .PHONY : src/crypto/crypto_ops.c.s
 
 src/crypto/des-internal.obj: src/crypto/des-internal.c.obj
@@ -690,7 +690,7 @@ src/crypto/des-internal.obj: src/crypto/des-internal.c.obj
 
 # target to build an object file
 src/crypto/des-internal.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/des-internal.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/des-internal.c.obj
 .PHONY : src/crypto/des-internal.c.obj
 
 src/crypto/des-internal.i: src/crypto/des-internal.c.i
@@ -699,7 +699,7 @@ src/crypto/des-internal.i: src/crypto/des-internal.c.i
 
 # target to preprocess a source file
 src/crypto/des-internal.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/des-internal.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/des-internal.c.i
 .PHONY : src/crypto/des-internal.c.i
 
 src/crypto/des-internal.s: src/crypto/des-internal.c.s
@@ -708,7 +708,7 @@ src/crypto/des-internal.s: src/crypto/des-internal.c.s
 
 # target to generate assembly for a file
 src/crypto/des-internal.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/des-internal.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/des-internal.c.s
 .PHONY : src/crypto/des-internal.c.s
 
 src/crypto/dh_group5.obj: src/crypto/dh_group5.c.obj
@@ -717,7 +717,7 @@ src/crypto/dh_group5.obj: src/crypto/dh_group5.c.obj
 
 # target to build an object file
 src/crypto/dh_group5.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_group5.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_group5.c.obj
 .PHONY : src/crypto/dh_group5.c.obj
 
 src/crypto/dh_group5.i: src/crypto/dh_group5.c.i
@@ -726,7 +726,7 @@ src/crypto/dh_group5.i: src/crypto/dh_group5.c.i
 
 # target to preprocess a source file
 src/crypto/dh_group5.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_group5.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_group5.c.i
 .PHONY : src/crypto/dh_group5.c.i
 
 src/crypto/dh_group5.s: src/crypto/dh_group5.c.s
@@ -735,7 +735,7 @@ src/crypto/dh_group5.s: src/crypto/dh_group5.c.s
 
 # target to generate assembly for a file
 src/crypto/dh_group5.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_group5.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_group5.c.s
 .PHONY : src/crypto/dh_group5.c.s
 
 src/crypto/dh_groups.obj: src/crypto/dh_groups.c.obj
@@ -744,7 +744,7 @@ src/crypto/dh_groups.obj: src/crypto/dh_groups.c.obj
 
 # target to build an object file
 src/crypto/dh_groups.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_groups.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_groups.c.obj
 .PHONY : src/crypto/dh_groups.c.obj
 
 src/crypto/dh_groups.i: src/crypto/dh_groups.c.i
@@ -753,7 +753,7 @@ src/crypto/dh_groups.i: src/crypto/dh_groups.c.i
 
 # target to preprocess a source file
 src/crypto/dh_groups.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_groups.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_groups.c.i
 .PHONY : src/crypto/dh_groups.c.i
 
 src/crypto/dh_groups.s: src/crypto/dh_groups.c.s
@@ -762,7 +762,7 @@ src/crypto/dh_groups.s: src/crypto/dh_groups.c.s
 
 # target to generate assembly for a file
 src/crypto/dh_groups.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_groups.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_groups.c.s
 .PHONY : src/crypto/dh_groups.c.s
 
 src/crypto/md4-internal.obj: src/crypto/md4-internal.c.obj
@@ -771,7 +771,7 @@ src/crypto/md4-internal.obj: src/crypto/md4-internal.c.obj
 
 # target to build an object file
 src/crypto/md4-internal.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md4-internal.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md4-internal.c.obj
 .PHONY : src/crypto/md4-internal.c.obj
 
 src/crypto/md4-internal.i: src/crypto/md4-internal.c.i
@@ -780,7 +780,7 @@ src/crypto/md4-internal.i: src/crypto/md4-internal.c.i
 
 # target to preprocess a source file
 src/crypto/md4-internal.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md4-internal.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md4-internal.c.i
 .PHONY : src/crypto/md4-internal.c.i
 
 src/crypto/md4-internal.s: src/crypto/md4-internal.c.s
@@ -789,7 +789,7 @@ src/crypto/md4-internal.s: src/crypto/md4-internal.c.s
 
 # target to generate assembly for a file
 src/crypto/md4-internal.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md4-internal.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md4-internal.c.s
 .PHONY : src/crypto/md4-internal.c.s
 
 src/crypto/md5-internal.obj: src/crypto/md5-internal.c.obj
@@ -798,7 +798,7 @@ src/crypto/md5-internal.obj: src/crypto/md5-internal.c.obj
 
 # target to build an object file
 src/crypto/md5-internal.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md5-internal.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md5-internal.c.obj
 .PHONY : src/crypto/md5-internal.c.obj
 
 src/crypto/md5-internal.i: src/crypto/md5-internal.c.i
@@ -807,7 +807,7 @@ src/crypto/md5-internal.i: src/crypto/md5-internal.c.i
 
 # target to preprocess a source file
 src/crypto/md5-internal.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md5-internal.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md5-internal.c.i
 .PHONY : src/crypto/md5-internal.c.i
 
 src/crypto/md5-internal.s: src/crypto/md5-internal.c.s
@@ -816,7 +816,7 @@ src/crypto/md5-internal.s: src/crypto/md5-internal.c.s
 
 # target to generate assembly for a file
 src/crypto/md5-internal.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md5-internal.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md5-internal.c.s
 .PHONY : src/crypto/md5-internal.c.s
 
 src/crypto/md5.obj: src/crypto/md5.c.obj
@@ -825,7 +825,7 @@ src/crypto/md5.obj: src/crypto/md5.c.obj
 
 # target to build an object file
 src/crypto/md5.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md5.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md5.c.obj
 .PHONY : src/crypto/md5.c.obj
 
 src/crypto/md5.i: src/crypto/md5.c.i
@@ -834,7 +834,7 @@ src/crypto/md5.i: src/crypto/md5.c.i
 
 # target to preprocess a source file
 src/crypto/md5.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md5.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md5.c.i
 .PHONY : src/crypto/md5.c.i
 
 src/crypto/md5.s: src/crypto/md5.c.s
@@ -843,7 +843,7 @@ src/crypto/md5.s: src/crypto/md5.c.s
 
 # target to generate assembly for a file
 src/crypto/md5.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md5.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md5.c.s
 .PHONY : src/crypto/md5.c.s
 
 src/crypto/ms_funcs.obj: src/crypto/ms_funcs.c.obj
@@ -852,7 +852,7 @@ src/crypto/ms_funcs.obj: src/crypto/ms_funcs.c.obj
 
 # target to build an object file
 src/crypto/ms_funcs.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/ms_funcs.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/ms_funcs.c.obj
 .PHONY : src/crypto/ms_funcs.c.obj
 
 src/crypto/ms_funcs.i: src/crypto/ms_funcs.c.i
@@ -861,7 +861,7 @@ src/crypto/ms_funcs.i: src/crypto/ms_funcs.c.i
 
 # target to preprocess a source file
 src/crypto/ms_funcs.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/ms_funcs.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/ms_funcs.c.i
 .PHONY : src/crypto/ms_funcs.c.i
 
 src/crypto/ms_funcs.s: src/crypto/ms_funcs.c.s
@@ -870,7 +870,7 @@ src/crypto/ms_funcs.s: src/crypto/ms_funcs.c.s
 
 # target to generate assembly for a file
 src/crypto/ms_funcs.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/ms_funcs.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/ms_funcs.c.s
 .PHONY : src/crypto/ms_funcs.c.s
 
 src/crypto/rc4.obj: src/crypto/rc4.c.obj
@@ -879,7 +879,7 @@ src/crypto/rc4.obj: src/crypto/rc4.c.obj
 
 # target to build an object file
 src/crypto/rc4.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/rc4.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/rc4.c.obj
 .PHONY : src/crypto/rc4.c.obj
 
 src/crypto/rc4.i: src/crypto/rc4.c.i
@@ -888,7 +888,7 @@ src/crypto/rc4.i: src/crypto/rc4.c.i
 
 # target to preprocess a source file
 src/crypto/rc4.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/rc4.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/rc4.c.i
 .PHONY : src/crypto/rc4.c.i
 
 src/crypto/rc4.s: src/crypto/rc4.c.s
@@ -897,7 +897,7 @@ src/crypto/rc4.s: src/crypto/rc4.c.s
 
 # target to generate assembly for a file
 src/crypto/rc4.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/rc4.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/rc4.c.s
 .PHONY : src/crypto/rc4.c.s
 
 src/crypto/sha1-internal.obj: src/crypto/sha1-internal.c.obj
@@ -906,7 +906,7 @@ src/crypto/sha1-internal.obj: src/crypto/sha1-internal.c.obj
 
 # target to build an object file
 src/crypto/sha1-internal.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-internal.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-internal.c.obj
 .PHONY : src/crypto/sha1-internal.c.obj
 
 src/crypto/sha1-internal.i: src/crypto/sha1-internal.c.i
@@ -915,7 +915,7 @@ src/crypto/sha1-internal.i: src/crypto/sha1-internal.c.i
 
 # target to preprocess a source file
 src/crypto/sha1-internal.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-internal.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-internal.c.i
 .PHONY : src/crypto/sha1-internal.c.i
 
 src/crypto/sha1-internal.s: src/crypto/sha1-internal.c.s
@@ -924,7 +924,7 @@ src/crypto/sha1-internal.s: src/crypto/sha1-internal.c.s
 
 # target to generate assembly for a file
 src/crypto/sha1-internal.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-internal.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-internal.c.s
 .PHONY : src/crypto/sha1-internal.c.s
 
 src/crypto/sha1-pbkdf2.obj: src/crypto/sha1-pbkdf2.c.obj
@@ -933,7 +933,7 @@ src/crypto/sha1-pbkdf2.obj: src/crypto/sha1-pbkdf2.c.obj
 
 # target to build an object file
 src/crypto/sha1-pbkdf2.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-pbkdf2.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-pbkdf2.c.obj
 .PHONY : src/crypto/sha1-pbkdf2.c.obj
 
 src/crypto/sha1-pbkdf2.i: src/crypto/sha1-pbkdf2.c.i
@@ -942,7 +942,7 @@ src/crypto/sha1-pbkdf2.i: src/crypto/sha1-pbkdf2.c.i
 
 # target to preprocess a source file
 src/crypto/sha1-pbkdf2.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-pbkdf2.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-pbkdf2.c.i
 .PHONY : src/crypto/sha1-pbkdf2.c.i
 
 src/crypto/sha1-pbkdf2.s: src/crypto/sha1-pbkdf2.c.s
@@ -951,7 +951,7 @@ src/crypto/sha1-pbkdf2.s: src/crypto/sha1-pbkdf2.c.s
 
 # target to generate assembly for a file
 src/crypto/sha1-pbkdf2.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-pbkdf2.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-pbkdf2.c.s
 .PHONY : src/crypto/sha1-pbkdf2.c.s
 
 src/crypto/sha1.obj: src/crypto/sha1.c.obj
@@ -960,7 +960,7 @@ src/crypto/sha1.obj: src/crypto/sha1.c.obj
 
 # target to build an object file
 src/crypto/sha1.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1.c.obj
 .PHONY : src/crypto/sha1.c.obj
 
 src/crypto/sha1.i: src/crypto/sha1.c.i
@@ -969,7 +969,7 @@ src/crypto/sha1.i: src/crypto/sha1.c.i
 
 # target to preprocess a source file
 src/crypto/sha1.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1.c.i
 .PHONY : src/crypto/sha1.c.i
 
 src/crypto/sha1.s: src/crypto/sha1.c.s
@@ -978,7 +978,7 @@ src/crypto/sha1.s: src/crypto/sha1.c.s
 
 # target to generate assembly for a file
 src/crypto/sha1.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1.c.s
 .PHONY : src/crypto/sha1.c.s
 
 src/crypto/sha256-internal.obj: src/crypto/sha256-internal.c.obj
@@ -987,7 +987,7 @@ src/crypto/sha256-internal.obj: src/crypto/sha256-internal.c.obj
 
 # target to build an object file
 src/crypto/sha256-internal.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-internal.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-internal.c.obj
 .PHONY : src/crypto/sha256-internal.c.obj
 
 src/crypto/sha256-internal.i: src/crypto/sha256-internal.c.i
@@ -996,7 +996,7 @@ src/crypto/sha256-internal.i: src/crypto/sha256-internal.c.i
 
 # target to preprocess a source file
 src/crypto/sha256-internal.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-internal.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-internal.c.i
 .PHONY : src/crypto/sha256-internal.c.i
 
 src/crypto/sha256-internal.s: src/crypto/sha256-internal.c.s
@@ -1005,7 +1005,7 @@ src/crypto/sha256-internal.s: src/crypto/sha256-internal.c.s
 
 # target to generate assembly for a file
 src/crypto/sha256-internal.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-internal.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-internal.c.s
 .PHONY : src/crypto/sha256-internal.c.s
 
 src/crypto/sha256.obj: src/crypto/sha256.c.obj
@@ -1014,7 +1014,7 @@ src/crypto/sha256.obj: src/crypto/sha256.c.obj
 
 # target to build an object file
 src/crypto/sha256.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256.c.obj
 .PHONY : src/crypto/sha256.c.obj
 
 src/crypto/sha256.i: src/crypto/sha256.c.i
@@ -1023,7 +1023,7 @@ src/crypto/sha256.i: src/crypto/sha256.c.i
 
 # target to preprocess a source file
 src/crypto/sha256.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256.c.i
 .PHONY : src/crypto/sha256.c.i
 
 src/crypto/sha256.s: src/crypto/sha256.c.s
@@ -1032,7 +1032,7 @@ src/crypto/sha256.s: src/crypto/sha256.c.s
 
 # target to generate assembly for a file
 src/crypto/sha256.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256.c.s
 .PHONY : src/crypto/sha256.c.s
 
 src/eap_peer/chap.obj: src/eap_peer/chap.c.obj
@@ -1041,7 +1041,7 @@ src/eap_peer/chap.obj: src/eap_peer/chap.c.obj
 
 # target to build an object file
 src/eap_peer/chap.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/chap.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/chap.c.obj
 .PHONY : src/eap_peer/chap.c.obj
 
 src/eap_peer/chap.i: src/eap_peer/chap.c.i
@@ -1050,7 +1050,7 @@ src/eap_peer/chap.i: src/eap_peer/chap.c.i
 
 # target to preprocess a source file
 src/eap_peer/chap.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/chap.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/chap.c.i
 .PHONY : src/eap_peer/chap.c.i
 
 src/eap_peer/chap.s: src/eap_peer/chap.c.s
@@ -1059,7 +1059,7 @@ src/eap_peer/chap.s: src/eap_peer/chap.c.s
 
 # target to generate assembly for a file
 src/eap_peer/chap.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/chap.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/chap.c.s
 .PHONY : src/eap_peer/chap.c.s
 
 src/eap_peer/eap.obj: src/eap_peer/eap.c.obj
@@ -1068,7 +1068,7 @@ src/eap_peer/eap.obj: src/eap_peer/eap.c.obj
 
 # target to build an object file
 src/eap_peer/eap.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap.c.obj
 .PHONY : src/eap_peer/eap.c.obj
 
 src/eap_peer/eap.i: src/eap_peer/eap.c.i
@@ -1077,7 +1077,7 @@ src/eap_peer/eap.i: src/eap_peer/eap.c.i
 
 # target to preprocess a source file
 src/eap_peer/eap.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap.c.i
 .PHONY : src/eap_peer/eap.c.i
 
 src/eap_peer/eap.s: src/eap_peer/eap.c.s
@@ -1086,7 +1086,7 @@ src/eap_peer/eap.s: src/eap_peer/eap.c.s
 
 # target to generate assembly for a file
 src/eap_peer/eap.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap.c.s
 .PHONY : src/eap_peer/eap.c.s
 
 src/eap_peer/eap_common.obj: src/eap_peer/eap_common.c.obj
@@ -1095,7 +1095,7 @@ src/eap_peer/eap_common.obj: src/eap_peer/eap_common.c.obj
 
 # target to build an object file
 src/eap_peer/eap_common.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_common.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_common.c.obj
 .PHONY : src/eap_peer/eap_common.c.obj
 
 src/eap_peer/eap_common.i: src/eap_peer/eap_common.c.i
@@ -1104,7 +1104,7 @@ src/eap_peer/eap_common.i: src/eap_peer/eap_common.c.i
 
 # target to preprocess a source file
 src/eap_peer/eap_common.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_common.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_common.c.i
 .PHONY : src/eap_peer/eap_common.c.i
 
 src/eap_peer/eap_common.s: src/eap_peer/eap_common.c.s
@@ -1113,7 +1113,7 @@ src/eap_peer/eap_common.s: src/eap_peer/eap_common.c.s
 
 # target to generate assembly for a file
 src/eap_peer/eap_common.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_common.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_common.c.s
 .PHONY : src/eap_peer/eap_common.c.s
 
 src/eap_peer/eap_mschapv2.obj: src/eap_peer/eap_mschapv2.c.obj
@@ -1122,7 +1122,7 @@ src/eap_peer/eap_mschapv2.obj: src/eap_peer/eap_mschapv2.c.obj
 
 # target to build an object file
 src/eap_peer/eap_mschapv2.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_mschapv2.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_mschapv2.c.obj
 .PHONY : src/eap_peer/eap_mschapv2.c.obj
 
 src/eap_peer/eap_mschapv2.i: src/eap_peer/eap_mschapv2.c.i
@@ -1131,7 +1131,7 @@ src/eap_peer/eap_mschapv2.i: src/eap_peer/eap_mschapv2.c.i
 
 # target to preprocess a source file
 src/eap_peer/eap_mschapv2.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_mschapv2.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_mschapv2.c.i
 .PHONY : src/eap_peer/eap_mschapv2.c.i
 
 src/eap_peer/eap_mschapv2.s: src/eap_peer/eap_mschapv2.c.s
@@ -1140,7 +1140,7 @@ src/eap_peer/eap_mschapv2.s: src/eap_peer/eap_mschapv2.c.s
 
 # target to generate assembly for a file
 src/eap_peer/eap_mschapv2.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_mschapv2.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_mschapv2.c.s
 .PHONY : src/eap_peer/eap_mschapv2.c.s
 
 src/eap_peer/eap_peap.obj: src/eap_peer/eap_peap.c.obj
@@ -1149,7 +1149,7 @@ src/eap_peer/eap_peap.obj: src/eap_peer/eap_peap.c.obj
 
 # target to build an object file
 src/eap_peer/eap_peap.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap.c.obj
 .PHONY : src/eap_peer/eap_peap.c.obj
 
 src/eap_peer/eap_peap.i: src/eap_peer/eap_peap.c.i
@@ -1158,7 +1158,7 @@ src/eap_peer/eap_peap.i: src/eap_peer/eap_peap.c.i
 
 # target to preprocess a source file
 src/eap_peer/eap_peap.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap.c.i
 .PHONY : src/eap_peer/eap_peap.c.i
 
 src/eap_peer/eap_peap.s: src/eap_peer/eap_peap.c.s
@@ -1167,7 +1167,7 @@ src/eap_peer/eap_peap.s: src/eap_peer/eap_peap.c.s
 
 # target to generate assembly for a file
 src/eap_peer/eap_peap.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap.c.s
 .PHONY : src/eap_peer/eap_peap.c.s
 
 src/eap_peer/eap_peap_common.obj: src/eap_peer/eap_peap_common.c.obj
@@ -1176,7 +1176,7 @@ src/eap_peer/eap_peap_common.obj: src/eap_peer/eap_peap_common.c.obj
 
 # target to build an object file
 src/eap_peer/eap_peap_common.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap_common.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap_common.c.obj
 .PHONY : src/eap_peer/eap_peap_common.c.obj
 
 src/eap_peer/eap_peap_common.i: src/eap_peer/eap_peap_common.c.i
@@ -1185,7 +1185,7 @@ src/eap_peer/eap_peap_common.i: src/eap_peer/eap_peap_common.c.i
 
 # target to preprocess a source file
 src/eap_peer/eap_peap_common.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap_common.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap_common.c.i
 .PHONY : src/eap_peer/eap_peap_common.c.i
 
 src/eap_peer/eap_peap_common.s: src/eap_peer/eap_peap_common.c.s
@@ -1194,7 +1194,7 @@ src/eap_peer/eap_peap_common.s: src/eap_peer/eap_peap_common.c.s
 
 # target to generate assembly for a file
 src/eap_peer/eap_peap_common.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap_common.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap_common.c.s
 .PHONY : src/eap_peer/eap_peap_common.c.s
 
 src/eap_peer/eap_tls.obj: src/eap_peer/eap_tls.c.obj
@@ -1203,7 +1203,7 @@ src/eap_peer/eap_tls.obj: src/eap_peer/eap_tls.c.obj
 
 # target to build an object file
 src/eap_peer/eap_tls.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls.c.obj
 .PHONY : src/eap_peer/eap_tls.c.obj
 
 src/eap_peer/eap_tls.i: src/eap_peer/eap_tls.c.i
@@ -1212,7 +1212,7 @@ src/eap_peer/eap_tls.i: src/eap_peer/eap_tls.c.i
 
 # target to preprocess a source file
 src/eap_peer/eap_tls.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls.c.i
 .PHONY : src/eap_peer/eap_tls.c.i
 
 src/eap_peer/eap_tls.s: src/eap_peer/eap_tls.c.s
@@ -1221,7 +1221,7 @@ src/eap_peer/eap_tls.s: src/eap_peer/eap_tls.c.s
 
 # target to generate assembly for a file
 src/eap_peer/eap_tls.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls.c.s
 .PHONY : src/eap_peer/eap_tls.c.s
 
 src/eap_peer/eap_tls_common.obj: src/eap_peer/eap_tls_common.c.obj
@@ -1230,7 +1230,7 @@ src/eap_peer/eap_tls_common.obj: src/eap_peer/eap_tls_common.c.obj
 
 # target to build an object file
 src/eap_peer/eap_tls_common.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls_common.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls_common.c.obj
 .PHONY : src/eap_peer/eap_tls_common.c.obj
 
 src/eap_peer/eap_tls_common.i: src/eap_peer/eap_tls_common.c.i
@@ -1239,7 +1239,7 @@ src/eap_peer/eap_tls_common.i: src/eap_peer/eap_tls_common.c.i
 
 # target to preprocess a source file
 src/eap_peer/eap_tls_common.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls_common.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls_common.c.i
 .PHONY : src/eap_peer/eap_tls_common.c.i
 
 src/eap_peer/eap_tls_common.s: src/eap_peer/eap_tls_common.c.s
@@ -1248,7 +1248,7 @@ src/eap_peer/eap_tls_common.s: src/eap_peer/eap_tls_common.c.s
 
 # target to generate assembly for a file
 src/eap_peer/eap_tls_common.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls_common.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls_common.c.s
 .PHONY : src/eap_peer/eap_tls_common.c.s
 
 src/eap_peer/eap_ttls.obj: src/eap_peer/eap_ttls.c.obj
@@ -1257,7 +1257,7 @@ src/eap_peer/eap_ttls.obj: src/eap_peer/eap_ttls.c.obj
 
 # target to build an object file
 src/eap_peer/eap_ttls.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_ttls.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_ttls.c.obj
 .PHONY : src/eap_peer/eap_ttls.c.obj
 
 src/eap_peer/eap_ttls.i: src/eap_peer/eap_ttls.c.i
@@ -1266,7 +1266,7 @@ src/eap_peer/eap_ttls.i: src/eap_peer/eap_ttls.c.i
 
 # target to preprocess a source file
 src/eap_peer/eap_ttls.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_ttls.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_ttls.c.i
 .PHONY : src/eap_peer/eap_ttls.c.i
 
 src/eap_peer/eap_ttls.s: src/eap_peer/eap_ttls.c.s
@@ -1275,7 +1275,7 @@ src/eap_peer/eap_ttls.s: src/eap_peer/eap_ttls.c.s
 
 # target to generate assembly for a file
 src/eap_peer/eap_ttls.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_ttls.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_ttls.c.s
 .PHONY : src/eap_peer/eap_ttls.c.s
 
 src/eap_peer/mschapv2.obj: src/eap_peer/mschapv2.c.obj
@@ -1284,7 +1284,7 @@ src/eap_peer/mschapv2.obj: src/eap_peer/mschapv2.c.obj
 
 # target to build an object file
 src/eap_peer/mschapv2.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/mschapv2.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/mschapv2.c.obj
 .PHONY : src/eap_peer/mschapv2.c.obj
 
 src/eap_peer/mschapv2.i: src/eap_peer/mschapv2.c.i
@@ -1293,7 +1293,7 @@ src/eap_peer/mschapv2.i: src/eap_peer/mschapv2.c.i
 
 # target to preprocess a source file
 src/eap_peer/mschapv2.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/mschapv2.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/mschapv2.c.i
 .PHONY : src/eap_peer/mschapv2.c.i
 
 src/eap_peer/mschapv2.s: src/eap_peer/mschapv2.c.s
@@ -1302,7 +1302,7 @@ src/eap_peer/mschapv2.s: src/eap_peer/mschapv2.c.s
 
 # target to generate assembly for a file
 src/eap_peer/mschapv2.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/mschapv2.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/mschapv2.c.s
 .PHONY : src/eap_peer/mschapv2.c.s
 
 src/esp_supplicant/esp_hostap.obj: src/esp_supplicant/esp_hostap.c.obj
@@ -1311,7 +1311,7 @@ src/esp_supplicant/esp_hostap.obj: src/esp_supplicant/esp_hostap.c.obj
 
 # target to build an object file
 src/esp_supplicant/esp_hostap.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_hostap.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_hostap.c.obj
 .PHONY : src/esp_supplicant/esp_hostap.c.obj
 
 src/esp_supplicant/esp_hostap.i: src/esp_supplicant/esp_hostap.c.i
@@ -1320,7 +1320,7 @@ src/esp_supplicant/esp_hostap.i: src/esp_supplicant/esp_hostap.c.i
 
 # target to preprocess a source file
 src/esp_supplicant/esp_hostap.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_hostap.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_hostap.c.i
 .PHONY : src/esp_supplicant/esp_hostap.c.i
 
 src/esp_supplicant/esp_hostap.s: src/esp_supplicant/esp_hostap.c.s
@@ -1329,7 +1329,7 @@ src/esp_supplicant/esp_hostap.s: src/esp_supplicant/esp_hostap.c.s
 
 # target to generate assembly for a file
 src/esp_supplicant/esp_hostap.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_hostap.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_hostap.c.s
 .PHONY : src/esp_supplicant/esp_hostap.c.s
 
 src/esp_supplicant/esp_wpa2.obj: src/esp_supplicant/esp_wpa2.c.obj
@@ -1338,7 +1338,7 @@ src/esp_supplicant/esp_wpa2.obj: src/esp_supplicant/esp_wpa2.c.obj
 
 # target to build an object file
 src/esp_supplicant/esp_wpa2.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpa2.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpa2.c.obj
 .PHONY : src/esp_supplicant/esp_wpa2.c.obj
 
 src/esp_supplicant/esp_wpa2.i: src/esp_supplicant/esp_wpa2.c.i
@@ -1347,7 +1347,7 @@ src/esp_supplicant/esp_wpa2.i: src/esp_supplicant/esp_wpa2.c.i
 
 # target to preprocess a source file
 src/esp_supplicant/esp_wpa2.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpa2.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpa2.c.i
 .PHONY : src/esp_supplicant/esp_wpa2.c.i
 
 src/esp_supplicant/esp_wpa2.s: src/esp_supplicant/esp_wpa2.c.s
@@ -1356,7 +1356,7 @@ src/esp_supplicant/esp_wpa2.s: src/esp_supplicant/esp_wpa2.c.s
 
 # target to generate assembly for a file
 src/esp_supplicant/esp_wpa2.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpa2.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpa2.c.s
 .PHONY : src/esp_supplicant/esp_wpa2.c.s
 
 src/esp_supplicant/esp_wpa_main.obj: src/esp_supplicant/esp_wpa_main.c.obj
@@ -1365,7 +1365,7 @@ src/esp_supplicant/esp_wpa_main.obj: src/esp_supplicant/esp_wpa_main.c.obj
 
 # target to build an object file
 src/esp_supplicant/esp_wpa_main.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpa_main.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpa_main.c.obj
 .PHONY : src/esp_supplicant/esp_wpa_main.c.obj
 
 src/esp_supplicant/esp_wpa_main.i: src/esp_supplicant/esp_wpa_main.c.i
@@ -1374,7 +1374,7 @@ src/esp_supplicant/esp_wpa_main.i: src/esp_supplicant/esp_wpa_main.c.i
 
 # target to preprocess a source file
 src/esp_supplicant/esp_wpa_main.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpa_main.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpa_main.c.i
 .PHONY : src/esp_supplicant/esp_wpa_main.c.i
 
 src/esp_supplicant/esp_wpa_main.s: src/esp_supplicant/esp_wpa_main.c.s
@@ -1383,7 +1383,7 @@ src/esp_supplicant/esp_wpa_main.s: src/esp_supplicant/esp_wpa_main.c.s
 
 # target to generate assembly for a file
 src/esp_supplicant/esp_wpa_main.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpa_main.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpa_main.c.s
 .PHONY : src/esp_supplicant/esp_wpa_main.c.s
 
 src/esp_supplicant/esp_wpas_glue.obj: src/esp_supplicant/esp_wpas_glue.c.obj
@@ -1392,7 +1392,7 @@ src/esp_supplicant/esp_wpas_glue.obj: src/esp_supplicant/esp_wpas_glue.c.obj
 
 # target to build an object file
 src/esp_supplicant/esp_wpas_glue.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpas_glue.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpas_glue.c.obj
 .PHONY : src/esp_supplicant/esp_wpas_glue.c.obj
 
 src/esp_supplicant/esp_wpas_glue.i: src/esp_supplicant/esp_wpas_glue.c.i
@@ -1401,7 +1401,7 @@ src/esp_supplicant/esp_wpas_glue.i: src/esp_supplicant/esp_wpas_glue.c.i
 
 # target to preprocess a source file
 src/esp_supplicant/esp_wpas_glue.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpas_glue.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpas_glue.c.i
 .PHONY : src/esp_supplicant/esp_wpas_glue.c.i
 
 src/esp_supplicant/esp_wpas_glue.s: src/esp_supplicant/esp_wpas_glue.c.s
@@ -1410,7 +1410,7 @@ src/esp_supplicant/esp_wpas_glue.s: src/esp_supplicant/esp_wpas_glue.c.s
 
 # target to generate assembly for a file
 src/esp_supplicant/esp_wpas_glue.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpas_glue.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wpas_glue.c.s
 .PHONY : src/esp_supplicant/esp_wpas_glue.c.s
 
 src/esp_supplicant/esp_wps.obj: src/esp_supplicant/esp_wps.c.obj
@@ -1419,7 +1419,7 @@ src/esp_supplicant/esp_wps.obj: src/esp_supplicant/esp_wps.c.obj
 
 # target to build an object file
 src/esp_supplicant/esp_wps.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wps.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wps.c.obj
 .PHONY : src/esp_supplicant/esp_wps.c.obj
 
 src/esp_supplicant/esp_wps.i: src/esp_supplicant/esp_wps.c.i
@@ -1428,7 +1428,7 @@ src/esp_supplicant/esp_wps.i: src/esp_supplicant/esp_wps.c.i
 
 # target to preprocess a source file
 src/esp_supplicant/esp_wps.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wps.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wps.c.i
 .PHONY : src/esp_supplicant/esp_wps.c.i
 
 src/esp_supplicant/esp_wps.s: src/esp_supplicant/esp_wps.c.s
@@ -1437,7 +1437,7 @@ src/esp_supplicant/esp_wps.s: src/esp_supplicant/esp_wps.c.s
 
 # target to generate assembly for a file
 src/esp_supplicant/esp_wps.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wps.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/esp_supplicant/esp_wps.c.s
 .PHONY : src/esp_supplicant/esp_wps.c.s
 
 src/rsn_supp/wpa.obj: src/rsn_supp/wpa.c.obj
@@ -1446,7 +1446,7 @@ src/rsn_supp/wpa.obj: src/rsn_supp/wpa.c.obj
 
 # target to build an object file
 src/rsn_supp/wpa.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa.c.obj
 .PHONY : src/rsn_supp/wpa.c.obj
 
 src/rsn_supp/wpa.i: src/rsn_supp/wpa.c.i
@@ -1455,7 +1455,7 @@ src/rsn_supp/wpa.i: src/rsn_supp/wpa.c.i
 
 # target to preprocess a source file
 src/rsn_supp/wpa.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa.c.i
 .PHONY : src/rsn_supp/wpa.c.i
 
 src/rsn_supp/wpa.s: src/rsn_supp/wpa.c.s
@@ -1464,7 +1464,7 @@ src/rsn_supp/wpa.s: src/rsn_supp/wpa.c.s
 
 # target to generate assembly for a file
 src/rsn_supp/wpa.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa.c.s
 .PHONY : src/rsn_supp/wpa.c.s
 
 src/rsn_supp/wpa_ie.obj: src/rsn_supp/wpa_ie.c.obj
@@ -1473,7 +1473,7 @@ src/rsn_supp/wpa_ie.obj: src/rsn_supp/wpa_ie.c.obj
 
 # target to build an object file
 src/rsn_supp/wpa_ie.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa_ie.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa_ie.c.obj
 .PHONY : src/rsn_supp/wpa_ie.c.obj
 
 src/rsn_supp/wpa_ie.i: src/rsn_supp/wpa_ie.c.i
@@ -1482,7 +1482,7 @@ src/rsn_supp/wpa_ie.i: src/rsn_supp/wpa_ie.c.i
 
 # target to preprocess a source file
 src/rsn_supp/wpa_ie.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa_ie.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa_ie.c.i
 .PHONY : src/rsn_supp/wpa_ie.c.i
 
 src/rsn_supp/wpa_ie.s: src/rsn_supp/wpa_ie.c.s
@@ -1491,7 +1491,7 @@ src/rsn_supp/wpa_ie.s: src/rsn_supp/wpa_ie.c.s
 
 # target to generate assembly for a file
 src/rsn_supp/wpa_ie.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa_ie.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa_ie.c.s
 .PHONY : src/rsn_supp/wpa_ie.c.s
 
 src/tls/asn1.obj: src/tls/asn1.c.obj
@@ -1500,7 +1500,7 @@ src/tls/asn1.obj: src/tls/asn1.c.obj
 
 # target to build an object file
 src/tls/asn1.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/asn1.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/asn1.c.obj
 .PHONY : src/tls/asn1.c.obj
 
 src/tls/asn1.i: src/tls/asn1.c.i
@@ -1509,7 +1509,7 @@ src/tls/asn1.i: src/tls/asn1.c.i
 
 # target to preprocess a source file
 src/tls/asn1.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/asn1.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/asn1.c.i
 .PHONY : src/tls/asn1.c.i
 
 src/tls/asn1.s: src/tls/asn1.c.s
@@ -1518,7 +1518,7 @@ src/tls/asn1.s: src/tls/asn1.c.s
 
 # target to generate assembly for a file
 src/tls/asn1.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/asn1.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/asn1.c.s
 .PHONY : src/tls/asn1.c.s
 
 src/tls/bignum.obj: src/tls/bignum.c.obj
@@ -1527,7 +1527,7 @@ src/tls/bignum.obj: src/tls/bignum.c.obj
 
 # target to build an object file
 src/tls/bignum.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/bignum.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/bignum.c.obj
 .PHONY : src/tls/bignum.c.obj
 
 src/tls/bignum.i: src/tls/bignum.c.i
@@ -1536,7 +1536,7 @@ src/tls/bignum.i: src/tls/bignum.c.i
 
 # target to preprocess a source file
 src/tls/bignum.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/bignum.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/bignum.c.i
 .PHONY : src/tls/bignum.c.i
 
 src/tls/bignum.s: src/tls/bignum.c.s
@@ -1545,7 +1545,7 @@ src/tls/bignum.s: src/tls/bignum.c.s
 
 # target to generate assembly for a file
 src/tls/bignum.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/bignum.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/bignum.c.s
 .PHONY : src/tls/bignum.c.s
 
 src/tls/pkcs1.obj: src/tls/pkcs1.c.obj
@@ -1554,7 +1554,7 @@ src/tls/pkcs1.obj: src/tls/pkcs1.c.obj
 
 # target to build an object file
 src/tls/pkcs1.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs1.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs1.c.obj
 .PHONY : src/tls/pkcs1.c.obj
 
 src/tls/pkcs1.i: src/tls/pkcs1.c.i
@@ -1563,7 +1563,7 @@ src/tls/pkcs1.i: src/tls/pkcs1.c.i
 
 # target to preprocess a source file
 src/tls/pkcs1.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs1.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs1.c.i
 .PHONY : src/tls/pkcs1.c.i
 
 src/tls/pkcs1.s: src/tls/pkcs1.c.s
@@ -1572,7 +1572,7 @@ src/tls/pkcs1.s: src/tls/pkcs1.c.s
 
 # target to generate assembly for a file
 src/tls/pkcs1.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs1.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs1.c.s
 .PHONY : src/tls/pkcs1.c.s
 
 src/tls/pkcs5.obj: src/tls/pkcs5.c.obj
@@ -1581,7 +1581,7 @@ src/tls/pkcs5.obj: src/tls/pkcs5.c.obj
 
 # target to build an object file
 src/tls/pkcs5.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs5.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs5.c.obj
 .PHONY : src/tls/pkcs5.c.obj
 
 src/tls/pkcs5.i: src/tls/pkcs5.c.i
@@ -1590,7 +1590,7 @@ src/tls/pkcs5.i: src/tls/pkcs5.c.i
 
 # target to preprocess a source file
 src/tls/pkcs5.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs5.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs5.c.i
 .PHONY : src/tls/pkcs5.c.i
 
 src/tls/pkcs5.s: src/tls/pkcs5.c.s
@@ -1599,7 +1599,7 @@ src/tls/pkcs5.s: src/tls/pkcs5.c.s
 
 # target to generate assembly for a file
 src/tls/pkcs5.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs5.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs5.c.s
 .PHONY : src/tls/pkcs5.c.s
 
 src/tls/pkcs8.obj: src/tls/pkcs8.c.obj
@@ -1608,7 +1608,7 @@ src/tls/pkcs8.obj: src/tls/pkcs8.c.obj
 
 # target to build an object file
 src/tls/pkcs8.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs8.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs8.c.obj
 .PHONY : src/tls/pkcs8.c.obj
 
 src/tls/pkcs8.i: src/tls/pkcs8.c.i
@@ -1617,7 +1617,7 @@ src/tls/pkcs8.i: src/tls/pkcs8.c.i
 
 # target to preprocess a source file
 src/tls/pkcs8.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs8.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs8.c.i
 .PHONY : src/tls/pkcs8.c.i
 
 src/tls/pkcs8.s: src/tls/pkcs8.c.s
@@ -1626,7 +1626,7 @@ src/tls/pkcs8.s: src/tls/pkcs8.c.s
 
 # target to generate assembly for a file
 src/tls/pkcs8.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs8.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/pkcs8.c.s
 .PHONY : src/tls/pkcs8.c.s
 
 src/tls/rsa.obj: src/tls/rsa.c.obj
@@ -1635,7 +1635,7 @@ src/tls/rsa.obj: src/tls/rsa.c.obj
 
 # target to build an object file
 src/tls/rsa.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/rsa.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/rsa.c.obj
 .PHONY : src/tls/rsa.c.obj
 
 src/tls/rsa.i: src/tls/rsa.c.i
@@ -1644,7 +1644,7 @@ src/tls/rsa.i: src/tls/rsa.c.i
 
 # target to preprocess a source file
 src/tls/rsa.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/rsa.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/rsa.c.i
 .PHONY : src/tls/rsa.c.i
 
 src/tls/rsa.s: src/tls/rsa.c.s
@@ -1653,7 +1653,7 @@ src/tls/rsa.s: src/tls/rsa.c.s
 
 # target to generate assembly for a file
 src/tls/rsa.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/rsa.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/rsa.c.s
 .PHONY : src/tls/rsa.c.s
 
 src/tls/tls_internal.obj: src/tls/tls_internal.c.obj
@@ -1662,7 +1662,7 @@ src/tls/tls_internal.obj: src/tls/tls_internal.c.obj
 
 # target to build an object file
 src/tls/tls_internal.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tls_internal.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tls_internal.c.obj
 .PHONY : src/tls/tls_internal.c.obj
 
 src/tls/tls_internal.i: src/tls/tls_internal.c.i
@@ -1671,7 +1671,7 @@ src/tls/tls_internal.i: src/tls/tls_internal.c.i
 
 # target to preprocess a source file
 src/tls/tls_internal.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tls_internal.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tls_internal.c.i
 .PHONY : src/tls/tls_internal.c.i
 
 src/tls/tls_internal.s: src/tls/tls_internal.c.s
@@ -1680,7 +1680,7 @@ src/tls/tls_internal.s: src/tls/tls_internal.c.s
 
 # target to generate assembly for a file
 src/tls/tls_internal.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tls_internal.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tls_internal.c.s
 .PHONY : src/tls/tls_internal.c.s
 
 src/tls/tlsv1_client.obj: src/tls/tlsv1_client.c.obj
@@ -1689,7 +1689,7 @@ src/tls/tlsv1_client.obj: src/tls/tlsv1_client.c.obj
 
 # target to build an object file
 src/tls/tlsv1_client.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client.c.obj
 .PHONY : src/tls/tlsv1_client.c.obj
 
 src/tls/tlsv1_client.i: src/tls/tlsv1_client.c.i
@@ -1698,7 +1698,7 @@ src/tls/tlsv1_client.i: src/tls/tlsv1_client.c.i
 
 # target to preprocess a source file
 src/tls/tlsv1_client.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client.c.i
 .PHONY : src/tls/tlsv1_client.c.i
 
 src/tls/tlsv1_client.s: src/tls/tlsv1_client.c.s
@@ -1707,7 +1707,7 @@ src/tls/tlsv1_client.s: src/tls/tlsv1_client.c.s
 
 # target to generate assembly for a file
 src/tls/tlsv1_client.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client.c.s
 .PHONY : src/tls/tlsv1_client.c.s
 
 src/tls/tlsv1_client_read.obj: src/tls/tlsv1_client_read.c.obj
@@ -1716,7 +1716,7 @@ src/tls/tlsv1_client_read.obj: src/tls/tlsv1_client_read.c.obj
 
 # target to build an object file
 src/tls/tlsv1_client_read.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client_read.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client_read.c.obj
 .PHONY : src/tls/tlsv1_client_read.c.obj
 
 src/tls/tlsv1_client_read.i: src/tls/tlsv1_client_read.c.i
@@ -1725,7 +1725,7 @@ src/tls/tlsv1_client_read.i: src/tls/tlsv1_client_read.c.i
 
 # target to preprocess a source file
 src/tls/tlsv1_client_read.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client_read.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client_read.c.i
 .PHONY : src/tls/tlsv1_client_read.c.i
 
 src/tls/tlsv1_client_read.s: src/tls/tlsv1_client_read.c.s
@@ -1734,7 +1734,7 @@ src/tls/tlsv1_client_read.s: src/tls/tlsv1_client_read.c.s
 
 # target to generate assembly for a file
 src/tls/tlsv1_client_read.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client_read.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client_read.c.s
 .PHONY : src/tls/tlsv1_client_read.c.s
 
 src/tls/tlsv1_client_write.obj: src/tls/tlsv1_client_write.c.obj
@@ -1743,7 +1743,7 @@ src/tls/tlsv1_client_write.obj: src/tls/tlsv1_client_write.c.obj
 
 # target to build an object file
 src/tls/tlsv1_client_write.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client_write.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client_write.c.obj
 .PHONY : src/tls/tlsv1_client_write.c.obj
 
 src/tls/tlsv1_client_write.i: src/tls/tlsv1_client_write.c.i
@@ -1752,7 +1752,7 @@ src/tls/tlsv1_client_write.i: src/tls/tlsv1_client_write.c.i
 
 # target to preprocess a source file
 src/tls/tlsv1_client_write.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client_write.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client_write.c.i
 .PHONY : src/tls/tlsv1_client_write.c.i
 
 src/tls/tlsv1_client_write.s: src/tls/tlsv1_client_write.c.s
@@ -1761,7 +1761,7 @@ src/tls/tlsv1_client_write.s: src/tls/tlsv1_client_write.c.s
 
 # target to generate assembly for a file
 src/tls/tlsv1_client_write.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client_write.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_client_write.c.s
 .PHONY : src/tls/tlsv1_client_write.c.s
 
 src/tls/tlsv1_common.obj: src/tls/tlsv1_common.c.obj
@@ -1770,7 +1770,7 @@ src/tls/tlsv1_common.obj: src/tls/tlsv1_common.c.obj
 
 # target to build an object file
 src/tls/tlsv1_common.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_common.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_common.c.obj
 .PHONY : src/tls/tlsv1_common.c.obj
 
 src/tls/tlsv1_common.i: src/tls/tlsv1_common.c.i
@@ -1779,7 +1779,7 @@ src/tls/tlsv1_common.i: src/tls/tlsv1_common.c.i
 
 # target to preprocess a source file
 src/tls/tlsv1_common.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_common.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_common.c.i
 .PHONY : src/tls/tlsv1_common.c.i
 
 src/tls/tlsv1_common.s: src/tls/tlsv1_common.c.s
@@ -1788,7 +1788,7 @@ src/tls/tlsv1_common.s: src/tls/tlsv1_common.c.s
 
 # target to generate assembly for a file
 src/tls/tlsv1_common.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_common.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_common.c.s
 .PHONY : src/tls/tlsv1_common.c.s
 
 src/tls/tlsv1_cred.obj: src/tls/tlsv1_cred.c.obj
@@ -1797,7 +1797,7 @@ src/tls/tlsv1_cred.obj: src/tls/tlsv1_cred.c.obj
 
 # target to build an object file
 src/tls/tlsv1_cred.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_cred.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_cred.c.obj
 .PHONY : src/tls/tlsv1_cred.c.obj
 
 src/tls/tlsv1_cred.i: src/tls/tlsv1_cred.c.i
@@ -1806,7 +1806,7 @@ src/tls/tlsv1_cred.i: src/tls/tlsv1_cred.c.i
 
 # target to preprocess a source file
 src/tls/tlsv1_cred.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_cred.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_cred.c.i
 .PHONY : src/tls/tlsv1_cred.c.i
 
 src/tls/tlsv1_cred.s: src/tls/tlsv1_cred.c.s
@@ -1815,7 +1815,7 @@ src/tls/tlsv1_cred.s: src/tls/tlsv1_cred.c.s
 
 # target to generate assembly for a file
 src/tls/tlsv1_cred.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_cred.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_cred.c.s
 .PHONY : src/tls/tlsv1_cred.c.s
 
 src/tls/tlsv1_record.obj: src/tls/tlsv1_record.c.obj
@@ -1824,7 +1824,7 @@ src/tls/tlsv1_record.obj: src/tls/tlsv1_record.c.obj
 
 # target to build an object file
 src/tls/tlsv1_record.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_record.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_record.c.obj
 .PHONY : src/tls/tlsv1_record.c.obj
 
 src/tls/tlsv1_record.i: src/tls/tlsv1_record.c.i
@@ -1833,7 +1833,7 @@ src/tls/tlsv1_record.i: src/tls/tlsv1_record.c.i
 
 # target to preprocess a source file
 src/tls/tlsv1_record.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_record.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_record.c.i
 .PHONY : src/tls/tlsv1_record.c.i
 
 src/tls/tlsv1_record.s: src/tls/tlsv1_record.c.s
@@ -1842,7 +1842,7 @@ src/tls/tlsv1_record.s: src/tls/tlsv1_record.c.s
 
 # target to generate assembly for a file
 src/tls/tlsv1_record.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_record.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_record.c.s
 .PHONY : src/tls/tlsv1_record.c.s
 
 src/tls/tlsv1_server.obj: src/tls/tlsv1_server.c.obj
@@ -1851,7 +1851,7 @@ src/tls/tlsv1_server.obj: src/tls/tlsv1_server.c.obj
 
 # target to build an object file
 src/tls/tlsv1_server.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server.c.obj
 .PHONY : src/tls/tlsv1_server.c.obj
 
 src/tls/tlsv1_server.i: src/tls/tlsv1_server.c.i
@@ -1860,7 +1860,7 @@ src/tls/tlsv1_server.i: src/tls/tlsv1_server.c.i
 
 # target to preprocess a source file
 src/tls/tlsv1_server.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server.c.i
 .PHONY : src/tls/tlsv1_server.c.i
 
 src/tls/tlsv1_server.s: src/tls/tlsv1_server.c.s
@@ -1869,7 +1869,7 @@ src/tls/tlsv1_server.s: src/tls/tlsv1_server.c.s
 
 # target to generate assembly for a file
 src/tls/tlsv1_server.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server.c.s
 .PHONY : src/tls/tlsv1_server.c.s
 
 src/tls/tlsv1_server_read.obj: src/tls/tlsv1_server_read.c.obj
@@ -1878,7 +1878,7 @@ src/tls/tlsv1_server_read.obj: src/tls/tlsv1_server_read.c.obj
 
 # target to build an object file
 src/tls/tlsv1_server_read.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server_read.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server_read.c.obj
 .PHONY : src/tls/tlsv1_server_read.c.obj
 
 src/tls/tlsv1_server_read.i: src/tls/tlsv1_server_read.c.i
@@ -1887,7 +1887,7 @@ src/tls/tlsv1_server_read.i: src/tls/tlsv1_server_read.c.i
 
 # target to preprocess a source file
 src/tls/tlsv1_server_read.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server_read.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server_read.c.i
 .PHONY : src/tls/tlsv1_server_read.c.i
 
 src/tls/tlsv1_server_read.s: src/tls/tlsv1_server_read.c.s
@@ -1896,7 +1896,7 @@ src/tls/tlsv1_server_read.s: src/tls/tlsv1_server_read.c.s
 
 # target to generate assembly for a file
 src/tls/tlsv1_server_read.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server_read.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server_read.c.s
 .PHONY : src/tls/tlsv1_server_read.c.s
 
 src/tls/tlsv1_server_write.obj: src/tls/tlsv1_server_write.c.obj
@@ -1905,7 +1905,7 @@ src/tls/tlsv1_server_write.obj: src/tls/tlsv1_server_write.c.obj
 
 # target to build an object file
 src/tls/tlsv1_server_write.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server_write.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server_write.c.obj
 .PHONY : src/tls/tlsv1_server_write.c.obj
 
 src/tls/tlsv1_server_write.i: src/tls/tlsv1_server_write.c.i
@@ -1914,7 +1914,7 @@ src/tls/tlsv1_server_write.i: src/tls/tlsv1_server_write.c.i
 
 # target to preprocess a source file
 src/tls/tlsv1_server_write.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server_write.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server_write.c.i
 .PHONY : src/tls/tlsv1_server_write.c.i
 
 src/tls/tlsv1_server_write.s: src/tls/tlsv1_server_write.c.s
@@ -1923,7 +1923,7 @@ src/tls/tlsv1_server_write.s: src/tls/tlsv1_server_write.c.s
 
 # target to generate assembly for a file
 src/tls/tlsv1_server_write.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server_write.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/tlsv1_server_write.c.s
 .PHONY : src/tls/tlsv1_server_write.c.s
 
 src/tls/x509v3.obj: src/tls/x509v3.c.obj
@@ -1932,7 +1932,7 @@ src/tls/x509v3.obj: src/tls/x509v3.c.obj
 
 # target to build an object file
 src/tls/x509v3.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/x509v3.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/x509v3.c.obj
 .PHONY : src/tls/x509v3.c.obj
 
 src/tls/x509v3.i: src/tls/x509v3.c.i
@@ -1941,7 +1941,7 @@ src/tls/x509v3.i: src/tls/x509v3.c.i
 
 # target to preprocess a source file
 src/tls/x509v3.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/x509v3.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/x509v3.c.i
 .PHONY : src/tls/x509v3.c.i
 
 src/tls/x509v3.s: src/tls/x509v3.c.s
@@ -1950,7 +1950,7 @@ src/tls/x509v3.s: src/tls/x509v3.c.s
 
 # target to generate assembly for a file
 src/tls/x509v3.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/x509v3.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/tls/x509v3.c.s
 .PHONY : src/tls/x509v3.c.s
 
 src/utils/base64.obj: src/utils/base64.c.obj
@@ -1959,7 +1959,7 @@ src/utils/base64.obj: src/utils/base64.c.obj
 
 # target to build an object file
 src/utils/base64.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/base64.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/base64.c.obj
 .PHONY : src/utils/base64.c.obj
 
 src/utils/base64.i: src/utils/base64.c.i
@@ -1968,7 +1968,7 @@ src/utils/base64.i: src/utils/base64.c.i
 
 # target to preprocess a source file
 src/utils/base64.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/base64.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/base64.c.i
 .PHONY : src/utils/base64.c.i
 
 src/utils/base64.s: src/utils/base64.c.s
@@ -1977,7 +1977,7 @@ src/utils/base64.s: src/utils/base64.c.s
 
 # target to generate assembly for a file
 src/utils/base64.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/base64.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/base64.c.s
 .PHONY : src/utils/base64.c.s
 
 src/utils/common.obj: src/utils/common.c.obj
@@ -1986,7 +1986,7 @@ src/utils/common.obj: src/utils/common.c.obj
 
 # target to build an object file
 src/utils/common.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/common.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/common.c.obj
 .PHONY : src/utils/common.c.obj
 
 src/utils/common.i: src/utils/common.c.i
@@ -1995,7 +1995,7 @@ src/utils/common.i: src/utils/common.c.i
 
 # target to preprocess a source file
 src/utils/common.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/common.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/common.c.i
 .PHONY : src/utils/common.c.i
 
 src/utils/common.s: src/utils/common.c.s
@@ -2004,7 +2004,7 @@ src/utils/common.s: src/utils/common.c.s
 
 # target to generate assembly for a file
 src/utils/common.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/common.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/common.c.s
 .PHONY : src/utils/common.c.s
 
 src/utils/ext_password.obj: src/utils/ext_password.c.obj
@@ -2013,7 +2013,7 @@ src/utils/ext_password.obj: src/utils/ext_password.c.obj
 
 # target to build an object file
 src/utils/ext_password.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/ext_password.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/ext_password.c.obj
 .PHONY : src/utils/ext_password.c.obj
 
 src/utils/ext_password.i: src/utils/ext_password.c.i
@@ -2022,7 +2022,7 @@ src/utils/ext_password.i: src/utils/ext_password.c.i
 
 # target to preprocess a source file
 src/utils/ext_password.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/ext_password.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/ext_password.c.i
 .PHONY : src/utils/ext_password.c.i
 
 src/utils/ext_password.s: src/utils/ext_password.c.s
@@ -2031,7 +2031,7 @@ src/utils/ext_password.s: src/utils/ext_password.c.s
 
 # target to generate assembly for a file
 src/utils/ext_password.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/ext_password.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/ext_password.c.s
 .PHONY : src/utils/ext_password.c.s
 
 src/utils/uuid.obj: src/utils/uuid.c.obj
@@ -2040,7 +2040,7 @@ src/utils/uuid.obj: src/utils/uuid.c.obj
 
 # target to build an object file
 src/utils/uuid.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/uuid.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/uuid.c.obj
 .PHONY : src/utils/uuid.c.obj
 
 src/utils/uuid.i: src/utils/uuid.c.i
@@ -2049,7 +2049,7 @@ src/utils/uuid.i: src/utils/uuid.c.i
 
 # target to preprocess a source file
 src/utils/uuid.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/uuid.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/uuid.c.i
 .PHONY : src/utils/uuid.c.i
 
 src/utils/uuid.s: src/utils/uuid.c.s
@@ -2058,7 +2058,7 @@ src/utils/uuid.s: src/utils/uuid.c.s
 
 # target to generate assembly for a file
 src/utils/uuid.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/uuid.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/uuid.c.s
 .PHONY : src/utils/uuid.c.s
 
 src/utils/wpa_debug.obj: src/utils/wpa_debug.c.obj
@@ -2067,7 +2067,7 @@ src/utils/wpa_debug.obj: src/utils/wpa_debug.c.obj
 
 # target to build an object file
 src/utils/wpa_debug.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpa_debug.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpa_debug.c.obj
 .PHONY : src/utils/wpa_debug.c.obj
 
 src/utils/wpa_debug.i: src/utils/wpa_debug.c.i
@@ -2076,7 +2076,7 @@ src/utils/wpa_debug.i: src/utils/wpa_debug.c.i
 
 # target to preprocess a source file
 src/utils/wpa_debug.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpa_debug.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpa_debug.c.i
 .PHONY : src/utils/wpa_debug.c.i
 
 src/utils/wpa_debug.s: src/utils/wpa_debug.c.s
@@ -2085,7 +2085,7 @@ src/utils/wpa_debug.s: src/utils/wpa_debug.c.s
 
 # target to generate assembly for a file
 src/utils/wpa_debug.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpa_debug.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpa_debug.c.s
 .PHONY : src/utils/wpa_debug.c.s
 
 src/utils/wpabuf.obj: src/utils/wpabuf.c.obj
@@ -2094,7 +2094,7 @@ src/utils/wpabuf.obj: src/utils/wpabuf.c.obj
 
 # target to build an object file
 src/utils/wpabuf.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpabuf.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpabuf.c.obj
 .PHONY : src/utils/wpabuf.c.obj
 
 src/utils/wpabuf.i: src/utils/wpabuf.c.i
@@ -2103,7 +2103,7 @@ src/utils/wpabuf.i: src/utils/wpabuf.c.i
 
 # target to preprocess a source file
 src/utils/wpabuf.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpabuf.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpabuf.c.i
 .PHONY : src/utils/wpabuf.c.i
 
 src/utils/wpabuf.s: src/utils/wpabuf.c.s
@@ -2112,7 +2112,7 @@ src/utils/wpabuf.s: src/utils/wpabuf.c.s
 
 # target to generate assembly for a file
 src/utils/wpabuf.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpabuf.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpabuf.c.s
 .PHONY : src/utils/wpabuf.c.s
 
 src/wps/wps.obj: src/wps/wps.c.obj
@@ -2121,7 +2121,7 @@ src/wps/wps.obj: src/wps/wps.c.obj
 
 # target to build an object file
 src/wps/wps.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps.c.obj
 .PHONY : src/wps/wps.c.obj
 
 src/wps/wps.i: src/wps/wps.c.i
@@ -2130,7 +2130,7 @@ src/wps/wps.i: src/wps/wps.c.i
 
 # target to preprocess a source file
 src/wps/wps.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps.c.i
 .PHONY : src/wps/wps.c.i
 
 src/wps/wps.s: src/wps/wps.c.s
@@ -2139,7 +2139,7 @@ src/wps/wps.s: src/wps/wps.c.s
 
 # target to generate assembly for a file
 src/wps/wps.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps.c.s
 .PHONY : src/wps/wps.c.s
 
 src/wps/wps_attr_build.obj: src/wps/wps_attr_build.c.obj
@@ -2148,7 +2148,7 @@ src/wps/wps_attr_build.obj: src/wps/wps_attr_build.c.obj
 
 # target to build an object file
 src/wps/wps_attr_build.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_build.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_build.c.obj
 .PHONY : src/wps/wps_attr_build.c.obj
 
 src/wps/wps_attr_build.i: src/wps/wps_attr_build.c.i
@@ -2157,7 +2157,7 @@ src/wps/wps_attr_build.i: src/wps/wps_attr_build.c.i
 
 # target to preprocess a source file
 src/wps/wps_attr_build.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_build.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_build.c.i
 .PHONY : src/wps/wps_attr_build.c.i
 
 src/wps/wps_attr_build.s: src/wps/wps_attr_build.c.s
@@ -2166,7 +2166,7 @@ src/wps/wps_attr_build.s: src/wps/wps_attr_build.c.s
 
 # target to generate assembly for a file
 src/wps/wps_attr_build.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_build.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_build.c.s
 .PHONY : src/wps/wps_attr_build.c.s
 
 src/wps/wps_attr_parse.obj: src/wps/wps_attr_parse.c.obj
@@ -2175,7 +2175,7 @@ src/wps/wps_attr_parse.obj: src/wps/wps_attr_parse.c.obj
 
 # target to build an object file
 src/wps/wps_attr_parse.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_parse.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_parse.c.obj
 .PHONY : src/wps/wps_attr_parse.c.obj
 
 src/wps/wps_attr_parse.i: src/wps/wps_attr_parse.c.i
@@ -2184,7 +2184,7 @@ src/wps/wps_attr_parse.i: src/wps/wps_attr_parse.c.i
 
 # target to preprocess a source file
 src/wps/wps_attr_parse.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_parse.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_parse.c.i
 .PHONY : src/wps/wps_attr_parse.c.i
 
 src/wps/wps_attr_parse.s: src/wps/wps_attr_parse.c.s
@@ -2193,7 +2193,7 @@ src/wps/wps_attr_parse.s: src/wps/wps_attr_parse.c.s
 
 # target to generate assembly for a file
 src/wps/wps_attr_parse.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_parse.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_parse.c.s
 .PHONY : src/wps/wps_attr_parse.c.s
 
 src/wps/wps_attr_process.obj: src/wps/wps_attr_process.c.obj
@@ -2202,7 +2202,7 @@ src/wps/wps_attr_process.obj: src/wps/wps_attr_process.c.obj
 
 # target to build an object file
 src/wps/wps_attr_process.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_process.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_process.c.obj
 .PHONY : src/wps/wps_attr_process.c.obj
 
 src/wps/wps_attr_process.i: src/wps/wps_attr_process.c.i
@@ -2211,7 +2211,7 @@ src/wps/wps_attr_process.i: src/wps/wps_attr_process.c.i
 
 # target to preprocess a source file
 src/wps/wps_attr_process.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_process.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_process.c.i
 .PHONY : src/wps/wps_attr_process.c.i
 
 src/wps/wps_attr_process.s: src/wps/wps_attr_process.c.s
@@ -2220,7 +2220,7 @@ src/wps/wps_attr_process.s: src/wps/wps_attr_process.c.s
 
 # target to generate assembly for a file
 src/wps/wps_attr_process.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_process.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_process.c.s
 .PHONY : src/wps/wps_attr_process.c.s
 
 src/wps/wps_common.obj: src/wps/wps_common.c.obj
@@ -2229,7 +2229,7 @@ src/wps/wps_common.obj: src/wps/wps_common.c.obj
 
 # target to build an object file
 src/wps/wps_common.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_common.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_common.c.obj
 .PHONY : src/wps/wps_common.c.obj
 
 src/wps/wps_common.i: src/wps/wps_common.c.i
@@ -2238,7 +2238,7 @@ src/wps/wps_common.i: src/wps/wps_common.c.i
 
 # target to preprocess a source file
 src/wps/wps_common.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_common.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_common.c.i
 .PHONY : src/wps/wps_common.c.i
 
 src/wps/wps_common.s: src/wps/wps_common.c.s
@@ -2247,7 +2247,7 @@ src/wps/wps_common.s: src/wps/wps_common.c.s
 
 # target to generate assembly for a file
 src/wps/wps_common.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_common.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_common.c.s
 .PHONY : src/wps/wps_common.c.s
 
 src/wps/wps_dev_attr.obj: src/wps/wps_dev_attr.c.obj
@@ -2256,7 +2256,7 @@ src/wps/wps_dev_attr.obj: src/wps/wps_dev_attr.c.obj
 
 # target to build an object file
 src/wps/wps_dev_attr.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_dev_attr.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_dev_attr.c.obj
 .PHONY : src/wps/wps_dev_attr.c.obj
 
 src/wps/wps_dev_attr.i: src/wps/wps_dev_attr.c.i
@@ -2265,7 +2265,7 @@ src/wps/wps_dev_attr.i: src/wps/wps_dev_attr.c.i
 
 # target to preprocess a source file
 src/wps/wps_dev_attr.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_dev_attr.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_dev_attr.c.i
 .PHONY : src/wps/wps_dev_attr.c.i
 
 src/wps/wps_dev_attr.s: src/wps/wps_dev_attr.c.s
@@ -2274,7 +2274,7 @@ src/wps/wps_dev_attr.s: src/wps/wps_dev_attr.c.s
 
 # target to generate assembly for a file
 src/wps/wps_dev_attr.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_dev_attr.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_dev_attr.c.s
 .PHONY : src/wps/wps_dev_attr.c.s
 
 src/wps/wps_enrollee.obj: src/wps/wps_enrollee.c.obj
@@ -2283,7 +2283,7 @@ src/wps/wps_enrollee.obj: src/wps/wps_enrollee.c.obj
 
 # target to build an object file
 src/wps/wps_enrollee.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_enrollee.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_enrollee.c.obj
 .PHONY : src/wps/wps_enrollee.c.obj
 
 src/wps/wps_enrollee.i: src/wps/wps_enrollee.c.i
@@ -2292,7 +2292,7 @@ src/wps/wps_enrollee.i: src/wps/wps_enrollee.c.i
 
 # target to preprocess a source file
 src/wps/wps_enrollee.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_enrollee.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_enrollee.c.i
 .PHONY : src/wps/wps_enrollee.c.i
 
 src/wps/wps_enrollee.s: src/wps/wps_enrollee.c.s
@@ -2301,7 +2301,7 @@ src/wps/wps_enrollee.s: src/wps/wps_enrollee.c.s
 
 # target to generate assembly for a file
 src/wps/wps_enrollee.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_enrollee.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_enrollee.c.s
 .PHONY : src/wps/wps_enrollee.c.s
 
 src/wps/wps_registrar.obj: src/wps/wps_registrar.c.obj
@@ -2310,7 +2310,7 @@ src/wps/wps_registrar.obj: src/wps/wps_registrar.c.obj
 
 # target to build an object file
 src/wps/wps_registrar.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_registrar.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_registrar.c.obj
 .PHONY : src/wps/wps_registrar.c.obj
 
 src/wps/wps_registrar.i: src/wps/wps_registrar.c.i
@@ -2319,7 +2319,7 @@ src/wps/wps_registrar.i: src/wps/wps_registrar.c.i
 
 # target to preprocess a source file
 src/wps/wps_registrar.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_registrar.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_registrar.c.i
 .PHONY : src/wps/wps_registrar.c.i
 
 src/wps/wps_registrar.s: src/wps/wps_registrar.c.s
@@ -2328,7 +2328,7 @@ src/wps/wps_registrar.s: src/wps/wps_registrar.c.s
 
 # target to generate assembly for a file
 src/wps/wps_registrar.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_registrar.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_registrar.c.s
 .PHONY : src/wps/wps_registrar.c.s
 
 src/wps/wps_validate.obj: src/wps/wps_validate.c.obj
@@ -2337,7 +2337,7 @@ src/wps/wps_validate.obj: src/wps/wps_validate.c.obj
 
 # target to build an object file
 src/wps/wps_validate.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_validate.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_validate.c.obj
 .PHONY : src/wps/wps_validate.c.obj
 
 src/wps/wps_validate.i: src/wps/wps_validate.c.i
@@ -2346,7 +2346,7 @@ src/wps/wps_validate.i: src/wps/wps_validate.c.i
 
 # target to preprocess a source file
 src/wps/wps_validate.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_validate.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_validate.c.i
 .PHONY : src/wps/wps_validate.c.i
 
 src/wps/wps_validate.s: src/wps/wps_validate.c.s
@@ -2355,7 +2355,7 @@ src/wps/wps_validate.s: src/wps/wps_validate.c.s
 
 # target to generate assembly for a file
 src/wps/wps_validate.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_validate.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_validate.c.s
 .PHONY : src/wps/wps_validate.c.s
 
 # Help Target
@@ -2625,6 +2625,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

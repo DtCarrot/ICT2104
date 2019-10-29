@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dtcarrot/esp/web_server
+CMAKE_SOURCE_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build
 
 # Utility rule file for confserver.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
 include CMakeFiles/confserver.dir/progress.make
 
 CMakeFiles/confserver:
-	/home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/tools/kconfig_new/confserver.py --env-file /home/dtcarrot/esp/web_server/build/config.env --kconfig /home/dtcarrot/esp/esp-idf/Kconfig --sdkconfig-rename /home/dtcarrot/esp/esp-idf/sdkconfig.rename --config /home/dtcarrot/esp/web_server/sdkconfig
+	/home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/tools/kconfig_new/confserver.py --env-file /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/config.env --kconfig /home/dtcarrot/esp/esp-idf/Kconfig --sdkconfig-rename /home/dtcarrot/esp/esp-idf/sdkconfig.rename --config /home/dtcarrot/esp/ict2104/esp32-ai-thinker/sdkconfig
 
 confserver: CMakeFiles/confserver
 confserver: CMakeFiles/confserver.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/confserver.dir/clean:
 .PHONY : CMakeFiles/confserver.dir/clean
 
 CMakeFiles/confserver.dir/depend:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/web_server /home/dtcarrot/esp/web_server /home/dtcarrot/esp/web_server/build /home/dtcarrot/esp/web_server/build /home/dtcarrot/esp/web_server/build/CMakeFiles/confserver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/ict2104/esp32-ai-thinker /home/dtcarrot/esp/ict2104/esp32-ai-thinker /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/confserver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/confserver.dir/depend
 

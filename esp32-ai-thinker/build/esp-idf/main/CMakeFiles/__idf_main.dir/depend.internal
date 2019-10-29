@@ -5,6 +5,8 @@ esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
  ../components/conversions/include/img_converters.h
  ../components/driver/include/esp_camera.h
  ../components/driver/include/sensor.h
+ ../components/src/include/ict2104_camera.h
+ ../components/src/include/ict2104_uart.h
  /home/dtcarrot/esp/esp-idf/components/driver/include/driver/gpio.h
  /home/dtcarrot/esp/esp-idf/components/driver/include/driver/ledc.h
  /home/dtcarrot/esp/esp-idf/components/driver/include/driver/periph_ctrl.h
@@ -108,5 +110,5 @@ esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
  /home/dtcarrot/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h
  /home/dtcarrot/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h
  /home/dtcarrot/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h
- /home/dtcarrot/esp/web_server/main/main.c
+ /home/dtcarrot/esp/ict2104/esp32-ai-thinker/main/main.c
  config/sdkconfig.h

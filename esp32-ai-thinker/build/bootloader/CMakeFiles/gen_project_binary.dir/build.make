@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/dtcarrot/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build/bootloader
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader
 
 # Utility rule file for gen_project_binary.
 
@@ -57,10 +57,10 @@ CMakeFiles/gen_project_binary: .bin_timestamp
 
 
 .bin_timestamp: bootloader.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dtcarrot/esp/web_server/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating binary image from built executable"
-	/home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 elf2image --flash_mode dio --flash_freq 40m --flash_size 2MB -o /home/dtcarrot/esp/web_server/build/bootloader/bootloader.bin bootloader.elf
-	/usr/bin/cmake -E echo "Generated /home/dtcarrot/esp/web_server/build/bootloader/bootloader.bin"
-	/usr/bin/cmake -E md5sum /home/dtcarrot/esp/web_server/build/bootloader/bootloader.bin > /home/dtcarrot/esp/web_server/build/bootloader/.bin_timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating binary image from built executable"
+	/home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 elf2image --flash_mode dio --flash_freq 40m --flash_size 2MB -o /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/bootloader.bin bootloader.elf
+	/usr/bin/cmake -E echo "Generated /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/bootloader.bin"
+	/usr/bin/cmake -E md5sum /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/bootloader.bin > /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/.bin_timestamp
 
 gen_project_binary: CMakeFiles/gen_project_binary
 gen_project_binary: .bin_timestamp
@@ -78,6 +78,6 @@ CMakeFiles/gen_project_binary.dir/clean:
 .PHONY : CMakeFiles/gen_project_binary.dir/clean
 
 CMakeFiles/gen_project_binary.dir/depend:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/esp-idf/components/bootloader/subproject /home/dtcarrot/esp/esp-idf/components/bootloader/subproject /home/dtcarrot/esp/web_server/build/bootloader /home/dtcarrot/esp/web_server/build/bootloader /home/dtcarrot/esp/web_server/build/bootloader/CMakeFiles/gen_project_binary.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/esp-idf/components/bootloader/subproject /home/dtcarrot/esp/esp-idf/components/bootloader/subproject /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/CMakeFiles/gen_project_binary.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/gen_project_binary.dir/depend
 

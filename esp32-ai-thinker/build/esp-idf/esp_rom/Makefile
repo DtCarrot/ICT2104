@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dtcarrot/esp/web_server
+CMAKE_SOURCE_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/CMakeFiles /home/dtcarrot/esp/web_server/build/esp-idf/esp_rom/CMakeFiles/progress.marks
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_rom/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/CMakeFiles 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp_rom/CMakeFiles/progress.marks
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_rom/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_rom/clean
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_rom/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_rom/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_rom/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_rom/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_rom/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/rule:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/rule
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/rule
 .PHONY : esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ __idf_esp_rom: esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/rule
 
 # fast build rule for target.
 __idf_esp_rom/fast:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build
 .PHONY : __idf_esp_rom/fast
 
 esp_rom.obj: esp_rom.c.obj
@@ -177,7 +177,7 @@ esp_rom.obj: esp_rom.c.obj
 
 # target to build an object file
 esp_rom.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/esp_rom.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/esp_rom.c.obj
 .PHONY : esp_rom.c.obj
 
 esp_rom.i: esp_rom.c.i
@@ -186,7 +186,7 @@ esp_rom.i: esp_rom.c.i
 
 # target to preprocess a source file
 esp_rom.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/esp_rom.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/esp_rom.c.i
 .PHONY : esp_rom.c.i
 
 esp_rom.s: esp_rom.c.s
@@ -195,7 +195,7 @@ esp_rom.s: esp_rom.c.s
 
 # target to generate assembly for a file
 esp_rom.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/esp_rom.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/esp_rom.c.s
 .PHONY : esp_rom.c.s
 
 # Help Target
@@ -225,6 +225,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

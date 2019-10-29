@@ -324,6 +324,8 @@ mbconfig.h
 mbutils.h
 /home/dtcarrot/esp/esp-idf/components/freemodbus/modbus/functions/mbutils.h
 
+/home/dtcarrot/esp/esp-idf/components/freemodbus/modbus/functions/mbfuncdiag.c
+
 /home/dtcarrot/esp/esp-idf/components/freemodbus/modbus/functions/mbfuncdisc.c
 stdlib.h
 /home/dtcarrot/esp/esp-idf/components/freemodbus/modbus/functions/stdlib.h

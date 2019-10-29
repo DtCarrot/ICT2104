@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dtcarrot/esp/web_server
+CMAKE_SOURCE_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build
 
 # Include any dependencies generated for this target.
 include esp-idf/components/CMakeFiles/__idf_components.dir/depend.make
@@ -59,172 +59,198 @@ include esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/camera.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/camera.c.obj: ../components/driver/camera.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/driver/camera.c.obj"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/driver/camera.c.obj   -c /home/dtcarrot/esp/web_server/components/driver/camera.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/driver/camera.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/driver/camera.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/camera.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/camera.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/driver/camera.c.i"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/web_server/components/driver/camera.c > CMakeFiles/__idf_components.dir/driver/camera.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/camera.c > CMakeFiles/__idf_components.dir/driver/camera.c.i
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/camera.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/driver/camera.c.s"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/web_server/components/driver/camera.c -o CMakeFiles/__idf_components.dir/driver/camera.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/camera.c -o CMakeFiles/__idf_components.dir/driver/camera.c.s
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/sccb.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/sccb.c.obj: ../components/driver/sccb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/driver/sccb.c.obj"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/driver/sccb.c.obj   -c /home/dtcarrot/esp/web_server/components/driver/sccb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/driver/sccb.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/driver/sccb.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/sccb.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/sccb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/driver/sccb.c.i"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/web_server/components/driver/sccb.c > CMakeFiles/__idf_components.dir/driver/sccb.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/sccb.c > CMakeFiles/__idf_components.dir/driver/sccb.c.i
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/sccb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/driver/sccb.c.s"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/web_server/components/driver/sccb.c -o CMakeFiles/__idf_components.dir/driver/sccb.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/sccb.c -o CMakeFiles/__idf_components.dir/driver/sccb.c.s
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/sensor.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/sensor.c.obj: ../components/driver/sensor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/driver/sensor.c.obj"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/driver/sensor.c.obj   -c /home/dtcarrot/esp/web_server/components/driver/sensor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/driver/sensor.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/driver/sensor.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/sensor.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/sensor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/driver/sensor.c.i"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/web_server/components/driver/sensor.c > CMakeFiles/__idf_components.dir/driver/sensor.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/sensor.c > CMakeFiles/__idf_components.dir/driver/sensor.c.i
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/sensor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/driver/sensor.c.s"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/web_server/components/driver/sensor.c -o CMakeFiles/__idf_components.dir/driver/sensor.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/sensor.c -o CMakeFiles/__idf_components.dir/driver/sensor.c.s
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/twi.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/twi.c.obj: ../components/driver/twi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/driver/twi.c.obj"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/driver/twi.c.obj   -c /home/dtcarrot/esp/web_server/components/driver/twi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/driver/twi.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/driver/twi.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/twi.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/twi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/driver/twi.c.i"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/web_server/components/driver/twi.c > CMakeFiles/__idf_components.dir/driver/twi.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/twi.c > CMakeFiles/__idf_components.dir/driver/twi.c.i
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/twi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/driver/twi.c.s"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/web_server/components/driver/twi.c -o CMakeFiles/__idf_components.dir/driver/twi.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/twi.c -o CMakeFiles/__idf_components.dir/driver/twi.c.s
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/xclk.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/xclk.c.obj: ../components/driver/xclk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/driver/xclk.c.obj"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/driver/xclk.c.obj   -c /home/dtcarrot/esp/web_server/components/driver/xclk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/driver/xclk.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/driver/xclk.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/xclk.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/xclk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/driver/xclk.c.i"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/web_server/components/driver/xclk.c > CMakeFiles/__idf_components.dir/driver/xclk.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/xclk.c > CMakeFiles/__idf_components.dir/driver/xclk.c.i
 
 esp-idf/components/CMakeFiles/__idf_components.dir/driver/xclk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/driver/xclk.c.s"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/web_server/components/driver/xclk.c -o CMakeFiles/__idf_components.dir/driver/xclk.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/driver/xclk.c -o CMakeFiles/__idf_components.dir/driver/xclk.c.s
 
 esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov2640.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov2640.c.obj: ../components/sensors/ov2640.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov2640.c.obj"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/sensors/ov2640.c.obj   -c /home/dtcarrot/esp/web_server/components/sensors/ov2640.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov2640.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/sensors/ov2640.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/sensors/ov2640.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov2640.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/sensors/ov2640.c.i"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/web_server/components/sensors/ov2640.c > CMakeFiles/__idf_components.dir/sensors/ov2640.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/sensors/ov2640.c > CMakeFiles/__idf_components.dir/sensors/ov2640.c.i
 
 esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov2640.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/sensors/ov2640.c.s"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/web_server/components/sensors/ov2640.c -o CMakeFiles/__idf_components.dir/sensors/ov2640.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/sensors/ov2640.c -o CMakeFiles/__idf_components.dir/sensors/ov2640.c.s
 
 esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov3660.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov3660.c.obj: ../components/sensors/ov3660.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov3660.c.obj"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/sensors/ov3660.c.obj   -c /home/dtcarrot/esp/web_server/components/sensors/ov3660.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov3660.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/sensors/ov3660.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/sensors/ov3660.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov3660.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/sensors/ov3660.c.i"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/web_server/components/sensors/ov3660.c > CMakeFiles/__idf_components.dir/sensors/ov3660.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/sensors/ov3660.c > CMakeFiles/__idf_components.dir/sensors/ov3660.c.i
 
 esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov3660.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/sensors/ov3660.c.s"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/web_server/components/sensors/ov3660.c -o CMakeFiles/__idf_components.dir/sensors/ov3660.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/sensors/ov3660.c -o CMakeFiles/__idf_components.dir/sensors/ov3660.c.s
 
 esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov7725.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov7725.c.obj: ../components/sensors/ov7725.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov7725.c.obj"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/sensors/ov7725.c.obj   -c /home/dtcarrot/esp/web_server/components/sensors/ov7725.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov7725.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/sensors/ov7725.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/sensors/ov7725.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov7725.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/sensors/ov7725.c.i"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/web_server/components/sensors/ov7725.c > CMakeFiles/__idf_components.dir/sensors/ov7725.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/sensors/ov7725.c > CMakeFiles/__idf_components.dir/sensors/ov7725.c.i
 
 esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov7725.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/sensors/ov7725.c.s"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/web_server/components/sensors/ov7725.c -o CMakeFiles/__idf_components.dir/sensors/ov7725.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/sensors/ov7725.c -o CMakeFiles/__idf_components.dir/sensors/ov7725.c.s
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/yuv.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/yuv.c.obj: ../components/conversions/yuv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/conversions/yuv.c.obj"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/conversions/yuv.c.obj   -c /home/dtcarrot/esp/web_server/components/conversions/yuv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/conversions/yuv.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/conversions/yuv.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/yuv.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/yuv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/conversions/yuv.c.i"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/web_server/components/conversions/yuv.c > CMakeFiles/__idf_components.dir/conversions/yuv.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/yuv.c > CMakeFiles/__idf_components.dir/conversions/yuv.c.i
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/yuv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/conversions/yuv.c.s"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/web_server/components/conversions/yuv.c -o CMakeFiles/__idf_components.dir/conversions/yuv.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/yuv.c -o CMakeFiles/__idf_components.dir/conversions/yuv.c.s
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.obj: ../components/conversions/to_jpg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.obj"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.obj -c /home/dtcarrot/esp/web_server/components/conversions/to_jpg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.obj -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/to_jpg.cpp
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.i"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dtcarrot/esp/web_server/components/conversions/to_jpg.cpp > CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/to_jpg.cpp > CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.i
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.s"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dtcarrot/esp/web_server/components/conversions/to_jpg.cpp -o CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/to_jpg.cpp -o CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.s
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_bmp.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_bmp.c.obj: ../components/conversions/to_bmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_bmp.c.obj"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/conversions/to_bmp.c.obj   -c /home/dtcarrot/esp/web_server/components/conversions/to_bmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_bmp.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/conversions/to_bmp.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/to_bmp.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_bmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/conversions/to_bmp.c.i"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/web_server/components/conversions/to_bmp.c > CMakeFiles/__idf_components.dir/conversions/to_bmp.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/to_bmp.c > CMakeFiles/__idf_components.dir/conversions/to_bmp.c.i
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_bmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/conversions/to_bmp.c.s"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/web_server/components/conversions/to_bmp.c -o CMakeFiles/__idf_components.dir/conversions/to_bmp.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/to_bmp.c -o CMakeFiles/__idf_components.dir/conversions/to_bmp.c.s
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/jpge.cpp.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/jpge.cpp.obj: ../components/conversions/jpge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object esp-idf/components/CMakeFiles/__idf_components.dir/conversions/jpge.cpp.obj"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/__idf_components.dir/conversions/jpge.cpp.obj -c /home/dtcarrot/esp/web_server/components/conversions/jpge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object esp-idf/components/CMakeFiles/__idf_components.dir/conversions/jpge.cpp.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/__idf_components.dir/conversions/jpge.cpp.obj -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/jpge.cpp
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/jpge.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/__idf_components.dir/conversions/jpge.cpp.i"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dtcarrot/esp/web_server/components/conversions/jpge.cpp > CMakeFiles/__idf_components.dir/conversions/jpge.cpp.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/jpge.cpp > CMakeFiles/__idf_components.dir/conversions/jpge.cpp.i
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/jpge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/__idf_components.dir/conversions/jpge.cpp.s"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dtcarrot/esp/web_server/components/conversions/jpge.cpp -o CMakeFiles/__idf_components.dir/conversions/jpge.cpp.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/jpge.cpp -o CMakeFiles/__idf_components.dir/conversions/jpge.cpp.s
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.obj: ../components/conversions/esp_jpg_decode.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.obj"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.obj   -c /home/dtcarrot/esp/web_server/components/conversions/esp_jpg_decode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/esp_jpg_decode.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.i"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/web_server/components/conversions/esp_jpg_decode.c > CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/esp_jpg_decode.c > CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.i
 
 esp-idf/components/CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.s"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/web_server/components/conversions/esp_jpg_decode.c -o CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/esp_jpg_decode.c -o CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.s
+
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj: ../components/src/ict2104_camera.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_camera.c
+
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/src/ict2104_camera.c.i"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_camera.c > CMakeFiles/__idf_components.dir/src/ict2104_camera.c.i
+
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/src/ict2104_camera.c.s"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_camera.c -o CMakeFiles/__idf_components.dir/src/ict2104_camera.c.s
+
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: ../components/src/ict2104_uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_uart.c
+
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/src/ict2104_uart.c.i"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_uart.c > CMakeFiles/__idf_components.dir/src/ict2104_uart.c.i
+
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/src/ict2104_uart.c.s"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_uart.c -o CMakeFiles/__idf_components.dir/src/ict2104_uart.c.s
 
 # Object files for target __idf_components
 __idf_components_OBJECTS = \
@@ -240,7 +266,9 @@ __idf_components_OBJECTS = \
 "CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.obj" \
 "CMakeFiles/__idf_components.dir/conversions/to_bmp.c.obj" \
 "CMakeFiles/__idf_components.dir/conversions/jpge.cpp.obj" \
-"CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.obj"
+"CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.obj" \
+"CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj" \
+"CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj"
 
 # External object files for target __idf_components
 __idf_components_EXTERNAL_OBJECTS =
@@ -258,11 +286,13 @@ esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_componen
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_bmp.c.obj
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/conversions/jpge.cpp.obj
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.obj
+esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj
+esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/build.make
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library libcomponents.a"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && $(CMAKE_COMMAND) -P CMakeFiles/__idf_components.dir/cmake_clean_target.cmake
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_components.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX static library libcomponents.a"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && $(CMAKE_COMMAND) -P CMakeFiles/__idf_components.dir/cmake_clean_target.cmake
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_components.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 esp-idf/components/CMakeFiles/__idf_components.dir/build: esp-idf/components/libcomponents.a
@@ -270,10 +300,10 @@ esp-idf/components/CMakeFiles/__idf_components.dir/build: esp-idf/components/lib
 .PHONY : esp-idf/components/CMakeFiles/__idf_components.dir/build
 
 esp-idf/components/CMakeFiles/__idf_components.dir/clean:
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/components && $(CMAKE_COMMAND) -P CMakeFiles/__idf_components.dir/cmake_clean.cmake
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && $(CMAKE_COMMAND) -P CMakeFiles/__idf_components.dir/cmake_clean.cmake
 .PHONY : esp-idf/components/CMakeFiles/__idf_components.dir/clean
 
 esp-idf/components/CMakeFiles/__idf_components.dir/depend:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/web_server /home/dtcarrot/esp/web_server/components /home/dtcarrot/esp/web_server/build /home/dtcarrot/esp/web_server/build/esp-idf/components /home/dtcarrot/esp/web_server/build/esp-idf/components/CMakeFiles/__idf_components.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/ict2104/esp32-ai-thinker /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components/CMakeFiles/__idf_components.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/components/CMakeFiles/__idf_components.dir/depend
 

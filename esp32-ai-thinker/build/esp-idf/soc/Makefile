@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dtcarrot/esp/web_server
+CMAKE_SOURCE_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/CMakeFiles /home/dtcarrot/esp/web_server/build/esp-idf/soc/CMakeFiles/progress.marks
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/CMakeFiles 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/soc/CMakeFiles/progress.marks
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/clean
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/soc/CMakeFiles/__idf_soc.dir/rule:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/CMakeFiles/__idf_soc.dir/rule
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/CMakeFiles/__idf_soc.dir/rule
 .PHONY : esp-idf/soc/CMakeFiles/__idf_soc.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ __idf_soc: esp-idf/soc/CMakeFiles/__idf_soc.dir/rule
 
 # fast build rule for target.
 __idf_soc/fast:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/build
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/build
 .PHONY : __idf_soc/fast
 
 esp32/cpu_util.obj: esp32/cpu_util.c.obj
@@ -177,7 +177,7 @@ esp32/cpu_util.obj: esp32/cpu_util.c.obj
 
 # target to build an object file
 esp32/cpu_util.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/cpu_util.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/cpu_util.c.obj
 .PHONY : esp32/cpu_util.c.obj
 
 esp32/cpu_util.i: esp32/cpu_util.c.i
@@ -186,7 +186,7 @@ esp32/cpu_util.i: esp32/cpu_util.c.i
 
 # target to preprocess a source file
 esp32/cpu_util.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/cpu_util.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/cpu_util.c.i
 .PHONY : esp32/cpu_util.c.i
 
 esp32/cpu_util.s: esp32/cpu_util.c.s
@@ -195,7 +195,7 @@ esp32/cpu_util.s: esp32/cpu_util.c.s
 
 # target to generate assembly for a file
 esp32/cpu_util.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/cpu_util.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/cpu_util.c.s
 .PHONY : esp32/cpu_util.c.s
 
 esp32/emac_hal.obj: esp32/emac_hal.c.obj
@@ -204,7 +204,7 @@ esp32/emac_hal.obj: esp32/emac_hal.c.obj
 
 # target to build an object file
 esp32/emac_hal.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/emac_hal.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/emac_hal.c.obj
 .PHONY : esp32/emac_hal.c.obj
 
 esp32/emac_hal.i: esp32/emac_hal.c.i
@@ -213,7 +213,7 @@ esp32/emac_hal.i: esp32/emac_hal.c.i
 
 # target to preprocess a source file
 esp32/emac_hal.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/emac_hal.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/emac_hal.c.i
 .PHONY : esp32/emac_hal.c.i
 
 esp32/emac_hal.s: esp32/emac_hal.c.s
@@ -222,7 +222,7 @@ esp32/emac_hal.s: esp32/emac_hal.c.s
 
 # target to generate assembly for a file
 esp32/emac_hal.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/emac_hal.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/emac_hal.c.s
 .PHONY : esp32/emac_hal.c.s
 
 esp32/gpio_periph.obj: esp32/gpio_periph.c.obj
@@ -231,7 +231,7 @@ esp32/gpio_periph.obj: esp32/gpio_periph.c.obj
 
 # target to build an object file
 esp32/gpio_periph.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/gpio_periph.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/gpio_periph.c.obj
 .PHONY : esp32/gpio_periph.c.obj
 
 esp32/gpio_periph.i: esp32/gpio_periph.c.i
@@ -240,7 +240,7 @@ esp32/gpio_periph.i: esp32/gpio_periph.c.i
 
 # target to preprocess a source file
 esp32/gpio_periph.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/gpio_periph.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/gpio_periph.c.i
 .PHONY : esp32/gpio_periph.c.i
 
 esp32/gpio_periph.s: esp32/gpio_periph.c.s
@@ -249,7 +249,7 @@ esp32/gpio_periph.s: esp32/gpio_periph.c.s
 
 # target to generate assembly for a file
 esp32/gpio_periph.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/gpio_periph.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/gpio_periph.c.s
 .PHONY : esp32/gpio_periph.c.s
 
 esp32/rtc_clk.obj: esp32/rtc_clk.c.obj
@@ -258,7 +258,7 @@ esp32/rtc_clk.obj: esp32/rtc_clk.c.obj
 
 # target to build an object file
 esp32/rtc_clk.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_clk.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_clk.c.obj
 .PHONY : esp32/rtc_clk.c.obj
 
 esp32/rtc_clk.i: esp32/rtc_clk.c.i
@@ -267,7 +267,7 @@ esp32/rtc_clk.i: esp32/rtc_clk.c.i
 
 # target to preprocess a source file
 esp32/rtc_clk.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_clk.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_clk.c.i
 .PHONY : esp32/rtc_clk.c.i
 
 esp32/rtc_clk.s: esp32/rtc_clk.c.s
@@ -276,7 +276,7 @@ esp32/rtc_clk.s: esp32/rtc_clk.c.s
 
 # target to generate assembly for a file
 esp32/rtc_clk.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_clk.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_clk.c.s
 .PHONY : esp32/rtc_clk.c.s
 
 esp32/rtc_clk_init.obj: esp32/rtc_clk_init.c.obj
@@ -285,7 +285,7 @@ esp32/rtc_clk_init.obj: esp32/rtc_clk_init.c.obj
 
 # target to build an object file
 esp32/rtc_clk_init.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_clk_init.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_clk_init.c.obj
 .PHONY : esp32/rtc_clk_init.c.obj
 
 esp32/rtc_clk_init.i: esp32/rtc_clk_init.c.i
@@ -294,7 +294,7 @@ esp32/rtc_clk_init.i: esp32/rtc_clk_init.c.i
 
 # target to preprocess a source file
 esp32/rtc_clk_init.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_clk_init.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_clk_init.c.i
 .PHONY : esp32/rtc_clk_init.c.i
 
 esp32/rtc_clk_init.s: esp32/rtc_clk_init.c.s
@@ -303,7 +303,7 @@ esp32/rtc_clk_init.s: esp32/rtc_clk_init.c.s
 
 # target to generate assembly for a file
 esp32/rtc_clk_init.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_clk_init.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_clk_init.c.s
 .PHONY : esp32/rtc_clk_init.c.s
 
 esp32/rtc_init.obj: esp32/rtc_init.c.obj
@@ -312,7 +312,7 @@ esp32/rtc_init.obj: esp32/rtc_init.c.obj
 
 # target to build an object file
 esp32/rtc_init.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_init.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_init.c.obj
 .PHONY : esp32/rtc_init.c.obj
 
 esp32/rtc_init.i: esp32/rtc_init.c.i
@@ -321,7 +321,7 @@ esp32/rtc_init.i: esp32/rtc_init.c.i
 
 # target to preprocess a source file
 esp32/rtc_init.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_init.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_init.c.i
 .PHONY : esp32/rtc_init.c.i
 
 esp32/rtc_init.s: esp32/rtc_init.c.s
@@ -330,7 +330,7 @@ esp32/rtc_init.s: esp32/rtc_init.c.s
 
 # target to generate assembly for a file
 esp32/rtc_init.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_init.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_init.c.s
 .PHONY : esp32/rtc_init.c.s
 
 esp32/rtc_periph.obj: esp32/rtc_periph.c.obj
@@ -339,7 +339,7 @@ esp32/rtc_periph.obj: esp32/rtc_periph.c.obj
 
 # target to build an object file
 esp32/rtc_periph.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_periph.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_periph.c.obj
 .PHONY : esp32/rtc_periph.c.obj
 
 esp32/rtc_periph.i: esp32/rtc_periph.c.i
@@ -348,7 +348,7 @@ esp32/rtc_periph.i: esp32/rtc_periph.c.i
 
 # target to preprocess a source file
 esp32/rtc_periph.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_periph.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_periph.c.i
 .PHONY : esp32/rtc_periph.c.i
 
 esp32/rtc_periph.s: esp32/rtc_periph.c.s
@@ -357,7 +357,7 @@ esp32/rtc_periph.s: esp32/rtc_periph.c.s
 
 # target to generate assembly for a file
 esp32/rtc_periph.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_periph.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_periph.c.s
 .PHONY : esp32/rtc_periph.c.s
 
 esp32/rtc_pm.obj: esp32/rtc_pm.c.obj
@@ -366,7 +366,7 @@ esp32/rtc_pm.obj: esp32/rtc_pm.c.obj
 
 # target to build an object file
 esp32/rtc_pm.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_pm.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_pm.c.obj
 .PHONY : esp32/rtc_pm.c.obj
 
 esp32/rtc_pm.i: esp32/rtc_pm.c.i
@@ -375,7 +375,7 @@ esp32/rtc_pm.i: esp32/rtc_pm.c.i
 
 # target to preprocess a source file
 esp32/rtc_pm.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_pm.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_pm.c.i
 .PHONY : esp32/rtc_pm.c.i
 
 esp32/rtc_pm.s: esp32/rtc_pm.c.s
@@ -384,7 +384,7 @@ esp32/rtc_pm.s: esp32/rtc_pm.c.s
 
 # target to generate assembly for a file
 esp32/rtc_pm.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_pm.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_pm.c.s
 .PHONY : esp32/rtc_pm.c.s
 
 esp32/rtc_sleep.obj: esp32/rtc_sleep.c.obj
@@ -393,7 +393,7 @@ esp32/rtc_sleep.obj: esp32/rtc_sleep.c.obj
 
 # target to build an object file
 esp32/rtc_sleep.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_sleep.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_sleep.c.obj
 .PHONY : esp32/rtc_sleep.c.obj
 
 esp32/rtc_sleep.i: esp32/rtc_sleep.c.i
@@ -402,7 +402,7 @@ esp32/rtc_sleep.i: esp32/rtc_sleep.c.i
 
 # target to preprocess a source file
 esp32/rtc_sleep.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_sleep.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_sleep.c.i
 .PHONY : esp32/rtc_sleep.c.i
 
 esp32/rtc_sleep.s: esp32/rtc_sleep.c.s
@@ -411,7 +411,7 @@ esp32/rtc_sleep.s: esp32/rtc_sleep.c.s
 
 # target to generate assembly for a file
 esp32/rtc_sleep.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_sleep.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_sleep.c.s
 .PHONY : esp32/rtc_sleep.c.s
 
 esp32/rtc_time.obj: esp32/rtc_time.c.obj
@@ -420,7 +420,7 @@ esp32/rtc_time.obj: esp32/rtc_time.c.obj
 
 # target to build an object file
 esp32/rtc_time.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_time.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_time.c.obj
 .PHONY : esp32/rtc_time.c.obj
 
 esp32/rtc_time.i: esp32/rtc_time.c.i
@@ -429,7 +429,7 @@ esp32/rtc_time.i: esp32/rtc_time.c.i
 
 # target to preprocess a source file
 esp32/rtc_time.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_time.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_time.c.i
 .PHONY : esp32/rtc_time.c.i
 
 esp32/rtc_time.s: esp32/rtc_time.c.s
@@ -438,7 +438,7 @@ esp32/rtc_time.s: esp32/rtc_time.c.s
 
 # target to generate assembly for a file
 esp32/rtc_time.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_time.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_time.c.s
 .PHONY : esp32/rtc_time.c.s
 
 esp32/rtc_wdt.obj: esp32/rtc_wdt.c.obj
@@ -447,7 +447,7 @@ esp32/rtc_wdt.obj: esp32/rtc_wdt.c.obj
 
 # target to build an object file
 esp32/rtc_wdt.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_wdt.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_wdt.c.obj
 .PHONY : esp32/rtc_wdt.c.obj
 
 esp32/rtc_wdt.i: esp32/rtc_wdt.c.i
@@ -456,7 +456,7 @@ esp32/rtc_wdt.i: esp32/rtc_wdt.c.i
 
 # target to preprocess a source file
 esp32/rtc_wdt.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_wdt.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_wdt.c.i
 .PHONY : esp32/rtc_wdt.c.i
 
 esp32/rtc_wdt.s: esp32/rtc_wdt.c.s
@@ -465,7 +465,7 @@ esp32/rtc_wdt.s: esp32/rtc_wdt.c.s
 
 # target to generate assembly for a file
 esp32/rtc_wdt.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_wdt.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_wdt.c.s
 .PHONY : esp32/rtc_wdt.c.s
 
 esp32/sdio_slave_periph.obj: esp32/sdio_slave_periph.c.obj
@@ -474,7 +474,7 @@ esp32/sdio_slave_periph.obj: esp32/sdio_slave_periph.c.obj
 
 # target to build an object file
 esp32/sdio_slave_periph.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdio_slave_periph.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdio_slave_periph.c.obj
 .PHONY : esp32/sdio_slave_periph.c.obj
 
 esp32/sdio_slave_periph.i: esp32/sdio_slave_periph.c.i
@@ -483,7 +483,7 @@ esp32/sdio_slave_periph.i: esp32/sdio_slave_periph.c.i
 
 # target to preprocess a source file
 esp32/sdio_slave_periph.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdio_slave_periph.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdio_slave_periph.c.i
 .PHONY : esp32/sdio_slave_periph.c.i
 
 esp32/sdio_slave_periph.s: esp32/sdio_slave_periph.c.s
@@ -492,7 +492,7 @@ esp32/sdio_slave_periph.s: esp32/sdio_slave_periph.c.s
 
 # target to generate assembly for a file
 esp32/sdio_slave_periph.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdio_slave_periph.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdio_slave_periph.c.s
 .PHONY : esp32/sdio_slave_periph.c.s
 
 esp32/sdmmc_periph.obj: esp32/sdmmc_periph.c.obj
@@ -501,7 +501,7 @@ esp32/sdmmc_periph.obj: esp32/sdmmc_periph.c.obj
 
 # target to build an object file
 esp32/sdmmc_periph.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdmmc_periph.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdmmc_periph.c.obj
 .PHONY : esp32/sdmmc_periph.c.obj
 
 esp32/sdmmc_periph.i: esp32/sdmmc_periph.c.i
@@ -510,7 +510,7 @@ esp32/sdmmc_periph.i: esp32/sdmmc_periph.c.i
 
 # target to preprocess a source file
 esp32/sdmmc_periph.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdmmc_periph.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdmmc_periph.c.i
 .PHONY : esp32/sdmmc_periph.c.i
 
 esp32/sdmmc_periph.s: esp32/sdmmc_periph.c.s
@@ -519,7 +519,7 @@ esp32/sdmmc_periph.s: esp32/sdmmc_periph.c.s
 
 # target to generate assembly for a file
 esp32/sdmmc_periph.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdmmc_periph.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/sdmmc_periph.c.s
 .PHONY : esp32/sdmmc_periph.c.s
 
 esp32/soc_memory_layout.obj: esp32/soc_memory_layout.c.obj
@@ -528,7 +528,7 @@ esp32/soc_memory_layout.obj: esp32/soc_memory_layout.c.obj
 
 # target to build an object file
 esp32/soc_memory_layout.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/soc_memory_layout.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/soc_memory_layout.c.obj
 .PHONY : esp32/soc_memory_layout.c.obj
 
 esp32/soc_memory_layout.i: esp32/soc_memory_layout.c.i
@@ -537,7 +537,7 @@ esp32/soc_memory_layout.i: esp32/soc_memory_layout.c.i
 
 # target to preprocess a source file
 esp32/soc_memory_layout.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/soc_memory_layout.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/soc_memory_layout.c.i
 .PHONY : esp32/soc_memory_layout.c.i
 
 esp32/soc_memory_layout.s: esp32/soc_memory_layout.c.s
@@ -546,7 +546,7 @@ esp32/soc_memory_layout.s: esp32/soc_memory_layout.c.s
 
 # target to generate assembly for a file
 esp32/soc_memory_layout.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/soc_memory_layout.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/soc_memory_layout.c.s
 .PHONY : esp32/soc_memory_layout.c.s
 
 esp32/spi_periph.obj: esp32/spi_periph.c.obj
@@ -555,7 +555,7 @@ esp32/spi_periph.obj: esp32/spi_periph.c.obj
 
 # target to build an object file
 esp32/spi_periph.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/spi_periph.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/spi_periph.c.obj
 .PHONY : esp32/spi_periph.c.obj
 
 esp32/spi_periph.i: esp32/spi_periph.c.i
@@ -564,7 +564,7 @@ esp32/spi_periph.i: esp32/spi_periph.c.i
 
 # target to preprocess a source file
 esp32/spi_periph.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/spi_periph.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/spi_periph.c.i
 .PHONY : esp32/spi_periph.c.i
 
 esp32/spi_periph.s: esp32/spi_periph.c.s
@@ -573,7 +573,7 @@ esp32/spi_periph.s: esp32/spi_periph.c.s
 
 # target to generate assembly for a file
 esp32/spi_periph.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/spi_periph.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/spi_periph.c.s
 .PHONY : esp32/spi_periph.c.s
 
 src/hal/spi_flash_hal.obj: src/hal/spi_flash_hal.c.obj
@@ -582,7 +582,7 @@ src/hal/spi_flash_hal.obj: src/hal/spi_flash_hal.c.obj
 
 # target to build an object file
 src/hal/spi_flash_hal.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal.c.obj
 .PHONY : src/hal/spi_flash_hal.c.obj
 
 src/hal/spi_flash_hal.i: src/hal/spi_flash_hal.c.i
@@ -591,7 +591,7 @@ src/hal/spi_flash_hal.i: src/hal/spi_flash_hal.c.i
 
 # target to preprocess a source file
 src/hal/spi_flash_hal.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal.c.i
 .PHONY : src/hal/spi_flash_hal.c.i
 
 src/hal/spi_flash_hal.s: src/hal/spi_flash_hal.c.s
@@ -600,7 +600,7 @@ src/hal/spi_flash_hal.s: src/hal/spi_flash_hal.c.s
 
 # target to generate assembly for a file
 src/hal/spi_flash_hal.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal.c.s
 .PHONY : src/hal/spi_flash_hal.c.s
 
 src/hal/spi_flash_hal_iram.obj: src/hal/spi_flash_hal_iram.c.obj
@@ -609,7 +609,7 @@ src/hal/spi_flash_hal_iram.obj: src/hal/spi_flash_hal_iram.c.obj
 
 # target to build an object file
 src/hal/spi_flash_hal_iram.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal_iram.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal_iram.c.obj
 .PHONY : src/hal/spi_flash_hal_iram.c.obj
 
 src/hal/spi_flash_hal_iram.i: src/hal/spi_flash_hal_iram.c.i
@@ -618,7 +618,7 @@ src/hal/spi_flash_hal_iram.i: src/hal/spi_flash_hal_iram.c.i
 
 # target to preprocess a source file
 src/hal/spi_flash_hal_iram.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal_iram.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal_iram.c.i
 .PHONY : src/hal/spi_flash_hal_iram.c.i
 
 src/hal/spi_flash_hal_iram.s: src/hal/spi_flash_hal_iram.c.s
@@ -627,7 +627,7 @@ src/hal/spi_flash_hal_iram.s: src/hal/spi_flash_hal_iram.c.s
 
 # target to generate assembly for a file
 src/hal/spi_flash_hal_iram.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal_iram.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal_iram.c.s
 .PHONY : src/hal/spi_flash_hal_iram.c.s
 
 src/hal/spi_hal.obj: src/hal/spi_hal.c.obj
@@ -636,7 +636,7 @@ src/hal/spi_hal.obj: src/hal/spi_hal.c.obj
 
 # target to build an object file
 src/hal/spi_hal.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal.c.obj
 .PHONY : src/hal/spi_hal.c.obj
 
 src/hal/spi_hal.i: src/hal/spi_hal.c.i
@@ -645,7 +645,7 @@ src/hal/spi_hal.i: src/hal/spi_hal.c.i
 
 # target to preprocess a source file
 src/hal/spi_hal.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal.c.i
 .PHONY : src/hal/spi_hal.c.i
 
 src/hal/spi_hal.s: src/hal/spi_hal.c.s
@@ -654,7 +654,7 @@ src/hal/spi_hal.s: src/hal/spi_hal.c.s
 
 # target to generate assembly for a file
 src/hal/spi_hal.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal.c.s
 .PHONY : src/hal/spi_hal.c.s
 
 src/hal/spi_hal_iram.obj: src/hal/spi_hal_iram.c.obj
@@ -663,7 +663,7 @@ src/hal/spi_hal_iram.obj: src/hal/spi_hal_iram.c.obj
 
 # target to build an object file
 src/hal/spi_hal_iram.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal_iram.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal_iram.c.obj
 .PHONY : src/hal/spi_hal_iram.c.obj
 
 src/hal/spi_hal_iram.i: src/hal/spi_hal_iram.c.i
@@ -672,7 +672,7 @@ src/hal/spi_hal_iram.i: src/hal/spi_hal_iram.c.i
 
 # target to preprocess a source file
 src/hal/spi_hal_iram.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal_iram.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal_iram.c.i
 .PHONY : src/hal/spi_hal_iram.c.i
 
 src/hal/spi_hal_iram.s: src/hal/spi_hal_iram.c.s
@@ -681,7 +681,7 @@ src/hal/spi_hal_iram.s: src/hal/spi_hal_iram.c.s
 
 # target to generate assembly for a file
 src/hal/spi_hal_iram.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal_iram.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal_iram.c.s
 .PHONY : src/hal/spi_hal_iram.c.s
 
 src/hal/spi_slave_hal.obj: src/hal/spi_slave_hal.c.obj
@@ -690,7 +690,7 @@ src/hal/spi_slave_hal.obj: src/hal/spi_slave_hal.c.obj
 
 # target to build an object file
 src/hal/spi_slave_hal.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal.c.obj
 .PHONY : src/hal/spi_slave_hal.c.obj
 
 src/hal/spi_slave_hal.i: src/hal/spi_slave_hal.c.i
@@ -699,7 +699,7 @@ src/hal/spi_slave_hal.i: src/hal/spi_slave_hal.c.i
 
 # target to preprocess a source file
 src/hal/spi_slave_hal.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal.c.i
 .PHONY : src/hal/spi_slave_hal.c.i
 
 src/hal/spi_slave_hal.s: src/hal/spi_slave_hal.c.s
@@ -708,7 +708,7 @@ src/hal/spi_slave_hal.s: src/hal/spi_slave_hal.c.s
 
 # target to generate assembly for a file
 src/hal/spi_slave_hal.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal.c.s
 .PHONY : src/hal/spi_slave_hal.c.s
 
 src/hal/spi_slave_hal_iram.obj: src/hal/spi_slave_hal_iram.c.obj
@@ -717,7 +717,7 @@ src/hal/spi_slave_hal_iram.obj: src/hal/spi_slave_hal_iram.c.obj
 
 # target to build an object file
 src/hal/spi_slave_hal_iram.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal_iram.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal_iram.c.obj
 .PHONY : src/hal/spi_slave_hal_iram.c.obj
 
 src/hal/spi_slave_hal_iram.i: src/hal/spi_slave_hal_iram.c.i
@@ -726,7 +726,7 @@ src/hal/spi_slave_hal_iram.i: src/hal/spi_slave_hal_iram.c.i
 
 # target to preprocess a source file
 src/hal/spi_slave_hal_iram.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal_iram.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal_iram.c.i
 .PHONY : src/hal/spi_slave_hal_iram.c.i
 
 src/hal/spi_slave_hal_iram.s: src/hal/spi_slave_hal_iram.c.s
@@ -735,7 +735,7 @@ src/hal/spi_slave_hal_iram.s: src/hal/spi_slave_hal_iram.c.s
 
 # target to generate assembly for a file
 src/hal/spi_slave_hal_iram.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal_iram.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal_iram.c.s
 .PHONY : src/hal/spi_slave_hal_iram.c.s
 
 src/lldesc.obj: src/lldesc.c.obj
@@ -744,7 +744,7 @@ src/lldesc.obj: src/lldesc.c.obj
 
 # target to build an object file
 src/lldesc.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/lldesc.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/lldesc.c.obj
 .PHONY : src/lldesc.c.obj
 
 src/lldesc.i: src/lldesc.c.i
@@ -753,7 +753,7 @@ src/lldesc.i: src/lldesc.c.i
 
 # target to preprocess a source file
 src/lldesc.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/lldesc.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/lldesc.c.i
 .PHONY : src/lldesc.c.i
 
 src/lldesc.s: src/lldesc.c.s
@@ -762,7 +762,7 @@ src/lldesc.s: src/lldesc.c.s
 
 # target to generate assembly for a file
 src/lldesc.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/lldesc.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/lldesc.c.s
 .PHONY : src/lldesc.c.s
 
 src/memory_layout_utils.obj: src/memory_layout_utils.c.obj
@@ -771,7 +771,7 @@ src/memory_layout_utils.obj: src/memory_layout_utils.c.obj
 
 # target to build an object file
 src/memory_layout_utils.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/memory_layout_utils.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/memory_layout_utils.c.obj
 .PHONY : src/memory_layout_utils.c.obj
 
 src/memory_layout_utils.i: src/memory_layout_utils.c.i
@@ -780,7 +780,7 @@ src/memory_layout_utils.i: src/memory_layout_utils.c.i
 
 # target to preprocess a source file
 src/memory_layout_utils.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/memory_layout_utils.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/memory_layout_utils.c.i
 .PHONY : src/memory_layout_utils.c.i
 
 src/memory_layout_utils.s: src/memory_layout_utils.c.s
@@ -789,7 +789,7 @@ src/memory_layout_utils.s: src/memory_layout_utils.c.s
 
 # target to generate assembly for a file
 src/memory_layout_utils.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/memory_layout_utils.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/memory_layout_utils.c.s
 .PHONY : src/memory_layout_utils.c.s
 
 src/soc_include_legacy_warn.obj: src/soc_include_legacy_warn.c.obj
@@ -798,7 +798,7 @@ src/soc_include_legacy_warn.obj: src/soc_include_legacy_warn.c.obj
 
 # target to build an object file
 src/soc_include_legacy_warn.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/soc_include_legacy_warn.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/soc_include_legacy_warn.c.obj
 .PHONY : src/soc_include_legacy_warn.c.obj
 
 src/soc_include_legacy_warn.i: src/soc_include_legacy_warn.c.i
@@ -807,7 +807,7 @@ src/soc_include_legacy_warn.i: src/soc_include_legacy_warn.c.i
 
 # target to preprocess a source file
 src/soc_include_legacy_warn.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/soc_include_legacy_warn.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/soc_include_legacy_warn.c.i
 .PHONY : src/soc_include_legacy_warn.c.i
 
 src/soc_include_legacy_warn.s: src/soc_include_legacy_warn.c.s
@@ -816,7 +816,7 @@ src/soc_include_legacy_warn.s: src/soc_include_legacy_warn.c.s
 
 # target to generate assembly for a file
 src/soc_include_legacy_warn.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/soc_include_legacy_warn.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/soc_include_legacy_warn.c.s
 .PHONY : src/soc_include_legacy_warn.c.s
 
 # Help Target
@@ -915,6 +915,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

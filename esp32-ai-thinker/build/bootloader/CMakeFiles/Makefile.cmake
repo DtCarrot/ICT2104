@@ -95,7 +95,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "config/sdkconfig.cmake"
   "config/sdkconfig.h"
   "mconf-idf-prefix/tmp/mconf-idf-cfgcmd.txt.in"
-  "/home/dtcarrot/esp/web_server/sdkconfig"
+  "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/sdkconfig"
   "/usr/share/cmake-3.13/Modules/CMakeASMInformation.cmake"
   "/usr/share/cmake-3.13/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.13/Modules/CMakeCXXInformation.cmake"

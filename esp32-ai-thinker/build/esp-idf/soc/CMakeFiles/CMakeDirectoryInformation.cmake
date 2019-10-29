@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/dtcarrot/esp/esp-idf")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/dtcarrot/esp/web_server/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

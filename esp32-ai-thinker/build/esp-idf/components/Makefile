@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dtcarrot/esp/web_server
+CMAKE_SOURCE_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/CMakeFiles /home/dtcarrot/esp/web_server/build/esp-idf/components/CMakeFiles/progress.marks
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/components/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/CMakeFiles 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components/CMakeFiles/progress.marks
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/components/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/components/clean
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/components/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/components/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/components/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/components/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/components/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/components/CMakeFiles/__idf_components.dir/rule:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/components/CMakeFiles/__idf_components.dir/rule
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/components/CMakeFiles/__idf_components.dir/rule
 .PHONY : esp-idf/components/CMakeFiles/__idf_components.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ __idf_components: esp-idf/components/CMakeFiles/__idf_components.dir/rule
 
 # fast build rule for target.
 __idf_components/fast:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/build
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/build
 .PHONY : __idf_components/fast
 
 conversions/esp_jpg_decode.obj: conversions/esp_jpg_decode.c.obj
@@ -177,7 +177,7 @@ conversions/esp_jpg_decode.obj: conversions/esp_jpg_decode.c.obj
 
 # target to build an object file
 conversions/esp_jpg_decode.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.obj
 .PHONY : conversions/esp_jpg_decode.c.obj
 
 conversions/esp_jpg_decode.i: conversions/esp_jpg_decode.c.i
@@ -186,7 +186,7 @@ conversions/esp_jpg_decode.i: conversions/esp_jpg_decode.c.i
 
 # target to preprocess a source file
 conversions/esp_jpg_decode.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.i
 .PHONY : conversions/esp_jpg_decode.c.i
 
 conversions/esp_jpg_decode.s: conversions/esp_jpg_decode.c.s
@@ -195,7 +195,7 @@ conversions/esp_jpg_decode.s: conversions/esp_jpg_decode.c.s
 
 # target to generate assembly for a file
 conversions/esp_jpg_decode.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.s
 .PHONY : conversions/esp_jpg_decode.c.s
 
 conversions/jpge.obj: conversions/jpge.cpp.obj
@@ -204,7 +204,7 @@ conversions/jpge.obj: conversions/jpge.cpp.obj
 
 # target to build an object file
 conversions/jpge.cpp.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/jpge.cpp.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/jpge.cpp.obj
 .PHONY : conversions/jpge.cpp.obj
 
 conversions/jpge.i: conversions/jpge.cpp.i
@@ -213,7 +213,7 @@ conversions/jpge.i: conversions/jpge.cpp.i
 
 # target to preprocess a source file
 conversions/jpge.cpp.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/jpge.cpp.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/jpge.cpp.i
 .PHONY : conversions/jpge.cpp.i
 
 conversions/jpge.s: conversions/jpge.cpp.s
@@ -222,7 +222,7 @@ conversions/jpge.s: conversions/jpge.cpp.s
 
 # target to generate assembly for a file
 conversions/jpge.cpp.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/jpge.cpp.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/jpge.cpp.s
 .PHONY : conversions/jpge.cpp.s
 
 conversions/to_bmp.obj: conversions/to_bmp.c.obj
@@ -231,7 +231,7 @@ conversions/to_bmp.obj: conversions/to_bmp.c.obj
 
 # target to build an object file
 conversions/to_bmp.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_bmp.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_bmp.c.obj
 .PHONY : conversions/to_bmp.c.obj
 
 conversions/to_bmp.i: conversions/to_bmp.c.i
@@ -240,7 +240,7 @@ conversions/to_bmp.i: conversions/to_bmp.c.i
 
 # target to preprocess a source file
 conversions/to_bmp.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_bmp.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_bmp.c.i
 .PHONY : conversions/to_bmp.c.i
 
 conversions/to_bmp.s: conversions/to_bmp.c.s
@@ -249,7 +249,7 @@ conversions/to_bmp.s: conversions/to_bmp.c.s
 
 # target to generate assembly for a file
 conversions/to_bmp.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_bmp.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_bmp.c.s
 .PHONY : conversions/to_bmp.c.s
 
 conversions/to_jpg.obj: conversions/to_jpg.cpp.obj
@@ -258,7 +258,7 @@ conversions/to_jpg.obj: conversions/to_jpg.cpp.obj
 
 # target to build an object file
 conversions/to_jpg.cpp.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.obj
 .PHONY : conversions/to_jpg.cpp.obj
 
 conversions/to_jpg.i: conversions/to_jpg.cpp.i
@@ -267,7 +267,7 @@ conversions/to_jpg.i: conversions/to_jpg.cpp.i
 
 # target to preprocess a source file
 conversions/to_jpg.cpp.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.i
 .PHONY : conversions/to_jpg.cpp.i
 
 conversions/to_jpg.s: conversions/to_jpg.cpp.s
@@ -276,7 +276,7 @@ conversions/to_jpg.s: conversions/to_jpg.cpp.s
 
 # target to generate assembly for a file
 conversions/to_jpg.cpp.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/to_jpg.cpp.s
 .PHONY : conversions/to_jpg.cpp.s
 
 conversions/yuv.obj: conversions/yuv.c.obj
@@ -285,7 +285,7 @@ conversions/yuv.obj: conversions/yuv.c.obj
 
 # target to build an object file
 conversions/yuv.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/yuv.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/yuv.c.obj
 .PHONY : conversions/yuv.c.obj
 
 conversions/yuv.i: conversions/yuv.c.i
@@ -294,7 +294,7 @@ conversions/yuv.i: conversions/yuv.c.i
 
 # target to preprocess a source file
 conversions/yuv.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/yuv.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/yuv.c.i
 .PHONY : conversions/yuv.c.i
 
 conversions/yuv.s: conversions/yuv.c.s
@@ -303,7 +303,7 @@ conversions/yuv.s: conversions/yuv.c.s
 
 # target to generate assembly for a file
 conversions/yuv.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/yuv.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/conversions/yuv.c.s
 .PHONY : conversions/yuv.c.s
 
 driver/camera.obj: driver/camera.c.obj
@@ -312,7 +312,7 @@ driver/camera.obj: driver/camera.c.obj
 
 # target to build an object file
 driver/camera.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/camera.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/camera.c.obj
 .PHONY : driver/camera.c.obj
 
 driver/camera.i: driver/camera.c.i
@@ -321,7 +321,7 @@ driver/camera.i: driver/camera.c.i
 
 # target to preprocess a source file
 driver/camera.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/camera.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/camera.c.i
 .PHONY : driver/camera.c.i
 
 driver/camera.s: driver/camera.c.s
@@ -330,7 +330,7 @@ driver/camera.s: driver/camera.c.s
 
 # target to generate assembly for a file
 driver/camera.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/camera.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/camera.c.s
 .PHONY : driver/camera.c.s
 
 driver/sccb.obj: driver/sccb.c.obj
@@ -339,7 +339,7 @@ driver/sccb.obj: driver/sccb.c.obj
 
 # target to build an object file
 driver/sccb.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/sccb.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/sccb.c.obj
 .PHONY : driver/sccb.c.obj
 
 driver/sccb.i: driver/sccb.c.i
@@ -348,7 +348,7 @@ driver/sccb.i: driver/sccb.c.i
 
 # target to preprocess a source file
 driver/sccb.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/sccb.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/sccb.c.i
 .PHONY : driver/sccb.c.i
 
 driver/sccb.s: driver/sccb.c.s
@@ -357,7 +357,7 @@ driver/sccb.s: driver/sccb.c.s
 
 # target to generate assembly for a file
 driver/sccb.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/sccb.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/sccb.c.s
 .PHONY : driver/sccb.c.s
 
 driver/sensor.obj: driver/sensor.c.obj
@@ -366,7 +366,7 @@ driver/sensor.obj: driver/sensor.c.obj
 
 # target to build an object file
 driver/sensor.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/sensor.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/sensor.c.obj
 .PHONY : driver/sensor.c.obj
 
 driver/sensor.i: driver/sensor.c.i
@@ -375,7 +375,7 @@ driver/sensor.i: driver/sensor.c.i
 
 # target to preprocess a source file
 driver/sensor.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/sensor.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/sensor.c.i
 .PHONY : driver/sensor.c.i
 
 driver/sensor.s: driver/sensor.c.s
@@ -384,7 +384,7 @@ driver/sensor.s: driver/sensor.c.s
 
 # target to generate assembly for a file
 driver/sensor.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/sensor.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/sensor.c.s
 .PHONY : driver/sensor.c.s
 
 driver/twi.obj: driver/twi.c.obj
@@ -393,7 +393,7 @@ driver/twi.obj: driver/twi.c.obj
 
 # target to build an object file
 driver/twi.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/twi.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/twi.c.obj
 .PHONY : driver/twi.c.obj
 
 driver/twi.i: driver/twi.c.i
@@ -402,7 +402,7 @@ driver/twi.i: driver/twi.c.i
 
 # target to preprocess a source file
 driver/twi.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/twi.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/twi.c.i
 .PHONY : driver/twi.c.i
 
 driver/twi.s: driver/twi.c.s
@@ -411,7 +411,7 @@ driver/twi.s: driver/twi.c.s
 
 # target to generate assembly for a file
 driver/twi.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/twi.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/twi.c.s
 .PHONY : driver/twi.c.s
 
 driver/xclk.obj: driver/xclk.c.obj
@@ -420,7 +420,7 @@ driver/xclk.obj: driver/xclk.c.obj
 
 # target to build an object file
 driver/xclk.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/xclk.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/xclk.c.obj
 .PHONY : driver/xclk.c.obj
 
 driver/xclk.i: driver/xclk.c.i
@@ -429,7 +429,7 @@ driver/xclk.i: driver/xclk.c.i
 
 # target to preprocess a source file
 driver/xclk.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/xclk.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/xclk.c.i
 .PHONY : driver/xclk.c.i
 
 driver/xclk.s: driver/xclk.c.s
@@ -438,7 +438,7 @@ driver/xclk.s: driver/xclk.c.s
 
 # target to generate assembly for a file
 driver/xclk.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/xclk.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/xclk.c.s
 .PHONY : driver/xclk.c.s
 
 sensors/ov2640.obj: sensors/ov2640.c.obj
@@ -447,7 +447,7 @@ sensors/ov2640.obj: sensors/ov2640.c.obj
 
 # target to build an object file
 sensors/ov2640.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov2640.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov2640.c.obj
 .PHONY : sensors/ov2640.c.obj
 
 sensors/ov2640.i: sensors/ov2640.c.i
@@ -456,7 +456,7 @@ sensors/ov2640.i: sensors/ov2640.c.i
 
 # target to preprocess a source file
 sensors/ov2640.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov2640.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov2640.c.i
 .PHONY : sensors/ov2640.c.i
 
 sensors/ov2640.s: sensors/ov2640.c.s
@@ -465,7 +465,7 @@ sensors/ov2640.s: sensors/ov2640.c.s
 
 # target to generate assembly for a file
 sensors/ov2640.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov2640.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov2640.c.s
 .PHONY : sensors/ov2640.c.s
 
 sensors/ov3660.obj: sensors/ov3660.c.obj
@@ -474,7 +474,7 @@ sensors/ov3660.obj: sensors/ov3660.c.obj
 
 # target to build an object file
 sensors/ov3660.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov3660.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov3660.c.obj
 .PHONY : sensors/ov3660.c.obj
 
 sensors/ov3660.i: sensors/ov3660.c.i
@@ -483,7 +483,7 @@ sensors/ov3660.i: sensors/ov3660.c.i
 
 # target to preprocess a source file
 sensors/ov3660.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov3660.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov3660.c.i
 .PHONY : sensors/ov3660.c.i
 
 sensors/ov3660.s: sensors/ov3660.c.s
@@ -492,7 +492,7 @@ sensors/ov3660.s: sensors/ov3660.c.s
 
 # target to generate assembly for a file
 sensors/ov3660.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov3660.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov3660.c.s
 .PHONY : sensors/ov3660.c.s
 
 sensors/ov7725.obj: sensors/ov7725.c.obj
@@ -501,7 +501,7 @@ sensors/ov7725.obj: sensors/ov7725.c.obj
 
 # target to build an object file
 sensors/ov7725.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov7725.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov7725.c.obj
 .PHONY : sensors/ov7725.c.obj
 
 sensors/ov7725.i: sensors/ov7725.c.i
@@ -510,7 +510,7 @@ sensors/ov7725.i: sensors/ov7725.c.i
 
 # target to preprocess a source file
 sensors/ov7725.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov7725.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov7725.c.i
 .PHONY : sensors/ov7725.c.i
 
 sensors/ov7725.s: sensors/ov7725.c.s
@@ -519,8 +519,62 @@ sensors/ov7725.s: sensors/ov7725.c.s
 
 # target to generate assembly for a file
 sensors/ov7725.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov7725.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/sensors/ov7725.c.s
 .PHONY : sensors/ov7725.c.s
+
+src/ict2104_camera.obj: src/ict2104_camera.c.obj
+
+.PHONY : src/ict2104_camera.obj
+
+# target to build an object file
+src/ict2104_camera.c.obj:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj
+.PHONY : src/ict2104_camera.c.obj
+
+src/ict2104_camera.i: src/ict2104_camera.c.i
+
+.PHONY : src/ict2104_camera.i
+
+# target to preprocess a source file
+src/ict2104_camera.c.i:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.i
+.PHONY : src/ict2104_camera.c.i
+
+src/ict2104_camera.s: src/ict2104_camera.c.s
+
+.PHONY : src/ict2104_camera.s
+
+# target to generate assembly for a file
+src/ict2104_camera.c.s:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.s
+.PHONY : src/ict2104_camera.c.s
+
+src/ict2104_uart.obj: src/ict2104_uart.c.obj
+
+.PHONY : src/ict2104_uart.obj
+
+# target to build an object file
+src/ict2104_uart.c.obj:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj
+.PHONY : src/ict2104_uart.c.obj
+
+src/ict2104_uart.i: src/ict2104_uart.c.i
+
+.PHONY : src/ict2104_uart.i
+
+# target to preprocess a source file
+src/ict2104_uart.c.i:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.i
+.PHONY : src/ict2104_uart.c.i
+
+src/ict2104_uart.s: src/ict2104_uart.c.s
+
+.PHONY : src/ict2104_uart.s
+
+# target to generate assembly for a file
+src/ict2104_uart.c.s:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.s
+.PHONY : src/ict2104_uart.c.s
 
 # Help Target
 help:
@@ -574,6 +628,12 @@ help:
 	@echo "... sensors/ov7725.obj"
 	@echo "... sensors/ov7725.i"
 	@echo "... sensors/ov7725.s"
+	@echo "... src/ict2104_camera.obj"
+	@echo "... src/ict2104_camera.i"
+	@echo "... src/ict2104_camera.s"
+	@echo "... src/ict2104_uart.obj"
+	@echo "... src/ict2104_uart.i"
+	@echo "... src/ict2104_uart.s"
 .PHONY : help
 
 
@@ -585,6 +645,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

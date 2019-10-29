@@ -30,6 +30,12 @@ img_converters.h
 stdint.h
 -
 
+../components/src/include/ict2104_camera.h
+esp_camera.h
+../components/src/include/esp_camera.h
+
+../components/src/include/ict2104_uart.h
+
 /home/dtcarrot/esp/esp-idf/components/driver/include/driver/gpio.h
 esp_err.h
 /home/dtcarrot/esp/esp-idf/components/driver/include/driver/esp_err.h
@@ -924,11 +930,11 @@ xtensa/config/specreg.h
 xtensa/xtruntime-core-state.h
 -
 
-/home/dtcarrot/esp/web_server/main/main.c
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/main/main.c
 freertos/FreeRTOS.h
-/home/dtcarrot/esp/web_server/main/freertos/FreeRTOS.h
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/main/freertos/FreeRTOS.h
 freertos/task.h
-/home/dtcarrot/esp/web_server/main/freertos/task.h
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/main/freertos/task.h
 esp_wifi.h
 -
 esp_event_loop.h
@@ -943,8 +949,10 @@ sys/param.h
 -
 esp_http_server.h
 -
-esp_camera.h
-/home/dtcarrot/esp/web_server/main/esp_camera.h
+ict2104_camera.h
+-
+ict2104_uart.h
+-
 
 config/sdkconfig.h
 

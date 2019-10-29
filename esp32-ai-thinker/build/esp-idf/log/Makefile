@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dtcarrot/esp/web_server
+CMAKE_SOURCE_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/CMakeFiles /home/dtcarrot/esp/web_server/build/esp-idf/log/CMakeFiles/progress.marks
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/log/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/CMakeFiles 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/log/CMakeFiles/progress.marks
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/log/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/log/clean
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/log/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/log/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/log/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/log/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/log/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/log/CMakeFiles/__idf_log.dir/rule:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/log/CMakeFiles/__idf_log.dir/rule
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/log/CMakeFiles/__idf_log.dir/rule
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ __idf_log: esp-idf/log/CMakeFiles/__idf_log.dir/rule
 
 # fast build rule for target.
 __idf_log/fast:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/build
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/build
 .PHONY : __idf_log/fast
 
 log.obj: log.c.obj
@@ -177,7 +177,7 @@ log.obj: log.c.obj
 
 # target to build an object file
 log.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj
 .PHONY : log.c.obj
 
 log.i: log.c.i
@@ -186,7 +186,7 @@ log.i: log.c.i
 
 # target to preprocess a source file
 log.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log.c.i
 .PHONY : log.c.i
 
 log.s: log.c.s
@@ -195,7 +195,7 @@ log.s: log.c.s
 
 # target to generate assembly for a file
 log.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log.c.s
 .PHONY : log.c.s
 
 # Help Target
@@ -225,6 +225,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

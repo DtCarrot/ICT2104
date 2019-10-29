@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/__idf_components.dir/conversions/to_bmp.c.obj"
   "CMakeFiles/__idf_components.dir/conversions/jpge.cpp.obj"
   "CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.obj"
+  "CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj"
+  "CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj"
   "libcomponents.pdb"
   "libcomponents.a"
 )

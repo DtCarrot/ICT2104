@@ -1,4 +1,4 @@
-# Install script for directory: /home/dtcarrot/esp/web_server
+# Install script for directory: /home/dtcarrot/esp/ict2104/esp32-ai-thinker
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dtcarrot/esp/web_server/build/esp-idf/cmake_install.cmake")
+  include("/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dtcarrot/esp/web_server/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

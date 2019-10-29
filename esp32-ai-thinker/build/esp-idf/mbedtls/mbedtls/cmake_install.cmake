@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dtcarrot/esp/web_server/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake")
-  include("/home/dtcarrot/esp/web_server/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake")
+  include("/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake")
+  include("/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake")
 
 endif()
 

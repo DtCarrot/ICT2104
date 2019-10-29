@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dtcarrot/esp/web_server
+CMAKE_SOURCE_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build
 
 # Utility rule file for bootloader-flash.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
 include esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/progress.make
 
 esp-idf/bootloader/CMakeFiles/bootloader-flash:
-	cd /home/dtcarrot/esp/esp-idf/components/bootloader && /usr/bin/cmake -D IDF_PATH="/home/dtcarrot/esp/esp-idf" -D ESPTOOLPY="/home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32" -D ESPTOOL_ARGS="write_flash @flash_bootloader_args" -D ESPTOOL_WORKING_DIR="/home/dtcarrot/esp/web_server/build" -P run_esptool.cmake
+	cd /home/dtcarrot/esp/esp-idf/components/bootloader && /usr/bin/cmake -D IDF_PATH="/home/dtcarrot/esp/esp-idf" -D ESPTOOLPY="/home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32" -D ESPTOOL_ARGS="write_flash @flash_bootloader_args" -D ESPTOOL_WORKING_DIR="/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build" -P run_esptool.cmake
 
 bootloader-flash: esp-idf/bootloader/CMakeFiles/bootloader-flash
 bootloader-flash: esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/build.make
@@ -67,10 +67,10 @@ esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/build: bootloader-flash
 .PHONY : esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/build
 
 esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/clean:
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/bootloader && $(CMAKE_COMMAND) -P CMakeFiles/bootloader-flash.dir/cmake_clean.cmake
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/bootloader && $(CMAKE_COMMAND) -P CMakeFiles/bootloader-flash.dir/cmake_clean.cmake
 .PHONY : esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/clean
 
 esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/depend:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/web_server /home/dtcarrot/esp/esp-idf/components/bootloader /home/dtcarrot/esp/web_server/build /home/dtcarrot/esp/web_server/build/esp-idf/bootloader /home/dtcarrot/esp/web_server/build/esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/ict2104/esp32-ai-thinker /home/dtcarrot/esp/esp-idf/components/bootloader /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/bootloader /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/depend
 

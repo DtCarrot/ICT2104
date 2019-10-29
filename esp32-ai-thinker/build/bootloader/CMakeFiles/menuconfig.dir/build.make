@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/dtcarrot/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build/bootloader
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader
 
 # Utility rule file for menuconfig.
 
@@ -54,9 +54,9 @@ CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build/bootloader
 include CMakeFiles/menuconfig.dir/progress.make
 
 CMakeFiles/menuconfig:
-	/home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/tools/kconfig_new/confgen.py --kconfig /home/dtcarrot/esp/esp-idf/Kconfig --sdkconfig-rename /home/dtcarrot/esp/esp-idf/sdkconfig.rename --config /home/dtcarrot/esp/web_server/sdkconfig --env-file /home/dtcarrot/esp/web_server/build/bootloader/config.env --env IDF_TARGET=esp32 --output config /home/dtcarrot/esp/web_server/sdkconfig
-	/usr/bin/cmake -E env COMPONENT_KCONFIGS=/home/dtcarrot/esp/esp-idf/components/efuse/Kconfig\ /home/dtcarrot/esp/esp-idf/components/esp32/Kconfig\ /home/dtcarrot/esp/esp-idf/components/esp_common/Kconfig\ /home/dtcarrot/esp/esp-idf/components/log/Kconfig\ /home/dtcarrot/esp/esp-idf/components/spi_flash/Kconfig COMPONENT_KCONFIGS_PROJBUILD=/home/dtcarrot/esp/esp-idf/components/bootloader/Kconfig.projbuild\ /home/dtcarrot/esp/esp-idf/components/esptool_py/Kconfig.projbuild\ /home/dtcarrot/esp/esp-idf/components/partition_table/Kconfig.projbuild IDF_CMAKE=y KCONFIG_CONFIG=/home/dtcarrot/esp/web_server/sdkconfig IDF_TARGET=esp32 /home/dtcarrot/esp/web_server/build/bootloader/kconfig_bin/mconf-idf /home/dtcarrot/esp/esp-idf/Kconfig
-	/home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/tools/kconfig_new/confgen.py --kconfig /home/dtcarrot/esp/esp-idf/Kconfig --sdkconfig-rename /home/dtcarrot/esp/esp-idf/sdkconfig.rename --config /home/dtcarrot/esp/web_server/sdkconfig --env-file /home/dtcarrot/esp/web_server/build/bootloader/config.env --env IDF_TARGET=esp32 --output config /home/dtcarrot/esp/web_server/sdkconfig
+	/home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/tools/kconfig_new/confgen.py --kconfig /home/dtcarrot/esp/esp-idf/Kconfig --sdkconfig-rename /home/dtcarrot/esp/esp-idf/sdkconfig.rename --config /home/dtcarrot/esp/ict2104/esp32-ai-thinker/sdkconfig --env-file /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/config.env --env IDF_TARGET=esp32 --output config /home/dtcarrot/esp/ict2104/esp32-ai-thinker/sdkconfig
+	/usr/bin/cmake -E env COMPONENT_KCONFIGS=/home/dtcarrot/esp/esp-idf/components/efuse/Kconfig\ /home/dtcarrot/esp/esp-idf/components/esp32/Kconfig\ /home/dtcarrot/esp/esp-idf/components/esp_common/Kconfig\ /home/dtcarrot/esp/esp-idf/components/log/Kconfig\ /home/dtcarrot/esp/esp-idf/components/spi_flash/Kconfig COMPONENT_KCONFIGS_PROJBUILD=/home/dtcarrot/esp/esp-idf/components/bootloader/Kconfig.projbuild\ /home/dtcarrot/esp/esp-idf/components/esptool_py/Kconfig.projbuild\ /home/dtcarrot/esp/esp-idf/components/partition_table/Kconfig.projbuild IDF_CMAKE=y KCONFIG_CONFIG=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/sdkconfig IDF_TARGET=esp32 /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/kconfig_bin/mconf-idf /home/dtcarrot/esp/esp-idf/Kconfig
+	/home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/tools/kconfig_new/confgen.py --kconfig /home/dtcarrot/esp/esp-idf/Kconfig --sdkconfig-rename /home/dtcarrot/esp/esp-idf/sdkconfig.rename --config /home/dtcarrot/esp/ict2104/esp32-ai-thinker/sdkconfig --env-file /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/config.env --env IDF_TARGET=esp32 --output config /home/dtcarrot/esp/ict2104/esp32-ai-thinker/sdkconfig
 
 menuconfig: CMakeFiles/menuconfig
 menuconfig: CMakeFiles/menuconfig.dir/build.make
@@ -73,6 +73,6 @@ CMakeFiles/menuconfig.dir/clean:
 .PHONY : CMakeFiles/menuconfig.dir/clean
 
 CMakeFiles/menuconfig.dir/depend:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/esp-idf/components/bootloader/subproject /home/dtcarrot/esp/esp-idf/components/bootloader/subproject /home/dtcarrot/esp/web_server/build/bootloader /home/dtcarrot/esp/web_server/build/bootloader /home/dtcarrot/esp/web_server/build/bootloader/CMakeFiles/menuconfig.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/esp-idf/components/bootloader/subproject /home/dtcarrot/esp/esp-idf/components/bootloader/subproject /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/CMakeFiles/menuconfig.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/menuconfig.dir/depend
 

@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/dtcarrot/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build/bootloader
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/bootloader/CMakeFiles /home/dtcarrot/esp/web_server/build/bootloader/esp-idf/spi_flash/CMakeFiles/progress.marks
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spi_flash/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/bootloader/CMakeFiles 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/CMakeFiles /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/esp-idf/spi_flash/CMakeFiles/progress.marks
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spi_flash/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spi_flash/clean
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spi_flash/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spi_flash/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spi_flash/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spi_flash/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spi_flash/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/rule:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/rule
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/rule
 .PHONY : esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ __idf_spi_flash: esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/rule
 
 # fast build rule for target.
 __idf_spi_flash/fast:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/build.make esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/build
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/build.make esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/build
 .PHONY : __idf_spi_flash/fast
 
 spi_flash_rom_patch.obj: spi_flash_rom_patch.c.obj
@@ -131,7 +131,7 @@ spi_flash_rom_patch.obj: spi_flash_rom_patch.c.obj
 
 # target to build an object file
 spi_flash_rom_patch.c.obj:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/build.make esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_rom_patch.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/build.make esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_rom_patch.c.obj
 .PHONY : spi_flash_rom_patch.c.obj
 
 spi_flash_rom_patch.i: spi_flash_rom_patch.c.i
@@ -140,7 +140,7 @@ spi_flash_rom_patch.i: spi_flash_rom_patch.c.i
 
 # target to preprocess a source file
 spi_flash_rom_patch.c.i:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/build.make esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_rom_patch.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/build.make esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_rom_patch.c.i
 .PHONY : spi_flash_rom_patch.c.i
 
 spi_flash_rom_patch.s: spi_flash_rom_patch.c.s
@@ -149,7 +149,7 @@ spi_flash_rom_patch.s: spi_flash_rom_patch.c.s
 
 # target to generate assembly for a file
 spi_flash_rom_patch.c.s:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/build.make esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_rom_patch.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/build.make esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_rom_patch.c.s
 .PHONY : spi_flash_rom_patch.c.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

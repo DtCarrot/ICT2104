@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/dtcarrot/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build/bootloader
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/bootloader/CMakeFiles /home/dtcarrot/esp/web_server/build/bootloader/esp-idf/xtensa/CMakeFiles/progress.marks
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/xtensa/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/bootloader/CMakeFiles 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/CMakeFiles /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/esp-idf/xtensa/CMakeFiles/progress.marks
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/xtensa/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/xtensa/clean
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/xtensa/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/xtensa/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/xtensa/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/xtensa/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/xtensa/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/rule:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/rule
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/rule
 .PHONY : esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ __idf_xtensa: esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/rule
 
 # fast build rule for target.
 __idf_xtensa/fast:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build
 .PHONY : __idf_xtensa/fast
 
 debug_helpers.obj: debug_helpers.c.obj
@@ -131,7 +131,7 @@ debug_helpers.obj: debug_helpers.c.obj
 
 # target to build an object file
 debug_helpers.c.obj:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/debug_helpers.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/debug_helpers.c.obj
 .PHONY : debug_helpers.c.obj
 
 debug_helpers.i: debug_helpers.c.i
@@ -140,7 +140,7 @@ debug_helpers.i: debug_helpers.c.i
 
 # target to preprocess a source file
 debug_helpers.c.i:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/debug_helpers.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/debug_helpers.c.i
 .PHONY : debug_helpers.c.i
 
 debug_helpers.s: debug_helpers.c.s
@@ -149,7 +149,7 @@ debug_helpers.s: debug_helpers.c.s
 
 # target to generate assembly for a file
 debug_helpers.c.s:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/debug_helpers.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/debug_helpers.c.s
 .PHONY : debug_helpers.c.s
 
 debug_helpers_asm.obj: debug_helpers_asm.S.obj
@@ -158,7 +158,7 @@ debug_helpers_asm.obj: debug_helpers_asm.S.obj
 
 # target to build an object file
 debug_helpers_asm.S.obj:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/debug_helpers_asm.S.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/debug_helpers_asm.S.obj
 .PHONY : debug_helpers_asm.S.obj
 
 eri.obj: eri.c.obj
@@ -167,7 +167,7 @@ eri.obj: eri.c.obj
 
 # target to build an object file
 eri.c.obj:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj
 .PHONY : eri.c.obj
 
 eri.i: eri.c.i
@@ -176,7 +176,7 @@ eri.i: eri.c.i
 
 # target to preprocess a source file
 eri.c.i:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.i
 .PHONY : eri.c.i
 
 eri.s: eri.c.s
@@ -185,7 +185,7 @@ eri.s: eri.c.s
 
 # target to generate assembly for a file
 eri.c.s:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.s
 .PHONY : eri.c.s
 
 trax.obj: trax.c.obj
@@ -194,7 +194,7 @@ trax.obj: trax.c.obj
 
 # target to build an object file
 trax.c.obj:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/trax.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/trax.c.obj
 .PHONY : trax.c.obj
 
 trax.i: trax.c.i
@@ -203,7 +203,7 @@ trax.i: trax.c.i
 
 # target to preprocess a source file
 trax.c.i:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/trax.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/trax.c.i
 .PHONY : trax.c.i
 
 trax.s: trax.c.s
@@ -212,7 +212,7 @@ trax.s: trax.c.s
 
 # target to generate assembly for a file
 trax.c.s:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/trax.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(MAKE) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/trax.c.s
 .PHONY : trax.c.s
 
 # Help Target
@@ -245,6 +245,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dtcarrot/esp/web_server/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

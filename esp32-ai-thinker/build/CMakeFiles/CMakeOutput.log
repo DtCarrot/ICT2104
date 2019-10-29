@@ -11,7 +11,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/dtcarrot/esp/web_server/build/CMakeFiles/3.13.4/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/3.13.4/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ 
@@ -24,7 +24,7 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/dtcarrot/esp/web_server/build/CMakeFiles/3.13.4/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/3.13.4/CompilerIdCXX/a.out"
 
 Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
 xtensa-esp32-elf-gcc (crosstool-NG esp32-2019r1) 8.2.0
@@ -33,31 +33,31 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1ef58/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1ef58.dir/build.make CMakeFiles/cmTC_1ef58.dir/build
-make[1]: Entering directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1ef58.dir/testCCompiler.c.obj
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address    -o CMakeFiles/cmTC_1ef58.dir/testCCompiler.c.obj   -c /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_1ef58
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ef58.dir/link.txt --verbose=1
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_1ef58.dir/testCCompiler.c.obj  -o cmTC_1ef58 
+Run Build Command:"/usr/bin/make" "cmTC_80361/fast"
+/usr/bin/make -f CMakeFiles/cmTC_80361.dir/build.make CMakeFiles/cmTC_80361.dir/build
+make[1]: Entering directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80361.dir/testCCompiler.c.obj
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address    -o CMakeFiles/cmTC_80361.dir/testCCompiler.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_80361
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80361.dir/link.txt --verbose=1
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_80361.dir/testCCompiler.c.obj  -o cmTC_80361 
 /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000400054
-make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_44f5f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_44f5f.dir/build.make CMakeFiles/cmTC_44f5f.dir/build
-make[1]: Entering directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_44f5f.dir/CMakeCCompilerABI.c.obj
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address    -o CMakeFiles/cmTC_44f5f.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_44f5f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44f5f.dir/link.txt --verbose=1
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   -nostdlib -v CMakeFiles/cmTC_44f5f.dir/CMakeCCompilerABI.c.obj  -o cmTC_44f5f 
+Run Build Command:"/usr/bin/make" "cmTC_01ad3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_01ad3.dir/build.make CMakeFiles/cmTC_01ad3.dir/build
+make[1]: Entering directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_01ad3.dir/CMakeCCompilerABI.c.obj
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address    -o CMakeFiles/cmTC_01ad3.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_01ad3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01ad3.dir/link.txt --verbose=1
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   -nostdlib -v CMakeFiles/cmTC_01ad3.dir/CMakeCCompilerABI.c.obj  -o cmTC_01ad3 
 Using built-in specs.
 COLLECT_GCC=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
 COLLECT_LTO_WRAPPER=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper
@@ -67,25 +67,25 @@ Thread model: posix
 gcc version 8.2.0 (crosstool-NG esp32-2019r1) 
 COMPILER_PATH=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/
 LIBRARY_PATH=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_44f5f'
- /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccW3GBSJ.res -o cmTC_44f5f -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_44f5f.dir/CMakeCCompilerABI.c.obj
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_01ad3'
+ /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVqjfey.res -o cmTC_01ad3 -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_01ad3.dir/CMakeCCompilerABI.c.obj
 /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000400054
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_44f5f'
-make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_01ad3'
+make[1]: Leaving directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(xtensa-esp32-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_44f5f/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_44f5f.dir/build.make CMakeFiles/cmTC_44f5f.dir/build]
-  ignore line: [make[1]: Entering directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_44f5f.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address    -o CMakeFiles/cmTC_44f5f.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_44f5f]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44f5f.dir/link.txt --verbose=1]
-  ignore line: [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   -nostdlib -v CMakeFiles/cmTC_44f5f.dir/CMakeCCompilerABI.c.obj  -o cmTC_44f5f ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_01ad3/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_01ad3.dir/build.make CMakeFiles/cmTC_01ad3.dir/build]
+  ignore line: [make[1]: Entering directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_01ad3.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address    -o CMakeFiles/cmTC_01ad3.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_01ad3]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01ad3.dir/link.txt --verbose=1]
+  ignore line: [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   -nostdlib -v CMakeFiles/cmTC_01ad3.dir/CMakeCCompilerABI.c.obj  -o cmTC_01ad3 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper]
@@ -95,19 +95,19 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 8.2.0 (crosstool-NG esp32-2019r1) ]
   ignore line: [COMPILER_PATH=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/]
   ignore line: [LIBRARY_PATH=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_44f5f']
-  link line: [ /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccW3GBSJ.res -o cmTC_44f5f -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_44f5f.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_01ad3']
+  link line: [ /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVqjfey.res -o cmTC_01ad3 -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_01ad3.dir/CMakeCCompilerABI.c.obj]
     arg [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccW3GBSJ.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccVqjfey.res] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_44f5f] ==> ignore
+    arg [cmTC_01ad3] ==> ignore
     arg [-L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0] ==> dir [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0]
     arg [-L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc] ==> dir [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc]
     arg [-L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib] ==> dir [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib]
-    arg [CMakeFiles/cmTC_44f5f.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [CMakeFiles/cmTC_01ad3.dir/CMakeCCompilerABI.c.obj] ==> ignore
   collapse library dir [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0] ==> [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0]
   collapse library dir [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc] ==> [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/lib/gcc]
   collapse library dir [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib] ==> [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/xtensa-esp32-elf/lib]
@@ -119,18 +119,18 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_aa1ce/fast"
-/usr/bin/make -f CMakeFiles/cmTC_aa1ce.dir/build.make CMakeFiles/cmTC_aa1ce.dir/build
-make[1]: Entering directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_aa1ce.dir/feature_tests.c.obj
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address    -std=c11 -o CMakeFiles/cmTC_aa1ce.dir/feature_tests.c.obj   -c /home/dtcarrot/esp/web_server/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_aa1ce
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa1ce.dir/link.txt --verbose=1
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_aa1ce.dir/feature_tests.c.obj  -o cmTC_aa1ce 
+Run Build Command:"/usr/bin/make" "cmTC_cf971/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cf971.dir/build.make CMakeFiles/cmTC_cf971.dir/build
+make[1]: Entering directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf971.dir/feature_tests.c.obj
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address    -std=c11 -o CMakeFiles/cmTC_cf971.dir/feature_tests.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_cf971
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf971.dir/link.txt --verbose=1
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_cf971.dir/feature_tests.c.obj  -o cmTC_cf971 
 /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000400054
-make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -140,18 +140,18 @@ make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMake
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2a41d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2a41d.dir/build.make CMakeFiles/cmTC_2a41d.dir/build
-make[1]: Entering directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2a41d.dir/feature_tests.c.obj
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address    -std=c99 -o CMakeFiles/cmTC_2a41d.dir/feature_tests.c.obj   -c /home/dtcarrot/esp/web_server/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_2a41d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a41d.dir/link.txt --verbose=1
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_2a41d.dir/feature_tests.c.obj  -o cmTC_2a41d 
+Run Build Command:"/usr/bin/make" "cmTC_992e3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_992e3.dir/build.make CMakeFiles/cmTC_992e3.dir/build
+make[1]: Entering directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_992e3.dir/feature_tests.c.obj
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address    -std=c99 -o CMakeFiles/cmTC_992e3.dir/feature_tests.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_992e3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_992e3.dir/link.txt --verbose=1
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_992e3.dir/feature_tests.c.obj  -o cmTC_992e3 
 /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000400054
-make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -161,18 +161,18 @@ make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMake
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_66c3d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_66c3d.dir/build.make CMakeFiles/cmTC_66c3d.dir/build
-make[1]: Entering directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_66c3d.dir/feature_tests.c.obj
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address    -std=c90 -o CMakeFiles/cmTC_66c3d.dir/feature_tests.c.obj   -c /home/dtcarrot/esp/web_server/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_66c3d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66c3d.dir/link.txt --verbose=1
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_66c3d.dir/feature_tests.c.obj  -o cmTC_66c3d 
+Run Build Command:"/usr/bin/make" "cmTC_26572/fast"
+/usr/bin/make -f CMakeFiles/cmTC_26572.dir/build.make CMakeFiles/cmTC_26572.dir/build
+make[1]: Entering directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_26572.dir/feature_tests.c.obj
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address    -std=c90 -o CMakeFiles/cmTC_26572.dir/feature_tests.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_26572
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26572.dir/link.txt --verbose=1
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_26572.dir/feature_tests.c.obj  -o cmTC_26572 
 /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000400054
-make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -180,31 +180,31 @@ make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMake
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c6f0b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c6f0b.dir/build.make CMakeFiles/cmTC_c6f0b.dir/build
-make[1]: Entering directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c6f0b.dir/testCXXCompiler.cxx.obj
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -o CMakeFiles/cmTC_c6f0b.dir/testCXXCompiler.cxx.obj -c /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_c6f0b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6f0b.dir/link.txt --verbose=1
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_c6f0b.dir/testCXXCompiler.cxx.obj  -o cmTC_c6f0b 
+Run Build Command:"/usr/bin/make" "cmTC_1d9c7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1d9c7.dir/build.make CMakeFiles/cmTC_1d9c7.dir/build
+make[1]: Entering directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1d9c7.dir/testCXXCompiler.cxx.obj
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -o CMakeFiles/cmTC_1d9c7.dir/testCXXCompiler.cxx.obj -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_1d9c7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d9c7.dir/link.txt --verbose=1
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_1d9c7.dir/testCXXCompiler.cxx.obj  -o cmTC_1d9c7 
 /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000400054
-make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7935c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7935c.dir/build.make CMakeFiles/cmTC_7935c.dir/build
-make[1]: Entering directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7935c.dir/CMakeCXXCompilerABI.cpp.obj
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -o CMakeFiles/cmTC_7935c.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_7935c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7935c.dir/link.txt --verbose=1
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib -v CMakeFiles/cmTC_7935c.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_7935c 
+Run Build Command:"/usr/bin/make" "cmTC_c32f6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c32f6.dir/build.make CMakeFiles/cmTC_c32f6.dir/build
+make[1]: Entering directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c32f6.dir/CMakeCXXCompilerABI.cpp.obj
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -o CMakeFiles/cmTC_c32f6.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_c32f6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c32f6.dir/link.txt --verbose=1
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib -v CMakeFiles/cmTC_c32f6.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_c32f6 
 Using built-in specs.
 COLLECT_GCC=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++
 COLLECT_LTO_WRAPPER=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper
@@ -214,25 +214,25 @@ Thread model: posix
 gcc version 8.2.0 (crosstool-NG esp32-2019r1) 
 COMPILER_PATH=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/
 LIBRARY_PATH=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_7935c'
- /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVImFzP.res -o cmTC_7935c -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_7935c.dir/CMakeCXXCompilerABI.cpp.obj
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_c32f6'
+ /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwZOY4P.res -o cmTC_c32f6 -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_c32f6.dir/CMakeCXXCompilerABI.cpp.obj
 /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000400054
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_7935c'
-make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_c32f6'
+make[1]: Leaving directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(xtensa-esp32-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_7935c/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_7935c.dir/build.make CMakeFiles/cmTC_7935c.dir/build]
-  ignore line: [make[1]: Entering directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_7935c.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -o CMakeFiles/cmTC_7935c.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_7935c]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7935c.dir/link.txt --verbose=1]
-  ignore line: [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib -v CMakeFiles/cmTC_7935c.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_7935c ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_c32f6/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_c32f6.dir/build.make CMakeFiles/cmTC_c32f6.dir/build]
+  ignore line: [make[1]: Entering directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_c32f6.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -o CMakeFiles/cmTC_c32f6.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_c32f6]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c32f6.dir/link.txt --verbose=1]
+  ignore line: [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib -v CMakeFiles/cmTC_c32f6.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_c32f6 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper]
@@ -242,19 +242,19 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 8.2.0 (crosstool-NG esp32-2019r1) ]
   ignore line: [COMPILER_PATH=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/]
   ignore line: [LIBRARY_PATH=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/:/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_7935c']
-  link line: [ /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVImFzP.res -o cmTC_7935c -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_7935c.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_c32f6']
+  link line: [ /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwZOY4P.res -o cmTC_c32f6 -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_c32f6.dir/CMakeCXXCompilerABI.cpp.obj]
     arg [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccVImFzP.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccwZOY4P.res] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_7935c] ==> ignore
+    arg [cmTC_c32f6] ==> ignore
     arg [-L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0] ==> dir [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0]
     arg [-L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc] ==> dir [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc]
     arg [-L/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib] ==> dir [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib]
-    arg [CMakeFiles/cmTC_7935c.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [CMakeFiles/cmTC_c32f6.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
   collapse library dir [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0] ==> [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0]
   collapse library dir [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc] ==> [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/lib/gcc]
   collapse library dir [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib] ==> [/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/xtensa-esp32-elf/lib]
@@ -266,18 +266,18 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++2a] compiler features compiled with the following output:
-Change Dir: /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_06e78/fast"
-/usr/bin/make -f CMakeFiles/cmTC_06e78.dir/build.make CMakeFiles/cmTC_06e78.dir/build
-make[1]: Entering directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_06e78.dir/feature_tests.cxx.obj
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -std=c++2a -o CMakeFiles/cmTC_06e78.dir/feature_tests.cxx.obj -c /home/dtcarrot/esp/web_server/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_06e78
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06e78.dir/link.txt --verbose=1
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_06e78.dir/feature_tests.cxx.obj  -o cmTC_06e78 
+Run Build Command:"/usr/bin/make" "cmTC_d806f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d806f.dir/build.make CMakeFiles/cmTC_d806f.dir/build
+make[1]: Entering directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d806f.dir/feature_tests.cxx.obj
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -std=c++2a -o CMakeFiles/cmTC_d806f.dir/feature_tests.cxx.obj -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_d806f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d806f.dir/link.txt --verbose=1
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_d806f.dir/feature_tests.cxx.obj  -o cmTC_d806f 
 /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000400054
-make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -340,18 +340,18 @@ make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMake
 
 
 Detecting CXX [-std=c++17] compiler features compiled with the following output:
-Change Dir: /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e75d9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e75d9.dir/build.make CMakeFiles/cmTC_e75d9.dir/build
-make[1]: Entering directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e75d9.dir/feature_tests.cxx.obj
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -std=c++17 -o CMakeFiles/cmTC_e75d9.dir/feature_tests.cxx.obj -c /home/dtcarrot/esp/web_server/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_e75d9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e75d9.dir/link.txt --verbose=1
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_e75d9.dir/feature_tests.cxx.obj  -o cmTC_e75d9 
+Run Build Command:"/usr/bin/make" "cmTC_42885/fast"
+/usr/bin/make -f CMakeFiles/cmTC_42885.dir/build.make CMakeFiles/cmTC_42885.dir/build
+make[1]: Entering directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_42885.dir/feature_tests.cxx.obj
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -std=c++17 -o CMakeFiles/cmTC_42885.dir/feature_tests.cxx.obj -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_42885
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42885.dir/link.txt --verbose=1
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_42885.dir/feature_tests.cxx.obj  -o cmTC_42885 
 /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000400054
-make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -414,18 +414,18 @@ make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMake
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d3c72/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d3c72.dir/build.make CMakeFiles/cmTC_d3c72.dir/build
-make[1]: Entering directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d3c72.dir/feature_tests.cxx.obj
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -std=c++14 -o CMakeFiles/cmTC_d3c72.dir/feature_tests.cxx.obj -c /home/dtcarrot/esp/web_server/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_d3c72
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3c72.dir/link.txt --verbose=1
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_d3c72.dir/feature_tests.cxx.obj  -o cmTC_d3c72 
+Run Build Command:"/usr/bin/make" "cmTC_bc03e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bc03e.dir/build.make CMakeFiles/cmTC_bc03e.dir/build
+make[1]: Entering directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bc03e.dir/feature_tests.cxx.obj
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -std=c++14 -o CMakeFiles/cmTC_bc03e.dir/feature_tests.cxx.obj -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_bc03e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc03e.dir/link.txt --verbose=1
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_bc03e.dir/feature_tests.cxx.obj  -o cmTC_bc03e 
 /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000400054
-make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -488,18 +488,18 @@ make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMake
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8b546/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8b546.dir/build.make CMakeFiles/cmTC_8b546.dir/build
-make[1]: Entering directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8b546.dir/feature_tests.cxx.obj
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -std=c++11 -o CMakeFiles/cmTC_8b546.dir/feature_tests.cxx.obj -c /home/dtcarrot/esp/web_server/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_8b546
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b546.dir/link.txt --verbose=1
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_8b546.dir/feature_tests.cxx.obj  -o cmTC_8b546 
+Run Build Command:"/usr/bin/make" "cmTC_117e2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_117e2.dir/build.make CMakeFiles/cmTC_117e2.dir/build
+make[1]: Entering directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_117e2.dir/feature_tests.cxx.obj
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -std=c++11 -o CMakeFiles/cmTC_117e2.dir/feature_tests.cxx.obj -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_117e2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_117e2.dir/link.txt --verbose=1
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_117e2.dir/feature_tests.cxx.obj  -o cmTC_117e2 
 /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000400054
-make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -562,18 +562,18 @@ make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMake
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a345c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a345c.dir/build.make CMakeFiles/cmTC_a345c.dir/build
-make[1]: Entering directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a345c.dir/feature_tests.cxx.obj
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -std=c++98 -o CMakeFiles/cmTC_a345c.dir/feature_tests.cxx.obj -c /home/dtcarrot/esp/web_server/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_a345c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a345c.dir/link.txt --verbose=1
-/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_a345c.dir/feature_tests.cxx.obj  -o cmTC_a345c 
+Run Build Command:"/usr/bin/make" "cmTC_bb48a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bb48a.dir/build.make CMakeFiles/cmTC_bb48a.dir/build
+make[1]: Entering directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bb48a.dir/feature_tests.cxx.obj
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++    -mlongcalls -Wno-frame-address    -std=c++98 -o CMakeFiles/cmTC_bb48a.dir/feature_tests.cxx.obj -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_bb48a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb48a.dir/link.txt --verbose=1
+/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++  -mlongcalls -Wno-frame-address   -nostdlib  CMakeFiles/cmTC_bb48a.dir/feature_tests.cxx.obj  -o cmTC_bb48a 
 /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000400054
-make[1]: Leaving directory '/home/dtcarrot/esp/web_server/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

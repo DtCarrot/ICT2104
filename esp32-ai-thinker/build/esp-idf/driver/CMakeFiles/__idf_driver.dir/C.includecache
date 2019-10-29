@@ -720,6 +720,14 @@ driver/sdmmc_host.h
 sdmmc_private.h
 /home/dtcarrot/esp/esp-idf/components/driver/sdmmc_private.h
 
+/home/dtcarrot/esp/esp-idf/components/driver/sdspi_crc.c
+stdint.h
+-
+esp32/rom/crc.h
+/home/dtcarrot/esp/esp-idf/components/driver/esp32/rom/crc.h
+sdspi_crc.h
+/home/dtcarrot/esp/esp-idf/components/driver/sdspi_crc.h
+
 /home/dtcarrot/esp/esp-idf/components/driver/sdspi_crc.h
 stdint.h
 -
@@ -1082,6 +1090,10 @@ stddef.h
 
 /home/dtcarrot/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h
 freertos/queue.h
+-
+
+/home/dtcarrot/esp/esp-idf/components/esp_rom/include/esp32/rom/crc.h
+stdint.h
 -
 
 /home/dtcarrot/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h

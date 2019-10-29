@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dtcarrot/esp/web_server
+CMAKE_SOURCE_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build
 
 # Utility rule file for __ldgen_output_esp32.project.ld.
 
@@ -134,9 +134,9 @@ esp-idf/esp32/ld/esp32.project.ld: esp-idf/unity/libunity.a
 esp-idf/esp32/ld/esp32.project.ld: esp-idf/wifi_provisioning/libwifi_provisioning.a
 esp-idf/esp32/ld/esp32.project.ld: esp-idf/main/libmain.a
 esp-idf/esp32/ld/esp32.project.ld: esp-idf/components/libcomponents.a
-esp-idf/esp32/ld/esp32.project.ld: /home/dtcarrot/esp/web_server/sdkconfig
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dtcarrot/esp/web_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ld/esp32.project.ld"
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/esp32 && /home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/tools/ldgen/ldgen.py --config /home/dtcarrot/esp/web_server/sdkconfig --fragments /home/dtcarrot/esp/esp-idf/components/esp_ringbuf/linker.lf	/home/dtcarrot/esp/esp-idf/components/spi_flash/linker.lf	/home/dtcarrot/esp/esp-idf/components/esp_wifi/linker.lf	/home/dtcarrot/esp/esp-idf/components/esp_eth/linker.lf	/home/dtcarrot/esp/esp-idf/components/lwip/linker.lf	/home/dtcarrot/esp/esp-idf/components/esp_event/linker.lf	/home/dtcarrot/esp/esp-idf/components/espcoredump/linker.lf	/home/dtcarrot/esp/esp-idf/components/esp32/linker.lf	/home/dtcarrot/esp/esp-idf/components/esp32/ld/esp32_fragments.lf	/home/dtcarrot/esp/esp-idf/components/xtensa/linker.lf	/home/dtcarrot/esp/esp-idf/components/soc/linker.lf	/home/dtcarrot/esp/esp-idf/components/heap/linker.lf	/home/dtcarrot/esp/esp-idf/components/freertos/linker.lf	/home/dtcarrot/esp/esp-idf/components/newlib/esp32-spiram-rom-functions-c.lf	/home/dtcarrot/esp/esp-idf/components/newlib/newlib.lf	/home/dtcarrot/esp/esp-idf/components/app_trace/linker.lf	/home/dtcarrot/esp/esp-idf/components/esp_gdbstub/linker.lf --input /home/dtcarrot/esp/esp-idf/components/esp32/ld/esp32.project.ld.in --output /home/dtcarrot/esp/web_server/build/esp-idf/esp32/ld/esp32.project.ld --kconfig /home/dtcarrot/esp/esp-idf/Kconfig --env-file /home/dtcarrot/esp/web_server/build/config.env --libraries-file /home/dtcarrot/esp/web_server/build/ldgen_libraries --objdump /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump
+esp-idf/esp32/ld/esp32.project.ld: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/sdkconfig
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ld/esp32.project.ld"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp32 && /home/dtcarrot/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/dtcarrot/esp/esp-idf/tools/ldgen/ldgen.py --config /home/dtcarrot/esp/ict2104/esp32-ai-thinker/sdkconfig --fragments /home/dtcarrot/esp/esp-idf/components/esp_ringbuf/linker.lf	/home/dtcarrot/esp/esp-idf/components/spi_flash/linker.lf	/home/dtcarrot/esp/esp-idf/components/esp_wifi/linker.lf	/home/dtcarrot/esp/esp-idf/components/esp_eth/linker.lf	/home/dtcarrot/esp/esp-idf/components/lwip/linker.lf	/home/dtcarrot/esp/esp-idf/components/esp_event/linker.lf	/home/dtcarrot/esp/esp-idf/components/espcoredump/linker.lf	/home/dtcarrot/esp/esp-idf/components/esp32/linker.lf	/home/dtcarrot/esp/esp-idf/components/esp32/ld/esp32_fragments.lf	/home/dtcarrot/esp/esp-idf/components/xtensa/linker.lf	/home/dtcarrot/esp/esp-idf/components/soc/linker.lf	/home/dtcarrot/esp/esp-idf/components/heap/linker.lf	/home/dtcarrot/esp/esp-idf/components/freertos/linker.lf	/home/dtcarrot/esp/esp-idf/components/newlib/esp32-spiram-rom-functions-c.lf	/home/dtcarrot/esp/esp-idf/components/newlib/newlib.lf	/home/dtcarrot/esp/esp-idf/components/app_trace/linker.lf	/home/dtcarrot/esp/esp-idf/components/esp_gdbstub/linker.lf --input /home/dtcarrot/esp/esp-idf/components/esp32/ld/esp32.project.ld.in --output /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp32/ld/esp32.project.ld --kconfig /home/dtcarrot/esp/esp-idf/Kconfig --env-file /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/config.env --libraries-file /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/ldgen_libraries --objdump /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump
 
 __ldgen_output_esp32.project.ld: esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld
 __ldgen_output_esp32.project.ld: esp-idf/esp32/ld/esp32.project.ld
@@ -150,10 +150,10 @@ esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/build: __ldgen_outp
 .PHONY : esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/build
 
 esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/clean:
-	cd /home/dtcarrot/esp/web_server/build/esp-idf/esp32 && $(CMAKE_COMMAND) -P CMakeFiles/__ldgen_output_esp32.project.ld.dir/cmake_clean.cmake
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp32 && $(CMAKE_COMMAND) -P CMakeFiles/__ldgen_output_esp32.project.ld.dir/cmake_clean.cmake
 .PHONY : esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/clean
 
 esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/depend:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/web_server /home/dtcarrot/esp/esp-idf/components/esp32 /home/dtcarrot/esp/web_server/build /home/dtcarrot/esp/web_server/build/esp-idf/esp32 /home/dtcarrot/esp/web_server/build/esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dtcarrot/esp/ict2104/esp32-ai-thinker /home/dtcarrot/esp/esp-idf/components/esp32 /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp32 /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/depend
 

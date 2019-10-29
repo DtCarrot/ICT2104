@@ -6,5 +6,5 @@
 
 #IncludeRegexTransform: 
 
-/home/dtcarrot/esp/web_server/build/bootloader/project_elf_src.c
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/bootloader/project_elf_src.c
 

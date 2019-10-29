@@ -1,13 +1,13 @@
 # Target labels
  mconf-idf
 # Source files and their labels
-/home/dtcarrot/esp/web_server/build/CMakeFiles/mconf-idf
-/home/dtcarrot/esp/web_server/build/CMakeFiles/mconf-idf.rule
-/home/dtcarrot/esp/web_server/build/CMakeFiles/mconf-idf-complete.rule
-/home/dtcarrot/esp/web_server/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule
-/home/dtcarrot/esp/web_server/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule
-/home/dtcarrot/esp/web_server/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule
-/home/dtcarrot/esp/web_server/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule
-/home/dtcarrot/esp/web_server/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule
-/home/dtcarrot/esp/web_server/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule
-/home/dtcarrot/esp/web_server/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/mconf-idf
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/mconf-idf.rule
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/mconf-idf-complete.rule
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule

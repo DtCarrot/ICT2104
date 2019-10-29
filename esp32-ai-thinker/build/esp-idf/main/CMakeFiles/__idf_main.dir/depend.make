@@ -4,6 +4,8 @@
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/conversions/include/img_converters.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/driver/include/esp_camera.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/driver/include/sensor.h
+esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/src/include/ict2104_camera.h
+esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/src/include/ict2104_uart.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: /home/dtcarrot/esp/esp-idf/components/driver/include/driver/gpio.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: /home/dtcarrot/esp/esp-idf/components/driver/include/driver/ledc.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: /home/dtcarrot/esp/esp-idf/components/driver/include/driver/periph_ctrl.h

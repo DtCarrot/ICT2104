@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/dtcarrot/esp/web_server/build/CMakeFiles/mconf-idf"
+			"file" : "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/mconf-idf"
 		},
 		{
-			"file" : "/home/dtcarrot/esp/web_server/build/CMakeFiles/mconf-idf.rule"
+			"file" : "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/mconf-idf.rule"
 		},
 		{
-			"file" : "/home/dtcarrot/esp/web_server/build/CMakeFiles/mconf-idf-complete.rule"
+			"file" : "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles/mconf-idf-complete.rule"
 		},
 		{
-			"file" : "/home/dtcarrot/esp/web_server/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule"
+			"file" : "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule"
 		},
 		{
-			"file" : "/home/dtcarrot/esp/web_server/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule"
+			"file" : "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule"
 		},
 		{
-			"file" : "/home/dtcarrot/esp/web_server/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule"
+			"file" : "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule"
 		},
 		{
-			"file" : "/home/dtcarrot/esp/web_server/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule"
+			"file" : "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule"
 		},
 		{
-			"file" : "/home/dtcarrot/esp/web_server/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule"
+			"file" : "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule"
 		},
 		{
-			"file" : "/home/dtcarrot/esp/web_server/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule"
+			"file" : "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule"
 		},
 		{
-			"file" : "/home/dtcarrot/esp/web_server/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule"
+			"file" : "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule"
 		}
 	],
 	"target" : 

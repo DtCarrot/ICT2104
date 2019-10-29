@@ -1,4 +1,4 @@
-# Install script for directory: /home/dtcarrot/esp/web_server/components
+# Install script for directory: /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

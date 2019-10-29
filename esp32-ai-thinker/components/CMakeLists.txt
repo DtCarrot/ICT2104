@@ -12,11 +12,14 @@ set(COMPONENT_SRCS
   conversions/to_bmp.c
   conversions/jpge.cpp
   conversions/esp_jpg_decode.c
+  src/ict2104_camera.c
+  src/ict2104_uart.c
   )
 
 set(COMPONENT_ADD_INCLUDEDIRS
   driver/include
   conversions/include
+  src/include
   )
 
 set(COMPONENT_PRIV_INCLUDEDIRS

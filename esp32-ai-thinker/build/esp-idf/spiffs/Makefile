@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dtcarrot/esp/web_server
+CMAKE_SOURCE_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dtcarrot/esp/web_server/build
+CMAKE_BINARY_DIR = /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/CMakeFiles /home/dtcarrot/esp/web_server/build/esp-idf/spiffs/CMakeFiles/progress.marks
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spiffs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/web_server/build/CMakeFiles 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/spiffs/CMakeFiles/progress.marks
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spiffs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spiffs/clean
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spiffs/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spiffs/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spiffs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spiffs/preinstall
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spiffs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/rule:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/rule
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/rule
 .PHONY : esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ __idf_spiffs: esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/rule
 
 # fast build rule for target.
 __idf_spiffs/fast:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build
 .PHONY : __idf_spiffs/fast
 
 esp_spiffs.obj: esp_spiffs.c.obj
@@ -177,7 +177,7 @@ esp_spiffs.obj: esp_spiffs.c.obj
 
 # target to build an object file
 esp_spiffs.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.obj
 .PHONY : esp_spiffs.c.obj
 
 esp_spiffs.i: esp_spiffs.c.i
@@ -186,7 +186,7 @@ esp_spiffs.i: esp_spiffs.c.i
 
 # target to preprocess a source file
 esp_spiffs.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.i
 .PHONY : esp_spiffs.c.i
 
 esp_spiffs.s: esp_spiffs.c.s
@@ -195,7 +195,7 @@ esp_spiffs.s: esp_spiffs.c.s
 
 # target to generate assembly for a file
 esp_spiffs.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.s
 .PHONY : esp_spiffs.c.s
 
 spiffs/src/spiffs_cache.obj: spiffs/src/spiffs_cache.c.obj
@@ -204,7 +204,7 @@ spiffs/src/spiffs_cache.obj: spiffs/src/spiffs_cache.c.obj
 
 # target to build an object file
 spiffs/src/spiffs_cache.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.obj
 .PHONY : spiffs/src/spiffs_cache.c.obj
 
 spiffs/src/spiffs_cache.i: spiffs/src/spiffs_cache.c.i
@@ -213,7 +213,7 @@ spiffs/src/spiffs_cache.i: spiffs/src/spiffs_cache.c.i
 
 # target to preprocess a source file
 spiffs/src/spiffs_cache.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.i
 .PHONY : spiffs/src/spiffs_cache.c.i
 
 spiffs/src/spiffs_cache.s: spiffs/src/spiffs_cache.c.s
@@ -222,7 +222,7 @@ spiffs/src/spiffs_cache.s: spiffs/src/spiffs_cache.c.s
 
 # target to generate assembly for a file
 spiffs/src/spiffs_cache.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.s
 .PHONY : spiffs/src/spiffs_cache.c.s
 
 spiffs/src/spiffs_check.obj: spiffs/src/spiffs_check.c.obj
@@ -231,7 +231,7 @@ spiffs/src/spiffs_check.obj: spiffs/src/spiffs_check.c.obj
 
 # target to build an object file
 spiffs/src/spiffs_check.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.obj
 .PHONY : spiffs/src/spiffs_check.c.obj
 
 spiffs/src/spiffs_check.i: spiffs/src/spiffs_check.c.i
@@ -240,7 +240,7 @@ spiffs/src/spiffs_check.i: spiffs/src/spiffs_check.c.i
 
 # target to preprocess a source file
 spiffs/src/spiffs_check.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.i
 .PHONY : spiffs/src/spiffs_check.c.i
 
 spiffs/src/spiffs_check.s: spiffs/src/spiffs_check.c.s
@@ -249,7 +249,7 @@ spiffs/src/spiffs_check.s: spiffs/src/spiffs_check.c.s
 
 # target to generate assembly for a file
 spiffs/src/spiffs_check.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.s
 .PHONY : spiffs/src/spiffs_check.c.s
 
 spiffs/src/spiffs_gc.obj: spiffs/src/spiffs_gc.c.obj
@@ -258,7 +258,7 @@ spiffs/src/spiffs_gc.obj: spiffs/src/spiffs_gc.c.obj
 
 # target to build an object file
 spiffs/src/spiffs_gc.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.obj
 .PHONY : spiffs/src/spiffs_gc.c.obj
 
 spiffs/src/spiffs_gc.i: spiffs/src/spiffs_gc.c.i
@@ -267,7 +267,7 @@ spiffs/src/spiffs_gc.i: spiffs/src/spiffs_gc.c.i
 
 # target to preprocess a source file
 spiffs/src/spiffs_gc.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.i
 .PHONY : spiffs/src/spiffs_gc.c.i
 
 spiffs/src/spiffs_gc.s: spiffs/src/spiffs_gc.c.s
@@ -276,7 +276,7 @@ spiffs/src/spiffs_gc.s: spiffs/src/spiffs_gc.c.s
 
 # target to generate assembly for a file
 spiffs/src/spiffs_gc.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.s
 .PHONY : spiffs/src/spiffs_gc.c.s
 
 spiffs/src/spiffs_hydrogen.obj: spiffs/src/spiffs_hydrogen.c.obj
@@ -285,7 +285,7 @@ spiffs/src/spiffs_hydrogen.obj: spiffs/src/spiffs_hydrogen.c.obj
 
 # target to build an object file
 spiffs/src/spiffs_hydrogen.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.obj
 .PHONY : spiffs/src/spiffs_hydrogen.c.obj
 
 spiffs/src/spiffs_hydrogen.i: spiffs/src/spiffs_hydrogen.c.i
@@ -294,7 +294,7 @@ spiffs/src/spiffs_hydrogen.i: spiffs/src/spiffs_hydrogen.c.i
 
 # target to preprocess a source file
 spiffs/src/spiffs_hydrogen.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.i
 .PHONY : spiffs/src/spiffs_hydrogen.c.i
 
 spiffs/src/spiffs_hydrogen.s: spiffs/src/spiffs_hydrogen.c.s
@@ -303,7 +303,7 @@ spiffs/src/spiffs_hydrogen.s: spiffs/src/spiffs_hydrogen.c.s
 
 # target to generate assembly for a file
 spiffs/src/spiffs_hydrogen.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.s
 .PHONY : spiffs/src/spiffs_hydrogen.c.s
 
 spiffs/src/spiffs_nucleus.obj: spiffs/src/spiffs_nucleus.c.obj
@@ -312,7 +312,7 @@ spiffs/src/spiffs_nucleus.obj: spiffs/src/spiffs_nucleus.c.obj
 
 # target to build an object file
 spiffs/src/spiffs_nucleus.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.obj
 .PHONY : spiffs/src/spiffs_nucleus.c.obj
 
 spiffs/src/spiffs_nucleus.i: spiffs/src/spiffs_nucleus.c.i
@@ -321,7 +321,7 @@ spiffs/src/spiffs_nucleus.i: spiffs/src/spiffs_nucleus.c.i
 
 # target to preprocess a source file
 spiffs/src/spiffs_nucleus.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.i
 .PHONY : spiffs/src/spiffs_nucleus.c.i
 
 spiffs/src/spiffs_nucleus.s: spiffs/src/spiffs_nucleus.c.s
@@ -330,7 +330,7 @@ spiffs/src/spiffs_nucleus.s: spiffs/src/spiffs_nucleus.c.s
 
 # target to generate assembly for a file
 spiffs/src/spiffs_nucleus.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.s
 .PHONY : spiffs/src/spiffs_nucleus.c.s
 
 spiffs_api.obj: spiffs_api.c.obj
@@ -339,7 +339,7 @@ spiffs_api.obj: spiffs_api.c.obj
 
 # target to build an object file
 spiffs_api.c.obj:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.obj
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.obj
 .PHONY : spiffs_api.c.obj
 
 spiffs_api.i: spiffs_api.c.i
@@ -348,7 +348,7 @@ spiffs_api.i: spiffs_api.c.i
 
 # target to preprocess a source file
 spiffs_api.c.i:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.i
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.i
 .PHONY : spiffs_api.c.i
 
 spiffs_api.s: spiffs_api.c.s
@@ -357,7 +357,7 @@ spiffs_api.s: spiffs_api.c.s
 
 # target to generate assembly for a file
 spiffs_api.c.s:
-	cd /home/dtcarrot/esp/web_server/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.s
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.s
 .PHONY : spiffs_api.c.s
 
 # Help Target
@@ -405,6 +405,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dtcarrot/esp/web_server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
