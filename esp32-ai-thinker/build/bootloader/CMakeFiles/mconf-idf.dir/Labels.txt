@@ -1,0 +1,13 @@
+# Target labels
+ mconf-idf
+# Source files and their labels
+/home/dtcarrot/esp/web_server/build/bootloader/CMakeFiles/mconf-idf
+/home/dtcarrot/esp/web_server/build/bootloader/CMakeFiles/mconf-idf.rule
+/home/dtcarrot/esp/web_server/build/bootloader/CMakeFiles/mconf-idf-complete.rule
+/home/dtcarrot/esp/web_server/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule
+/home/dtcarrot/esp/web_server/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule
+/home/dtcarrot/esp/web_server/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule
+/home/dtcarrot/esp/web_server/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule
+/home/dtcarrot/esp/web_server/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule
+/home/dtcarrot/esp/web_server/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule
+/home/dtcarrot/esp/web_server/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule

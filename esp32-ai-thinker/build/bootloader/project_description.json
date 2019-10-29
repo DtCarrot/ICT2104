@@ -1,0 +1,18 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "/home/dtcarrot/esp/esp-idf/components/bootloader/subproject",
+    "build_dir":          "/home/dtcarrot/esp/web_server/build/bootloader",
+    "config_file":        "/home/dtcarrot/esp/web_server/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v4.1-dev-281-g96b96ae24-dirty",
+    "phy_data_partition": "",
+    "monitor_baud" : "115200",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "/home/dtcarrot/esp/esp-idf/components/efuse/Kconfig;/home/dtcarrot/esp/esp-idf/components/esp32/Kconfig;/home/dtcarrot/esp/esp-idf/components/esp_common/Kconfig;/home/dtcarrot/esp/esp-idf/components/log/Kconfig;/home/dtcarrot/esp/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/dtcarrot/esp/esp-idf/components/bootloader/Kconfig.projbuild;/home/dtcarrot/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/home/dtcarrot/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp32", "esp_common", "esp_rom", "esptool_py", "log", "main", "micro-ecc", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "/home/dtcarrot/esp/esp-idf/components/bootloader", "/home/dtcarrot/esp/esp-idf/components/bootloader_support", "/home/dtcarrot/esp/esp-idf/components/efuse", "/home/dtcarrot/esp/esp-idf/components/esp32", "/home/dtcarrot/esp/esp-idf/components/esp_common", "/home/dtcarrot/esp/esp-idf/components/esp_rom", "/home/dtcarrot/esp/esp-idf/components/esptool_py", "/home/dtcarrot/esp/esp-idf/components/log", "/home/dtcarrot/esp/esp-idf/components/bootloader/subproject/main", "/home/dtcarrot/esp/esp-idf/components/bootloader/subproject/components/micro-ecc", "/home/dtcarrot/esp/esp-idf/components/partition_table", "/home/dtcarrot/esp/esp-idf/components/soc", "/home/dtcarrot/esp/esp-idf/components/spi_flash", "/home/dtcarrot/esp/esp-idf/components/xtensa", "" ]
+}
