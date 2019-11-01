@@ -1274,6 +1274,19 @@ __idf_components/fast:
 	$(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/build
 .PHONY : __idf_components/fast
 
+#=============================================================================
+# Target rules for targets named __idf_protocol_examples_common
+
+# Build rule for target.
+__idf_protocol_examples_common: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 __idf_protocol_examples_common
+.PHONY : __idf_protocol_examples_common
+
+# fast build rule for target.
+__idf_protocol_examples_common/fast:
+	$(MAKE) -f esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/build.make esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/build
+.PHONY : __idf_protocol_examples_common/fast
+
 project_elf_src.obj: project_elf_src.c.obj
 
 .PHONY : project_elf_src.obj
@@ -1399,6 +1412,7 @@ help:
 	@echo "... __idf_wifi_provisioning"
 	@echo "... __idf_main"
 	@echo "... __idf_components"
+	@echo "... __idf_protocol_examples_common"
 	@echo "... project_elf_src.obj"
 	@echo "... project_elf_src.i"
 	@echo "... project_elf_src.s"

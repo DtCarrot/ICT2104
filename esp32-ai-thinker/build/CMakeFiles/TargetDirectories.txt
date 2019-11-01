@@ -516,3 +516,10 @@
 /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components/CMakeFiles/rebuild_cache.dir
 /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components/CMakeFiles/list_install_components.dir
 /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components/CMakeFiles/install.dir
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/protocol_examples_common/CMakeFiles/install/strip.dir
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/protocol_examples_common/CMakeFiles/install/local.dir
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/protocol_examples_common/CMakeFiles/edit_cache.dir
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/protocol_examples_common/CMakeFiles/rebuild_cache.dir
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/protocol_examples_common/CMakeFiles/list_install_components.dir
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/protocol_examples_common/CMakeFiles/install.dir

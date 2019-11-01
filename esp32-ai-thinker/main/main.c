@@ -7,10 +7,12 @@
 #include <esp_system.h>
 #include <nvs_flash.h>
 #include <sys/param.h>
-
+#include "driver/gpio.h"
 #include <esp_http_server.h>
 #include <ict2104_camera.h>
 #include <ict2104_uart.h>
+#include <ict2104_wifi.h>
+#include <ict2104_mqtt.h>
 
 /*
  *
@@ -25,28 +27,32 @@ void app_main()
     ESP_LOGD("TAG", "Before starting camera");
     ESP_LOGI("TAG", "Before starting camera");
 
+    ESP_LOGI("TAG", "Before starting uart");
+    // Initialize UART driver connectivity
+    // uart_init();
+    ESP_LOGI("TAG", "Finished UART init");
 
-    // Initialize the camera
-    // ESP_ERROR_CHECK(main_camera_init());
-
+    vTaskDelay(2000 / portTICK_PERIOD_MS);
+    uart_init();
     // Initialize SPI ram
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
         ESP_ERROR_CHECK(nvs_flash_erase());
         ret = nvs_flash_init();
     }
-    // Initialize UART driver connectivity
-    uart_init();
+    ESP_ERROR_CHECK(ret);
+
+    // Initialize the camera
+    ESP_ERROR_CHECK(main_camera_init());
+
     // Initialize async task
     init_task();
-
+    // init_mqtt();
+    ESP_LOGI("TAG", "Before starting wifi");
+    httpd_handle_t server = NULL;
+    initialize_wifi(&server);
 
 
 }
 
 
-//   main_camera_init();
-//   static httpd_handle_t server = NULL;
-//   ESP_ERROR_CHECK(ret);
-//   ESP_LOGI(TAG, "ESP_WIFI_MODE_STA");
-//   initialise_wifi(&server);

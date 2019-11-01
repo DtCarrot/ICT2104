@@ -506,16 +506,6 @@ stdarg.h
 nghttp2/nghttp2ver.h
 -
 
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_buf.c
-nghttp2_buf.h
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_buf.h
-stdio.h
--
-nghttp2_helper.h
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_helper.h
-nghttp2_debug.h
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_debug.h
-
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_buf.h
 config.h
 -
@@ -526,22 +516,10 @@ nghttp2_int.h
 nghttp2_mem.h
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_mem.h
 
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_callbacks.c
-nghttp2_callbacks.h
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_callbacks.h
-stdlib.h
--
-
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_callbacks.h
 config.h
 -
 nghttp2/nghttp2.h
--
-
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_debug.c
-nghttp2_debug.h
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_debug.h
-stdio.h
 -
 
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_debug.h
@@ -628,10 +606,6 @@ config.h
 nghttp2/nghttp2.h
 -
 
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_hd_huffman_data.c
-nghttp2_hd_huffman.h
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_hd_huffman.h
-
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_helper.c
 nghttp2_helper.h
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_helper.h
@@ -684,12 +658,6 @@ config.h
 nghttp2/nghttp2.h
 -
 
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_map.c
-nghttp2_map.h
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_map.h
-string.h
--
-
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_map.h
 config.h
 -
@@ -697,10 +665,6 @@ nghttp2/nghttp2.h
 -
 nghttp2_int.h
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_int.h
-nghttp2_mem.h
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_mem.h
-
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_mem.c
 nghttp2_mem.h
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_mem.h
 
@@ -719,24 +683,6 @@ netinet/in.h
 -
 nghttp2/nghttp2.h
 -
-
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_npn.c
-nghttp2_npn.h
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_npn.h
-string.h
--
-
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_npn.h
-config.h
--
-nghttp2/nghttp2.h
--
-
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_option.c
-nghttp2_option.h
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_option.h
-nghttp2_session.h
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_session.h
 
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_option.h
 config.h
@@ -781,10 +727,6 @@ nghttp2_int.h
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_int.h
 nghttp2_mem.h
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_mem.h
-
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_priority_spec.c
-nghttp2_priority_spec.h
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_priority_spec.h
 
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_priority_spec.h
 config.h
@@ -921,12 +863,6 @@ nghttp2_priority_spec.h
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_priority_spec.h
 
 /home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_submit.h
-config.h
--
-nghttp2/nghttp2.h
--
-
-/home/dtcarrot/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_version.c
 config.h
 -
 nghttp2/nghttp2.h

@@ -130,6 +130,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/dtcarrot/esp/esp-idf/components/wpa_supplicant/CMakeLists.txt"
   "/home/dtcarrot/esp/esp-idf/components/xtensa/CMakeLists.txt"
   "/home/dtcarrot/esp/esp-idf/examples/build_system/cmake/import_lib/main/lib/tinyxml2/.git"
+  "/home/dtcarrot/esp/esp-idf/examples/common_components/protocol_examples_common/CMakeLists.txt"
   "/home/dtcarrot/esp/esp-idf/tools/cmake/build.cmake"
   "/home/dtcarrot/esp/esp-idf/tools/cmake/component.cmake"
   "/home/dtcarrot/esp/esp-idf/tools/cmake/crosstool_version_check.cmake"
@@ -283,6 +284,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "esp-idf/wifi_provisioning/CMakeFiles/CMakeDirectoryInformation.cmake"
   "esp-idf/main/CMakeFiles/CMakeDirectoryInformation.cmake"
   "esp-idf/components/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "esp-idf/protocol_examples_common/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -373,4 +375,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/DependInfo.cmake"
   "esp-idf/main/CMakeFiles/__idf_main.dir/DependInfo.cmake"
   "esp-idf/components/CMakeFiles/__idf_components.dir/DependInfo.cmake"
+  "esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/DependInfo.cmake"
   )

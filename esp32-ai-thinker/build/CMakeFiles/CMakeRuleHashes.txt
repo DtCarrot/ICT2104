@@ -10,7 +10,7 @@ f7c4722ba3d01cfbcb94e31fdcc32bd3 CMakeFiles/app-flash
 04b5d07e800744d3cd5972e355a7774e CMakeFiles/gen_project_binary
 04b5d07e800744d3cd5972e355a7774e CMakeFiles/mconf-idf
 906fb1cd1e5b20e3d01f5906d3ac3b94 CMakeFiles/mconf-idf-complete
-f88f487efaa86a0aa516f0d6743bd36e CMakeFiles/menuconfig
+e984fe35b06295c38c50f8a3e2d2608b CMakeFiles/menuconfig
 f8de380dbe9ad0f4f20653f56aa996d5 CMakeFiles/size
 a9a96ec48db3f6f0754c565ae1f1211a CMakeFiles/size-components
 57e68c958863eb2979867fa4c2ae5f3f CMakeFiles/size-files
@@ -28,7 +28,7 @@ c053e298cf9b4be7c75684429c235f53 esp-idf/efuse/CMakeFiles/efuse_test_table
 8248d798dfca728fee6cd0f8e90d59d7 esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld
 8248d798dfca728fee6cd0f8e90d59d7 esp-idf/esp32/CMakeFiles/esp32_linker_script
 c163a02d5e7f65f79db63ec32e9bf0ef esp-idf/esp32/esp32_out.ld
-d3025bc18a4cdee13917a915bcf9a251 esp-idf/esp32/ld/esp32.project.ld
+6b947987480a436946bceaa719cf81a4 esp-idf/esp32/ld/esp32.project.ld
 ad7517f4bd5207750fc8dba6bce3e7f0 esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc
 bb0bd6b03968a7ee3e38b17a4b0b9d04 esp-idf/mbedtls/mbedtls/library/CMakeFiles/lib
 d54e0b56199584120e72415210364d32 esp-idf/partition_table/CMakeFiles/partition_table

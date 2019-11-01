@@ -14,12 +14,17 @@ set(COMPONENT_SRCS
   conversions/esp_jpg_decode.c
   src/ict2104_camera.c
   src/ict2104_uart.c
+  src/ict2104_wifi.c
+  src/ict2104_mqtt.c
+
+
   )
 
 set(COMPONENT_ADD_INCLUDEDIRS
   driver/include
   conversions/include
   src/include
+
   )
 
 set(COMPONENT_PRIV_INCLUDEDIRS
@@ -29,6 +34,6 @@ set(COMPONENT_PRIV_INCLUDEDIRS
   )
 
 set(COMPONENT_REQUIRES driver)
-set(COMPONENT_PRIV_REQUIRES freertos)
+set(COMPONENT_PRIV_REQUIRES freertos mqtt esp_http_server)
 
 register_component()

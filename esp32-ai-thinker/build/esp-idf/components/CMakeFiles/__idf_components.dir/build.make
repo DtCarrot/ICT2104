@@ -252,6 +252,32 @@ esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/src/ict2104_uart.c.s"
 	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_uart.c -o CMakeFiles/__idf_components.dir/src/ict2104_uart.c.s
 
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj: ../components/src/ict2104_wifi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_wifi.c
+
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.i"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_wifi.c > CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.i
+
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.s"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_wifi.c -o CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.s
+
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: ../components/src/ict2104_mqtt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_mqtt.c
+
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.i"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_mqtt.c > CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.i
+
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.s"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_mqtt.c -o CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.s
+
 # Object files for target __idf_components
 __idf_components_OBJECTS = \
 "CMakeFiles/__idf_components.dir/driver/camera.c.obj" \
@@ -268,7 +294,9 @@ __idf_components_OBJECTS = \
 "CMakeFiles/__idf_components.dir/conversions/jpge.cpp.obj" \
 "CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.obj" \
 "CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj" \
-"CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj"
+"CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj" \
+"CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj" \
+"CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj"
 
 # External object files for target __idf_components
 __idf_components_EXTERNAL_OBJECTS =
@@ -288,9 +316,11 @@ esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_componen
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/conversions/esp_jpg_decode.c.obj
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj
+esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj
+esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/build.make
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX static library libcomponents.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX static library libcomponents.a"
 	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && $(CMAKE_COMMAND) -P CMakeFiles/__idf_components.dir/cmake_clean_target.cmake
 	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_components.dir/link.txt --verbose=$(VERBOSE)
 

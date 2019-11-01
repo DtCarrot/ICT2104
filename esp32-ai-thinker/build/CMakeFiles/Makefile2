@@ -266,6 +266,7 @@ CMakeFiles/hello-world.elf.dir/all: esp-idf/unity/CMakeFiles/__idf_unity.dir/all
 CMakeFiles/hello-world.elf.dir/all: esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/all
 CMakeFiles/hello-world.elf.dir/all: esp-idf/main/CMakeFiles/__idf_main.dir/all
 CMakeFiles/hello-world.elf.dir/all: esp-idf/components/CMakeFiles/__idf_components.dir/all
+CMakeFiles/hello-world.elf.dir/all: esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/all
 	$(MAKE) -f CMakeFiles/hello-world.elf.dir/build.make CMakeFiles/hello-world.elf.dir/depend
 	$(MAKE) -f CMakeFiles/hello-world.elf.dir/build.make CMakeFiles/hello-world.elf.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=88 "Built target hello-world.elf"
@@ -603,6 +604,7 @@ esp-idf/all: esp-idf/unity/all
 esp-idf/all: esp-idf/wifi_provisioning/all
 esp-idf/all: esp-idf/main/all
 esp-idf/all: esp-idf/components/all
+esp-idf/all: esp-idf/protocol_examples_common/all
 
 .PHONY : esp-idf/all
 
@@ -674,6 +676,7 @@ esp-idf/clean: esp-idf/unity/clean
 esp-idf/clean: esp-idf/wifi_provisioning/clean
 esp-idf/clean: esp-idf/main/clean
 esp-idf/clean: esp-idf/components/clean
+esp-idf/clean: esp-idf/protocol_examples_common/clean
 
 .PHONY : esp-idf/clean
 
@@ -745,6 +748,7 @@ esp-idf/preinstall: esp-idf/unity/preinstall
 esp-idf/preinstall: esp-idf/wifi_provisioning/preinstall
 esp-idf/preinstall: esp-idf/main/preinstall
 esp-idf/preinstall: esp-idf/components/preinstall
+esp-idf/preinstall: esp-idf/protocol_examples_common/preinstall
 
 .PHONY : esp-idf/preinstall
 
@@ -783,7 +787,7 @@ all: esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/rule
@@ -828,7 +832,7 @@ esp-idf/driver/preinstall:
 esp-idf/driver/CMakeFiles/__idf_driver.dir/all: esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/all
 	$(MAKE) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/depend
 	$(MAKE) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=10,11 "Built target __idf_driver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=10,11,12 "Built target __idf_driver"
 .PHONY : esp-idf/driver/CMakeFiles/__idf_driver.dir/all
 
 # Include target in all.
@@ -838,7 +842,7 @@ all: esp-idf/driver/CMakeFiles/__idf_driver.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/driver/CMakeFiles/__idf_driver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/driver/CMakeFiles/__idf_driver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/driver/CMakeFiles/__idf_driver.dir/rule
@@ -970,7 +974,7 @@ all: esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 51
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/rule
@@ -1007,7 +1011,7 @@ all: esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 49
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 50
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rule
@@ -1044,7 +1048,7 @@ all: esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/rule
@@ -1076,7 +1080,7 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/lib.dir/all: esp-idf/esp_ringbuf/CMak
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/library/CMakeFiles/lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/library/CMakeFiles/lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/library/CMakeFiles/lib.dir/rule
@@ -1149,7 +1153,7 @@ all: esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 41
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/rule
@@ -1230,7 +1234,7 @@ clean: esp-idf/efuse/CMakeFiles/efuse_common_table.dir/clean
 esp-idf/efuse/CMakeFiles/__idf_efuse.dir/all: esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/all
 	$(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/depend
 	$(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=12 "Built target __idf_efuse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num= "Built target __idf_efuse"
 .PHONY : esp-idf/efuse/CMakeFiles/__idf_efuse.dir/all
 
 # Include target in all.
@@ -1240,7 +1244,7 @@ all: esp-idf/efuse/CMakeFiles/__idf_efuse.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/efuse/CMakeFiles/__idf_efuse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 32
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/CMakeFiles/__idf_efuse.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/efuse/CMakeFiles/__idf_efuse.dir/rule
@@ -1391,7 +1395,7 @@ all: esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 32
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/rule
@@ -1501,7 +1505,7 @@ all: esp-idf/app_update/CMakeFiles/__idf_app_update.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/app_update/CMakeFiles/__idf_app_update.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/app_update/CMakeFiles/__idf_app_update.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/app_update/CMakeFiles/__idf_app_update.dir/rule
@@ -1546,7 +1550,7 @@ esp-idf/spi_flash/preinstall:
 esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/all: esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/all
 	$(MAKE) -f esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/build.make esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/depend
 	$(MAKE) -f esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/build.make esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=70 "Built target __idf_spi_flash"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=70,71 "Built target __idf_spi_flash"
 .PHONY : esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/all
 
 # Include target in all.
@@ -1556,7 +1560,7 @@ all: esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/rule
@@ -1611,7 +1615,7 @@ all: esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 29
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/rule
@@ -1656,7 +1660,7 @@ esp-idf/esp_wifi/preinstall:
 esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/all: esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/all
 	$(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/depend
 	$(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=22 "Built target __idf_esp_wifi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=22,23 "Built target __idf_esp_wifi"
 .PHONY : esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/all
 
 # Include target in all.
@@ -1666,7 +1670,7 @@ all: esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 28
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/rule
@@ -1821,7 +1825,7 @@ esp-idf/tcpip_adapter/preinstall:
 esp-idf/tcpip_adapter/CMakeFiles/__idf_tcpip_adapter.dir/all: esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/all
 	$(MAKE) -f esp-idf/tcpip_adapter/CMakeFiles/__idf_tcpip_adapter.dir/build.make esp-idf/tcpip_adapter/CMakeFiles/__idf_tcpip_adapter.dir/depend
 	$(MAKE) -f esp-idf/tcpip_adapter/CMakeFiles/__idf_tcpip_adapter.dir/build.make esp-idf/tcpip_adapter/CMakeFiles/__idf_tcpip_adapter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num= "Built target __idf_tcpip_adapter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=73 "Built target __idf_tcpip_adapter"
 .PHONY : esp-idf/tcpip_adapter/CMakeFiles/__idf_tcpip_adapter.dir/all
 
 # Include target in all.
@@ -1886,7 +1890,7 @@ all: esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/rule
@@ -1941,7 +1945,7 @@ all: esp-idf/pthread/CMakeFiles/__idf_pthread.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/pthread/CMakeFiles/__idf_pthread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/pthread/CMakeFiles/__idf_pthread.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/pthread/CMakeFiles/__idf_pthread.dir/rule
@@ -1986,7 +1990,7 @@ esp-idf/espcoredump/preinstall:
 esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/all: esp-idf/esp32/CMakeFiles/__idf_esp32.dir/all
 	$(MAKE) -f esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/build.make esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/depend
 	$(MAKE) -f esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/build.make esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=23 "Built target __idf_espcoredump"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num= "Built target __idf_espcoredump"
 .PHONY : esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/all
 
 # Include target in all.
@@ -1996,7 +2000,7 @@ all: esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/rule
@@ -2074,6 +2078,7 @@ esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/all: esp-idf/unity/
 esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/all: esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/all
 esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/all: esp-idf/main/CMakeFiles/__idf_main.dir/all
 esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/all: esp-idf/components/CMakeFiles/__idf_components.dir/all
+esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/all: esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/all
 	$(MAKE) -f esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/build.make esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/depend
 	$(MAKE) -f esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/build.make esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num= "Built target __ldgen_output_esp32.project.ld"
@@ -2635,7 +2640,7 @@ esp-idf/newlib/preinstall:
 esp-idf/newlib/CMakeFiles/__idf_newlib.dir/all: esp-idf/cxx/CMakeFiles/__idf_cxx.dir/all
 	$(MAKE) -f esp-idf/newlib/CMakeFiles/__idf_newlib.dir/build.make esp-idf/newlib/CMakeFiles/__idf_newlib.dir/depend
 	$(MAKE) -f esp-idf/newlib/CMakeFiles/__idf_newlib.dir/build.make esp-idf/newlib/CMakeFiles/__idf_newlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=58 "Built target __idf_newlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=57,58 "Built target __idf_newlib"
 .PHONY : esp-idf/newlib/CMakeFiles/__idf_newlib.dir/all
 
 # Include target in all.
@@ -2690,7 +2695,7 @@ esp-idf/cxx/preinstall:
 esp-idf/cxx/CMakeFiles/__idf_cxx.dir/all: esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/all
 	$(MAKE) -f esp-idf/cxx/CMakeFiles/__idf_cxx.dir/build.make esp-idf/cxx/CMakeFiles/__idf_cxx.dir/depend
 	$(MAKE) -f esp-idf/cxx/CMakeFiles/__idf_cxx.dir/build.make esp-idf/cxx/CMakeFiles/__idf_cxx.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=9 "Built target __idf_cxx"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num= "Built target __idf_cxx"
 .PHONY : esp-idf/cxx/CMakeFiles/__idf_cxx.dir/all
 
 # Include target in all.
@@ -2700,7 +2705,7 @@ all: esp-idf/cxx/CMakeFiles/__idf_cxx.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/cxx/CMakeFiles/__idf_cxx.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/cxx/CMakeFiles/__idf_cxx.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/cxx/CMakeFiles/__idf_cxx.dir/rule
@@ -2810,7 +2815,7 @@ all: esp-idf/asio/CMakeFiles/__idf_asio.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/asio/CMakeFiles/__idf_asio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/asio/CMakeFiles/__idf_asio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/asio/CMakeFiles/__idf_asio.dir/rule
@@ -2933,7 +2938,7 @@ all: esp-idf/cbor/CMakeFiles/__idf_cbor.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/cbor/CMakeFiles/__idf_cbor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/cbor/CMakeFiles/__idf_cbor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/cbor/CMakeFiles/__idf_cbor.dir/rule
@@ -2988,7 +2993,7 @@ all: esp-idf/coap/CMakeFiles/__idf_coap.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/coap/CMakeFiles/__idf_coap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 57
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/coap/CMakeFiles/__idf_coap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/coap/CMakeFiles/__idf_coap.dir/rule
@@ -3033,7 +3038,7 @@ esp-idf/console/preinstall:
 esp-idf/console/CMakeFiles/__idf_console.dir/all: esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/all
 	$(MAKE) -f esp-idf/console/CMakeFiles/__idf_console.dir/build.make esp-idf/console/CMakeFiles/__idf_console.dir/depend
 	$(MAKE) -f esp-idf/console/CMakeFiles/__idf_console.dir/build.make esp-idf/console/CMakeFiles/__idf_console.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num= "Built target __idf_console"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=9 "Built target __idf_console"
 .PHONY : esp-idf/console/CMakeFiles/__idf_console.dir/all
 
 # Include target in all.
@@ -3043,7 +3048,7 @@ all: esp-idf/console/CMakeFiles/__idf_console.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/console/CMakeFiles/__idf_console.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/console/CMakeFiles/__idf_console.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/console/CMakeFiles/__idf_console.dir/rule
@@ -3098,7 +3103,7 @@ all: esp-idf/nghttp/CMakeFiles/__idf_nghttp.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/nghttp/CMakeFiles/__idf_nghttp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 57
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/nghttp/CMakeFiles/__idf_nghttp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/nghttp/CMakeFiles/__idf_nghttp.dir/rule
@@ -3154,7 +3159,7 @@ all: esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 57
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/rule
@@ -3209,7 +3214,7 @@ all: esp-idf/esp_adc_cal/CMakeFiles/__idf_esp_adc_cal.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_adc_cal/CMakeFiles/__idf_esp_adc_cal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_adc_cal/CMakeFiles/__idf_esp_adc_cal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/esp_adc_cal/CMakeFiles/__idf_esp_adc_cal.dir/rule
@@ -3264,7 +3269,7 @@ all: esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/rule
@@ -3311,7 +3316,7 @@ esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/all: esp-idf/nghttp/CMa
 esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/all: esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/all
 	$(MAKE) -f esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/build.make esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/depend
 	$(MAKE) -f esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/build.make esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=72 "Built target __idf_tcp_transport"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num= "Built target __idf_tcp_transport"
 .PHONY : esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/all
 
 # Include target in all.
@@ -3321,7 +3326,7 @@ all: esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 57
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/rule
@@ -3379,7 +3384,7 @@ all: esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 57
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/rule
@@ -3435,7 +3440,7 @@ all: esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 58
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/rule
@@ -3494,7 +3499,7 @@ all: esp-idf/esp_https_ota/CMakeFiles/__idf_esp_https_ota.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_https_ota/CMakeFiles/__idf_esp_https_ota.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 57
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_https_ota/CMakeFiles/__idf_esp_https_ota.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/esp_https_ota/CMakeFiles/__idf_esp_https_ota.dir/rule
@@ -3567,7 +3572,7 @@ all: esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/rule
@@ -3616,7 +3621,7 @@ esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/all: esp-idf/esp_http_server/CM
 esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/all: esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/all
 	$(MAKE) -f esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/build.make esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/depend
 	$(MAKE) -f esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/build.make esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=64,65 "Built target __idf_protocomm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=65 "Built target __idf_protocomm"
 .PHONY : esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/all
 
 # Include target in all.
@@ -3626,7 +3631,7 @@ all: esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 58
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 60
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/rule
@@ -3672,7 +3677,7 @@ esp-idf/mdns/CMakeFiles/__idf_mdns.dir/all: esp-idf/esp_ringbuf/CMakeFiles/__idf
 esp-idf/mdns/CMakeFiles/__idf_mdns.dir/all: esp-idf/console/CMakeFiles/__idf_console.dir/all
 	$(MAKE) -f esp-idf/mdns/CMakeFiles/__idf_mdns.dir/build.make esp-idf/mdns/CMakeFiles/__idf_mdns.dir/depend
 	$(MAKE) -f esp-idf/mdns/CMakeFiles/__idf_mdns.dir/build.make esp-idf/mdns/CMakeFiles/__idf_mdns.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num= "Built target __idf_mdns"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=56 "Built target __idf_mdns"
 .PHONY : esp-idf/mdns/CMakeFiles/__idf_mdns.dir/all
 
 # Include target in all.
@@ -3682,7 +3687,7 @@ all: esp-idf/mdns/CMakeFiles/__idf_mdns.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/mdns/CMakeFiles/__idf_mdns.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 56
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/mdns/CMakeFiles/__idf_mdns.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/mdns/CMakeFiles/__idf_mdns.dir/rule
@@ -3744,7 +3749,7 @@ all: esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/rule
@@ -3802,7 +3807,7 @@ all: esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 57
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/rule
@@ -3875,7 +3880,7 @@ all: esp-idf/expat/CMakeFiles/__idf_expat.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/expat/CMakeFiles/__idf_expat.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/expat/CMakeFiles/__idf_expat.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/expat/CMakeFiles/__idf_expat.dir/rule
@@ -3930,7 +3935,7 @@ all: esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/rule
@@ -3985,7 +3990,7 @@ all: esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/rule
@@ -4042,7 +4047,7 @@ all: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 57
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/rule
@@ -4097,7 +4102,7 @@ all: esp-idf/freemodbus/CMakeFiles/__idf_freemodbus.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/freemodbus/CMakeFiles/__idf_freemodbus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 58
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/freemodbus/CMakeFiles/__idf_freemodbus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/freemodbus/CMakeFiles/__idf_freemodbus.dir/rule
@@ -4160,7 +4165,7 @@ esp-idf/jsmn/preinstall:
 esp-idf/jsmn/CMakeFiles/__idf_jsmn.dir/all: esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/all
 	$(MAKE) -f esp-idf/jsmn/CMakeFiles/__idf_jsmn.dir/build.make esp-idf/jsmn/CMakeFiles/__idf_jsmn.dir/depend
 	$(MAKE) -f esp-idf/jsmn/CMakeFiles/__idf_jsmn.dir/build.make esp-idf/jsmn/CMakeFiles/__idf_jsmn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num= "Built target __idf_jsmn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=32 "Built target __idf_jsmn"
 .PHONY : esp-idf/jsmn/CMakeFiles/__idf_jsmn.dir/all
 
 # Include target in all.
@@ -4170,7 +4175,7 @@ all: esp-idf/jsmn/CMakeFiles/__idf_jsmn.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/jsmn/CMakeFiles/__idf_jsmn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/jsmn/CMakeFiles/__idf_jsmn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/jsmn/CMakeFiles/__idf_jsmn.dir/rule
@@ -4215,7 +4220,7 @@ esp-idf/json/preinstall:
 esp-idf/json/CMakeFiles/__idf_json.dir/all: esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/all
 	$(MAKE) -f esp-idf/json/CMakeFiles/__idf_json.dir/build.make esp-idf/json/CMakeFiles/__idf_json.dir/depend
 	$(MAKE) -f esp-idf/json/CMakeFiles/__idf_json.dir/build.make esp-idf/json/CMakeFiles/__idf_json.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=32 "Built target __idf_json"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num= "Built target __idf_json"
 .PHONY : esp-idf/json/CMakeFiles/__idf_json.dir/all
 
 # Include target in all.
@@ -4225,7 +4230,7 @@ all: esp-idf/json/CMakeFiles/__idf_json.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/json/CMakeFiles/__idf_json.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/json/CMakeFiles/__idf_json.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/json/CMakeFiles/__idf_json.dir/rule
@@ -4280,7 +4285,7 @@ all: esp-idf/libsodium/CMakeFiles/__idf_libsodium.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/libsodium/CMakeFiles/__idf_libsodium.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 67
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/libsodium/CMakeFiles/__idf_libsodium.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/libsodium/CMakeFiles/__idf_libsodium.dir/rule
@@ -4328,7 +4333,7 @@ esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/all: esp-idf/esp-tls/CMakeFiles/__idf_esp
 esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/all: esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/all
 	$(MAKE) -f esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/build.make esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/depend
 	$(MAKE) -f esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/build.make esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=57 "Built target __idf_mqtt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num= "Built target __idf_mqtt"
 .PHONY : esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/all
 
 # Include target in all.
@@ -4393,7 +4398,7 @@ all: esp-idf/openssl/CMakeFiles/__idf_openssl.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/openssl/CMakeFiles/__idf_openssl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/openssl/CMakeFiles/__idf_openssl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/openssl/CMakeFiles/__idf_openssl.dir/rule
@@ -4438,7 +4443,7 @@ esp-idf/spiffs/preinstall:
 esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/all: esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/all
 	$(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/depend
 	$(MAKE) -f esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build.make esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=71 "Built target __idf_spiffs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=72 "Built target __idf_spiffs"
 .PHONY : esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/all
 
 # Include target in all.
@@ -4448,7 +4453,7 @@ all: esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/rule
@@ -4493,7 +4498,7 @@ esp-idf/ulp/preinstall:
 esp-idf/ulp/CMakeFiles/__idf_ulp.dir/all: esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/all
 	$(MAKE) -f esp-idf/ulp/CMakeFiles/__idf_ulp.dir/build.make esp-idf/ulp/CMakeFiles/__idf_ulp.dir/depend
 	$(MAKE) -f esp-idf/ulp/CMakeFiles/__idf_ulp.dir/build.make esp-idf/ulp/CMakeFiles/__idf_ulp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=73 "Built target __idf_ulp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num= "Built target __idf_ulp"
 .PHONY : esp-idf/ulp/CMakeFiles/__idf_ulp.dir/all
 
 # Include target in all.
@@ -4503,7 +4508,7 @@ all: esp-idf/ulp/CMakeFiles/__idf_ulp.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/ulp/CMakeFiles/__idf_ulp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/ulp/CMakeFiles/__idf_ulp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/ulp/CMakeFiles/__idf_ulp.dir/rule
@@ -4558,7 +4563,7 @@ all: esp-idf/unity/CMakeFiles/__idf_unity.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/unity/CMakeFiles/__idf_unity.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/unity/CMakeFiles/__idf_unity.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/unity/CMakeFiles/__idf_unity.dir/rule
@@ -4620,7 +4625,7 @@ all: esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/rule
@@ -4695,9 +4700,10 @@ esp-idf/main/CMakeFiles/__idf_main.dir/all: esp-idf/ulp/CMakeFiles/__idf_ulp.dir
 esp-idf/main/CMakeFiles/__idf_main.dir/all: esp-idf/unity/CMakeFiles/__idf_unity.dir/all
 esp-idf/main/CMakeFiles/__idf_main.dir/all: esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/all
 esp-idf/main/CMakeFiles/__idf_main.dir/all: esp-idf/components/CMakeFiles/__idf_components.dir/all
+esp-idf/main/CMakeFiles/__idf_main.dir/all: esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/all
 	$(MAKE) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/depend
 	$(MAKE) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=56 "Built target __idf_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num= "Built target __idf_main"
 .PHONY : esp-idf/main/CMakeFiles/__idf_main.dir/all
 
 # Include target in all.
@@ -4750,6 +4756,11 @@ esp-idf/components/preinstall:
 
 # All Build rule for target.
 esp-idf/components/CMakeFiles/__idf_components.dir/all: esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/all
+esp-idf/components/CMakeFiles/__idf_components.dir/all: esp-idf/nghttp/CMakeFiles/__idf_nghttp.dir/all
+esp-idf/components/CMakeFiles/__idf_components.dir/all: esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/all
+esp-idf/components/CMakeFiles/__idf_components.dir/all: esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/all
+esp-idf/components/CMakeFiles/__idf_components.dir/all: esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/all
+esp-idf/components/CMakeFiles/__idf_components.dir/all: esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/all
 	$(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/depend
 	$(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=7,8 "Built target __idf_components"
@@ -4762,7 +4773,7 @@ all: esp-idf/components/CMakeFiles/__idf_components.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/components/CMakeFiles/__idf_components.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 54
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 60
 	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/components/CMakeFiles/__idf_components.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
 .PHONY : esp-idf/components/CMakeFiles/__idf_components.dir/rule
@@ -4779,6 +4790,61 @@ esp-idf/components/CMakeFiles/__idf_components.dir/clean:
 
 # clean rule for target.
 clean: esp-idf/components/CMakeFiles/__idf_components.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory esp-idf/protocol_examples_common
+
+# Convenience name for "all" pass in the directory.
+esp-idf/protocol_examples_common/all: esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/all
+
+.PHONY : esp-idf/protocol_examples_common/all
+
+# Convenience name for "clean" pass in the directory.
+esp-idf/protocol_examples_common/clean: esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/clean
+
+.PHONY : esp-idf/protocol_examples_common/clean
+
+# Convenience name for "preinstall" pass in the directory.
+esp-idf/protocol_examples_common/preinstall:
+
+.PHONY : esp-idf/protocol_examples_common/preinstall
+
+#=============================================================================
+# Target rules for target esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir
+
+# All Build rule for target.
+esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/all: esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/all
+	$(MAKE) -f esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/build.make esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/depend
+	$(MAKE) -f esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/build.make esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=64 "Built target __idf_protocol_examples_common"
+.PHONY : esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/all
+
+# Include target in all.
+all: esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 55
+	$(MAKE) -f CMakeFiles/Makefile2 esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles 0
+.PHONY : esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/rule
+
+# Convenience name for target.
+__idf_protocol_examples_common: esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/rule
+
+.PHONY : __idf_protocol_examples_common
+
+# clean rule for target.
+esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/clean:
+	$(MAKE) -f esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/build.make esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/clean
+.PHONY : esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/clean
+
+# clean rule for target.
+clean: esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/clean
 
 .PHONY : clean
 

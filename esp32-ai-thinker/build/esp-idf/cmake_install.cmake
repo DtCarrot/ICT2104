@@ -101,6 +101,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/wifi_provisioning/cmake_install.cmake")
   include("/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/main/cmake_install.cmake")
   include("/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components/cmake_install.cmake")
+  include("/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/protocol_examples_common/cmake_install.cmake")
 
 endif()
 

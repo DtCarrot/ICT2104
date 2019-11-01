@@ -1,0 +1,6 @@
+[submodule "esp32-ai-thinker/components/espmqtt"]
+	path = esp32-ai-thinker/components/espmqtt
+	url = https://github.com/espressif/esp-mqtt.git
+[submodule "esp32-ai-thinker/components/tcp_transport"]
+	path = esp32-ai-thinker/components/tcp_transport
+	url = https://github.com/espressif/esp-mqtt.git

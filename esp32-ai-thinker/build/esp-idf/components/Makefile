@@ -549,6 +549,33 @@ src/ict2104_camera.c.s:
 	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.s
 .PHONY : src/ict2104_camera.c.s
 
+src/ict2104_mqtt.obj: src/ict2104_mqtt.c.obj
+
+.PHONY : src/ict2104_mqtt.obj
+
+# target to build an object file
+src/ict2104_mqtt.c.obj:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj
+.PHONY : src/ict2104_mqtt.c.obj
+
+src/ict2104_mqtt.i: src/ict2104_mqtt.c.i
+
+.PHONY : src/ict2104_mqtt.i
+
+# target to preprocess a source file
+src/ict2104_mqtt.c.i:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.i
+.PHONY : src/ict2104_mqtt.c.i
+
+src/ict2104_mqtt.s: src/ict2104_mqtt.c.s
+
+.PHONY : src/ict2104_mqtt.s
+
+# target to generate assembly for a file
+src/ict2104_mqtt.c.s:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.s
+.PHONY : src/ict2104_mqtt.c.s
+
 src/ict2104_uart.obj: src/ict2104_uart.c.obj
 
 .PHONY : src/ict2104_uart.obj
@@ -575,6 +602,33 @@ src/ict2104_uart.s: src/ict2104_uart.c.s
 src/ict2104_uart.c.s:
 	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.s
 .PHONY : src/ict2104_uart.c.s
+
+src/ict2104_wifi.obj: src/ict2104_wifi.c.obj
+
+.PHONY : src/ict2104_wifi.obj
+
+# target to build an object file
+src/ict2104_wifi.c.obj:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj
+.PHONY : src/ict2104_wifi.c.obj
+
+src/ict2104_wifi.i: src/ict2104_wifi.c.i
+
+.PHONY : src/ict2104_wifi.i
+
+# target to preprocess a source file
+src/ict2104_wifi.c.i:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.i
+.PHONY : src/ict2104_wifi.c.i
+
+src/ict2104_wifi.s: src/ict2104_wifi.c.s
+
+.PHONY : src/ict2104_wifi.s
+
+# target to generate assembly for a file
+src/ict2104_wifi.c.s:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.s
+.PHONY : src/ict2104_wifi.c.s
 
 # Help Target
 help:
@@ -631,9 +685,15 @@ help:
 	@echo "... src/ict2104_camera.obj"
 	@echo "... src/ict2104_camera.i"
 	@echo "... src/ict2104_camera.s"
+	@echo "... src/ict2104_mqtt.obj"
+	@echo "... src/ict2104_mqtt.i"
+	@echo "... src/ict2104_mqtt.s"
 	@echo "... src/ict2104_uart.obj"
 	@echo "... src/ict2104_uart.i"
 	@echo "... src/ict2104_uart.s"
+	@echo "... src/ict2104_wifi.obj"
+	@echo "... src/ict2104_wifi.i"
+	@echo "... src/ict2104_wifi.s"
 .PHONY : help
 
 

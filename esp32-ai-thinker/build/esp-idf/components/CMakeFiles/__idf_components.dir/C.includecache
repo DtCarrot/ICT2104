@@ -296,6 +296,10 @@ portmacro.h
 ../../Source/portable/IAR/78K0R/portmacro.h
 /home/dtcarrot/esp/esp-idf/components/freertos/Source/portable/IAR/78K0R/portmacro.h
 
+/home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/event_groups.h
+timers.h
+/home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/timers.h
+
 /home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/list.h
 
 /home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h
@@ -365,6 +369,10 @@ list.h
 /home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/list.h
 portmacro.h
 /home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/portmacro.h
+
+/home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/timers.h
+task.h
+/home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/task.h
 
 /home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h
 xtensa/hal.h
@@ -587,6 +595,16 @@ xtensa/xtruntime-core-state.h
 /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_uart.c
 esp_log.h
 /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/esp_log.h
+freertos/FreeRTOS.h
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/freertos/FreeRTOS.h
+freertos/task.h
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/freertos/task.h
+freertos/event_groups.h
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/freertos/event_groups.h
+esp_system.h
+-
+sys/param.h
+-
 driver/uart.h
 /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/driver/uart.h
 string.h

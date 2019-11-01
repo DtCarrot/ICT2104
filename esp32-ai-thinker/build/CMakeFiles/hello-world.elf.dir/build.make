@@ -143,6 +143,7 @@ hello-world.elf: esp-idf/unity/libunity.a
 hello-world.elf: esp-idf/wifi_provisioning/libwifi_provisioning.a
 hello-world.elf: esp-idf/main/libmain.a
 hello-world.elf: esp-idf/components/libcomponents.a
+hello-world.elf: esp-idf/protocol_examples_common/libprotocol_examples_common.a
 hello-world.elf: esp-idf/asio/libasio.a
 hello-world.elf: esp-idf/cbor/libcbor.a
 hello-world.elf: esp-idf/coap/libcoap.a
@@ -159,21 +160,21 @@ hello-world.elf: esp-idf/sdmmc/libsdmmc.a
 hello-world.elf: esp-idf/freemodbus/libfreemodbus.a
 hello-world.elf: esp-idf/jsmn/libjsmn.a
 hello-world.elf: esp-idf/libsodium/liblibsodium.a
-hello-world.elf: esp-idf/mqtt/libmqtt.a
-hello-world.elf: esp-idf/tcp_transport/libtcp_transport.a
-hello-world.elf: esp-idf/esp-tls/libesp-tls.a
 hello-world.elf: esp-idf/openssl/libopenssl.a
 hello-world.elf: esp-idf/spiffs/libspiffs.a
 hello-world.elf: esp-idf/ulp/libulp.a
 hello-world.elf: esp-idf/unity/libunity.a
 hello-world.elf: esp-idf/wifi_provisioning/libwifi_provisioning.a
 hello-world.elf: esp-idf/protocomm/libprotocomm.a
-hello-world.elf: esp-idf/esp_http_server/libesp_http_server.a
-hello-world.elf: esp-idf/nghttp/libnghttp.a
 hello-world.elf: esp-idf/protobuf-c/libprotobuf-c.a
 hello-world.elf: esp-idf/mdns/libmdns.a
 hello-world.elf: esp-idf/console/libconsole.a
 hello-world.elf: esp-idf/json/libjson.a
+hello-world.elf: esp-idf/esp_http_server/libesp_http_server.a
+hello-world.elf: esp-idf/mqtt/libmqtt.a
+hello-world.elf: esp-idf/tcp_transport/libtcp_transport.a
+hello-world.elf: esp-idf/esp-tls/libesp-tls.a
+hello-world.elf: esp-idf/nghttp/libnghttp.a
 hello-world.elf: esp-idf/esp_ringbuf/libesp_ringbuf.a
 hello-world.elf: esp-idf/driver/libdriver.a
 hello-world.elf: esp-idf/wpa_supplicant/libwpa_supplicant.a
@@ -261,6 +262,7 @@ hello-world.elf: /home/dtcarrot/esp/esp-idf/components/esp_rom/esp32/ld/esp32.ro
 hello-world.elf: /home/dtcarrot/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
 hello-world.elf: /home/dtcarrot/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
 hello-world.elf: /home/dtcarrot/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+hello-world.elf: /home/dtcarrot/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
 hello-world.elf: CMakeFiles/hello-world.elf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable hello-world.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello-world.elf.dir/link.txt --verbose=$(VERBOSE)

@@ -105,6 +105,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../components/driver/include"
   "../components/conversions/include"
   "../components/src/include"
+  "/home/dtcarrot/esp/esp-idf/examples/common_components/protocol_examples_common/include"
   )
 
 # Targets to which this target links.
@@ -168,6 +169,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/unity/CMakeFiles/__idf_unity.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components/CMakeFiles/__idf_components.dir/DependInfo.cmake"
+  "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/DependInfo.cmake"
