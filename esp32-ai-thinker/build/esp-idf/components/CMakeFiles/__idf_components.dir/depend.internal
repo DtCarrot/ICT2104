@@ -762,6 +762,7 @@ esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj
  ../components/driver/include/esp_camera.h
  ../components/driver/include/sensor.h
  ../components/src/include/ict2104_camera.h
+ ../components/src/include/ict2104_mqtt.h
  ../components/src/include/ict2104_uart.h
  ../components/src/include/ict2104_wifi.h
  /home/dtcarrot/esp/esp-idf/components/driver/include/driver/gpio.h
@@ -818,19 +819,36 @@ esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj
  /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/arch.h
  /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/debug.h
  /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h
+ /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/dns.h
+ /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/err.h
+ /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h
+ /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h
  /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h
  /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_addr.h
  /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_zone.h
  /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h
+ /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/mem.h
+ /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/memp.h
+ /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/netdb.h
+ /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/netif.h
  /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h
+ /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/pbuf.h
+ /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/priv/mem_priv.h
+ /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/priv/memp_priv.h
+ /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/priv/memp_std.h
+ /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h
+ /home/dtcarrot/esp/esp-idf/components/lwip/lwip/src/include/lwip/stats.h
  /home/dtcarrot/esp/esp-idf/components/lwip/port/esp32/include/arch/cc.h
  /home/dtcarrot/esp/esp-idf/components/lwip/port/esp32/include/arch/perf.h
  /home/dtcarrot/esp/esp-idf/components/lwip/port/esp32/include/arch/sys_arch.h
  /home/dtcarrot/esp/esp-idf/components/lwip/port/esp32/include/arch/vfs_lwip.h
  /home/dtcarrot/esp/esp-idf/components/lwip/port/esp32/include/lwipopts.h
  /home/dtcarrot/esp/esp-idf/components/lwip/port/esp32/include/netif/dhcp_state.h
+ /home/dtcarrot/esp/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h
+ /home/dtcarrot/esp/esp-idf/components/mqtt/esp-mqtt/include/mqtt_config.h
  /home/dtcarrot/esp/esp-idf/components/newlib/platform_include/assert.h
  /home/dtcarrot/esp/esp-idf/components/newlib/platform_include/errno.h
+ /home/dtcarrot/esp/esp-idf/components/newlib/platform_include/sys/poll.h
  /home/dtcarrot/esp/esp-idf/components/newlib/platform_include/sys/select.h
  /home/dtcarrot/esp/esp-idf/components/newlib/platform_include/sys/time.h
  /home/dtcarrot/esp/esp-idf/components/newlib/platform_include/time.h

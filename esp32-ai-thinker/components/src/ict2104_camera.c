@@ -57,8 +57,7 @@ typedef struct
   size_t len;
 } jpg_chunking_t;
 
-static size_t jpg_encode_stream(void *arg, size_t index, const void *data, size_t len)
-{
+static size_t jpg_encode_stream(void *arg, size_t index, const void *data, size_t len) {
   jpg_chunking_t *j = (jpg_chunking_t *)arg;
   if (!index)
   {
@@ -72,8 +71,11 @@ static size_t jpg_encode_stream(void *arg, size_t index, const void *data, size_
   return len;
 }
 
-esp_err_t jpg_httpd_handler(httpd_req_t *req)
-{
+// esp_err_t capture_video() {
+
+// }
+
+esp_err_t jpg_httpd_handler(httpd_req_t *req) {
   camera_fb_t *fb = NULL;
   esp_err_t res = ESP_OK;
   size_t fb_len = 0;
@@ -105,8 +107,7 @@ esp_err_t jpg_httpd_handler(httpd_req_t *req)
 
 
 // Initialize camera 
-esp_err_t main_camera_init()
-{
+esp_err_t main_camera_init() {
   ESP_LOGD(TAG, "Starting camera");
   // Initialize the camera with configuration
   esp_err_t err = esp_camera_init(&camera_config);

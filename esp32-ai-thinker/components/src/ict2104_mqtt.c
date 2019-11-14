@@ -71,7 +71,7 @@ static esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event) {
 }
 
 const esp_mqtt_client_config_t mqtt_cfg = {
-    .uri = "mqtt://mqtt.eclipse.org",
+    .uri = "mqtt://test.mosquitto.org",
     .event_handle = mqtt_event_handler
 };
 
@@ -86,7 +86,9 @@ uint8_t check_if_mqtt_connected() {
     return mqtt_connected;
 }
 
-void publish_mqtt(char *data) {
+void publish_mqtt(char *data, uint8_t byte_size) {
+    char msg[byte_size];
+    strcpy(msg, data);
     const char * TAG = "MQTT";
     ESP_LOGI(TAG, "Publish MQTT");
     int msg_id = esp_mqtt_client_publish(mqtt_client, "test", "Fast test", 0, 0, 0);

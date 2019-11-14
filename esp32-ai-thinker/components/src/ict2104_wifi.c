@@ -6,6 +6,7 @@
 #include <sys/param.h>
 
 #include <esp_http_server.h>
+#include "ict2104_mqtt.h"
 #include "ict2104_wifi.h"
 #include "ict2104_uart.h"
 #include "ict2104_camera.h"
@@ -63,6 +64,7 @@ static esp_err_t wifi_event_handler(void *ctx, system_event_t *event) {
             // {
             ESP_LOGI(TAG, "Starting web server");
             *server = start_webserver();
+            init_mqtt();
             // }
             break;
         case SYSTEM_EVENT_STA_DISCONNECTED:

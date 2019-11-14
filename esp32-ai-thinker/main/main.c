@@ -44,14 +44,13 @@ void app_main()
 
     // Initialize the camera
     ESP_ERROR_CHECK(main_camera_init());
+    init_task();
 
     // Initialize async task
-    init_task();
-    // init_mqtt();
     ESP_LOGI("TAG", "Before starting wifi");
     httpd_handle_t server = NULL;
     initialize_wifi(&server);
-
+    // init_mqtt();
 
 }
 
