@@ -14,4 +14,5 @@
 void init_uart();
 void rx_uart_interrupt(UART_Handle handle, void *ptr, size_t size);
 void read_uart();
-void send_data(char msg[]);
+//void send_data(char *msg, uint8_t len);
+void send_data(int msg);

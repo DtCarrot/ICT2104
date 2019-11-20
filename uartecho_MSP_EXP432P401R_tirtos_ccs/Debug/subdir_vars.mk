@@ -11,6 +11,7 @@ SYSCFG_SRCS += \
 
 C_SRCS += \
 ../buzzer.c \
+../buzzerThread.c \
 ../main_tirtos.c \
 ../pir.c \
 ../rxtx_uart.c \
@@ -28,6 +29,7 @@ GEN_MISC_DIRS += \
 
 C_DEPS += \
 ./buzzer.d \
+./buzzerThread.d \
 ./main_tirtos.d \
 ./pir.d \
 ./rxtx_uart.d \
@@ -39,6 +41,7 @@ C_DEPS += \
 
 OBJS += \
 ./buzzer.obj \
+./buzzerThread.obj \
 ./main_tirtos.obj \
 ./pir.obj \
 ./rxtx_uart.obj \
@@ -57,6 +60,7 @@ GEN_MISC_DIRS__QUOTED += \
 
 OBJS__QUOTED += \
 "buzzer.obj" \
+"buzzerThread.obj" \
 "main_tirtos.obj" \
 "pir.obj" \
 "rxtx_uart.obj" \
@@ -72,6 +76,7 @@ GEN_MISC_FILES__QUOTED += \
 
 C_DEPS__QUOTED += \
 "buzzer.d" \
+"buzzerThread.d" \
 "main_tirtos.d" \
 "pir.d" \
 "rxtx_uart.d" \
@@ -86,6 +91,7 @@ GEN_FILES__QUOTED += \
 
 C_SRCS__QUOTED += \
 "../buzzer.c" \
+"../buzzerThread.c" \
 "../main_tirtos.c" \
 "../pir.c" \
 "../rxtx_uart.c" \

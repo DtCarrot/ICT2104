@@ -18,6 +18,15 @@ ultrasonicThread.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/sourc
 ultrasonicThread.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/../include/time.h
 ultrasonicThread.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/abi_prefix.h
 ultrasonicThread.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/xlocale/_time.h
+ultrasonicThread.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/pthread.h
+ultrasonicThread.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/time.h
+ultrasonicThread.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/signal.h
+ultrasonicThread.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/../include/signal.h
+ultrasonicThread.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/../include/sys/timespec.h
+ultrasonicThread.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/sys/_timespec.h
+ultrasonicThread.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/sched.h
+ultrasonicThread.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/stdio.h
+ultrasonicThread.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/stdarg.h
 ultrasonicThread.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/Timer.h
 ultrasonicThread.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/UART.h
 ultrasonicThread.obj: ../ultrasonic.h
@@ -47,6 +56,15 @@ ultrasonicThread.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/sourc
 /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/../include/time.h: 
 /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/abi_prefix.h: 
 /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/xlocale/_time.h: 
+/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/pthread.h: 
+/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/time.h: 
+/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/signal.h: 
+/home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/../include/signal.h: 
+/home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/../include/sys/timespec.h: 
+/home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/sys/_timespec.h: 
+/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/sched.h: 
+/home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/stdio.h: 
+/home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/stdarg.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/Timer.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/UART.h: 
 ../ultrasonic.h: 

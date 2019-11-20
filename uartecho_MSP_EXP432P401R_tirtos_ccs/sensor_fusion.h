@@ -8,3 +8,14 @@
  *
  */
 uint8_t sensor_fusion_check(float distance, uint8_t active);
+
+extern int time_since_last_alert;
+extern uint8_t uart_sent;
+
+uint8_t is_uart_sent();
+int get_time_since_last_alert();
+
+void set_uart_sent(uint8_t status);
+
+void inc_time_since_last_alert(int count);
+void reset_time_count();

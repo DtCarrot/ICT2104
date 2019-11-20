@@ -90,6 +90,8 @@ GPIO5.gpioPin.$assign = "boosterpack.7"; // P1.5
 GPIO6.$name = "CONFIG_BUZZER_OUT_PIN";
 // Mode - Select the GPIO mode
 GPIO6.mode = "Output";
+// Output Strength - Specifies the output strength
+GPIO6.outputStrength = "High";
 // Assign pin
 GPIO6.gpioPin.$assign = "boosterpack.14"; // P1.7
 // Suggest solution

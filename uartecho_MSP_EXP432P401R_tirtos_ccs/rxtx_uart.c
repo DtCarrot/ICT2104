@@ -4,6 +4,8 @@
 #include <unistd.h>
 #include <stdint.h>
 #include <stddef.h>
+#include <stdio.h>
+#include <string.h>
 
 /* Driver Header files */
 #include <ti/drivers/GPIO.h>
@@ -47,7 +49,19 @@ void init_uart() {
         //UART_read(uart, &input, sizeof(input));
         //UART_write(uart, &input, sizeof(input));
     //}
-    while(1) {}
+
+    while(1) {
+        UART_read(uart, &input, sizeof(input));
+        // If the command is to play the alarm
+        if(strncmp(input, "play", 4) == 0) {
+            // Start the alarm
+        } else if(strncmp(input, "stop", 4) == 0) {
+            // Turn off the alarm
+        }
+        // Clear the value after running the comparison checks
+        strcpy(input, " ");
+    }
+
 }
 
 uint8_t rxData[1024];
@@ -58,15 +72,29 @@ void rx_uart_interrupt(UART_Handle handle, void *rxBuf, size_t size) {
         rxData[i] = ((uint8_t*) rxBuf)[i];
     }
     int j = 0;
+
 }
 
 void read_uart() {
-    UART_write(uart, echoPrompt, sizeof(echoPrompt));
+    //UART_write(uart, echoPrompt, sizeof(echoPrompt));
     //UART_read(uart, &input, 1);
     //UART_write(uart, &input, 1);
 }
 
-void send_data(char msg[]) {
-    //UART_write(uart, msg, sizeof(msg));
-    UART_write(uart, "Trigger", sizeof(msg));
+void send_data(int data) {
+    //char output[len];
+    //uint8_t *output = "SC02";
+    //strcpy(output, msg);
+    if(data == 12) {
+        uint8_t *output = "SC02";
+        UART_write(uart, output, sizeof(output));
+    }
 }
+
+//void send_data(char *msg, uint8_t len) {
+//    char output[len];
+//    //uint8_t *output = "SC02";
+//    strcpy(output, msg);
+//    if(s
+//    UART_write(uart, output, sizeof(output));
+//}

@@ -36,7 +36,9 @@
 #include <unistd.h>
 #include <stdint.h>
 #include <stddef.h>
-
+/* POSIX Header files */
+#include <pthread.h>
+#include <stdio.h>
 /* Driver Header files */
 #include <ti/drivers/Timer.h>
 #include <ti/drivers/UART.h>
@@ -46,11 +48,11 @@
 #include "pir.h"
 #include "sensor_fusion.h"
 #include "rxtx_uart.h"
-
 /* Driver configuration */
 #include "ti_drivers_config.h"
 
 /* Custom files */
+extern void *buzzerThread(void *arg0);
 
 /* Callback used for toggling the LED. */
 void timerCallback(Timer_Handle myHandle);
@@ -125,6 +127,43 @@ void timerCallback(Timer_Handle myHandle)
     sleep(1000);
 }
 */
+pthread_t           buzzThread;
+pthread_attr_t      buzzAttrs;
+struct sched_param  buzzPriParam;
+/* Stack size in bytes */
+#define THREADSTACKSIZE    1024
+int                 retc;
+void create_buzzer_thread() {
+
+    /* Initialize the attributes structure with default values */
+    pthread_attr_init(&buzzAttrs);
+    buzzPriParam.sched_priority=1;
+
+    retc = pthread_attr_setschedparam(&buzzAttrs, &buzzPriParam);
+    retc |= pthread_attr_setdetachstate(&buzzAttrs, PTHREAD_CREATE_DETACHED);
+    retc |= pthread_attr_setstacksize(&buzzAttrs, THREADSTACKSIZE);
+    if (retc != 0) {
+        /* failed to set attributes */
+        while (1) {
+
+        }
+    }
+    retc = pthread_create(&buzzThread, &buzzAttrs, buzzerThread, NULL);
+    if (retc != 0) {
+        /* pthread_create() failed */
+        while (1) {
+
+        }
+    }
+    /*
+    retc = pthread_detach(&buzzThread);
+    if(retc != 0) {
+        while(1) {
+            printf("Restarting");
+        }
+    }*/
+
+}
 
 /* 
  * 
@@ -144,6 +183,15 @@ void iteratorCallback(Timer_Handle myHandle) {
         }
     }
 
+    inc_time_since_last_alert(20);
+
+    if(get_time_since_last_alert() > 10000000) {
+        // pthread_cancel(buzzThread);
+        trigger_buzzer(0);
+        reset_time_count();
+        set_uart_sent(0);
+    }
+
     inc_microseconds_since_high_trigger(ITERATOR_INTERVAL);
     inc_ultrasonic_microseconds_count(ITERATOR_INTERVAL);
     float ultrasonic_detected_distance = get_ultrasonic_distance();
@@ -151,9 +199,17 @@ void iteratorCallback(Timer_Handle myHandle) {
     // Run a sensor fusion check to determine whether an object have been detected
     int motion_detected = sensor_fusion_check(ultrasonic_detected_distance, pir_status);
     if(motion_detected) {
-        char data[] = "Sending data over\r\n";
-        send_data(data);
-       //trigger_buzzer(1);
+        if(!is_uart_sent()) {
+            create_buzzer_thread();
+//            char data[] = "SC01";
+//            send_data(data, sizeof(data));
+            send_data(12);
+            set_uart_sent(1);
+        }
+
+
+    } else {
+        int a = 0;
     }
 
 }
