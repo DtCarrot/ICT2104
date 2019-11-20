@@ -26,17 +26,7 @@ static const int RX_BUF_SIZE = 1024;
 #define RXD_PIN (GPIO_NUM_16)
 
 
-// SC01 - Code for "People Detected"
-const char *SC01 = "SC01";
 
-// SC02 - Code for "Sensor Reading"
-const char *SC02 = "SC02"
-
-// SC03 - Code for "Start Alarm"
-const char *SC03 = "SC03";
-
-// SC04 - Code for "Stop Alarm"
-const char *SC04 = "SC04";
 
 
 /*
@@ -45,23 +35,41 @@ const char *SC04 = "SC04";
  *
  */
 void parse_message(char* output, uint8_t byte_size) {
+    const char * RX_TASK_TAG = "UART RX";
+
+    // SC01 - Code for "People Detected"
+    const char *SC01 = "SC01";
+
+    // SC02 - Code for "Sensor Reading"
+    const char *SC02 = "SC02";
+
+    // SC03 - Code for "Start Alarm"
+    const char *SC03 = "SC03";
+
+    // SC04 - Code for "Stop Alarm"
+    const char *SC04 = "SC04";
+
     char msg[byte_size];
     strcpy(msg, output);
-    if(strncmp((char*) data, SC01, 4) == 0) {
+    ESP_LOGI(RX_TASK_TAG, "Parsing data");
+    if(strncmp((char*) msg, SC01, 4) == 0) {
         // If people detected, we need to fuse with the prediction from video stream
         ESP_LOGI(RX_TASK_TAG, "Found SC01");
         // Now we need to start capture video
-    } else if(strncmp((char*) data, SC02, 4) == 0) {
+    } else if(strncmp((char*) msg, SC02, 4) == 0) {
         // If readings of sensor detected - send to MQTT to publish to broker.
         ESP_LOGI(RX_TASK_TAG, "Found SC02");
         // Send reading to MQTT server
         publish_mqtt(output, byte_size);
-    } else if(strncmp((char*) data, SC03, 4) == 0) {
+    } else if(strncmp((char*) msg, SC03, 4) == 0) {
         // Reading of start alarm message 
         ESP_LOGI(RX_TASK_TAG, "Found SC03");
-    } else if(strncmp((char*) data, SC04, 4) == 0) {
+    } else if(strncmp((char*) msg, SC04, 4) == 0) {
         ESP_LOGI(RX_TASK_TAG, "Found SC04");
+    } else {
+        return;
     }
+    publish_mqtt(msg, sizeof(msg));
 }
 
 void uart_task(void) {
@@ -89,6 +97,7 @@ void uart_task(void) {
         if (rxBytes > 0) {
             data[rxBytes] = 0;
             ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%s'", rxBytes, data);
+            parse_message((char*)data, sizeof(data));
             // Match against existing codes
             ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, data, rxBytes, ESP_LOG_INFO);
         }
@@ -128,8 +137,8 @@ void uart_init(void) {
 }
 
 
-int sendData(const char* logName, const char* data)
-{
+int sendData(const char* data) {
+    static const char *logName = "SEND_DATA";
     const int len = strlen(data);
     const int txBytes = uart_write_bytes(UART_NUM_1, data, len);
     printf("Sending...");
@@ -141,7 +150,7 @@ void tx_task(void) {
     static const char *TX_TASK_TAG = "TX_TASK";
     esp_log_level_set(TX_TASK_TAG, ESP_LOG_INFO);
     while (1) {
-        sendData(TX_TASK_TAG, "Cello orld");
+        sendData("Cello orld");
         vTaskDelay(2000 / portTICK_PERIOD_MS);
     }
 }

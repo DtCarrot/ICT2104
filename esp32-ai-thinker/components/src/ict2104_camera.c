@@ -1,7 +1,10 @@
 #include <esp_log.h>
 #include <esp_wifi.h>
 #include <esp_http_server.h>
+#include "esp_http_client.h"
+#include "esp_tls.h"
 #include "ict2104_camera.h"
+#include "mbedtls/base64.h"
 
 #define CAM_PIN_PWDN    32 
 #define CAM_PIN_RESET   -1 
@@ -88,10 +91,10 @@ esp_err_t jpg_httpd_handler(httpd_req_t *req) {
     httpd_resp_send_500(req);
     return ESP_FAIL;
   }
-  res = httpd_resp_set_type(req, "image/jpeg");
+  res = httpd_resp_set_hdr(req, "Content-Type", "multipart/form-data; boundary=capture");
   if (res == ESP_OK)
   {
-    res = httpd_resp_set_hdr(req, "Content-Disposition", "inline; filename=capture.jpg");
+    res = httpd_resp_set_hdr(req, "Content-Disposition", "form-data; filename=capture.jpg");
   }
 
   if (res == ESP_OK)
@@ -105,6 +108,43 @@ esp_err_t jpg_httpd_handler(httpd_req_t *req) {
   return res;
 }
 
+esp_err_t _http_event_handler(esp_http_client_event_t *evt) {
+    switch(evt->event_id) {
+        case HTTP_EVENT_ERROR:
+            ESP_LOGD(TAG, "HTTP_EVENT_ERROR");
+            break;
+        case HTTP_EVENT_ON_CONNECTED:
+            ESP_LOGD(TAG, "HTTP_EVENT_ON_CONNECTED");
+            break;
+        case HTTP_EVENT_HEADER_SENT:
+            ESP_LOGD(TAG, "HTTP_EVENT_HEADER_SENT");
+            break;
+        case HTTP_EVENT_ON_HEADER:
+            ESP_LOGD(TAG, "HTTP_EVENT_ON_HEADER, key=%s, value=%s", evt->header_key, evt->header_value);
+            break;
+        case HTTP_EVENT_ON_DATA:
+            ESP_LOGD(TAG, "HTTP_EVENT_ON_DATA, len=%d", evt->data_len);
+            if (!esp_http_client_is_chunked_response(evt->client)) {
+                // Write out data
+                printf("%.*s", evt->data_len, (char*)evt->data);
+            }
+
+            break;
+        case HTTP_EVENT_ON_FINISH:
+            ESP_LOGD(TAG, "HTTP_EVENT_ON_FINISH");
+            break;
+        case HTTP_EVENT_DISCONNECTED:
+            ESP_LOGI(TAG, "HTTP_EVENT_DISCONNECTED");
+            int mbedtls_err = 0;
+            esp_err_t err = esp_tls_get_and_clear_last_error(evt->data, &mbedtls_err, NULL);
+            if (err != 0) {
+                ESP_LOGI(TAG, "Last esp error code: 0x%x", err);
+                ESP_LOGI(TAG, "Last mbedtls failure: 0x%x", mbedtls_err);
+            }
+            break;
+    }
+    return ESP_OK;
+}
 
 // Initialize camera 
 esp_err_t main_camera_init() {
@@ -120,3 +160,96 @@ esp_err_t main_camera_init() {
   return ESP_OK;
 }
 
+int count = 0;
+// void uart_init(void) {
+//     xTaskCreate(uart_task, "uart_task", 1024*2, NULL, configMAX_PRIORITIES-1, NULL);
+// }
+
+esp_err_t start_capture() {
+  while(count < 50) {
+    vTaskDelay(5000 / portTICK_PERIOD_MS);
+    count++;
+    camera_fb_t *fb = NULL;
+    esp_err_t res = ESP_OK;
+    size_t fb_len = 0;
+    int64_t fr_start = esp_timer_get_time();
+
+    fb = esp_camera_fb_get();
+    if (!fb)
+    {
+      ESP_LOGE(TAG, "Camera capture failed");
+      // httpd_resp_send_500(req);
+      return ESP_FAIL;
+    }
+    // POST
+    esp_http_client_config_t config = {
+        .url = "http://httpbin.org/get",
+        .event_handler = _http_event_handler,
+    };
+    esp_http_client_handle_t client = esp_http_client_init(&config);
+
+    // POST
+    esp_http_client_set_url(client, "http://192.168.43.210:8000/upload");
+    esp_http_client_set_method(client, HTTP_METHOD_POST);
+    // esp_http_client_set_post_field(client, post_data, strlen(post_data));
+
+    // Set headers
+    // esp_http_client_set_header(client, "Content-Type", "multipart/form-data");
+
+    // fb_len = fb->len;
+    // esp_http_client_set_post_field(client, (const char*) fb-> buf, fb->len);
+
+    esp_http_client_set_post_field(client, (const char *)fb->buf, fb->len);
+    ESP_LOGI(TAG, "Size: %d", fb->len);
+    // char * buffer_data = encode(fb->buf);
+    unsigned char buffer[256];
+    size_t len;
+    if( mbedtls_base64_encode( buffer, sizeof( buffer ), &len, fb->buf, fb->len ) != 0) {
+      ESP_LOGI(TAG, "Buffer: %s", buffer);
+    }
+
+    esp_http_client_set_header(client, "Content-Type", "image/jpg");
+
+  // res = httpd_resp_set_type(req, "image/jpeg");
+  // if (res == ESP_OK)
+  // {
+  //   res = httpd_resp_set_hdr(req, "Content-Disposition", "inline; filename=capture.jpg");
+  // }
+
+  // if (res == ESP_OK)
+  // {
+  //   fb_len = fb->len;
+  //   res = httpd_resp_send(req, (const char *)fb->buf, fb->len);
+  // }
+    esp_err_t err = NULL;
+
+    err = esp_http_client_perform(client);
+    if (err == ESP_OK) {
+        ESP_LOGI(TAG, "HTTP POST Status = %d, content_length = %d",
+                esp_http_client_get_status_code(client),
+                esp_http_client_get_content_length(client));
+    } else {
+        ESP_LOGE(TAG, "HTTP POST request failed: %s", esp_err_to_name(err));
+    }
+
+
+    esp_http_client_cleanup(client);
+    // res = httpd_resp_set_type(req, "image/jpeg");
+    // if (res == ESP_OK)
+    // {
+    //   res = httpd_resp_set_hdr(req, "Content-Disposition", "inline; filename=capture.jpg");
+    // }
+
+    // if (res == ESP_OK)
+    // {
+    //   fb_len = fb->len;
+    //   res = httpd_resp_send(req, (const char *)fb->buf, fb->len);
+    // }
+    // esp_camera_fb_return(fb);
+    // int64_t fr_end = esp_timer_get_time();
+    // ESP_LOGI(TAG, "JPG: %uKB %ums", (uint32_t)(fb_len / 1024), (uint32_t)((fr_end - fr_start) / 1000));
+    // return res;
+
+  }
+  return ESP_OK;
+}

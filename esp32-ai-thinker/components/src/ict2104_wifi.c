@@ -59,12 +59,13 @@ static esp_err_t wifi_event_handler(void *ctx, system_event_t *event) {
             ESP_LOGI(TAG, "Got IP: '%s'",
                     ip4addr_ntoa(&event->event_info.got_ip.ip_info.ip));
 
+            start_capture();
             /* Start the web server */
             // if (*server == NULL)
             // {
             ESP_LOGI(TAG, "Starting web server");
-            *server = start_webserver();
-            init_mqtt();
+            // *server = start_webserver();
+            // init_mqtt();
             // }
             break;
         case SYSTEM_EVENT_STA_DISCONNECTED:
@@ -72,11 +73,11 @@ static esp_err_t wifi_event_handler(void *ctx, system_event_t *event) {
             ESP_ERROR_CHECK(esp_wifi_connect());
 
             /* Stop the web server */
-            if (*server)
-            {
-            stop_webserver(*server);
-            *server = NULL;
-            }
+            // if (*server)
+            // {
+            // stop_webserver(*server);
+            // *server = NULL;
+            // }
             break;
         default:
             break;

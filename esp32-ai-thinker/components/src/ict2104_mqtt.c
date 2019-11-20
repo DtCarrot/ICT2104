@@ -21,28 +21,58 @@
 #include "esp_log.h"
 #include "mqtt_client.h"
 
+#include "ict2104_uart.h"
+
 uint8_t mqtt_connected = 0;
+
+esp_mqtt_client_handle_t client = NULL;
+
+void publish_mqtt(char *data, uint8_t byte_size) {
+    const char *PUBLISH_TAG = "PUBLISH MQTT";
+    char msg[byte_size];
+    strcpy(msg, data);
+    const char * TAG = "MQTT";
+    ESP_LOGI(TAG, "Publish MQTT");
+    // Publish mqtt message with specified topic
+    int msg_id = esp_mqtt_client_publish(client, "telemetry", data, 0, 0, 0);
+}
+
+void heartbeat_mqtt(void *p) {
+    const char *msg = "HEARTBEAT";
+    while (1) {
+        publish_mqtt(msg, sizeof(msg));
+        // send heartbeat every 5 seconds.
+        vTaskDelay(5000 / portTICK_PERIOD_MS);
+    }
+}
+
+TaskHandle_t heartbeat_handle = NULL;
 
 static esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event) {
     const char * TAG = "MQTT";
-    esp_mqtt_client_handle_t client = event->client;
+    client = event->client;
     int msg_id;
     switch(event->event_id) {
         case MQTT_EVENT_CONNECTED:
             mqtt_connected = 1;
             ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
-            msg_id = esp_mqtt_client_subscribe(client, "test", 0);
+            msg_id = esp_mqtt_client_subscribe(client, "command", 0);
             ESP_LOGI(TAG, "sent subscribe successful, msg_id=%d", msg_id);
+            // Start the heartbeat task
+            xTaskCreate(heartbeat_mqtt, "heartbeat_mqtt", 1024*2, NULL, configMAX_PRIORITIES-1, &heartbeat_handle);
             break;
 
         case MQTT_EVENT_DISCONNECTED:
             mqtt_connected = 0;
             ESP_LOGE(TAG, "MQTT_EVENT_DISCONNECTED");
+            if(heartbeat_handle != NULL) {
+                vTaskDelete(heartbeat_handle);
+            }
             break;
 
         case MQTT_EVENT_SUBSCRIBED:
             ESP_LOGI(TAG, "MQTT_EVENT_SUBSCRIBED, msg_id=%d", event->msg_id);
-            msg_id = esp_mqtt_client_publish(client, "test", "data", 0, 0, 0);
+            msg_id = esp_mqtt_client_publish(client, "telemetry", "STARTED", 0, 0, 0);
             ESP_LOGI(TAG, "sent publish successful, msg_id=%d", msg_id);
             break;
 
@@ -58,11 +88,16 @@ static esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event) {
             ESP_LOGI(TAG, "MQTT_EVENT_DATA");
             printf("TOPIC=%.*s\r\n", event->topic_len, event->topic);
             printf("DATA=%.*s\r\n", event->data_len, event->data);
+            // Send data to UART 
+            sendData(event->data);
             break;
 
         case MQTT_EVENT_ERROR:
             mqtt_connected = 0;
             ESP_LOGI(TAG, "MQTT_EVENT_ERROR");
+            if(heartbeat_handle != NULL) {
+                vTaskDelete(heartbeat_handle);
+            }
             break;
         default:
             break;
@@ -71,7 +106,9 @@ static esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event) {
 }
 
 const esp_mqtt_client_config_t mqtt_cfg = {
-    .uri = "mqtt://test.mosquitto.org",
+    .uri = "mqtt://tailor.cloudmqtt.com:17072",
+    .username = "zrxlhoid",
+    .password = "Bv7DAHDDEwVu",
     .event_handle = mqtt_event_handler
 };
 
@@ -86,10 +123,3 @@ uint8_t check_if_mqtt_connected() {
     return mqtt_connected;
 }
 
-void publish_mqtt(char *data, uint8_t byte_size) {
-    char msg[byte_size];
-    strcpy(msg, data);
-    const char * TAG = "MQTT";
-    ESP_LOGI(TAG, "Publish MQTT");
-    int msg_id = esp_mqtt_client_publish(mqtt_client, "test", "Fast test", 0, 0, 0);
-}

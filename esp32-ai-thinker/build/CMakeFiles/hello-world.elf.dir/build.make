@@ -150,7 +150,6 @@ hello-world.elf: esp-idf/coap/libcoap.a
 hello-world.elf: esp-idf/esp_adc_cal/libesp_adc_cal.a
 hello-world.elf: esp-idf/esp_gdbstub/libesp_gdbstub.a
 hello-world.elf: esp-idf/esp_https_ota/libesp_https_ota.a
-hello-world.elf: esp-idf/esp_http_client/libesp_http_client.a
 hello-world.elf: esp-idf/esp_local_ctrl/libesp_local_ctrl.a
 hello-world.elf: esp-idf/esp_websocket_client/libesp_websocket_client.a
 hello-world.elf: esp-idf/expat/libexpat.a
@@ -170,6 +169,7 @@ hello-world.elf: esp-idf/protobuf-c/libprotobuf-c.a
 hello-world.elf: esp-idf/mdns/libmdns.a
 hello-world.elf: esp-idf/console/libconsole.a
 hello-world.elf: esp-idf/json/libjson.a
+hello-world.elf: esp-idf/esp_http_client/libesp_http_client.a
 hello-world.elf: esp-idf/esp_http_server/libesp_http_server.a
 hello-world.elf: esp-idf/mqtt/libmqtt.a
 hello-world.elf: esp-idf/tcp_transport/libtcp_transport.a

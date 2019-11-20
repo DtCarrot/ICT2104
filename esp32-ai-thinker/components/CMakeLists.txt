@@ -34,6 +34,6 @@ set(COMPONENT_PRIV_INCLUDEDIRS
   )
 
 set(COMPONENT_REQUIRES driver)
-set(COMPONENT_PRIV_REQUIRES freertos mqtt esp_http_server)
+set(COMPONENT_PRIV_REQUIRES freertos mqtt esp_http_server esp_http_client mbedtls)
 
 register_component()

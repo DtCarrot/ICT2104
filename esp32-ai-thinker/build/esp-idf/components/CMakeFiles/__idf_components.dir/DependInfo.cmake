@@ -73,6 +73,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/dtcarrot/esp/esp-idf/components/tcp_transport/include"
   "/home/dtcarrot/esp/esp-idf/components/esp-tls"
   "/home/dtcarrot/esp/esp-idf/components/esp_http_server/include"
+  "/home/dtcarrot/esp/esp-idf/components/esp_http_client/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/conversions/jpge.cpp" "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components/CMakeFiles/__idf_components.dir/conversions/jpge.cpp.obj"
@@ -130,6 +131,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/dtcarrot/esp/esp-idf/components/tcp_transport/include"
   "/home/dtcarrot/esp/esp-idf/components/esp-tls"
   "/home/dtcarrot/esp/esp-idf/components/esp_http_server/include"
+  "/home/dtcarrot/esp/esp-idf/components/esp_http_client/include"
   )
 
 # Targets to which this target links.
@@ -147,6 +149,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/driver/CMakeFiles/__idf_driver.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/DependInfo.cmake"
+  "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/nghttp/CMakeFiles/__idf_nghttp.dir/DependInfo.cmake"
@@ -164,11 +167,11 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/DependInfo.cmake"
-  "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/tcpip_adapter/CMakeFiles/__idf_tcpip_adapter.dir/DependInfo.cmake"
-  "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/DependInfo.cmake"
   "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/DependInfo.cmake"
+  "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/tcpip_adapter/CMakeFiles/__idf_tcpip_adapter.dir/DependInfo.cmake"
+  "/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

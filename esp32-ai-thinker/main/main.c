@@ -44,7 +44,7 @@ void app_main()
 
     // Initialize the camera
     ESP_ERROR_CHECK(main_camera_init());
-    init_task();
+    // init_task();
 
     // Initialize async task
     ESP_LOGI("TAG", "Before starting wifi");
