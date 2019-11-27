@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/dtcarrot/esp/esp-idf/components/esp32/include/esp32/clk.h
-stdint.h
--
-
 /home/dtcarrot/esp/esp-idf/components/esp32/include/esp_attr.h
 sdkconfig.h
 /home/dtcarrot/esp/esp-idf/components/esp32/include/sdkconfig.h
@@ -60,37 +56,9 @@ sdkconfig.h
 stdlib.h
 -
 
-/home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h
-
-/home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/rtc.h
-stdbool.h
--
-stddef.h
--
-stdint.h
--
-soc/soc.h
-/home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/soc/soc.h
-soc/rtc_periph.h
-/home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/soc/rtc_periph.h
-
 /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h
 soc.h
 /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/soc.h
-
-/home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_struct.h
-stdint.h
--
-
-/home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h
-
-/home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_reg.h
-soc.h
-/home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/soc.h
-
-/home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_struct.h
-stdint.h
--
 
 /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/sens_reg.h
 soc.h
@@ -104,22 +72,6 @@ esp_assert.h
 esp_bit_defs.h
 -
 
-/home/dtcarrot/esp/esp-idf/components/soc/include/soc/rtc_periph.h
-stdint.h
--
-soc/rtc_io_reg.h
-/home/dtcarrot/esp/esp-idf/components/soc/include/soc/soc/rtc_io_reg.h
-soc/rtc_io_struct.h
-/home/dtcarrot/esp/esp-idf/components/soc/include/soc/soc/rtc_io_struct.h
-soc/rtc_cntl_reg.h
-/home/dtcarrot/esp/esp-idf/components/soc/include/soc/soc/rtc_cntl_reg.h
-soc/rtc_cntl_struct.h
-/home/dtcarrot/esp/esp-idf/components/soc/include/soc/soc/rtc_cntl_struct.h
-soc/rtc_gpio_channel.h
-/home/dtcarrot/esp/esp-idf/components/soc/include/soc/soc/rtc_gpio_channel.h
-soc/gpio_pins.h
-/home/dtcarrot/esp/esp-idf/components/soc/include/soc/soc/gpio_pins.h
-
 /home/dtcarrot/esp/esp-idf/components/ulp/include/esp32/ulp.h
 stdint.h
 -
@@ -131,34 +83,6 @@ esp_err.h
 /home/dtcarrot/esp/esp-idf/components/ulp/include/esp32/esp_err.h
 soc/soc.h
 /home/dtcarrot/esp/esp-idf/components/ulp/include/esp32/soc/soc.h
-
-/home/dtcarrot/esp/esp-idf/components/ulp/ulp.c
-stdio.h
--
-string.h
--
-stdlib.h
--
-esp_attr.h
-/home/dtcarrot/esp/esp-idf/components/ulp/esp_attr.h
-esp_err.h
-/home/dtcarrot/esp/esp-idf/components/ulp/esp_err.h
-esp_log.h
-/home/dtcarrot/esp/esp-idf/components/ulp/esp_log.h
-esp32/clk.h
-/home/dtcarrot/esp/esp-idf/components/ulp/esp32/clk.h
-esp32/ulp.h
-/home/dtcarrot/esp/esp-idf/components/ulp/esp32/ulp.h
-soc/soc.h
-/home/dtcarrot/esp/esp-idf/components/ulp/soc/soc.h
-soc/rtc.h
-/home/dtcarrot/esp/esp-idf/components/ulp/soc/rtc.h
-soc/rtc_cntl_reg.h
-/home/dtcarrot/esp/esp-idf/components/ulp/soc/rtc_cntl_reg.h
-soc/sens_reg.h
-/home/dtcarrot/esp/esp-idf/components/ulp/soc/sens_reg.h
-sdkconfig.h
-/home/dtcarrot/esp/esp-idf/components/ulp/sdkconfig.h
 
 /home/dtcarrot/esp/esp-idf/components/ulp/ulp_macro.c
 stdio.h

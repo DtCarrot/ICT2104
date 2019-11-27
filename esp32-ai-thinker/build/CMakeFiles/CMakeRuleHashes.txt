@@ -21,6 +21,7 @@ a754ce3b90dc964280aa57fff37bbcfe bootloader-prefix/src/bootloader-stamp/bootload
 49be187dcd83f064964d4346f2dc8a5c bootloader-prefix/src/bootloader-stamp/bootloader-mkdir
 b70c77ca0373848ac8f08e76dccffe69 bootloader-prefix/src/bootloader-stamp/bootloader-patch
 8512b8f8328a7e94a738927386ab31fa bootloader-prefix/src/bootloader-stamp/bootloader-update
+93b78cfd61135889e041c9639de196be dummy_main_src.c
 16e43f846ee2eb839ed0c6004fea2577 esp-idf/bootloader/CMakeFiles/bootloader-flash
 841ad48564adff0cd45999f10f65e7ff esp-idf/efuse/CMakeFiles/efuse_common_table
 c053e298cf9b4be7c75684429c235f53 esp-idf/efuse/CMakeFiles/efuse_test_table

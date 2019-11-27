@@ -21,8 +21,7 @@ httpd_uri_t uri_handler_jpg = {
     .handler = jpg_httpd_handler};
 
 
-httpd_handle_t start_webserver(void)
-{
+httpd_handle_t start_webserver(void) {
   httpd_handle_t server = NULL;
   ESP_LOGI(TAG, "Init web server");
   httpd_config_t config = HTTPD_DEFAULT_CONFIG();
@@ -41,8 +40,7 @@ httpd_handle_t start_webserver(void)
   return NULL;
 }
 
-void stop_webserver(httpd_handle_t server)
-{
+void stop_webserver(httpd_handle_t server) {
   // Stop the httpd server
   httpd_stop(server);
 }
@@ -59,13 +57,13 @@ static esp_err_t wifi_event_handler(void *ctx, system_event_t *event) {
             ESP_LOGI(TAG, "Got IP: '%s'",
                     ip4addr_ntoa(&event->event_info.got_ip.ip_info.ip));
 
+            init_mqtt();
             start_capture();
             /* Start the web server */
             // if (*server == NULL)
             // {
             ESP_LOGI(TAG, "Starting web server");
             // *server = start_webserver();
-            // init_mqtt();
             // }
             break;
         case SYSTEM_EVENT_STA_DISCONNECTED:
@@ -89,7 +87,9 @@ void start_wifi() {
 
 }
 
+// Initialize wifi connectivity
 void initialize_wifi(void *arg) {
+
     ESP_LOGI("WiFi", "Init tcpip adapter");
     tcpip_adapter_init();
     ESP_LOGI("WiFi", "After init adapter");

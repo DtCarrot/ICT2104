@@ -105,6 +105,10 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../components/driver/include"
   "../components/conversions/include"
   "../components/src/include"
+  "../components/esp-face/face_detection/include"
+  "../components/esp-face/face_recognition/include"
+  "../components/esp-face/image_util/include"
+  "../components/esp-face/lib/include"
   "/home/dtcarrot/esp/esp-idf/examples/common_components/protocol_examples_common/include"
   )
 

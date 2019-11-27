@@ -1,0 +1,2 @@
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/build/CMakeFiles/rebuild_cache.dir
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/build/CMakeFiles/edit_cache.dir

@@ -8,13 +8,6 @@ const storage = multer.memoryStorage();
 const fs = require("fs");
 // Put this statement near the top of your module
 var bodyParser = require("body-parser");
-// server.use(
-//   bodyParser.raw({
-//     inflate: true,
-//     limit: "400kb",
-//     type: "image/jpg"
-//   })
-// );
 // Put these statements before you define any routes.
 
 const upload = multer({ storage: storage });
@@ -39,11 +32,11 @@ server.use(function(req, res, next) {
   });
   req.on("end", function() {
     console.log("On end: ");
-    fs.writeFileSync("image-test.jpeg", data_stream.read(), {
-      encoding: "utf8",
-      mode: 777
-    });
-    req.rawBody = data;
+    // fs.writeFileSync("image-test.jpeg", data_stream.read(), {
+    //   encoding: "utf8",
+    //   mode: 777
+    // });
+    req.rawBody = data_stream.read();
     next();
   });
 });
@@ -60,30 +53,28 @@ io.on("connect", socket => {
 });
 io.listen(8888);
 
-const uploadImage = req => {
-  // console.log("Called");
-  // console.log(req.rawBody);
-  const buffer = Buffer.from(req.rawBody, "utf8");
-  // const buffer = new Buffer(req.rawBody).toString("base64");
-  // let imgSrcString = `data:image/jpeg;base64,${buffer}`;
-  // console.log(imgSrcString);
-  fs.writeFileSync("./image.jpg", buffer, err => console.log(err));
-  console.log("Completed");
-  // console.log(req.body);
-  // console.log(req.file);
-  // const form = new IncomingForm();
-  // form.on("file", (field, file) => {
-  //   console.log(field, file);
-  // });
-  // form.parse(req, (err, fields, files) => {
-  //   io.sockets.emit("broadcast", "test");
-  //   console.log(err, fields, files);
-  // });
+// Method that will be called when an image have been send from ESP32-CAM
+const uploadImage = (req, res) => {
+  // Convert raw image body to utf8 format
+  const buffer = Buffer.from(req.rawBody, "utf8").toString("base64");
+
+  // Write temporary image buffer
+  // fs.readFile("./image.jpg", buffer, err => console.log(err));
+  // const fileData = fs.readFileSync("./image-test.jpeg");
+  // const buffer = Buffer.from(fileData).toString("base64");
+  // io.sockets.emit("test");
+  // Send base64 image data
+  io.sockets.emit("broadcast", buffer);
+  // io.sockets.emit("broadcast", buffer);
+  res.send(200);
 };
 
 server.unsubscribe(cors(corsOptions));
 
-// server.post("/upload", upload.single("namewee"), uploadImage);
+/*
+ * /upload HTTP POST request
+ *
+ */
 server.post("/upload", uploadImage);
 
 server.listen(8000, () => {

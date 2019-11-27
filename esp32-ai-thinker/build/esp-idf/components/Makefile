@@ -441,6 +441,114 @@ driver/xclk.c.s:
 	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/driver/xclk.c.s
 .PHONY : driver/xclk.c.s
 
+esp-face/face_detection/fd_forward.obj: esp-face/face_detection/fd_forward.c.obj
+
+.PHONY : esp-face/face_detection/fd_forward.obj
+
+# target to build an object file
+esp-face/face_detection/fd_forward.c.obj:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_detection/fd_forward.c.obj
+.PHONY : esp-face/face_detection/fd_forward.c.obj
+
+esp-face/face_detection/fd_forward.i: esp-face/face_detection/fd_forward.c.i
+
+.PHONY : esp-face/face_detection/fd_forward.i
+
+# target to preprocess a source file
+esp-face/face_detection/fd_forward.c.i:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_detection/fd_forward.c.i
+.PHONY : esp-face/face_detection/fd_forward.c.i
+
+esp-face/face_detection/fd_forward.s: esp-face/face_detection/fd_forward.c.s
+
+.PHONY : esp-face/face_detection/fd_forward.s
+
+# target to generate assembly for a file
+esp-face/face_detection/fd_forward.c.s:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_detection/fd_forward.c.s
+.PHONY : esp-face/face_detection/fd_forward.c.s
+
+esp-face/face_recognition/fr_flash.obj: esp-face/face_recognition/fr_flash.c.obj
+
+.PHONY : esp-face/face_recognition/fr_flash.obj
+
+# target to build an object file
+esp-face/face_recognition/fr_flash.c.obj:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_flash.c.obj
+.PHONY : esp-face/face_recognition/fr_flash.c.obj
+
+esp-face/face_recognition/fr_flash.i: esp-face/face_recognition/fr_flash.c.i
+
+.PHONY : esp-face/face_recognition/fr_flash.i
+
+# target to preprocess a source file
+esp-face/face_recognition/fr_flash.c.i:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_flash.c.i
+.PHONY : esp-face/face_recognition/fr_flash.c.i
+
+esp-face/face_recognition/fr_flash.s: esp-face/face_recognition/fr_flash.c.s
+
+.PHONY : esp-face/face_recognition/fr_flash.s
+
+# target to generate assembly for a file
+esp-face/face_recognition/fr_flash.c.s:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_flash.c.s
+.PHONY : esp-face/face_recognition/fr_flash.c.s
+
+esp-face/face_recognition/fr_forward.obj: esp-face/face_recognition/fr_forward.c.obj
+
+.PHONY : esp-face/face_recognition/fr_forward.obj
+
+# target to build an object file
+esp-face/face_recognition/fr_forward.c.obj:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_forward.c.obj
+.PHONY : esp-face/face_recognition/fr_forward.c.obj
+
+esp-face/face_recognition/fr_forward.i: esp-face/face_recognition/fr_forward.c.i
+
+.PHONY : esp-face/face_recognition/fr_forward.i
+
+# target to preprocess a source file
+esp-face/face_recognition/fr_forward.c.i:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_forward.c.i
+.PHONY : esp-face/face_recognition/fr_forward.c.i
+
+esp-face/face_recognition/fr_forward.s: esp-face/face_recognition/fr_forward.c.s
+
+.PHONY : esp-face/face_recognition/fr_forward.s
+
+# target to generate assembly for a file
+esp-face/face_recognition/fr_forward.c.s:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_forward.c.s
+.PHONY : esp-face/face_recognition/fr_forward.c.s
+
+esp-face/image_util/image_util.obj: esp-face/image_util/image_util.c.obj
+
+.PHONY : esp-face/image_util/image_util.obj
+
+# target to build an object file
+esp-face/image_util/image_util.c.obj:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/image_util/image_util.c.obj
+.PHONY : esp-face/image_util/image_util.c.obj
+
+esp-face/image_util/image_util.i: esp-face/image_util/image_util.c.i
+
+.PHONY : esp-face/image_util/image_util.i
+
+# target to preprocess a source file
+esp-face/image_util/image_util.c.i:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/image_util/image_util.c.i
+.PHONY : esp-face/image_util/image_util.c.i
+
+esp-face/image_util/image_util.s: esp-face/image_util/image_util.c.s
+
+.PHONY : esp-face/image_util/image_util.s
+
+# target to generate assembly for a file
+esp-face/image_util/image_util.c.s:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/image_util/image_util.c.s
+.PHONY : esp-face/image_util/image_util.c.s
+
 sensors/ov2640.obj: sensors/ov2640.c.obj
 
 .PHONY : sensors/ov2640.obj
@@ -673,6 +781,18 @@ help:
 	@echo "... driver/xclk.obj"
 	@echo "... driver/xclk.i"
 	@echo "... driver/xclk.s"
+	@echo "... esp-face/face_detection/fd_forward.obj"
+	@echo "... esp-face/face_detection/fd_forward.i"
+	@echo "... esp-face/face_detection/fd_forward.s"
+	@echo "... esp-face/face_recognition/fr_flash.obj"
+	@echo "... esp-face/face_recognition/fr_flash.i"
+	@echo "... esp-face/face_recognition/fr_flash.s"
+	@echo "... esp-face/face_recognition/fr_forward.obj"
+	@echo "... esp-face/face_recognition/fr_forward.i"
+	@echo "... esp-face/face_recognition/fr_forward.s"
+	@echo "... esp-face/image_util/image_util.obj"
+	@echo "... esp-face/image_util/image_util.i"
+	@echo "... esp-face/image_util/image_util.s"
 	@echo "... sensors/ov2640.obj"
 	@echo "... sensors/ov2640.i"
 	@echo "... sensors/ov2640.s"

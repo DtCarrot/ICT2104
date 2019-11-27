@@ -16,6 +16,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj"
   "CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj"
   "CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj"
+  "CMakeFiles/__idf_components.dir/esp-face/face_detection/fd_forward.c.obj"
+  "CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_forward.c.obj"
+  "CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_flash.c.obj"
+  "CMakeFiles/__idf_components.dir/esp-face/image_util/image_util.c.obj"
   "libcomponents.pdb"
   "libcomponents.a"
 )

@@ -1,4 +1,10 @@
-COMPONENT_ADD_INCLUDEDIRS := driver/include conversions/include src/include
+COMPONENT_ADD_INCLUDEDIRS := driver/include conversions/include src/include 
 COMPONENT_PRIV_INCLUDEDIRS := driver/private_include conversions/private_include sensors/private_include
 COMPONENT_SRCDIRS := driver conversions sensors src
+EXTRA_COMPONENT_DIRS += $(SOLUTION_PATH)/components
+EXTRA_COMPONENT_DIRS += $(SOLUTION_PATH)/components/esp-face/lib
+EXTRA_COMPONENT_DIRS += $(SOLUTION_PATH)/components/esp-face/image_util
+EXTRA_COMPONENT_DIRS += $(SOLUTION_PATH)/components/esp-face/face_detection
+EXTRA_COMPONENT_DIRS += $(SOLUTION_PATH)/components/esp-face/face_recognition
+EXTRA_COMPONENT_DIRS += $(SOLUTION_PATH)/components/esp-face/object_detection
 CXXFLAGS += -fno-rtti

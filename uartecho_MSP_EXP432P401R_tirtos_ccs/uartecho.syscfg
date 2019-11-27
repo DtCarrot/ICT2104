@@ -17,9 +17,12 @@ var GPIO4 = GPIO.addInstance();
 var Timer2 = Timer.addInstance();
 var GPIO5 = GPIO.addInstance();
 var GPIO6 = GPIO.addInstance();
+var GPIO7 = GPIO.addInstance();
 // Name
 RTOS.timer0.resource.$name = "MyTIMER_A1";
 var Power = scripting.addModule("/ti/drivers/Power");
+// Initial Performance Level - The performance level at system start up.
+Power.initialPerformanceLevel = 3;
 // Name
 Power.performanceLevel3.$name = "ti_drivers_power_PowerMSP432PerfLevels0";
 // Name
@@ -72,14 +75,16 @@ Timer1.timer.$name = "MyTIMER321";
 GPIO4.$name = "CONFIG_GPIO_LED_0";
 // Use Hardware - Select the hardware to use, or 'none' to use available header pins
 GPIO4.$hardware = system.deviceData.board.components.LED1_RED;
+// Output Strength - Specifies the output strength
+GPIO4.outputStrength = "High";
 // Name - The C/C++ identifier used in applications as the index parameter passed to Timer runtime APIs
 Timer2.$name = "CONFIG_TIMER_1";
 // Interrupt Priority - Timer Interrupt Priority
 Timer2.interruptPriority = "6";
-// Timer Type
-Timer2.timerType = "32 Bits";
 // Name
-Timer2.timer.$name = "MyTIMER321";
+Timer2.timer.$name = "MyTIMER_A1";
+// Use Peripheral
+Timer2.timer.$assign = "Timer_A1";
 // Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
 GPIO5.$name = "CONFIG_PIR_ECHO_PIN";
 // Callback Function - The name of the callback function called when this GPIO pin triggers an interrupt, or 'NULL' if it's specified at runtime
@@ -93,7 +98,13 @@ GPIO6.mode = "Output";
 // Output Strength - Specifies the output strength
 GPIO6.outputStrength = "High";
 // Assign pin
-GPIO6.gpioPin.$assign = "boosterpack.14"; // P1.7
+GPIO6.gpioPin.$assign = "boosterpack.10"; // P6.4
+// Mode - Select the GPIO mode
+GPIO7.mode = "Output";
+// Use Hardware - Select the hardware to use, or 'none' to use available header pins
+GPIO7.$hardware = system.deviceData.board.components.LED2_GREEN;
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO7.$name = "CONFIG_LED_PIN_GREEN";
 // Suggest solution
 RTOS.timer0.resource.$suggestSolution = "Timer_A0";
 // Suggest solution
@@ -105,8 +116,8 @@ UART1.uart.rxPin.$suggestSolution = "6";
 // Suggest solution
 GPIO2.gpioPin.$suggestSolution = "1";
 // Suggest solution
-Timer1.timer.$suggestSolution = "TIMER32_1";
+Timer1.timer.$suggestSolution = "TIMER32_0";
 // Suggest solution
 GPIO4.gpioPin.$suggestSolution = "4";
 // Suggest solution
-Timer2.timer.$suggestSolution = "TIMER32_0";
+GPIO7.gpioPin.$suggestSolution = "17";

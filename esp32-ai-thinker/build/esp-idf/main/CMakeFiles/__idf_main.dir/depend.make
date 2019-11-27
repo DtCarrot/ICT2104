@@ -4,6 +4,11 @@
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/conversions/include/img_converters.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/driver/include/esp_camera.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/driver/include/sensor.h
+esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/esp-face/face_detection/include/fd_forward.h
+esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/esp-face/image_util/include/image_util.h
+esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/esp-face/lib/include/dl_lib_matrix3d.h
+esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/esp-face/lib/include/dl_lib_matrix3dq.h
+esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/esp-face/lib/include/mtmn.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/src/include/ict2104_camera.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/src/include/ict2104_mqtt.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/src/include/ict2104_uart.h

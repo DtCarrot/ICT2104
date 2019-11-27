@@ -19,3 +19,4 @@ void init_mqtt();
 static esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event);
 uint8_t check_if_mqtt_connected();
 void publish_mqtt(char *data, uint8_t byte_size);
+void init_mqtt_task();

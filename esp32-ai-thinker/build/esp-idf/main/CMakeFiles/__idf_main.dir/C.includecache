@@ -30,6 +30,48 @@ img_converters.h
 stdint.h
 -
 
+../components/esp-face/face_detection/include/fd_forward.h
+image_util.h
+../components/esp-face/face_detection/include/image_util.h
+dl_lib_matrix3d.h
+../components/esp-face/face_detection/include/dl_lib_matrix3d.h
+mtmn.h
+../components/esp-face/face_detection/include/mtmn.h
+
+../components/esp-face/image_util/include/image_util.h
+stdint.h
+-
+math.h
+-
+mtmn.h
+../components/esp-face/image_util/include/mtmn.h
+
+../components/esp-face/lib/include/dl_lib_matrix3d.h
+stdint.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+assert.h
+-
+freertos/FreeRTOS.h
+../components/esp-face/lib/include/freertos/FreeRTOS.h
+
+../components/esp-face/lib/include/dl_lib_matrix3dq.h
+dl_lib_matrix3d.h
+../components/esp-face/lib/include/dl_lib_matrix3d.h
+
+../components/esp-face/lib/include/mtmn.h
+dl_lib_matrix3d.h
+../components/esp-face/lib/include/dl_lib_matrix3d.h
+dl_lib_matrix3dq.h
+../components/esp-face/lib/include/dl_lib_matrix3dq.h
+
 ../components/src/include/ict2104_camera.h
 esp_camera.h
 ../components/src/include/esp_camera.h
@@ -1361,6 +1403,8 @@ ict2104_wifi.h
 -
 ict2104_mqtt.h
 -
+fd_forward.h
+/home/dtcarrot/esp/ict2104/esp32-ai-thinker/main/fd_forward.h
 
 config/sdkconfig.h
 

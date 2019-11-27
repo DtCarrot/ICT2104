@@ -54,8 +54,7 @@ static camera_config_t camera_config = {
 
 static const char *TAG = "camera";
 
-typedef struct
-{
+typedef struct {
   httpd_req_t *req;
   size_t len;
 } jpg_chunking_t;
@@ -73,10 +72,6 @@ static size_t jpg_encode_stream(void *arg, size_t index, const void *data, size_
   j->len += len;
   return len;
 }
-
-// esp_err_t capture_video() {
-
-// }
 
 esp_err_t jpg_httpd_handler(httpd_req_t *req) {
   camera_fb_t *fb = NULL;
@@ -109,41 +104,41 @@ esp_err_t jpg_httpd_handler(httpd_req_t *req) {
 }
 
 esp_err_t _http_event_handler(esp_http_client_event_t *evt) {
-    switch(evt->event_id) {
-        case HTTP_EVENT_ERROR:
-            ESP_LOGD(TAG, "HTTP_EVENT_ERROR");
-            break;
-        case HTTP_EVENT_ON_CONNECTED:
-            ESP_LOGD(TAG, "HTTP_EVENT_ON_CONNECTED");
-            break;
-        case HTTP_EVENT_HEADER_SENT:
-            ESP_LOGD(TAG, "HTTP_EVENT_HEADER_SENT");
-            break;
-        case HTTP_EVENT_ON_HEADER:
-            ESP_LOGD(TAG, "HTTP_EVENT_ON_HEADER, key=%s, value=%s", evt->header_key, evt->header_value);
-            break;
-        case HTTP_EVENT_ON_DATA:
-            ESP_LOGD(TAG, "HTTP_EVENT_ON_DATA, len=%d", evt->data_len);
-            if (!esp_http_client_is_chunked_response(evt->client)) {
-                // Write out data
-                printf("%.*s", evt->data_len, (char*)evt->data);
-            }
+  switch(evt->event_id) {
+    case HTTP_EVENT_ERROR:
+        ESP_LOGD(TAG, "HTTP_EVENT_ERROR");
+        break;
+    case HTTP_EVENT_ON_CONNECTED:
+        ESP_LOGD(TAG, "HTTP_EVENT_ON_CONNECTED");
+        break;
+    case HTTP_EVENT_HEADER_SENT:
+        ESP_LOGD(TAG, "HTTP_EVENT_HEADER_SENT");
+        break;
+    case HTTP_EVENT_ON_HEADER:
+        ESP_LOGD(TAG, "HTTP_EVENT_ON_HEADER, key=%s, value=%s", evt->header_key, evt->header_value);
+        break;
+    case HTTP_EVENT_ON_DATA:
+        ESP_LOGD(TAG, "HTTP_EVENT_ON_DATA, len=%d", evt->data_len);
+        if (!esp_http_client_is_chunked_response(evt->client)) {
+            // Write out data
+            printf("%.*s", evt->data_len, (char*)evt->data);
+        }
 
-            break;
-        case HTTP_EVENT_ON_FINISH:
-            ESP_LOGD(TAG, "HTTP_EVENT_ON_FINISH");
-            break;
-        case HTTP_EVENT_DISCONNECTED:
-            ESP_LOGI(TAG, "HTTP_EVENT_DISCONNECTED");
-            int mbedtls_err = 0;
-            esp_err_t err = esp_tls_get_and_clear_last_error(evt->data, &mbedtls_err, NULL);
-            if (err != 0) {
-                ESP_LOGI(TAG, "Last esp error code: 0x%x", err);
-                ESP_LOGI(TAG, "Last mbedtls failure: 0x%x", mbedtls_err);
-            }
-            break;
-    }
-    return ESP_OK;
+        break;
+    case HTTP_EVENT_ON_FINISH:
+        ESP_LOGD(TAG, "HTTP_EVENT_ON_FINISH");
+        break;
+    case HTTP_EVENT_DISCONNECTED:
+        ESP_LOGI(TAG, "HTTP_EVENT_DISCONNECTED");
+        int mbedtls_err = 0;
+        esp_err_t err = esp_tls_get_and_clear_last_error(evt->data, &mbedtls_err, NULL);
+        if (err != 0) {
+            ESP_LOGI(TAG, "Last esp error code: 0x%x", err);
+            ESP_LOGI(TAG, "Last mbedtls failure: 0x%x", mbedtls_err);
+        }
+        break;
+  }
+  return ESP_OK;
 }
 
 // Initialize camera 
@@ -161,94 +156,92 @@ esp_err_t main_camera_init() {
 }
 
 int count = 0;
-// void uart_init(void) {
-//     xTaskCreate(uart_task, "uart_task", 1024*2, NULL, configMAX_PRIORITIES-1, NULL);
-// }
+// This method shall be responsible for capturing
+// a video frame and sending it to the HTTP server every 5 seconds.
+esp_err_t start_capture_task() {
+  return ESP_OK;
+
+}
 
 esp_err_t start_capture() {
-  while(count < 50) {
-    vTaskDelay(5000 / portTICK_PERIOD_MS);
+  // xTaskCreatePinnedToCore(&start_capture_task, "capture_task", 4096, NULL, 5, NULL, 0);
+  // return ESP_OK;
+  // Remove counter later
+  while(1) {
+
     count++;
     camera_fb_t *fb = NULL;
     esp_err_t res = ESP_OK;
     size_t fb_len = 0;
     int64_t fr_start = esp_timer_get_time();
 
+    // Get the frame buffer from the ESP32 Camera
     fb = esp_camera_fb_get();
+    // Check if the camera capture have been successful
     if (!fb)
     {
       ESP_LOGE(TAG, "Camera capture failed");
-      // httpd_resp_send_500(req);
+      // Might want to trigger mqtt to send an error message when capturing video frame
       return ESP_FAIL;
     }
-    // POST
+
+    // float ratio = 0.3;
+    // int ori_w = 320;
+    // int ori_h = 240;
+    // int w = ori_w * ratio;
+    // int h = ori_h * ratio;
+    // int c = 3;
+
+    // dl_matrix3du_t *image_ori = dl_matrix3du_alloc(1, ori_w, ori_h, c);
+    // dl_matrix3du_t *image_motion = dl_matrix3du_alloc(1, w, h, c);
+    // dl_matrix3du_t *image_new = dl_matrix3du_alloc(1, w, h, c);
+    // dl_matrix3du_t *image_tmp = dl_matrix3du_alloc(1, w, h, c);
+    // if(!fmt2rgb888(fb->buf, fb->len, fb->format, image_ori->item))
+    // {
+    //     ESP_LOGW(TAG, "fmt2rgb888 failed");
+    //     //res = ESP_FAIL;
+    //     //dl_matrix3du_free(image_matrix);
+    //     //break;
+    // }
+
+
+    // Prepare the POST request to upload the frame buffer data
+    // using HTTP.
+    // Sends to the <remote ip>/upload with the buffer data
     esp_http_client_config_t config = {
         .url = "http://httpbin.org/get",
         .event_handler = _http_event_handler,
     };
     esp_http_client_handle_t client = esp_http_client_init(&config);
 
-    // POST
+    // Set remote URL 
     esp_http_client_set_url(client, "http://192.168.43.210:8000/upload");
+    // Set HTTP method -> Set post in our case
     esp_http_client_set_method(client, HTTP_METHOD_POST);
-    // esp_http_client_set_post_field(client, post_data, strlen(post_data));
-
-    // Set headers
-    // esp_http_client_set_header(client, "Content-Type", "multipart/form-data");
-
-    // fb_len = fb->len;
-    // esp_http_client_set_post_field(client, (const char*) fb-> buf, fb->len);
-
+    // Set the post data which is the buffer data together with the buffer length
     esp_http_client_set_post_field(client, (const char *)fb->buf, fb->len);
     ESP_LOGI(TAG, "Size: %d", fb->len);
-    // char * buffer_data = encode(fb->buf);
-    unsigned char buffer[256];
-    size_t len;
-    if( mbedtls_base64_encode( buffer, sizeof( buffer ), &len, fb->buf, fb->len ) != 0) {
-      ESP_LOGI(TAG, "Buffer: %s", buffer);
-    }
-
+    // Set header content type
     esp_http_client_set_header(client, "Content-Type", "image/jpg");
 
-  // res = httpd_resp_set_type(req, "image/jpeg");
-  // if (res == ESP_OK)
-  // {
-  //   res = httpd_resp_set_hdr(req, "Content-Disposition", "inline; filename=capture.jpg");
-  // }
-
-  // if (res == ESP_OK)
-  // {
-  //   fb_len = fb->len;
-  //   res = httpd_resp_send(req, (const char *)fb->buf, fb->len);
-  // }
     esp_err_t err = NULL;
 
+    // Execute HTTP POST Request
     err = esp_http_client_perform(client);
+    // Check whether there is any error in invoking http request.
     if (err == ESP_OK) {
-        ESP_LOGI(TAG, "HTTP POST Status = %d, content_length = %d",
-                esp_http_client_get_status_code(client),
-                esp_http_client_get_content_length(client));
+      // Get http status code and length
+      ESP_LOGI(TAG, "HTTP POST Status = %d, content_length = %d",
+              esp_http_client_get_status_code(client),
+              esp_http_client_get_content_length(client));
     } else {
-        ESP_LOGE(TAG, "HTTP POST request failed: %s", esp_err_to_name(err));
+      ESP_LOGE(TAG, "HTTP POST request failed: %s", esp_err_to_name(err));
     }
-
-
+    // Clean up after sending each http message
     esp_http_client_cleanup(client);
-    // res = httpd_resp_set_type(req, "image/jpeg");
-    // if (res == ESP_OK)
-    // {
-    //   res = httpd_resp_set_hdr(req, "Content-Disposition", "inline; filename=capture.jpg");
-    // }
 
-    // if (res == ESP_OK)
-    // {
-    //   fb_len = fb->len;
-    //   res = httpd_resp_send(req, (const char *)fb->buf, fb->len);
-    // }
-    // esp_camera_fb_return(fb);
-    // int64_t fr_end = esp_timer_get_time();
-    // ESP_LOGI(TAG, "JPG: %uKB %ums", (uint32_t)(fb_len / 1024), (uint32_t)((fr_end - fr_start) / 1000));
-    // return res;
+    // Delay by 5000ms before next request
+    vTaskDelay(800 / portTICK_PERIOD_MS);
 
   }
   return ESP_OK;

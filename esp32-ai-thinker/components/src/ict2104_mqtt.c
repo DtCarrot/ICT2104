@@ -6,8 +6,6 @@
 #include "esp_system.h"
 #include "esp_event.h"
 #include "tcpip_adapter.h"
-// #include "common_components/protocol_examples_common.h"
-
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/semphr.h"
@@ -28,6 +26,9 @@ uint8_t mqtt_connected = 0;
 esp_mqtt_client_handle_t client = NULL;
 
 void publish_mqtt(char *data, uint8_t byte_size) {
+    if (client == NULL) {
+        return;
+    }
     const char *PUBLISH_TAG = "PUBLISH MQTT";
     char msg[byte_size];
     strcpy(msg, data);
@@ -43,6 +44,19 @@ void heartbeat_mqtt(void *p) {
         publish_mqtt(msg, sizeof(msg));
         // send heartbeat every 5 seconds.
         vTaskDelay(5000 / portTICK_PERIOD_MS);
+    }
+}
+
+void parse_mqtt_message(char* output, uint8_t byte_size) {
+    const char *RESET = "RST1";
+    const char *ALERT = "ALT1";
+    char msg[byte_size];
+    strcpy(msg, output);
+    if(strncmp((char*) msg, RESET, 4) == 0) {
+        ESP_LOGI("MSG", "Restarting");
+        esp_restart();
+    } else if(strncmp((char*) msg, ALERT, 4) == 0) {
+        ESP_LOGI("MSG", "Alerting");
     }
 }
 
@@ -88,8 +102,9 @@ static esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event) {
             ESP_LOGI(TAG, "MQTT_EVENT_DATA");
             printf("TOPIC=%.*s\r\n", event->topic_len, event->topic);
             printf("DATA=%.*s\r\n", event->data_len, event->data);
+            parse_mqtt_message((char*)event->data, sizeof(event->data));
             // Send data to UART 
-            sendData(event->data);
+            // sendData(event->data);
             break;
 
         case MQTT_EVENT_ERROR:
@@ -116,6 +131,10 @@ esp_mqtt_client_handle_t mqtt_client;
 void init_mqtt() {
     mqtt_client = esp_mqtt_client_init(&mqtt_cfg);
     esp_mqtt_client_start(mqtt_client);
+}
+
+void init_mqtt_task() {
+    xTaskCreate(init_mqtt_task, "mqtt_task", 1024*2, NULL, configMAX_PRIORITIES-1, NULL);
 }
 
 

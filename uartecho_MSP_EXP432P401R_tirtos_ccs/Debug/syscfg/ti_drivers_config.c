@@ -35,11 +35,13 @@ GPIO_PinConfig gpioPinConfigs[] = {
     /* CONFIG_ECHO_PIN */
     GPIOMSP432_P2_6 | GPIO_CFG_IN_NOPULL | GPIO_CFG_IN_INT_BOTH_EDGES,
     /* CONFIG_GPIO_LED_0 : LaunchPad LED 1 Red */
-    GPIOMSP432_P1_0 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_MED | GPIO_CFG_OUT_LOW,
+    GPIOMSP432_P1_0 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_HIGH | GPIO_CFG_OUT_LOW,
     /* CONFIG_PIR_ECHO_PIN */
     GPIOMSP432_P1_5 | GPIO_CFG_IN_NOPULL | GPIO_CFG_IN_INT_NONE,
     /* CONFIG_BUZZER_OUT_PIN */
-    GPIOMSP432_P1_7 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_HIGH | GPIO_CFG_OUT_LOW,
+    GPIOMSP432_P6_4 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_HIGH | GPIO_CFG_OUT_LOW,
+    /* CONFIG_LED_PIN_GREEN : LaunchPad LED 2 Green */
+    GPIOMSP432_P2_1 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_MED | GPIO_CFG_OUT_LOW,
 };
 
 /*
@@ -63,6 +65,8 @@ GPIO_CallbackFxn gpioCallbackFunctions[] = {
     NULL,
     /* CONFIG_BUZZER_OUT_PIN */
     NULL,
+    /* CONFIG_LED_PIN_GREEN : LaunchPad LED 2 Green */
+    NULL,
 };
 
 /*
@@ -71,8 +75,8 @@ GPIO_CallbackFxn gpioCallbackFunctions[] = {
 const GPIOMSP432_Config GPIOMSP432_config = {
     .pinConfigs = (GPIO_PinConfig *)gpioPinConfigs,
     .callbacks = (GPIO_CallbackFxn *)gpioCallbackFunctions,
-    .numberOfPinConfigs = 6,
-    .numberOfCallbacks = 6,
+    .numberOfPinConfigs = 7,
+    .numberOfCallbacks = 7,
     .intPriority = (~0)
 };
 
@@ -89,7 +93,7 @@ extern void PowerMSP432_sleepPolicy(void);
 const PowerMSP432_ConfigV1 PowerMSP432_config = {
     .policyInitFxn         = PowerMSP432_initPolicy,
     .policyFxn             = PowerMSP432_sleepPolicy,
-    .initialPerfLevel      = 2,
+    .initialPerfLevel      = 3,
     .enablePolicy          = true,
     .enablePerf            = true,
     .enableParking         = false,
@@ -132,15 +136,16 @@ TimerMSP432_Object timerMSP432Objects[CONFIG_TIMER_COUNT];
 const TimerMSP432_HWAttrs TimerMSP432HWAttrs[CONFIG_TIMER_COUNT] = {
     /* CONFIG_TIMER_0 */
     {
-        .timerBaseAddress  = TIMER32_1_BASE,
-        .intNum            = INT_T32_INT2,
+        .timerBaseAddress  = TIMER32_0_BASE,
+        .intNum            = INT_T32_INT1,
         .intPriority       = (~0),
     },
     /* CONFIG_TIMER_1 */
     {
-        .timerBaseAddress  = TIMER32_0_BASE,
-        .intNum            = INT_T32_INT1,
+        .timerBaseAddress  = TIMER_A1_BASE,
+        .intNum            = INT_TA1_0,
         .intPriority       = 0xc0,
+        .clockSource       = TIMER_A_CLOCKSOURCE_ACLK
     },
 };
 
@@ -156,7 +161,7 @@ const Timer_Config Timer_config[CONFIG_TIMER_COUNT] = {
     },
     /* CONFIG_TIMER_1 */
     {
-        .fxnTablePtr = &TimerMSP432_Timer32_fxnTable,
+        .fxnTablePtr = &TimerMSP432_Timer_A_fxnTable,
         .object      = &timerMSP432Objects[CONFIG_TIMER_1],
         .hwAttrs     = &TimerMSP432HWAttrs[CONFIG_TIMER_1]
     },

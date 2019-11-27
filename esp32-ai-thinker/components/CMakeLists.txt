@@ -16,7 +16,10 @@ set(COMPONENT_SRCS
   src/ict2104_uart.c
   src/ict2104_wifi.c
   src/ict2104_mqtt.c
-
+  esp-face/face_detection/fd_forward.c
+  esp-face/face_recognition/fr_forward.c
+  esp-face/face_recognition/fr_flash.c
+  esp-face/image_util/image_util.c
 
   )
 
@@ -24,6 +27,13 @@ set(COMPONENT_ADD_INCLUDEDIRS
   driver/include
   conversions/include
   src/include
+  esp-face/face_detection/include
+  esp-face/face_recognition/include
+  esp-face/face_recognition/include
+  esp-face/image_util/include
+  esp-face/lib/include
+
+
 
   )
 
@@ -33,7 +43,7 @@ set(COMPONENT_PRIV_INCLUDEDIRS
   conversions/private_include
   )
 
-set(COMPONENT_REQUIRES driver)
-set(COMPONENT_PRIV_REQUIRES freertos mqtt esp_http_server esp_http_client mbedtls)
+set(COMPONENT_REQUIRES driver )
+set(COMPONENT_PRIV_REQUIRES spi_flash freertos mqtt esp_http_server esp_http_client mbedtls)
 
 register_component()

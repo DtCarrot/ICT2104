@@ -6,14 +6,16 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <string.h>
-
 /* Driver Header files */
 #include <ti/drivers/GPIO.h>
 #include <ti/drivers/UART.h>
+#include <ti/sysbios/BIOS.h>
+#include <xdc/runtime/Error.h>
 
 /* Driver configuration */
 #include "ti_drivers_config.h"
 
+#include <ti/sysbios/knl/Semaphore.h>
 #include "rxtx_uart.h"
 
 UART_Handle uart;
@@ -21,17 +23,21 @@ UART_Params uartParams;
 char        input[100];
 const char  echoPrompt[] = "Echoing characters:\r\n";
 
+
+Semaphore_Handle SEM_uart_rx; // this binary semaphore handles uart receiving interrupts
+
+
 void init_uart() {
     UART_init();
+
     /* Create a UART with data processing off. */
     UART_Params_init(&uartParams);
 
     uartParams.writeDataMode = UART_DATA_BINARY;
+    uartParams.writeMode = UART_MODE_BLOCKING;
     uartParams.readDataMode = UART_DATA_BINARY;
     uartParams.readReturnMode = UART_RETURN_FULL;
     uartParams.readEcho = UART_ECHO_OFF;
-    uartParams.readMode = UART_MODE_CALLBACK; // the uart uses a read interrupt
-    uartParams.readCallback = &rx_uart_interrupt; // function called when the uart interrupt fires
 
     uartParams.baudRate = 115200;
 
@@ -42,14 +48,19 @@ void init_uart() {
         while (1);
     }
 
-    //UART_write(uart, echoPrompt, sizeof(echoPrompt));
+    // Define binary semaphore to ensure that only one resource 
+    // accesses UART at the same time
+    Semaphore_Params sem_params;
+    Error_Block eb;
 
-    /* Loop forever echoing */
-    //while (1) {
-        //UART_read(uart, &input, sizeof(input));
-        //UART_write(uart, &input, sizeof(input));
-    //}
+    // Initialize semaphore
+    Semaphore_Params_init(&sem_params);
+    // Define the semaphore to be binary
+    sem_params.mode = Semaphore_Mode_BINARY;
+    // Create semaphore
+    SEM_uart_rx = Semaphore_create(0, &sem_params, &eb);
 
+    // While loop to check for any incoming data
     while(1) {
         UART_read(uart, &input, sizeof(input));
         // If the command is to play the alarm
@@ -75,26 +86,48 @@ void rx_uart_interrupt(UART_Handle handle, void *rxBuf, size_t size) {
 
 }
 
-void read_uart() {
-    //UART_write(uart, echoPrompt, sizeof(echoPrompt));
-    //UART_read(uart, &input, 1);
-    //UART_write(uart, &input, 1);
-}
 
-void send_data(int data) {
-    //char output[len];
-    //uint8_t *output = "SC02";
-    //strcpy(output, msg);
-    if(data == 12) {
-        uint8_t *output = "SC02";
-        UART_write(uart, output, sizeof(output));
+/*
+ * Method that is used to send data with UART command with
+ * optional message.
+ *
+ *
+ */
+void send_data(uint8_t *command, uint8_t command_len, uint8_t *msg, uint8_t msg_len) {
+
+    // Dynamically define the memory management for command
+    uint8_t *output_code = malloc(sizeof(uint8_t) * command_len);
+    uint8_t *output_msg;
+    
+    // If the message is not NULL, we need to dynamically declare
+    // the message data memory
+    if (msg != NULL) {
+        output_msg = malloc(sizeof(uint8_t) * msg_len);
+        strncpy(output_msg, msg, sizeof(msg));
     }
+
+    strncpy(output_code, command, sizeof(output_code));
+    
+    // Wait until the binary mutex have been released
+    Semaphore_pend(SEM_uart_rx, BIOS_WAIT_FOREVER);
+
+    // Acquire the mutex
+    Semaphore_post(SEM_uart_rx);
+
+    // Write the 4 byte header code
+    UART_writePolling(uart, output_code, sizeof(output_code));
+    if (msg != NULL) {
+        // Write the 4 byte header associated message
+        UART_writePolling(uart, output_msg, sizeof(output_msg));
+        // Free the memeory for the msg
+        free(output_msg);
+    }
+
+    // Release the mutex so that other 
+    // resources can acquire the mutex
+    Semaphore_post(SEM_uart_rx);
+
+    // Free the memory for the coe
+    free(output_code);
 }
 
-//void send_data(char *msg, uint8_t len) {
-//    char output[len];
-//    //uint8_t *output = "SC02";
-//    strcpy(output, msg);
-//    if(s
-//    UART_write(uart, output, sizeof(output));
-//}

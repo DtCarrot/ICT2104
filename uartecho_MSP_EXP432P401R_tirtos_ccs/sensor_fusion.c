@@ -13,7 +13,12 @@ int time_since_last_alert = 0;
  *
  */
 uint8_t sensor_fusion_check(float distance, uint8_t active) {
-    if(distance < 20 && active) {
+
+    if(distance < 20 && distance > 0) {
+        return 1;
+    }
+
+    if(active) {
         return 1;
     }
     return 0;

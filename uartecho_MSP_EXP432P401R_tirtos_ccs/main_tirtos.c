@@ -45,6 +45,15 @@
 /* Driver configuration */
 #include <ti/drivers/Board.h>
 
+#include <unistd.h>
+#include <stddef.h>
+
+#include <ti/drivers/GPIO.h>
+
+/* Driver configuration */
+#include "ti_drivers_config.h"
+
+
 
 
 extern void *mainThread(void *arg0);
@@ -65,6 +74,10 @@ int main(void)
 
     /* Call driver init functions */
     Board_init();
+    GPIO_init();
+    GPIO_setConfig(CONFIG_LED_PIN_GREEN, GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING);
+    GPIO_write(CONFIG_LED_PIN_GREEN, 1);
+
     /* Initialize the attributes structure with default values */
 //    pthread_attr_init(&attrs);
 //

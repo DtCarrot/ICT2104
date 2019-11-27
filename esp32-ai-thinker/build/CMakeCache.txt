@@ -18,6 +18,9 @@
 CCACHE_ENABLE:UNINITIALIZED=0
 
 //Path to a program.
+CCACHE_FOUND:FILEPATH=CCACHE_FOUND-NOTFOUND
+
+//Path to a program.
 CMAKE_AR:FILEPATH=/home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ar
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
@@ -232,8 +235,8 @@ ENABLE_TESTING:BOOL=
 //Build mbed TLS with zlib library.
 ENABLE_ZLIB_SUPPORT:BOOL=OFF
 
-//No help, variable specified on the command line.
-ESP_PLATFORM:UNINITIALIZED=1
+//INTERNAL
+ESP_PLATFORM:BOOL=1
 
 //GCC is not 5.2.0 version
 GCC_NOT_5_2_0:STRING=1
@@ -465,6 +468,27 @@ hello-world_BINARY_DIR:STATIC=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build
 
 //Value Computed by CMake
 hello-world_SOURCE_DIR:STATIC=/home/dtcarrot/esp/ict2104/esp32-ai-thinker
+
+//Dependencies for the target
+idf_component_app_trace_LIB_DEPENDS:STATIC=general;gcov;
+
+//Dependencies for the target
+idf_component_app_update_LIB_DEPENDS:STATIC=general;-u esp_app_desc;
+
+//Dependencies for the target
+idf_component_cxx_LIB_DEPENDS:STATIC=general;stdc++;general;-u __cxa_guard_dummy;general;-u __cxx_fatal_exception;
+
+//Dependencies for the target
+idf_component_esp32_LIB_DEPENDS:STATIC=general;-L /home/dtcarrot/esp/esp-who/esp-idf/components/esp32/lib;general;coexist;general;core;general;espnow;general;mesh;general;net80211;general;phy;general;pp;general;rtc;general;smartconfig;general;wpa2;general;wpa;general;wps;general;-L /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp32;general;-T esp32_out.ld;general;-T /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/esp32/esp32.project.ld;general;-L /home/dtcarrot/esp/esp-who/esp-idf/components/esp32/ld;general;-T esp32.rom.ld;general;-L /home/dtcarrot/esp/esp-who/esp-idf/components/esp32/ld;general;-T esp32.peripherals.ld;general;-L /home/dtcarrot/esp/esp-who/esp-idf/components/esp32/ld;general;-T esp32.rom.libgcc.ld;general;-L /home/dtcarrot/esp/esp-who/esp-idf/components/esp32/ld;general;-T esp32.rom.spiram_incompatible_fns.ld;general;/home/dtcarrot/esp/esp-who/esp-idf/components/esp32/libhal.a;general;gcc;general;-u call_user_start_cpu0;general;-u ld_include_panic_highint_hdl;
+
+//Dependencies for the target
+idf_component_freertos_LIB_DEPENDS:STATIC=general;-Wl,--undefined=uxTopUsedPriority;
+
+//Dependencies for the target
+idf_component_mbedtls_LIB_DEPENDS:STATIC=general;mbedtls;general;mbedcrypto;general;mbedx509;
+
+//Dependencies for the target
+idf_component_newlib_LIB_DEPENDS:STATIC=general;-L /home/dtcarrot/esp/esp-who/esp-idf/components/newlib/lib;general;c;general;m;
 
 //Value Computed by CMake
 mbed TLS_BINARY_DIR:STATIC=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/mbedtls/mbedtls

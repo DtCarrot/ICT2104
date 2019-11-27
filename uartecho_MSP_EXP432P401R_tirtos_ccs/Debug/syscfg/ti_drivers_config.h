@@ -40,8 +40,10 @@ extern "C" {
 #define CONFIG_GPIO_LED_0           3
 /* P1.5 */
 #define CONFIG_PIR_ECHO_PIN         4
-/* P1.7 */
+/* P6.4 */
 #define CONFIG_BUZZER_OUT_PIN       5
+/* P2.1, LaunchPad LED 2 Green */
+#define CONFIG_LED_PIN_GREEN        6
 
 /* LEDs are active high */
 #define CONFIG_GPIO_LED_ON  (1)

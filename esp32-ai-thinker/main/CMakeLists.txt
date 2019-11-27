@@ -1,3 +1,7 @@
 
-idf_component_register(SRCS "main.c"
-                    INCLUDE_DIRS ".")
+set(COMPONENT_SRCS
+    "main.c"
+    )
+set(COMPONENT_ADD_INCLUDEDIRS ".")
+set(EXTRA_COMPONENT_DIRS components)
+register_component()
