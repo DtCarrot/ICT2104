@@ -75,6 +75,10 @@ dl_lib_matrix3dq.h
 ../components/src/include/ict2104_camera.h
 esp_camera.h
 ../components/src/include/esp_camera.h
+esp_http_server.h
+-
+esp_http_client.h
+../components/src/include/esp_http_client.h
 
 ../components/src/include/ict2104_mqtt.h
 stdio.h
@@ -101,6 +105,12 @@ esp_log.h
 ../components/src/include/esp_log.h
 mqtt_client.h
 ../components/src/include/mqtt_client.h
+
+../components/src/include/ict2104_nvs.h
+stdio.h
+-
+esp_system.h
+../components/src/include/esp_system.h
 
 ../components/src/include/ict2104_uart.h
 
@@ -459,6 +469,16 @@ tcpip_adapter.h
 /home/dtcarrot/esp/esp-idf/components/esp_event/include/esp_event_loop.h
 esp_event.h
 /home/dtcarrot/esp/esp-idf/components/esp_event/include/esp_event.h
+
+/home/dtcarrot/esp/esp-idf/components/esp_http_client/include/esp_http_client.h
+freertos/FreeRTOS.h
+/home/dtcarrot/esp/esp-idf/components/esp_http_client/include/freertos/FreeRTOS.h
+http_parser.h
+/home/dtcarrot/esp/esp-idf/components/esp_http_client/include/http_parser.h
+sdkconfig.h
+/home/dtcarrot/esp/esp-idf/components/esp_http_client/include/sdkconfig.h
+esp_err.h
+/home/dtcarrot/esp/esp-idf/components/esp_http_client/include/esp_err.h
 
 /home/dtcarrot/esp/esp-idf/components/esp_http_server/include/esp_http_server.h
 stdio.h
@@ -1402,6 +1422,8 @@ ict2104_uart.h
 ict2104_wifi.h
 -
 ict2104_mqtt.h
+-
+ict2104_nvs.h
 -
 fd_forward.h
 /home/dtcarrot/esp/ict2104/esp32-ai-thinker/main/fd_forward.h

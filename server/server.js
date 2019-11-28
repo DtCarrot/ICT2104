@@ -24,20 +24,21 @@ server.use(function(req, res, next) {
     return next();
   }
 
-  var data = "";
   const data_stream = new Stream();
   req.on("data", function(chunk) {
-    data += chunk;
     data_stream.push(chunk);
+    // req.rawBody = data_stream.read();
   });
   req.on("end", function() {
     console.log("On end: ");
-    // fs.writeFileSync("image-test.jpeg", data_stream.read(), {
-    //   encoding: "utf8",
-    //   mode: 777
-    // });
     req.rawBody = data_stream.read();
     next();
+  });
+  req.on("error", () => {
+    console.log("Error in reading data");
+  });
+  req.on("success", () => {
+    console.log("Success!");
   });
 });
 
@@ -48,8 +49,11 @@ var corsOptions = {
 
 const socketServer = http.createServer(server);
 const io = socketIo(socketServer);
+let currentSocket = null;
 io.on("connect", socket => {
-  console.log("Socket info: ", socket);
+  console.log("User connected");
+  currentSocket = socket;
+  // console.log("Socket info: ", socket);
 });
 io.listen(8888);
 
@@ -64,7 +68,14 @@ const uploadImage = (req, res) => {
   // const buffer = Buffer.from(fileData).toString("base64");
   // io.sockets.emit("test");
   // Send base64 image data
-  io.sockets.emit("broadcast", buffer);
+  // io.sockets.emit("broadcast", buffer);
+  if (currentSocket !== null) {
+    console.log("Sending image");
+    currentSocket.emit("broadcast", buffer);
+  } else {
+    console.log("Socket null");
+  }
+  console.log("Done emit");
   // io.sockets.emit("broadcast", buffer);
   res.send(200);
 };

@@ -4,6 +4,7 @@
 #include "esp_http_client.h"
 #include "esp_tls.h"
 #include "ict2104_camera.h"
+#include "ict2104_nvs.h"
 #include "mbedtls/base64.h"
 
 #define CAM_PIN_PWDN    32 
@@ -23,36 +24,9 @@
 #define CAM_PIN_HREF    23
 #define CAM_PIN_PCLK    22
 
-static camera_config_t camera_config = {
-    .pin_pwdn  = CAM_PIN_PWDN,
-    .pin_reset = CAM_PIN_RESET,
-    .pin_xclk = CAM_PIN_XCLK,
-    .pin_sscb_sda = CAM_PIN_SIOD,
-    .pin_sscb_scl = CAM_PIN_SIOC,
-    .pin_d7 = CAM_PIN_D7,
-    .pin_d6 = CAM_PIN_D6,
-    .pin_d5 = CAM_PIN_D5,
-    .pin_d4 = CAM_PIN_D4,
-    .pin_d3 = CAM_PIN_D3,
-    .pin_d2 = CAM_PIN_D2,
-    .pin_d1 = CAM_PIN_D1,
-    .pin_d0 = CAM_PIN_D0,
-    .pin_vsync = CAM_PIN_VSYNC,
-    .pin_href = CAM_PIN_HREF,
-    .pin_pclk = CAM_PIN_PCLK,
-
-    .xclk_freq_hz = 20000000,
-    .ledc_timer = LEDC_TIMER_0,
-    .ledc_channel = LEDC_CHANNEL_0,
-
-    .pixel_format = PIXFORMAT_JPEG,//YUV422,GRAYSCALE,RGB565,JPEG
-    .frame_size = FRAMESIZE_SVGA,//QQVGA-QXGA Do not use sizes above QVGA when not JPEG
-
-    .jpeg_quality = 12, //0-63 lower number means higher quality
-    .fb_count = 1 //if more than one, i2s runs in continuous mode. Use only with JPEG
-};
-
 static const char *TAG = "camera";
+int img_quality;
+uint8_t camera_activated = 0;
 
 typedef struct {
   httpd_req_t *req;
@@ -143,6 +117,41 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt) {
 
 // Initialize camera 
 esp_err_t main_camera_init() {
+  img_quality = (int) get_image_quality();
+  static camera_config_t camera_config = {
+      .pin_pwdn  = CAM_PIN_PWDN,
+      .pin_reset = CAM_PIN_RESET,
+      .pin_xclk = CAM_PIN_XCLK,
+      .pin_sscb_sda = CAM_PIN_SIOD,
+      .pin_sscb_scl = CAM_PIN_SIOC,
+      .pin_d7 = CAM_PIN_D7,
+      .pin_d6 = CAM_PIN_D6,
+      .pin_d5 = CAM_PIN_D5,
+      .pin_d4 = CAM_PIN_D4,
+      .pin_d3 = CAM_PIN_D3,
+      .pin_d2 = CAM_PIN_D2,
+      .pin_d1 = CAM_PIN_D1,
+      .pin_d0 = CAM_PIN_D0,
+      .pin_vsync = CAM_PIN_VSYNC,
+      .pin_href = CAM_PIN_HREF,
+      .pin_pclk = CAM_PIN_PCLK,
+
+      .xclk_freq_hz = 20000000,
+      .ledc_timer = LEDC_TIMER_0,
+      .ledc_channel = LEDC_CHANNEL_0,
+
+      .pixel_format = PIXFORMAT_JPEG,//YUV422,GRAYSCALE,RGB565,JPEG
+      .frame_size = FRAMESIZE_SVGA,//QQVGA-QXGA Do not use sizes above QVGA when not JPEG
+
+      .jpeg_quality = 12, //0-63 lower number means higher quality
+      .fb_count = 1 //if more than one, i2s runs in continuous mode. Use only with JPEG
+  };
+
+  if(img_quality == 0) {
+    camera_config.jpeg_quality = 12;
+  } else {
+    camera_config.jpeg_quality = 25;
+  }
   ESP_LOGD(TAG, "Starting camera");
   // Initialize the camera with configuration
   esp_err_t err = esp_camera_init(&camera_config);
@@ -152,7 +161,21 @@ esp_err_t main_camera_init() {
     ESP_LOGE(TAG, "Camera Init Failed");
     return err;
   }
+  toggle_camera_status(1);
   return ESP_OK;
+}
+
+void reset_camera() {
+  uint8_t new_image_quality = get_image_quality();
+  if(new_image_quality == 0) {
+    new_image_quality++;
+  } else {
+    new_image_quality = 0;
+  }
+  set_image_quality(new_image_quality);
+  toggle_camera_status(0);
+  ESP_ERROR_CHECK(esp_camera_deinit());
+  ESP_ERROR_CHECK(main_camera_init());
 }
 
 int count = 0;
@@ -175,6 +198,12 @@ esp_err_t start_capture() {
     size_t fb_len = 0;
     int64_t fr_start = esp_timer_get_time();
 
+    if(get_camera_status() == 0) {
+      ESP_LOGI("Camera", "Camera undefined");
+      // Delay by 2000ms before next request
+      vTaskDelay(2000 / portTICK_PERIOD_MS);
+      continue;
+    }
     // Get the frame buffer from the ESP32 Camera
     fb = esp_camera_fb_get();
     // Check if the camera capture have been successful
@@ -184,26 +213,6 @@ esp_err_t start_capture() {
       // Might want to trigger mqtt to send an error message when capturing video frame
       return ESP_FAIL;
     }
-
-    // float ratio = 0.3;
-    // int ori_w = 320;
-    // int ori_h = 240;
-    // int w = ori_w * ratio;
-    // int h = ori_h * ratio;
-    // int c = 3;
-
-    // dl_matrix3du_t *image_ori = dl_matrix3du_alloc(1, ori_w, ori_h, c);
-    // dl_matrix3du_t *image_motion = dl_matrix3du_alloc(1, w, h, c);
-    // dl_matrix3du_t *image_new = dl_matrix3du_alloc(1, w, h, c);
-    // dl_matrix3du_t *image_tmp = dl_matrix3du_alloc(1, w, h, c);
-    // if(!fmt2rgb888(fb->buf, fb->len, fb->format, image_ori->item))
-    // {
-    //     ESP_LOGW(TAG, "fmt2rgb888 failed");
-    //     //res = ESP_FAIL;
-    //     //dl_matrix3du_free(image_matrix);
-    //     //break;
-    // }
-
 
     // Prepare the POST request to upload the frame buffer data
     // using HTTP.
@@ -240,9 +249,17 @@ esp_err_t start_capture() {
     // Clean up after sending each http message
     esp_http_client_cleanup(client);
 
-    // Delay by 5000ms before next request
-    vTaskDelay(800 / portTICK_PERIOD_MS);
+    // Delay by 2000ms before next request
+    vTaskDelay(2000 / portTICK_PERIOD_MS);
 
   }
   return ESP_OK;
+}
+
+void toggle_camera_status(uint8_t status) {
+  camera_activated = status;
+}
+
+uint8_t get_camera_status() {
+  return camera_activated;
 }

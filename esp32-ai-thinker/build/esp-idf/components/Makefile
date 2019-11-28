@@ -684,6 +684,33 @@ src/ict2104_mqtt.c.s:
 	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.s
 .PHONY : src/ict2104_mqtt.c.s
 
+src/ict2104_nvs.obj: src/ict2104_nvs.c.obj
+
+.PHONY : src/ict2104_nvs.obj
+
+# target to build an object file
+src/ict2104_nvs.c.obj:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj
+.PHONY : src/ict2104_nvs.c.obj
+
+src/ict2104_nvs.i: src/ict2104_nvs.c.i
+
+.PHONY : src/ict2104_nvs.i
+
+# target to preprocess a source file
+src/ict2104_nvs.c.i:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.i
+.PHONY : src/ict2104_nvs.c.i
+
+src/ict2104_nvs.s: src/ict2104_nvs.c.s
+
+.PHONY : src/ict2104_nvs.s
+
+# target to generate assembly for a file
+src/ict2104_nvs.c.s:
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build && $(MAKE) -f esp-idf/components/CMakeFiles/__idf_components.dir/build.make esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.s
+.PHONY : src/ict2104_nvs.c.s
+
 src/ict2104_uart.obj: src/ict2104_uart.c.obj
 
 .PHONY : src/ict2104_uart.obj
@@ -808,6 +835,9 @@ help:
 	@echo "... src/ict2104_mqtt.obj"
 	@echo "... src/ict2104_mqtt.i"
 	@echo "... src/ict2104_mqtt.s"
+	@echo "... src/ict2104_nvs.obj"
+	@echo "... src/ict2104_nvs.i"
+	@echo "... src/ict2104_nvs.s"
 	@echo "... src/ict2104_uart.obj"
 	@echo "... src/ict2104_uart.i"
 	@echo "... src/ict2104_uart.s"

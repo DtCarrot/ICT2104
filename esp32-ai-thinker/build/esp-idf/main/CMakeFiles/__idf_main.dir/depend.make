@@ -11,6 +11,7 @@ esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/esp-face/lib/in
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/esp-face/lib/include/mtmn.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/src/include/ict2104_camera.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/src/include/ict2104_mqtt.h
+esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/src/include/ict2104_nvs.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/src/include/ict2104_uart.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: ../components/src/include/ict2104_wifi.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: /home/dtcarrot/esp/esp-idf/components/coap/libcoap/include/coap2/address.h
@@ -55,6 +56,7 @@ esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: /home/dtcarrot/esp/esp-idf/co
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_event/include/esp_event_base.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_event/include/esp_event_legacy.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_event/include/esp_event_loop.h
+esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_http_client/include/esp_http_client.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_http_server/include/esp_http_server.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h
 esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h

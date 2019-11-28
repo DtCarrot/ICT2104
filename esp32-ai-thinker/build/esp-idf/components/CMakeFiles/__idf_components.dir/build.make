@@ -278,9 +278,22 @@ esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.s"
 	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_mqtt.c -o CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.s
 
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: ../components/src/ict2104_nvs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_nvs.c
+
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.i"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_nvs.c > CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.i
+
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.s"
+	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/src/ict2104_nvs.c -o CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.s
+
 esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_detection/fd_forward.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_detection/fd_forward.c.obj: ../components/esp-face/face_detection/fd_forward.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_detection/fd_forward.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_detection/fd_forward.c.obj"
 	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/esp-face/face_detection/fd_forward.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/esp-face/face_detection/fd_forward.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_detection/fd_forward.c.i: cmake_force
@@ -293,7 +306,7 @@ esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_detection/fd_fo
 
 esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_forward.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_forward.c.obj: ../components/esp-face/face_recognition/fr_forward.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_forward.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_forward.c.obj"
 	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_forward.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/esp-face/face_recognition/fr_forward.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_forward.c.i: cmake_force
@@ -306,7 +319,7 @@ esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_
 
 esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_flash.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_flash.c.obj: ../components/esp-face/face_recognition/fr_flash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_flash.c.obj"
 	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_flash.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/esp-face/face_recognition/fr_flash.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_flash.c.i: cmake_force
@@ -319,7 +332,7 @@ esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_
 
 esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/image_util/image_util.c.obj: esp-idf/components/CMakeFiles/__idf_components.dir/flags.make
 esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/image_util/image_util.c.obj: ../components/esp-face/image_util/image_util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/image_util/image_util.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/image_util/image_util.c.obj"
 	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && /home/dtcarrot/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_components.dir/esp-face/image_util/image_util.c.obj   -c /home/dtcarrot/esp/ict2104/esp32-ai-thinker/components/esp-face/image_util/image_util.c
 
 esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/image_util/image_util.c.i: cmake_force
@@ -349,6 +362,7 @@ __idf_components_OBJECTS = \
 "CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj" \
 "CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj" \
 "CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj" \
+"CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj" \
 "CMakeFiles/__idf_components.dir/esp-face/face_detection/fd_forward.c.obj" \
 "CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_forward.c.obj" \
 "CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_flash.c.obj" \
@@ -374,13 +388,14 @@ esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_componen
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj
+esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_detection/fd_forward.c.obj
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_forward.c.obj
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/face_recognition/fr_flash.c.obj
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/esp-face/image_util/image_util.c.obj
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/build.make
 esp-idf/components/libcomponents.a: esp-idf/components/CMakeFiles/__idf_components.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX static library libcomponents.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX static library libcomponents.a"
 	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && $(CMAKE_COMMAND) -P CMakeFiles/__idf_components.dir/cmake_clean_target.cmake
 	cd /home/dtcarrot/esp/ict2104/esp32-ai-thinker/build/esp-idf/components && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_components.dir/link.txt --verbose=$(VERBOSE)
 

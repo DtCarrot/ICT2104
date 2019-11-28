@@ -44,6 +44,7 @@
 
 /* Driver configuration */
 #include <ti/drivers/Board.h>
+#include "rxtx_uart.h"
 
 #include <unistd.h>
 #include <stddef.h>
@@ -53,20 +54,50 @@
 /* Driver configuration */
 #include "ti_drivers_config.h"
 
+#include "led.h"
+#include "nvs_driver.h"
 
 
-
+/* Custom files */
+extern void *buzzerThread(void *arg0);
 extern void *mainThread(void *arg0);
 extern void *ultrasonicThread(void *arg0);
 
+
 /* Stack size in bytes */
-#define THREADSTACKSIZE    2048
+#define THREADSTACKSIZE    1024
+int                 retc;
+void create_buzzer_thread() {
+    pthread_t           buzzThread;
+    pthread_attr_t      buzzAttrs;
+    struct sched_param  buzzPriParam;
+    /* Initialize the attributes structure with default values */
+    pthread_attr_init(&buzzAttrs);
+    buzzPriParam.sched_priority=2;
+
+    retc = pthread_attr_setschedparam(&buzzAttrs, &buzzPriParam);
+    retc |= pthread_attr_setdetachstate(&buzzAttrs, PTHREAD_CREATE_DETACHED);
+    retc |= pthread_attr_setstacksize(&buzzAttrs, 512);
+    if (retc != 0) {
+        /* failed to set attributes */
+        while (1) {
+
+        }
+    }
+    retc = pthread_create(&buzzThread, &buzzAttrs, buzzerThread, NULL);
+    if (retc != 0) {
+        /* pthread_create() failed */
+        while (1) {
+
+        }
+    }
+}
+
 
 /*
  *  ======== main ========
  */
-int main(void)
-{
+int main(void) {
     pthread_t           thread;
     pthread_attr_t      attrs;
     struct sched_param  priParam;
@@ -75,8 +106,11 @@ int main(void)
     /* Call driver init functions */
     Board_init();
     GPIO_init();
-    GPIO_setConfig(CONFIG_LED_PIN_GREEN, GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING);
-    GPIO_write(CONFIG_LED_PIN_GREEN, 1);
+
+    init_led_gpio();
+    trigger_led1(1);
+
+
 
     /* Initialize the attributes structure with default values */
 //    pthread_attr_init(&attrs);
@@ -97,7 +131,7 @@ int main(void)
 //        while (1) {}
 //    }
 //
-
+    create_buzzer_thread();
     pthread_t           usThread;
     pthread_attr_t      usAttrs;
     struct sched_param  usPriParam;
@@ -120,6 +154,7 @@ int main(void)
         while (1) {}
     }
 
+    init_uart_thread();
     BIOS_start();
 
     return (0);

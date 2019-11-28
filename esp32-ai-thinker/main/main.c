@@ -12,6 +12,7 @@
 #include <ict2104_uart.h>
 #include <ict2104_wifi.h>
 #include <ict2104_mqtt.h>
+#include <ict2104_nvs.h>
 #include "fd_forward.h"
 
 /*
@@ -22,6 +23,7 @@
  */
 void app_main()
 {
+    nvs_init();
     // Set a delay before starting for debugging purposes
     vTaskDelay(10000 / portTICK_PERIOD_MS);
     ESP_LOGD("TAG", "Before starting camera");
@@ -40,6 +42,7 @@ void app_main()
         ESP_ERROR_CHECK(nvs_flash_erase());
         ret = nvs_flash_init();
     }
+
     ESP_ERROR_CHECK(ret);
 
     // Initialize the camera

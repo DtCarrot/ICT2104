@@ -47,6 +47,7 @@ void stop_webserver(httpd_handle_t server) {
 
 static esp_err_t wifi_event_handler(void *ctx, system_event_t *event) {
     httpd_handle_t *server = (httpd_handle_t *)ctx;
+    ESP_LOGI(TAG, "Current state %d", event->event_id);
     switch (event->event_id) {
         case SYSTEM_EVENT_STA_START:
             ESP_LOGI(TAG, "SYSTEM_EVENT_STA_START");

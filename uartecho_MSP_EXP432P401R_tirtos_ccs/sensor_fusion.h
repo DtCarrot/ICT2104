@@ -19,3 +19,7 @@ void set_uart_sent(uint8_t status);
 
 void inc_time_since_last_alert(int count);
 void reset_time_count();
+
+
+void set_alert_sound(uint8_t status);
+uint8_t get_alert_sound();

@@ -18,6 +18,10 @@ var Timer2 = Timer.addInstance();
 var GPIO5 = GPIO.addInstance();
 var GPIO6 = GPIO.addInstance();
 var GPIO7 = GPIO.addInstance();
+var GPIO8 = GPIO.addInstance();
+var GPIO9 = GPIO.addInstance();
+var NVS = scripting.addModule("/ti/drivers/NVS");
+var NVS1 = NVS.addInstance();
 // Name
 RTOS.timer0.resource.$name = "MyTIMER_A1";
 var Power = scripting.addModule("/ti/drivers/Power");
@@ -38,7 +42,7 @@ GPIO1.$name = "CONFIG_TRIGGER_PIN";
 // Mode - Select the GPIO mode
 GPIO1.mode = "Output";
 // Assign pin
-GPIO1.gpioPin.$assign = "boosterpack.40"; // P2.7
+GPIO1.gpioPin.$assign = "boosterpack.11"; // P3.6
 // Name - The C/C++ identifier used in applications as the index parameter passed to UART runtime APIs
 UART1.$name = "CONFIG_UART_0";
 // Use Hardware - Select the hardware to use, or 'none' to use available header pins
@@ -62,7 +66,7 @@ GPIO3.interruptTrigger = "Both Edges";
 // Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
 GPIO3.$name = "CONFIG_ECHO_PIN";
 // Assign pin
-GPIO3.gpioPin.$assign = "boosterpack.39"; // P2.6
+GPIO3.gpioPin.$assign = "boosterpack.31"; // P3.7
 // Name - The C/C++ identifier used in applications as the index parameter passed to Timer runtime APIs
 Timer1.$name = "CONFIG_TIMER_0";
 // Clock Source - Specifies the clock source of the timer peripheral
@@ -105,6 +109,18 @@ GPIO7.mode = "Output";
 GPIO7.$hardware = system.deviceData.board.components.LED2_GREEN;
 // Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
 GPIO7.$name = "CONFIG_LED_PIN_GREEN";
+// Use Hardware - Select the hardware to use, or 'none' to use available header pins
+GPIO8.$hardware = system.deviceData.board.components.LED2_BLUE;
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO8.$name = "CONFIG_LED_PIN_BLUE";
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO9.$name = "CONFIG_LED_PIN_RED";
+// Use Hardware - Select the hardware to use, or 'none' to use available header pins
+GPIO9.$hardware = system.deviceData.board.components.LED2_RED;
+// Name - The C/C++ identifier used in applications as the index parameter passed to NVS runtime APIs
+NVS1.$name = "CONFIG_NVS_0";
+// Name
+NVS1.internalFlash.$name = "ti_drivers_nvs_NVSMSP4320";
 // Suggest solution
 RTOS.timer0.resource.$suggestSolution = "Timer_A0";
 // Suggest solution
@@ -121,3 +137,7 @@ Timer1.timer.$suggestSolution = "TIMER32_0";
 GPIO4.gpioPin.$suggestSolution = "4";
 // Suggest solution
 GPIO7.gpioPin.$suggestSolution = "17";
+// Suggest solution
+GPIO8.gpioPin.$suggestSolution = "18";
+// Suggest solution
+GPIO9.gpioPin.$suggestSolution = "16";

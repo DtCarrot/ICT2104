@@ -12,7 +12,8 @@
 #include "ti_drivers_config.h"
 
 extern UART_Handle uart;
-void init_uart();
+void init_uart_thread();
+void *init_uart();
 void rx_uart_interrupt(UART_Handle handle, void *ptr, size_t size);
 void read_uart();
 //void send_data(char *msg, uint8_t len);

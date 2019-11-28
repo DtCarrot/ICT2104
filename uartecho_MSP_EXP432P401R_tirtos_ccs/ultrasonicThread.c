@@ -46,6 +46,7 @@
 #include "ultrasonic.h"
 #include "buzzer.h"
 #include "pir.h"
+//#include "nvs_driver.h"
 #include "sensor_fusion.h"
 #include "rxtx_uart.h"
 /* Driver configuration */
@@ -69,11 +70,16 @@ const char *ALARM_STOP = "SC02";
 
 const char *ULTRASONIC_READING = "SR04";
 
+
+
+
 /*
  *  ======== mainThread ========
  */
 void *ultrasonicThread(void *arg0) {
 
+
+//    nvs_initialize();
     Timer_Handle timer0;
     Timer_Params params;
     Timer_Handle timer1;
@@ -134,39 +140,12 @@ void *ultrasonicThread(void *arg0) {
     }
 
     // Initialize the UART driver
-    init_uart();
+
+    //create_buzzer_thread();
 }
 
 
-pthread_t           buzzThread;
-pthread_attr_t      buzzAttrs;
-struct sched_param  buzzPriParam;
-/* Stack size in bytes */
-#define THREADSTACKSIZE    1024
-int                 retc;
-void create_buzzer_thread() {
 
-    /* Initialize the attributes structure with default values */
-    pthread_attr_init(&buzzAttrs);
-    buzzPriParam.sched_priority=1;
-
-    retc = pthread_attr_setschedparam(&buzzAttrs, &buzzPriParam);
-    retc |= pthread_attr_setdetachstate(&buzzAttrs, PTHREAD_CREATE_DETACHED);
-    retc |= pthread_attr_setstacksize(&buzzAttrs, THREADSTACKSIZE);
-    if (retc != 0) {
-        /* failed to set attributes */
-        while (1) {
-
-        }
-    }
-    retc = pthread_create(&buzzThread, &buzzAttrs, buzzerThread, NULL);
-    if (retc != 0) {
-        /* pthread_create() failed */
-        while (1) {
-
-        }
-    }
-}
 
 /* 
  *
@@ -253,7 +232,8 @@ void iteratorCallback(Timer_Handle myHandle) {
     int motion_detected = sensor_fusion_check(ultrasonic_detected_distance, pir_status);
     if(motion_detected) {
         if(!is_uart_sent()) {
-            create_buzzer_thread();
+            // create_buzzer_thread();
+            set_alert_sound(1);
             uint8_t distance = (uint8_t) ultrasonic_detected_distance;
             uint8_t message[12];
 

@@ -15,6 +15,7 @@
 #include "driver/uart.h"
 #include "string.h"
 #include "driver/gpio.h"
+#include "ict2104_camera.h"
 #include "ict2104_uart.h"
 #include "ict2104_mqtt.h"
 
@@ -44,17 +45,18 @@ void parse_message(char* output, uint8_t byte_size) {
     // SC02 - Code to stop alarm
     const char *ALARM_STOP = "SC02";
 
-    // SC32 - Code for "Temperature Reading"
+    // SC03 - Code for "Temperature Reading"
     const char *TEMPERATURE_READING = "SR03";
 
-    // SC33 - Code for "Ultrasonic Reading"
+    // SC04 - Code for "Ultrasonic Reading"
     const char *ULTRASONIC_READING = "SR04";
 
-    // SC03 - Code for "Start Alarm"
-    const char *SC04 = "SC03";
+    // SC04 - Code for "Ultrasonic Reading"
+    // const char *ULTRASONIC_READING = "SR04";
 
-    // SC04 - Code for "Stop Alarm"
-    const char *SC05 = "SC04";
+    // Change tone ACK
+    const char *CHANGE_TONE_ACK = "TACK";
+
 
     char msg[byte_size];
     strcpy(msg, output);
@@ -70,12 +72,13 @@ void parse_message(char* output, uint8_t byte_size) {
             // Reset the messge header flag
             message_header_exists = 0;
 
-            char *data_message = malloc(sizeof(char) * 9);
+            char *data_message = malloc(sizeof(char) * 9); // Dynamically declare memory
             sprintf(data_message, "%s%s", message_header, msg);
 
             // Publish mqtt message with ultrasonic reading command
-            // publish_mqtt(msg, sizeof(msg));
             publish_mqtt(data_message, sizeof(data_message));
+
+            free(data_message); // Clear the memory 
 
         } else if(strncmp((char*) message_header, TEMPERATURE_READING, 4) == 0) {
 
@@ -122,12 +125,16 @@ void parse_message(char* output, uint8_t byte_size) {
         message_header_exists = 1;
         ESP_LOGI(RX_TASK_TAG, "Found SC04");
 
+    } else if(strncmp((char*) msg, CHANGE_TONE_ACK, 4) == 0) {
+
+        ESP_LOGI(RX_TASK_TAG, "Change Tone ACK");
+        publish_mqtt(msg, sizeof(msg));
+
     } else {
 
         return;
 
     }
-    // publish_mqtt(msg, sizeof(msg));
 }
 
 void uart_task(void) {
@@ -200,6 +207,7 @@ void uart_init(void) {
 
 int sendData(const char* data) {
     static const char *logName = "SEND_DATA";
+    // char *data = "ICT1";
     const int len = strlen(data);
     const int txBytes = uart_write_bytes(UART_NUM_1, data, len);
     printf("Sending...");

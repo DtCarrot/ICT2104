@@ -688,6 +688,7 @@ esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj: ../
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj: ../components/driver/include/esp_camera.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj: ../components/driver/include/sensor.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj: ../components/src/include/ict2104_camera.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj: ../components/src/include/ict2104_nvs.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj: /home/dtcarrot/esp/esp-idf/components/driver/include/driver/gpio.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj: /home/dtcarrot/esp/esp-idf/components/driver/include/driver/ledc.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj: /home/dtcarrot/esp/esp-idf/components/driver/include/driver/periph_ctrl.h
@@ -840,8 +841,16 @@ esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj: /ho
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj: ../components/src/ict2104_camera.c
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_camera.c.obj: config/sdkconfig.h
 
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: ../components/conversions/include/img_converters.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: ../components/driver/include/esp_camera.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: ../components/driver/include/sensor.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: ../components/src/include/ict2104_camera.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: ../components/src/include/ict2104_uart.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/driver/include/driver/gpio.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/driver/include/driver/ledc.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/driver/include/driver/periph_ctrl.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp32/include/esp_attr.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp32/include/esp_intr_alloc.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_common/include/esp_assert.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_common/include/esp_bit_defs.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_common/include/esp_err.h
@@ -851,10 +860,14 @@ esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_common/include/esp_system.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_common/include/esp_task.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_common/include/esp_timer.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_common/include/esp_types.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_event/include/esp_event.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_event/include/esp_event_base.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_event/include/esp_event_legacy.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_http_client/include/esp_http_client.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_http_server/include/esp_http_server.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_private.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_types_private.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h
@@ -876,6 +889,7 @@ esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/semphr.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/task.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/timers.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/heap/include/esp_heap_caps.h
@@ -920,7 +934,16 @@ esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/newlib/platform_include/sys/select.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/newlib/platform_include/sys/time.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/newlib/platform_include/time.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/nghttp/port/include/http_parser.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/gpio_struct.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_reg.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/soc.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/include/soc/gpio_periph.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home/dtcarrot/esp/esp-idf/components/vfs/include/sys/ioctl.h
@@ -941,9 +964,36 @@ esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: /home
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: ../components/src/ict2104_mqtt.c
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_mqtt.c.obj: config/sdkconfig.h
 
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/esp32/include/esp_attr.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_common/include/esp_assert.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_common/include/esp_bit_defs.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_common/include/esp_err.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_common/include/esp_idf_version.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_common/include/esp_system.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_common/include/esp_types.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/log/include/esp_log.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/log/include/esp_log_internal.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/newlib/platform_include/assert.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/nvs_flash/include/nvs.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/nvs_flash/include/nvs_flash.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/soc.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/include/hal/esp_flash_err.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/include/hal/spi_flash_types.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/spi_flash/include/esp_flash.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/spi_flash/include/esp_partition.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: /home/dtcarrot/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: ../components/src/ict2104_nvs.c
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_nvs.c.obj: config/sdkconfig.h
+
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: ../components/conversions/include/img_converters.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: ../components/driver/include/esp_camera.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: ../components/driver/include/sensor.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: ../components/src/include/ict2104_camera.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: ../components/src/include/ict2104_mqtt.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: ../components/src/include/ict2104_uart.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/driver/include/driver/gpio.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/driver/include/driver/ledc.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/driver/include/driver/periph_ctrl.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/driver/include/driver/uart.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/esp32/include/esp_attr.h
@@ -961,6 +1011,8 @@ esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_event/include/esp_event.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_event/include/esp_event_base.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_event/include/esp_event_legacy.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_http_client/include/esp_http_client.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_http_server/include/esp_http_server.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h
@@ -1030,6 +1082,7 @@ esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/newlib/platform_include/sys/select.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/newlib/platform_include/sys/time.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/newlib/platform_include/time.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/nghttp/port/include/http_parser.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_uart.c.obj: /home/dtcarrot/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h
@@ -1089,6 +1142,7 @@ esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj: /home
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_event/include/esp_event.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_event/include/esp_event_base.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_event/include/esp_event_legacy.h
+esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_http_client/include/esp_http_client.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_http_server/include/esp_http_server.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h
 esp-idf/components/CMakeFiles/__idf_components.dir/src/ict2104_wifi.c.obj: /home/dtcarrot/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h

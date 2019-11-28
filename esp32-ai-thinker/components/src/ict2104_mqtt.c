@@ -20,6 +20,7 @@
 #include "mqtt_client.h"
 
 #include "ict2104_uart.h"
+#include "ict2104_camera.h"
 
 uint8_t mqtt_connected = 0;
 
@@ -50,6 +51,9 @@ void heartbeat_mqtt(void *p) {
 void parse_mqtt_message(char* output, uint8_t byte_size) {
     const char *RESET = "RST1";
     const char *ALERT = "ALT1";
+    const char *CHANGE_TONE = "CHT1";
+    const char *CHANGE_CAMERA_QUALITY = "CAMQ";
+
     char msg[byte_size];
     strcpy(msg, output);
     if(strncmp((char*) msg, RESET, 4) == 0) {
@@ -57,6 +61,17 @@ void parse_mqtt_message(char* output, uint8_t byte_size) {
         esp_restart();
     } else if(strncmp((char*) msg, ALERT, 4) == 0) {
         ESP_LOGI("MSG", "Alerting");
+        // Send alert mesasge to uart
+        sendData(ALERT);
+    } else if(strncmp((char*) msg, CHANGE_CAMERA_QUALITY, 4) == 0) {
+
+        ESP_LOGI("MSG", "Received command to change camera quality");
+
+        reset_camera();
+
+    } else if(strncmp((char*) msg, CHANGE_TONE, 4) == 0) {
+        // Send message to change the tone
+        sendData(CHANGE_TONE);
     }
 }
 

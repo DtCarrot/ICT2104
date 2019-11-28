@@ -44,3 +44,12 @@ void inc_time_since_last_alert(int count) {
 void reset_time_count() {
     time_since_last_alert = 0;
 }
+
+uint8_t alert_sound = 0;
+
+void set_alert_sound(uint8_t status) {
+    alert_sound = status;
+}
+uint8_t get_alert_sound() {
+    return alert_sound;
+}
