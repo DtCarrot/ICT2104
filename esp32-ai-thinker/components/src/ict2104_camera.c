@@ -1,3 +1,14 @@
+/*
+ * ict2104_camera.c
+ *
+ * Source file used to implement the methods
+ * required for initializing the camera,
+ * starting the image capture and sending image
+ * data to ESP32-CAM
+ *
+ *
+ *
+ */
 #include <esp_log.h>
 #include <esp_wifi.h>
 #include <esp_http_server.h>
@@ -7,6 +18,12 @@
 #include "ict2104_nvs.h"
 #include "mbedtls/base64.h"
 
+/*
+ *
+ * Define camera pin used for ESP32-CAM
+ *
+ *
+ */
 #define CAM_PIN_PWDN    32 
 #define CAM_PIN_RESET   -1 
 #define CAM_PIN_XCLK    0
@@ -25,7 +42,9 @@
 #define CAM_PIN_PCLK    22
 
 static const char *TAG = "camera";
+
 int img_quality;
+int count = 0;
 uint8_t camera_activated = 0;
 
 typedef struct {
@@ -33,50 +52,14 @@ typedef struct {
   size_t len;
 } jpg_chunking_t;
 
-static size_t jpg_encode_stream(void *arg, size_t index, const void *data, size_t len) {
-  jpg_chunking_t *j = (jpg_chunking_t *)arg;
-  if (!index)
-  {
-    j->len = 0;
-  }
-  if (httpd_resp_send_chunk(j->req, (const char *)data, len) != ESP_OK)
-  {
-    return 0;
-  }
-  j->len += len;
-  return len;
-}
 
-esp_err_t jpg_httpd_handler(httpd_req_t *req) {
-  camera_fb_t *fb = NULL;
-  esp_err_t res = ESP_OK;
-  size_t fb_len = 0;
-  int64_t fr_start = esp_timer_get_time();
-
-  fb = esp_camera_fb_get();
-  if (!fb)
-  {
-    ESP_LOGE(TAG, "Camera capture failed");
-    httpd_resp_send_500(req);
-    return ESP_FAIL;
-  }
-  res = httpd_resp_set_hdr(req, "Content-Type", "multipart/form-data; boundary=capture");
-  if (res == ESP_OK)
-  {
-    res = httpd_resp_set_hdr(req, "Content-Disposition", "form-data; filename=capture.jpg");
-  }
-
-  if (res == ESP_OK)
-  {
-    fb_len = fb->len;
-    res = httpd_resp_send(req, (const char *)fb->buf, fb->len);
-  }
-  esp_camera_fb_return(fb);
-  int64_t fr_end = esp_timer_get_time();
-  ESP_LOGI(TAG, "JPG: %uKB %ums", (uint32_t)(fb_len / 1024), (uint32_t)((fr_end - fr_start) / 1000));
-  return res;
-}
-
+/*
+ *
+ * Handle HTTP event 
+ *
+ * Currently used for debugging
+ *
+ */
 esp_err_t _http_event_handler(esp_http_client_event_t *evt) {
   switch(evt->event_id) {
     case HTTP_EVENT_ERROR:
@@ -115,9 +98,18 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt) {
   return ESP_OK;
 }
 
-// Initialize camera 
+/*
+ * Main method used to initialize the camera pins,
+ * configuring the camera settings 
+ * and checking if camera successfully initialized
+ *
+ * @returns esp_err_t if the camera failed to initialize 
+ *
+ */
 esp_err_t main_camera_init() {
   img_quality = (int) get_image_quality();
+  // Define the camera configuration
+  // pins and image quality 
   static camera_config_t camera_config = {
       .pin_pwdn  = CAM_PIN_PWDN,
       .pin_reset = CAM_PIN_RESET,
@@ -147,10 +139,16 @@ esp_err_t main_camera_init() {
       .fb_count = 1 //if more than one, i2s runs in continuous mode. Use only with JPEG
   };
 
+  // if the img quality flag is 0,
+  // we use SVGA frame size 
   if(img_quality == 0) {
-    camera_config.jpeg_quality = 12;
+    camera_config.frame_size = FRAMESIZE_SVGA;
+
   } else {
-    camera_config.jpeg_quality = 25;
+    // if the img quality flag is 0,
+    // we use VGA frame size which is lower resolution 
+    // than FRAMESIZE_SVGA
+    camera_config.frame_size = FRAMESIZE_VGA;
   }
   ESP_LOGD(TAG, "Starting camera");
   // Initialize the camera with configuration
@@ -161,43 +159,61 @@ esp_err_t main_camera_init() {
     ESP_LOGE(TAG, "Camera Init Failed");
     return err;
   }
+  // set flag to indicate that camera is active
   toggle_camera_status(1);
   return ESP_OK;
 }
 
+/*
+ * Method used to reset the camera.
+ * Currently, it will be called after clicking
+ * the change image quality in UI
+ *
+ * @TODO: To be refactored to split up logic to reset camera 
+ * and changing of image quality.
+ *
+ *
+ */
 void reset_camera() {
+  // Get the current image quality 
   uint8_t new_image_quality = get_image_quality();
+  // Configure the image quality
   if(new_image_quality == 0) {
     new_image_quality++;
   } else {
     new_image_quality = 0;
   }
+  // Update the image quality setting in nvs storage
   set_image_quality(new_image_quality);
+  // Toggle the camera status to 0
   toggle_camera_status(0);
+  // Deinitialize ESP-32 camera
   ESP_ERROR_CHECK(esp_camera_deinit());
+  // Reinitialize the ESP-32 Camera
   ESP_ERROR_CHECK(main_camera_init());
 }
 
-int count = 0;
-// This method shall be responsible for capturing
-// a video frame and sending it to the HTTP server every 5 seconds.
-esp_err_t start_capture_task() {
-  return ESP_OK;
 
-}
-
+/*
+ * Method to start the process of capturing image
+ * frame
+ *
+ * Note: main_camera_init() must be called first 
+ *
+ *
+ */
 esp_err_t start_capture() {
-  // xTaskCreatePinnedToCore(&start_capture_task, "capture_task", 4096, NULL, 5, NULL, 0);
-  // return ESP_OK;
-  // Remove counter later
+
+  // Continuously capture photo frame
   while(1) {
 
-    count++;
     camera_fb_t *fb = NULL;
     esp_err_t res = ESP_OK;
     size_t fb_len = 0;
     int64_t fr_start = esp_timer_get_time();
 
+    // If the camera is inactive,
+    // we sleep and wait for 2000ms 
     if(get_camera_status() == 0) {
       ESP_LOGI("Camera", "Camera undefined");
       // Delay by 2000ms before next request
@@ -256,6 +272,12 @@ esp_err_t start_capture() {
   return ESP_OK;
 }
 
+/*
+ *
+ * Getter / Setter method used to get the current camera status
+ *
+ *
+ */
 void toggle_camera_status(uint8_t status) {
   camera_activated = status;
 }

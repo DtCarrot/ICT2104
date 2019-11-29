@@ -11,15 +11,15 @@ SYSCFG_SRCS += \
 
 C_SRCS += \
 ../buzzer.c \
-../buzzerThread.c \
+../buzzer_thread.c \
+../led.c \
+../main_thread.c \
 ../main_tirtos.c \
 ../pir.c \
 ../rxtx_uart.c \
 ../sensor_fusion.c \
-../uartecho.c \
 ./syscfg/ti_drivers_config.c \
-../ultrasonic.c \
-../ultrasonicThread.c 
+../ultrasonic.c 
 
 GEN_FILES += \
 ./syscfg/ti_drivers_config.c 
@@ -29,27 +29,27 @@ GEN_MISC_DIRS += \
 
 C_DEPS += \
 ./buzzer.d \
-./buzzerThread.d \
+./buzzer_thread.d \
+./led.d \
+./main_thread.d \
 ./main_tirtos.d \
 ./pir.d \
 ./rxtx_uart.d \
 ./sensor_fusion.d \
-./uartecho.d \
 ./syscfg/ti_drivers_config.d \
-./ultrasonic.d \
-./ultrasonicThread.d 
+./ultrasonic.d 
 
 OBJS += \
 ./buzzer.obj \
-./buzzerThread.obj \
+./buzzer_thread.obj \
+./led.obj \
+./main_thread.obj \
 ./main_tirtos.obj \
 ./pir.obj \
 ./rxtx_uart.obj \
 ./sensor_fusion.obj \
-./uartecho.obj \
 ./syscfg/ti_drivers_config.obj \
-./ultrasonic.obj \
-./ultrasonicThread.obj 
+./ultrasonic.obj 
 
 GEN_MISC_FILES += \
 ./syscfg/ti_drivers_config.h \
@@ -60,15 +60,15 @@ GEN_MISC_DIRS__QUOTED += \
 
 OBJS__QUOTED += \
 "buzzer.obj" \
-"buzzerThread.obj" \
+"buzzer_thread.obj" \
+"led.obj" \
+"main_thread.obj" \
 "main_tirtos.obj" \
 "pir.obj" \
 "rxtx_uart.obj" \
 "sensor_fusion.obj" \
-"uartecho.obj" \
 "syscfg/ti_drivers_config.obj" \
-"ultrasonic.obj" \
-"ultrasonicThread.obj" 
+"ultrasonic.obj" 
 
 GEN_MISC_FILES__QUOTED += \
 "syscfg/ti_drivers_config.h" \
@@ -76,30 +76,30 @@ GEN_MISC_FILES__QUOTED += \
 
 C_DEPS__QUOTED += \
 "buzzer.d" \
-"buzzerThread.d" \
+"buzzer_thread.d" \
+"led.d" \
+"main_thread.d" \
 "main_tirtos.d" \
 "pir.d" \
 "rxtx_uart.d" \
 "sensor_fusion.d" \
-"uartecho.d" \
 "syscfg/ti_drivers_config.d" \
-"ultrasonic.d" \
-"ultrasonicThread.d" 
+"ultrasonic.d" 
 
 GEN_FILES__QUOTED += \
 "syscfg/ti_drivers_config.c" 
 
 C_SRCS__QUOTED += \
 "../buzzer.c" \
-"../buzzerThread.c" \
+"../buzzer_thread.c" \
+"../led.c" \
+"../main_thread.c" \
 "../main_tirtos.c" \
 "../pir.c" \
 "../rxtx_uart.c" \
 "../sensor_fusion.c" \
-"../uartecho.c" \
 "./syscfg/ti_drivers_config.c" \
-"../ultrasonic.c" \
-"../ultrasonicThread.c" 
+"../ultrasonic.c" 
 
 SYSCFG_SRCS__QUOTED += \
 "../uartecho.syscfg" 

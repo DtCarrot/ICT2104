@@ -15,39 +15,14 @@ const char * TAG = "WIFI";
 
 static EventGroupHandle_t s_wifi_event_group;
 
-httpd_uri_t uri_handler_jpg = {
-    .uri = "/jpg",
-    .method = HTTP_GET,
-    .handler = jpg_httpd_handler};
-
-
-httpd_handle_t start_webserver(void) {
-  httpd_handle_t server = NULL;
-  ESP_LOGI(TAG, "Init web server");
-  httpd_config_t config = HTTPD_DEFAULT_CONFIG();
-
-  // Start the httpd server
-  ESP_LOGI(TAG, "Starting server on port: '%d'", config.server_port);
-  if (httpd_start(&server, &config) == ESP_OK)
-  {
-    // Set URI handlers
-    ESP_LOGI(TAG, "Registering URI handlers");
-    httpd_register_uri_handler(server, &uri_handler_jpg);
-    return server;
-  }
-
-  ESP_LOGI(TAG, "Error starting server!");
-  return NULL;
-}
-
-void stop_webserver(httpd_handle_t server) {
-  // Stop the httpd server
-  httpd_stop(server);
-}
-
+/*
+ * Method used to manage wifi events
+ *
+ */
 static esp_err_t wifi_event_handler(void *ctx, system_event_t *event) {
     httpd_handle_t *server = (httpd_handle_t *)ctx;
     ESP_LOGI(TAG, "Current state %d", event->event_id);
+    // Check what is the current connectivity state
     switch (event->event_id) {
         case SYSTEM_EVENT_STA_START:
             ESP_LOGI(TAG, "SYSTEM_EVENT_STA_START");
@@ -55,28 +30,18 @@ static esp_err_t wifi_event_handler(void *ctx, system_event_t *event) {
             break;
         case SYSTEM_EVENT_STA_GOT_IP:
             ESP_LOGI(TAG, "SYSTEM_EVENT_STA_GOT_IP");
-            ESP_LOGI(TAG, "Got IP: '%s'",
-                    ip4addr_ntoa(&event->event_info.got_ip.ip_info.ip));
-
+            // Initialize the MQTT instance 
             init_mqtt();
+            // Trigger signal for camera to 
+            // start capturing photo
+            // and sending it to HTTP server
             start_capture();
-            /* Start the web server */
-            // if (*server == NULL)
-            // {
             ESP_LOGI(TAG, "Starting web server");
-            // *server = start_webserver();
-            // }
             break;
         case SYSTEM_EVENT_STA_DISCONNECTED:
             ESP_LOGI(TAG, "SYSTEM_EVENT_STA_DISCONNECTED");
             ESP_ERROR_CHECK(esp_wifi_connect());
 
-            /* Stop the web server */
-            // if (*server)
-            // {
-            // stop_webserver(*server);
-            // *server = NULL;
-            // }
             break;
         default:
             break;
@@ -84,22 +49,26 @@ static esp_err_t wifi_event_handler(void *ctx, system_event_t *event) {
     return ESP_OK;
 }
 
-void start_wifi() {
-
-}
-
-// Initialize wifi connectivity
+/*
+ *  Method used to initialize wifi connectivity
+ *
+ *
+ */
 void initialize_wifi(void *arg) {
 
     ESP_LOGI("WiFi", "Init tcpip adapter");
     tcpip_adapter_init();
     ESP_LOGI("WiFi", "After init adapter");
+    // Define event handler that will be used to
+    // manage any update in wifi state
     ESP_ERROR_CHECK(esp_event_loop_init(wifi_event_handler, arg));
     ESP_LOGI("WiFi", "Before init config");
     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
     ESP_LOGI("WiFi", "Before init custom config");
     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
     ESP_ERROR_CHECK(esp_wifi_set_storage(WIFI_STORAGE_RAM));
+
+    // Set the wifi ssid and password
     wifi_config_t wifi_config = {
         .sta = {
             .ssid = "Huawei Pro 20",
@@ -109,11 +78,11 @@ void initialize_wifi(void *arg) {
 
     ESP_LOGI("WiFi", "Setting WiFi configuration SSID %s...", wifi_config.sta.ssid);
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+    // Apply wifi configuration
     ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config));
+    // Start the wifi service
     ESP_ERROR_CHECK(esp_wifi_start());
 
-    // start_wifi();
-    // xTaskCreate(start_wifi, "wifi_task", 1024*2, NULL, configMAX_PRIORITIES, NULL);
 }
 
 

@@ -38,6 +38,12 @@ void init_buzzer_gpio() {
     GPIO_write(CONFIG_BUZZER_OUT_PIN, 0);
 }
 
+/*
+ * Method used to trigger buzzer
+ *
+ * @param status - uint8 with updated buzzer status
+ *
+ */
 void trigger_buzzer(uint8_t status) {
     GPIO_write(CONFIG_BUZZER_OUT_PIN, status);
 }

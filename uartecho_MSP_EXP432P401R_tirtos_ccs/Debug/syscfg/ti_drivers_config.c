@@ -29,11 +29,11 @@
  */
 GPIO_PinConfig gpioPinConfigs[] = {
     /* CONFIG_TRIGGER_PIN */
-    GPIOMSP432_P2_7 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_MED | GPIO_CFG_OUT_LOW,
+    GPIOMSP432_P3_6 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_MED | GPIO_CFG_OUT_LOW,
     /* CONFIG_GPIO_0 */
     GPIOMSP432_P10_1 | GPIO_CFG_IN_NOPULL | GPIO_CFG_IN_INT_NONE,
     /* CONFIG_ECHO_PIN */
-    GPIOMSP432_P2_6 | GPIO_CFG_IN_NOPULL | GPIO_CFG_IN_INT_BOTH_EDGES,
+    GPIOMSP432_P3_7 | GPIO_CFG_IN_NOPULL | GPIO_CFG_IN_INT_BOTH_EDGES,
     /* CONFIG_GPIO_LED_0 : LaunchPad LED 1 Red */
     GPIOMSP432_P1_0 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_HIGH | GPIO_CFG_OUT_LOW,
     /* CONFIG_PIR_ECHO_PIN */
@@ -42,6 +42,10 @@ GPIO_PinConfig gpioPinConfigs[] = {
     GPIOMSP432_P6_4 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_HIGH | GPIO_CFG_OUT_LOW,
     /* CONFIG_LED_PIN_GREEN : LaunchPad LED 2 Green */
     GPIOMSP432_P2_1 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_MED | GPIO_CFG_OUT_LOW,
+    /* CONFIG_LED_PIN_BLUE : LaunchPad LED 2 Blue */
+    GPIOMSP432_P2_2 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_MED | GPIO_CFG_OUT_LOW,
+    /* CONFIG_LED_PIN_RED : LaunchPad LED 2 Red */
+    GPIOMSP432_P2_0 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_MED | GPIO_CFG_OUT_LOW,
 };
 
 /*
@@ -67,6 +71,10 @@ GPIO_CallbackFxn gpioCallbackFunctions[] = {
     NULL,
     /* CONFIG_LED_PIN_GREEN : LaunchPad LED 2 Green */
     NULL,
+    /* CONFIG_LED_PIN_BLUE : LaunchPad LED 2 Blue */
+    NULL,
+    /* CONFIG_LED_PIN_RED : LaunchPad LED 2 Red */
+    NULL,
 };
 
 /*
@@ -75,10 +83,74 @@ GPIO_CallbackFxn gpioCallbackFunctions[] = {
 const GPIOMSP432_Config GPIOMSP432_config = {
     .pinConfigs = (GPIO_PinConfig *)gpioPinConfigs,
     .callbacks = (GPIO_CallbackFxn *)gpioCallbackFunctions,
-    .numberOfPinConfigs = 7,
-    .numberOfCallbacks = 7,
+    .numberOfPinConfigs = 9,
+    .numberOfCallbacks = 9,
     .intPriority = (~0)
 };
+
+
+/*
+ *  =============================== NVS ===============================
+ */
+
+#include <ti/drivers/NVS.h>
+#include <ti/drivers/nvs/NVSMSP432.h>
+
+/*
+ *  NVSMSP432 Internal NVS flash region definitions
+ *
+ * Place uninitialized char arrays at addresses
+ * corresponding to the 'regionBase' addresses defined in
+ * the configured NVS regions. These arrays are used as
+ * place holders so that the linker will not place other
+ * content there.
+ *
+ * For GCC targets, the 'flashBuf' arrays are each placed into
+ * the shared ".nvs" section. The user must add content to
+ * their GCC linker command file to place the .nvs section
+ * at the lowest 'regionBase' address specified in their NVS
+ * regions.
+ */
+
+#if defined(__TI_COMPILER_VERSION__)
+
+#pragma LOCATION(flashBuf0, 0x0);
+#pragma NOINIT(flashBuf0);
+static char flashBuf0[0x1000];
+
+#elif defined(__IAR_SYSTEMS_ICC__)
+
+__no_init static char flashBuf0[0x1000] @ 0x0;
+
+#elif defined(__GNUC__)
+
+__attribute__ ((section (".nvs")))
+static char flashBuf0[0x1000];
+
+#endif
+
+NVSMSP432_Object nvsMSP432Objects[1];
+
+static const NVSMSP432_HWAttrs nvsMSP432HWAttrs[1] = {
+    /* CONFIG_NVS_0 */
+    {
+        .regionBase = (void *) flashBuf0,
+        .regionSize = 0x1000
+    },
+};
+
+#define CONFIG_NVS_COUNT 1
+
+const NVS_Config NVS_config[CONFIG_NVS_COUNT] = {
+    /* CONFIG_NVS_0 */
+    {
+        .fxnTablePtr = &NVSMSP432_fxnTable,
+        .object = &nvsMSP432Objects[0],
+        .hwAttrs = &nvsMSP432HWAttrs[0],
+    },
+};
+
+const uint_least8_t NVS_count = CONFIG_NVS_COUNT;
 
 
 /*

@@ -19,6 +19,8 @@ buzzerThread.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti
 buzzerThread.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/../include/time.h
 buzzerThread.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/abi_prefix.h
 buzzerThread.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/xlocale/_time.h
+buzzerThread.obj: ../led.h
+buzzerThread.obj: ../sensor_fusion.h
 
 ../buzzerThread.c: 
 ../buzzer.h: 
@@ -39,3 +41,5 @@ buzzerThread.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2
 /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/../include/time.h: 
 /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/abi_prefix.h: 
 /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/xlocale/_time.h: 
+../led.h: 
+../sensor_fusion.h: 

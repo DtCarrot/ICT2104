@@ -1,8 +1,7 @@
 /*
+ * ict2104_uart.h
  * This file implements the methods required to 
  * connect to UART, set up the async RX and TX of tasks
- *
- *
  *
  */
 
@@ -33,10 +32,16 @@ uint8_t message_header_exists = 0;
 
 /*
  *
- * Parse message
+ * Parse message sent from MSP432 via UART
+ *
+ * By comparing the first 4 bytes of the string 
+ * which represents predefined commands
+ *
+ * It will trigger corresponding action
  *
  */
 void parse_message(char* output, uint8_t byte_size) {
+
     const char * RX_TASK_TAG = "UART RX";
 
     // SC01 - Code for "People Detected"
@@ -97,7 +102,7 @@ void parse_message(char* output, uint8_t byte_size) {
     } 
 
     // Check the message command and perform action based
-    // on the UART inpu
+    // on the UART input
     if(strncmp((char*) msg, PEOPLE_DETECTED, 4) == 0) {
 
         // If people detected, we need to fuse with the prediction from video stream
@@ -120,6 +125,7 @@ void parse_message(char* output, uint8_t byte_size) {
 
     } else if(strncmp((char*) msg, TEMPERATURE_READING, 4) == 0) {
 
+        // @TODO
         // Set the temperature message header to tell loop to expect an temperature reading value
         strcpy(message_header, TEMPERATURE_READING);
         message_header_exists = 1;
@@ -137,8 +143,17 @@ void parse_message(char* output, uint8_t byte_size) {
     }
 }
 
+/*
+ *
+ * Main task function that shall be responsible
+ * for reading UART input
+ *
+ */
 void uart_task(void) {
     const char * RX_TASK_TAG = "UART RX";
+    // Define configuration for UART
+    // set baud rate to 115200 
+    // with 8 bits with 1 stop bit
     const uart_config_t uart_config = {
         .baud_rate = 115200,
         .data_bits = UART_DATA_8_BITS,
@@ -147,6 +162,7 @@ void uart_task(void) {
         .flow_ctrl = UART_HW_FLOWCTRL_DISABLE
     };
     ESP_LOGI(RX_TASK_TAG, "Config uart params");
+    // Set UART configuration
     ESP_ERROR_CHECK(uart_param_config(UART_NUM_1, &uart_config));
     // Set the TX and RX pin
     ESP_LOGI(RX_TASK_TAG, "Config set pin");
@@ -159,69 +175,42 @@ void uart_task(void) {
     uint8_t* data = (uint8_t*) malloc(RX_BUF_SIZE+1);
     // Read data sent from MSP432 over UART protocol.
     while (1) {
+        // Read 4 bytes of data at a time
         const int rxBytes = uart_read_bytes(UART_NUM_1, data, 4, 1000 / portTICK_RATE_MS);
-        // const int rxBytes = uart_read_bytes(UART_NUM_1, data, RX_BUF_SIZE, 1000 / portTICK_RATE_MS);
         if (rxBytes > 0) {
             data[rxBytes] = 0;
             ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%s'", rxBytes, data);
+            // Parse message and execute corresponding action
             parse_message((char*)data, sizeof(data));
-            // Match against existing codes
-            ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, data, rxBytes, ESP_LOG_INFO);
         }
     }
-    free(data);
+    free(data); // Free dynamically allocated data
 }
 
-void rx_task(void) {
-    static const char *RX_TASK_TAG = "RX_TASK";
-    esp_log_level_set(RX_TASK_TAG, ESP_LOG_INFO);
-    uint8_t* data = (uint8_t*) malloc(RX_BUF_SIZE+1);
-    while (1) {
-        const int rxBytes = uart_read_bytes(UART_NUM_1, data, 4, 1000 / portTICK_RATE_MS);
-        // const int rxBytes = uart_read_bytes(UART_NUM_1, data, RX_BUF_SIZE, 1000 / portTICK_RATE_MS);
-        if (rxBytes > 0) {
-            data[rxBytes] = 0;
-            ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%s'", rxBytes, data);
-            uint8_t *sc01 = (uint8_t) "SC01";
-            uint8_t found = 1;
-            for (int i=0; i<rxBytes; i++) {
-                if(data[i] != sc01[i]) {
-                    found = 0;
-                }
-            }
-            if(found) {
-                ESP_LOGI(RX_TASK_TAG, "Found SC01");
-            }
-            ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, data, rxBytes, ESP_LOG_INFO);
-            // if(strncmp((const char*) data, "SC01", 4) == 0) {
-            // }
-        }
-    }
-    free(data);
-}
-
+/*
+ *
+ * Method wrapper used to create UART task
+ *
+ *
+ * Note: Must be called before running sendData()
+ *
+ */
 void uart_init(void) {
     xTaskCreate(uart_task, "uart_task", 1024*2, NULL, configMAX_PRIORITIES-1, NULL);
 }
 
-
+/*
+ *
+ * Method to send data to MSP432 over UART
+ *
+ */
 int sendData(const char* data) {
     static const char *logName = "SEND_DATA";
-    // char *data = "ICT1";
     const int len = strlen(data);
+    // Write data to MSP432 over UART
     const int txBytes = uart_write_bytes(UART_NUM_1, data, len);
-    printf("Sending...");
     ESP_LOGI(logName, "Wrote %d bytes", txBytes);
     return txBytes;
-}
-
-void tx_task(void) {
-    static const char *TX_TASK_TAG = "TX_TASK";
-    esp_log_level_set(TX_TASK_TAG, ESP_LOG_INFO);
-    while (1) {
-        sendData("Cello orld");
-        vTaskDelay(2000 / portTICK_PERIOD_MS);
-    }
 }
 
 

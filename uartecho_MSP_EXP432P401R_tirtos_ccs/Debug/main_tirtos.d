@@ -82,10 +82,13 @@ main_tirtos.obj: /home/dtcarrot/ti/ccs910/xdctools_3_55_02_22_core/packages/xdc/
 main_tirtos.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/kernel/tirtos/packages/ti/sysbios/BIOS__epilogue.h
 main_tirtos.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/kernel/tirtos/packages/ti/sysbios/package/BIOS_RtsGateProxy.h
 main_tirtos.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/Board.h
-main_tirtos.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/unistd.h
+main_tirtos.obj: ../rxtx_uart.h
 main_tirtos.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/GPIO.h
+main_tirtos.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/UART.h
 main_tirtos.obj: /home/dtcarrot/workspace_v9/uartecho_MSP_EXP432P401R_tirtos_ccs/Debug/syscfg/ti_drivers_config.h
 main_tirtos.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/devices/DeviceFamily.h
+main_tirtos.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/unistd.h
+main_tirtos.obj: ../led.h
 
 ../main_tirtos.c: 
 /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/stdint.h: 
@@ -169,7 +172,10 @@ main_tirtos.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/kernel/tirtos/packages/ti/sysbios/BIOS__epilogue.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/kernel/tirtos/packages/ti/sysbios/package/BIOS_RtsGateProxy.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/Board.h: 
-/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/unistd.h: 
+../rxtx_uart.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/GPIO.h: 
+/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/UART.h: 
 /home/dtcarrot/workspace_v9/uartecho_MSP_EXP432P401R_tirtos_ccs/Debug/syscfg/ti_drivers_config.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/devices/DeviceFamily.h: 
+/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/unistd.h: 
+../led.h: 

@@ -17,7 +17,7 @@
 
 /*
  *
- * Main entry for this application
+ * Main entry for the ESP-32 CAM embedded program
  *
  *
  */
@@ -30,12 +30,13 @@ void app_main()
     ESP_LOGI("TAG", "Before starting camera");
 
     ESP_LOGI("TAG", "Before starting uart");
-    // Initialize UART driver connectivity
-    // uart_init();
     ESP_LOGI("TAG", "Finished UART init");
 
     vTaskDelay(2000 / portTICK_PERIOD_MS);
+
+    // Initialize UART driver connectivity
     uart_init();
+
     // Initialize SPI ram
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {

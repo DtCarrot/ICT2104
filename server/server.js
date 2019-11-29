@@ -2,6 +2,7 @@ const express = require("express");
 const http = require("http");
 const cors = require("cors");
 const Stream = require("stream").Transform;
+const uuidv1 = require("uuid/v1");
 const server = express();
 const multer = require("multer");
 const storage = multer.memoryStorage();
@@ -60,18 +61,20 @@ io.listen(8888);
 // Method that will be called when an image have been send from ESP32-CAM
 const uploadImage = (req, res) => {
   // Convert raw image body to utf8 format
-  const buffer = Buffer.from(req.rawBody, "utf8").toString("base64");
+  const buffer = Buffer.from(req.rawBody, "utf8");
+  const base64Data = buffer.toString("base64");
 
   // Write temporary image buffer
-  // fs.readFile("./image.jpg", buffer, err => console.log(err));
-  // const fileData = fs.readFileSync("./image-test.jpeg");
-  // const buffer = Buffer.from(fileData).toString("base64");
-  // io.sockets.emit("test");
-  // Send base64 image data
-  // io.sockets.emit("broadcast", buffer);
   if (currentSocket !== null) {
     console.log("Sending image");
-    currentSocket.emit("broadcast", buffer);
+    currentSocket.emit("broadcast", base64Data);
+    const randomStr = `images/${uuidv1()}.jpeg`;
+    console.log("Random str: ", randomStr);
+    fs.writeFile(randomStr, buffer, "utf8", err => {
+      if (err) {
+        console.log("Failed to write file");
+      }
+    });
   } else {
     console.log("Socket null");
   }

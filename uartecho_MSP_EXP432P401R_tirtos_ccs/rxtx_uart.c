@@ -29,11 +29,12 @@ const char *ALERT = "ALT1";
 const char *CHANGE_TONE = "CHT1";
 const char *CHANGE_TONE_ACK = "TACK";
 
-
 Semaphore_Handle SEM_uart_rx; // this binary semaphore handles uart receiving interrupts
 
 /* Stack size in bytes */
 #define THREADSTACKSIZE    2048
+
+uint8_t rxData[1024];
 
 void init_uart_thread() {
     pthread_t           usThread;
@@ -62,6 +63,8 @@ void init_uart_thread() {
 }
 
 void *init_uart() {
+
+    // Initialize UART pin
     UART_init();
 
     /* Create a UART with data processing off. */
@@ -75,8 +78,13 @@ void *init_uart() {
     uartParams.readMode = UART_MODE_CALLBACK;
     uartParams.readCallback = &rx_uart_interrupt;
 
+    // Set baud rate of UART to 115200
     uartParams.baudRate = 115200;
+            // Toggle the uart sent flag to 1 to indicate that an alert have been trigger 
+            // and message have been sent to ESP32-CAM over UART
+            set_uart_sent(1);
 
+    // Open the UART port connectivity
     uart = UART_open(CONFIG_UART_1, &uartParams);
 
     if (uart == NULL) {
@@ -95,40 +103,48 @@ void *init_uart() {
     sem_params.mode = Semaphore_Mode_BINARY;
     // Create semaphore
     SEM_uart_rx = Semaphore_create(0, &sem_params, &eb);
-    //char input[4];
-    // While loop to check for any incoming data
-//
+
+
+    // While loop to continuously get UART RX value
+    // char input[10];
+    char *input = malloc(sizeof(char) * 10);
 
     while(1) {
-        char input[50];
-        UART_read(uart, &input, sizeof(input));
+
+        // Read UART data 
+        UART_read(uart, input, sizeof(input));
+
         // If the command is to play the alarm
-        if(strncmp(input, "play", 4) == 0) {
-            // Start the alarm
-        } else if(strncmp(input, ALERT, 4) == 0) {
+        if(strncmp(input, ALERT, 4) == 0) {
+
+            toggle_remote_trigger(1);
             // Turn on the alarm
-            //create_buzzer_thread();
             set_alert_sound(1);
+            // memset(input, 0, sizeof(input));    
+            free(input);
+            *input = malloc(sizeof(char) * 10);
+
         } else if(strncmp(input, CHANGE_TONE, 4) == 0) {
+
             // Message to change tone
             change_buzzer_tone();
             // Send CHANGE_TONE_ACK
             send_data(CHANGE_TONE_ACK, sizeof(CHANGE_TONE_ACK), NULL, 0);
+
+            free(input);
+            *input = malloc(sizeof(char) * 10);
+
         }
 
-        // Clear the value after running the comparison checks
-        //strcpy(input, "");
-        //input[0] = '\0';
-//        __delay_cycles(100);
+        // Sleep for 100 microseconds for uart
+
         usleep(100);
+
 
     }
 
-
-
 }
 
-uint8_t rxData[1024];
 
 void rx_uart_interrupt(UART_Handle handle, void *rxBuf, size_t size) {
     int i = 0;
@@ -136,7 +152,6 @@ void rx_uart_interrupt(UART_Handle handle, void *rxBuf, size_t size) {
         rxData[i] = ((uint8_t*) rxBuf)[i];
     }
     int j = 0;
-
 }
 
 
@@ -144,6 +159,10 @@ void rx_uart_interrupt(UART_Handle handle, void *rxBuf, size_t size) {
  * Method that is used to send data with UART command with
  * optional message.
  *
+ * command -> Actual predefined uint8_t command
+ * command_len -> Actual uint8_t command length
+ * msg -> Actual msg
+ * msg_len -> Actual msg length
  *
  */
 void send_data(uint8_t *command, uint8_t command_len, uint8_t *msg, uint8_t msg_len) {
@@ -155,8 +174,8 @@ void send_data(uint8_t *command, uint8_t command_len, uint8_t *msg, uint8_t msg_
     // If the message is not NULL, we need to dynamically declare
     // the message data memory
     if (msg != NULL) {
-        output_msg = malloc(sizeof(uint8_t) * msg_len);
-        strncpy(output_msg, msg, sizeof(msg));
+        output_msg = malloc(sizeof(uint8_t) * msg_len); // Dynamically declare message memory
+        strncpy(output_msg, msg, sizeof(msg)); 
     }
 
     strncpy(output_code, command, sizeof(output_code));

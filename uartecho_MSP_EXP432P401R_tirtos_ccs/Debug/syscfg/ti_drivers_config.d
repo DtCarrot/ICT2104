@@ -16,8 +16,10 @@ syscfg/ti_drivers_config.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt
 syscfg/ti_drivers_config.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/sys/_stdint.h
 syscfg/ti_drivers_config.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/GPIO.h
 syscfg/ti_drivers_config.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/gpio/GPIOMSP432.h
-syscfg/ti_drivers_config.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/Power.h
+syscfg/ti_drivers_config.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/NVS.h
 syscfg/ti_drivers_config.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/stdbool.h
+syscfg/ti_drivers_config.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/nvs/NVSMSP432.h
+syscfg/ti_drivers_config.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/Power.h
 syscfg/ti_drivers_config.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/utils/List.h
 syscfg/ti_drivers_config.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/power/PowerMSP432.h
 syscfg/ti_drivers_config.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/Timer.h
@@ -61,8 +63,10 @@ syscfg/ti_drivers_config.h:
 /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/sys/_stdint.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/GPIO.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/gpio/GPIOMSP432.h: 
-/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/Power.h: 
+/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/NVS.h: 
 /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/stdbool.h: 
+/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/nvs/NVSMSP432.h: 
+/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/Power.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/utils/List.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/power/PowerMSP432.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/Timer.h: 

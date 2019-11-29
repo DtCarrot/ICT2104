@@ -21,6 +21,13 @@ rxtx_uart.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LT
 rxtx_uart.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/stdio.h
 rxtx_uart.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/stdarg.h
 rxtx_uart.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/string.h
+rxtx_uart.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/pthread.h
+rxtx_uart.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/time.h
+rxtx_uart.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/signal.h
+rxtx_uart.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/../include/signal.h
+rxtx_uart.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/../include/sys/timespec.h
+rxtx_uart.obj: /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/sys/_timespec.h
+rxtx_uart.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/sched.h
 rxtx_uart.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/GPIO.h
 rxtx_uart.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/UART.h
 rxtx_uart.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/kernel/tirtos/packages/ti/sysbios/BIOS.h
@@ -183,6 +190,7 @@ rxtx_uart.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/kernel/tirto
 rxtx_uart.obj: /home/dtcarrot/ti/ccs910/xdctools_3_55_02_22_core/packages/xdc/runtime/IModule.h
 rxtx_uart.obj: /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/kernel/tirtos/packages/ti/sysbios/knl/Event__epilogue.h
 rxtx_uart.obj: ../rxtx_uart.h
+rxtx_uart.obj: ../buzzer.h
 
 ../rxtx_uart.c: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/unistd.h: 
@@ -205,6 +213,13 @@ rxtx_uart.obj: ../rxtx_uart.h
 /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/stdio.h: 
 /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/stdarg.h: 
 /home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/string.h: 
+/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/pthread.h: 
+/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/time.h: 
+/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/signal.h: 
+/home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/../include/signal.h: 
+/home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/../include/sys/timespec.h: 
+/home/dtcarrot/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/sys/_timespec.h: 
+/home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/sched.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/GPIO.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/UART.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/kernel/tirtos/packages/ti/sysbios/BIOS.h: 
@@ -367,3 +382,4 @@ rxtx_uart.obj: ../rxtx_uart.h
 /home/dtcarrot/ti/ccs910/xdctools_3_55_02_22_core/packages/xdc/runtime/IModule.h: 
 /home/dtcarrot/ti/simplelink_msp432p4_sdk_3_30_00_13/kernel/tirtos/packages/ti/sysbios/knl/Event__epilogue.h: 
 ../rxtx_uart.h: 
+../buzzer.h: 

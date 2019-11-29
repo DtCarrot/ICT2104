@@ -32,11 +32,12 @@ esp_err_t set_image_quality(int32_t image_quality) {
     err = nvs_open(STORAGE_NAMESPACE, NVS_READWRITE, &esp_nvs_handle);
     if (err != ESP_OK) return err;
 
+    // Set the image quality to the new value
     err = nvs_set_i32(esp_nvs_handle, "image_quality", image_quality);
     ESP_LOGI("NVS", "Setting Image Quality: %d", image_quality);
     if (err != ESP_OK) return err;
-    // Commit
 
+    // Commit the image quality update 
     err = nvs_commit(esp_nvs_handle);
     if (err != ESP_OK) return err;
     nvs_close(esp_nvs_handle);

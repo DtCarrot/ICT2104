@@ -30,11 +30,11 @@ extern "C" {
  *  ======== GPIO ========
  */
 
-/* P2.7 */
+/* P3.6 */
 #define CONFIG_TRIGGER_PIN          0
 /* P10.1 */
 #define CONFIG_GPIO_0               1
-/* P2.6 */
+/* P3.7 */
 #define CONFIG_ECHO_PIN             2
 /* P1.0, LaunchPad LED 1 Red */
 #define CONFIG_GPIO_LED_0           3
@@ -44,6 +44,10 @@ extern "C" {
 #define CONFIG_BUZZER_OUT_PIN       5
 /* P2.1, LaunchPad LED 2 Green */
 #define CONFIG_LED_PIN_GREEN        6
+/* P2.2, LaunchPad LED 2 Blue */
+#define CONFIG_LED_PIN_BLUE         7
+/* P2.0, LaunchPad LED 2 Red */
+#define CONFIG_LED_PIN_RED          8
 
 /* LEDs are active high */
 #define CONFIG_GPIO_LED_ON  (1)
@@ -51,6 +55,13 @@ extern "C" {
 
 #define CONFIG_LED_ON  (CONFIG_GPIO_LED_ON)
 #define CONFIG_LED_OFF (CONFIG_GPIO_LED_OFF)
+
+
+/*
+ *  ======== NVS ========
+ */
+
+#define CONFIG_NVS_0                0
 
 
 /*

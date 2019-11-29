@@ -11,15 +11,15 @@ GEN_CMDS__FLAG := -l"/home/dtcarrot/workspace_v9/tirtos_builds_MSP_EXP432P401R_r
 
 ORDERED_OBJS += \
 "./buzzer.obj" \
-"./buzzerThread.obj" \
+"./buzzer_thread.obj" \
+"./led.obj" \
+"./main_thread.obj" \
 "./main_tirtos.obj" \
 "./pir.obj" \
 "./rxtx_uart.obj" \
 "./sensor_fusion.obj" \
-"./uartecho.obj" \
 "./syscfg/ti_drivers_config.obj" \
 "./ultrasonic.obj" \
-"./ultrasonicThread.obj" \
 "../MSP_EXP432P401R_TIRTOS.cmd" \
 -l"ti/display/lib/display.aem4f" \
 -l"ti/grlib/lib/ccs/m4f/grlib.a" \
@@ -173,8 +173,8 @@ uartecho_MSP_EXP432P401R_tirtos_ccs.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(GEN_MISC_FILES__QUOTED)$(BIN_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "buzzer.obj" "buzzerThread.obj" "main_tirtos.obj" "pir.obj" "rxtx_uart.obj" "sensor_fusion.obj" "uartecho.obj" "syscfg/ti_drivers_config.obj" "ultrasonic.obj" "ultrasonicThread.obj" 
-	-$(RM) "buzzer.d" "buzzerThread.d" "main_tirtos.d" "pir.d" "rxtx_uart.d" "sensor_fusion.d" "uartecho.d" "syscfg/ti_drivers_config.d" "ultrasonic.d" "ultrasonicThread.d" 
+	-$(RM) "buzzer.obj" "buzzer_thread.obj" "led.obj" "main_thread.obj" "main_tirtos.obj" "pir.obj" "rxtx_uart.obj" "sensor_fusion.obj" "syscfg/ti_drivers_config.obj" "ultrasonic.obj" 
+	-$(RM) "buzzer.d" "buzzer_thread.d" "led.d" "main_thread.d" "main_tirtos.d" "pir.d" "rxtx_uart.d" "sensor_fusion.d" "syscfg/ti_drivers_config.d" "ultrasonic.d" 
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
 	-@echo 'Finished clean'
 	-@echo ' '

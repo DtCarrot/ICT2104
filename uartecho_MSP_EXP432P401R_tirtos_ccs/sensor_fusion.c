@@ -6,6 +6,7 @@
 
 uint8_t uart_sent = 0;
 int time_since_last_alert = 0;
+uint8_t ULTRASONIC_DISTANCE_THRESHOLD = 30;
 
 /*
  * Source file for functions that will manage the sensor fusion
@@ -14,13 +15,19 @@ int time_since_last_alert = 0;
  */
 uint8_t sensor_fusion_check(float distance, uint8_t active) {
 
-    if(distance < 20 && distance > 0) {
+    // First check if the distance is more than equal to 0
+    // and less than the distance threshold in cm.
+    if(distance < ULTRASONIC_DISTANCE_THRESHOLD && distance > 0) {
         return 1;
     }
 
+    // Check if the PIR sensor have detected
     if(active) {
         return 1;
     }
+
+    // If the code is still here, 
+    // we need to return 0
     return 0;
 }
 

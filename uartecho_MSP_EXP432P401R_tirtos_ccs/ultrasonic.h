@@ -1,16 +1,34 @@
+/*
+ * ultrasonic.h
+ *
+ * This header file shall declare the interfaces
+ * required to initialize the ultrasonic pins,
+ * managing the trigger for ultrasonic trigger pin
+ * and interrupt when the echo pin goes HIGH.
+ *
+ *
+ * Additionally, it shall also perform necessary calculation
+ * to calculate the distance based on the ultrasonic
+ * reading
+ *
+ *
+ */
 #include <unistd.h>
 #include <stdint.h>
 #include <stddef.h>
-
-extern float ultrasonic_distance;
-extern uint16_t ultrasonic_microseconds_count;
-extern uint16_t time_since_last_trigger;
-
 
 void init_ultrasonic_gpio();
 void trigger_ultrasonic_pin(uint8_t);
 void ultrasonic_echo_interrupt(uint8_t);
 float compute_distance();
+
+/*
+ * Getters, Setters used to manipulate or retrieve 
+ * variables that are encapsulated inside the source 
+ * file without exposing it as a global variable.
+ *
+ *
+ */
 void set_ultrasonic_distance(float);
 float get_ultrasonic_distance();
 void reset_ultrasonic_microseconds_count();
